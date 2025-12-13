@@ -212,7 +212,7 @@ Search university rules by keyword
 ### Run Tests
 ```bash
 # Make sure the Flask app is running first
-python app.py
+python app/app.py
 
 # In another terminal:
 python test_university_rules.py

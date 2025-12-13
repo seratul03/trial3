@@ -120,7 +120,7 @@ Enhanced with strict rules:
 ## Testing
 
 ### Test the System:
-1. Start server: `.\.venv\Scripts\python.exe app.py`
+1. Start server: `.\.venv\Scripts\python.exe app/app.py`
 2. Open browser: http://127.0.0.1:8000
 3. Try these queries:
 

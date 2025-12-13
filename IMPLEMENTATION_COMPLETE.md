@@ -274,7 +274,7 @@ Bot: Smoking is strictly banned on campus. Violations can lead to
 ## 🚦 Next Steps
 
 ### To Use:
-1. **Start the chatbot**: `python app.py`
+1. **Start the chatbot**: `python app/app.py`
 2. **Ask questions** about university rules
 3. **Test with**: `python test_university_rules.py`
 

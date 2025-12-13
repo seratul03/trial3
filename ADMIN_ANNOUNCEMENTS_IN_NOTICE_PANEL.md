@@ -148,7 +148,7 @@ Student sees unified notice list
    ```bash
    # Terminal 1 - Student Chatbot
    cd College_chatbot
-   python app.py
+   python app/app.py
 
    # Terminal 2 - Admin Panel
    cd "Admin Panel"

@@ -124,7 +124,7 @@ For detailed instructions, see `notice/README.md`
 
 ```bash
 cd College_chatbot
-python app.py
+python app/app.py
 ```
 
 ### Start the Admin Panel (Ports 3000 & 8000)

@@ -93,7 +93,7 @@ print("STATUS: ALL DATA TYPES SUPPORTED ✅")
 print("="*80)
 
 print("\n🎯 Next Steps:")
-print("1. Start the Flask app: python app.py")
+print("1. Start the Flask app: python app/app.py")
 print("2. Open the chat interface: http://localhost:5000")
 print("3. Test the queries above to verify all data types work")
 print("4. Confirm AI responds to general queries, not just scholarships")

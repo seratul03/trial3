@@ -4,7 +4,7 @@ Test the scholarship retrieval and context building
 import sys
 sys.path.insert(0, '.')
 
-from app import retrieve_top_k, build_context_from_docs
+from app.app import retrieve_top_k, build_context_from_docs
 
 def test_scholarship_retrieval():
     """Test that scholarship queries retrieve the correct files"""

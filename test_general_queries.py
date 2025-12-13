@@ -1,4 +1,4 @@
-from app import retrieve_top_k
+from app.app import retrieve_top_k
 
 test_queries = [
     "Who is the HOD of CSE?",

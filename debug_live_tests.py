@@ -1,5 +1,5 @@
 import json
-from app import app as flask_app
+from app.app import app as flask_app
 
 def post_profile(client, profile):
     return client.post('/api/profile', json=profile)

@@ -258,7 +258,7 @@ To start using the notice system:
 
 2. **Test the interface:**
 
-   - Run the chatbot: `python app.py`
+   - Run the chatbot: `python app/app.py`
    - Open http://localhost:8000
    - Click Academic → Notice
    - Verify notices appear

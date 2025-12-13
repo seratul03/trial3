@@ -2,7 +2,7 @@
 import sys
 sys.path.insert(0, '.')
 import json
-from app import format_scholarship_for_user
+from app.app import format_scholarship_for_user
 
 # Load a sample scholarship
 with open('Scholarship/data/detailed scholarship/kanyashree.json', 'r', encoding='utf-8') as f:

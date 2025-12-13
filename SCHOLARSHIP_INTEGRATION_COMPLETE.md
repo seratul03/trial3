@@ -188,7 +188,7 @@ Students now receive:
 ### Start the Application
 ```bash
 cd "C:\Users\Seratul Mustakim\Downloads\College_chatbot\College_chatbot"
-python app.py
+python app/app.py
 ```
 
 **Expected Console Output**:

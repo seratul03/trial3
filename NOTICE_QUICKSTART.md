@@ -27,7 +27,7 @@ Category--Title--YYYY-MM-DD.pdf
 
 ```bash
 cd College_chatbot
-python app.py
+python app/app.py
 ```
 
 The server should start on `http://localhost:8000`
@@ -202,7 +202,7 @@ mkdir -p "College_chatbot/notice/pdfs"
 
 # 3. Start server
 cd College_chatbot
-python app.py
+python app/app.py
 
 # 4. Test in browser
 # Go to: http://localhost:8000

@@ -11,7 +11,7 @@
 
 ```bash
 cd College_chatbot
-python app.py
+python app/app.py
 ```
 
 ✅ Student chatbot will run on `http://localhost:8000`

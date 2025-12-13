@@ -2,7 +2,7 @@
 import sys
 sys.path.insert(0, '.')
 import json
-from app import format_scholarship_for_user
+from app.app import format_scholarship_for_user
 
 scholarships = ['aikyashree.json', 'nabanna.json', 'sports.json']
 

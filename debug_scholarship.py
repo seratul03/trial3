@@ -1,4 +1,4 @@
-import app, json
+import app.app as app, json
 
 def main():
     q = 'kanyashree scholarship'
