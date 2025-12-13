@@ -1,0 +1,54 @@
+{
+  "course_code": "ESCM192",
+  "course_name": "Engineering Graphics & Design Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Engineering Drawing, Lettering, Dimensioning, Scales"
+    },
+    {
+      "module_number": 2,
+      "title": "Geometrical Construction and Curves"
+    },
+    {
+      "module_number": 3,
+      "title": "Projection of Points, Lines, Surfaces"
+    },
+    {
+      "module_number": 4,
+      "title": "Projection of Regular Solids"
+    },
+    {
+      "module_number": 5,
+      "title": "Isometric Projections"
+    },
+    {
+      "module_number": 6,
+      "title": "Sections and Sectional Views"
+    },
+    {
+      "module_number": 7,
+      "title": "Development of Surfaces"
+    },
+    {
+      "module_number": 8,
+      "title": "Computer Aided Drafting Interface (AutoCAD)"
+    }
+  ],
+  "summary": "Engineering Graphics & Design Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 8 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Engineering Drawing – N. D. Bhatt",
+    "Engineering Drawing and Computer Graphics – Shah & Rana",
+    "Engineering Graphics – Agrawal & Agrawal",
+    "Engineering Drawing – Narayana & Kannaiah"
+  ],
+  "course_outcomes": [
+    "Analyze and develop sense of scale and drawing techniques of various curves.",
+    "Develop drafting and sketching skills and understand Indian Standards for engineering drawing.",
+    "Analyze orthographic projections and visualize 3D objects; draw isometric projections.",
+    "Familiarize with AutoCAD and develop drafting skills using different commands."
+  ],
+  "prerequisites": [
+    "Unambiguous and clear visualization; sound pictorial intelligence."
+  ]
+}

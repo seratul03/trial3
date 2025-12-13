@@ -1,0 +1,31 @@
+# Sample Notice Files
+
+Place your PDF files in this directory following the naming convention:
+`Category--Title--YYYY-MM-DD.pdf`
+
+## Example Files (for demonstration):
+
+1. `Academic--Mid Semester Examination Schedule--2025-03-15.pdf`
+   - Contains exam dates and timings for mid-semester exams
+
+2. `Event--Annual Technical Symposium 2025--2025-04-20.pdf`
+   - Information about the upcoming tech fest
+
+3. `Examination--Final Semester Exam Form Fill-up--2025-05-10.pdf`
+   - Deadline and instructions for exam form submission
+
+4. `Important--Fee Payment Deadline Extended--2025-02-28.pdf`
+   - Updated deadline for semester fee payment
+
+5. `Holiday--Summer Vacation Notice--2025-06-01.pdf`
+   - Summer break schedule and reopening date
+
+## How to Add Your PDFs:
+
+1. Delete this SAMPLE_FILES.txt file
+2. Add your actual PDF files with the correct naming format
+3. The notices will automatically appear in the student chatbot
+
+---
+
+Note: This is just a sample guide file. Replace it with actual PDF notices.

@@ -1,0 +1,34 @@
+{
+  "course_code": "AUM-2",
+  "course_name": "Yoga and Sports",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Physical Education and Yoga"
+    },
+    {
+      "module_number": 2,
+      "title": "Physical Fitness & Wellness"
+    },
+    {
+      "module_number": 3,
+      "title": "Yoga, Asanas, Pranayama & Meditation"
+    },
+    {
+      "module_number": 4,
+      "title": "Yoga for Various Health Problems"
+    }
+  ],
+  "summary": "Yoga and Sports is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 4 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Health, Yoga And Physical Education – Dr. H.L. Khatri & Dr. Suman Lata",
+    "Modern Trends and Physical Education – Prof. Ajmer Singh",
+    "Light On Yoga – B.K.S. Iyengar"
+  ],
+  "course_outcomes": [
+    "Identify and explain aims and objectives of Yoga and Physical Education.",
+    "Evaluate components of physical fitness and differentiate health-related fitness and wellness.",
+    "Assess effectiveness of specific yoga poses in managing health conditions like hypertension, obesity, back pain, diabetes and asthma."
+  ],
+  "prerequisites": []
+}

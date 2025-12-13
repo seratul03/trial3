@@ -1,0 +1,42 @@
+{
+  "course_code": "PEC-CSM501C",
+  "course_name": "Cloud Computing (Elective-I Option C)",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Cloud Computing"
+    },
+    {
+      "module_number": 2,
+      "title": "Cloud Architecture"
+    },
+    {
+      "module_number": 3,
+      "title": "Cloud Management & Virtualization"
+    },
+    {
+      "module_number": 4,
+      "title": "Cloud Security"
+    },
+    {
+      "module_number": 5,
+      "title": "Market-Based Management & Case Studies"
+    }
+  ],
+  "summary": "Cloud Computing (Elective-I Option C) is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Mastering Cloud Computing – Buyya & Selvi",
+    "Cloud Computing – Kumar Saurabh",
+    "Cloud Computing: A Practical Approach – Velte",
+    "Architecting the Cloud – Michael J. Kavis"
+  ],
+  "course_outcomes": [
+    "Recall basic concepts of cloud computing.",
+    "Identify mechanisms and architectures of cloud computing.",
+    "Analyze cloud security services and architectures.",
+    "Compare different cloud services and case studies."
+  ],
+  "prerequisites": [
+    "Basics knowledge of networking and computer fundamentals"
+  ]
+}

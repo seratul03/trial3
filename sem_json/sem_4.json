@@ -1,0 +1,176 @@
+{
+  "semester": "SEMESTER – IV",
+  "subjects": [
+    {
+      "course_code": "HSMCM401",
+      "course_name": "Design Thinking for Entrepreneurship and Startups",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Entrepreneurship & Design Thinking" },
+        { "module_number": 2, "title": "Being Ingenious & Fixing Problem" },
+        { "module_number": 3, "title": "Process of Product Design" },
+        { "module_number": 4, "title": "Prototyping & Testing" },
+        { "module_number": 5, "title": "Design Thinking & Customer Centricity" },
+        { "module_number": 6, "title": "Business Ideas and their Implementation" },
+        { "module_number": 7, "title": "Managing the Business: Idea to Start-up" },
+        { "module_number": 8, "title": "Intellectual Property Rights (IPR)" }
+      ],
+      "recommended_books": [
+        "Engineering Design – John R. Karsnitz, O’Brien, Hutchinson",
+        "The Design of Business – Roger Martin",
+        "Design Thinking – Plattner, Meinel, Leifer",
+        "Design Thinking for Strategic Innovation – Idris Mootee",
+        "The Startup Owner’s Manual – Steve Blank & Bob Dorf",
+        "The Lean Startup – Eric Ries",
+        "Demand – Adrian J. Slywotzky"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM401",
+      "course_name": "Operating Systems",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Operating Systems" },
+        { "module_number": 2, "title": "Processes & Scheduling" },
+        { "module_number": 3, "title": "Inter-process Communication & Synchronization" },
+        { "module_number": 4, "title": "Deadlocks" },
+        { "module_number": 5, "title": "Memory Management & Virtual Memory" },
+        { "module_number": 6, "title": "I/O System, Device Management, File System, Disk Scheduling" }
+      ],
+      "recommended_books": [
+        "Operating System Concepts Essentials – Silberschatz, Galvin, Gagne",
+        "Operating Systems: Internals and Design Principles – William Stallings",
+        "Operating Systems: A Design-Oriented Approach – Charles Crowley",
+        "Operating Systems: A Modern Perspective – Gary J. Nutt",
+        "Design of the Unix Operating System – Maurice Bach",
+        "Understanding the Linux Kernel – Bovet & Cesati"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM402",
+      "course_name": "Design and Analysis of Algorithms",
+      "modules": [
+        { "module_number": 1, "title": "Introduction & Recurrence Solving" },
+        { "module_number": 2, "title": "Algorithm Design Techniques" },
+        { "module_number": 3, "title": "String Matching Algorithms" },
+        { "module_number": 4, "title": "Graph Algorithms" },
+        { "module_number": 5, "title": "Complexity Classes: P, NP, NP Complete" },
+        { "module_number": 6, "title": "Approximation and Randomized Algorithms" },
+        { "module_number": 7, "title": "Current Trends" }
+      ],
+      "recommended_books": [
+        "Introduction to Algorithms – Cormen, Leiserson, Rivest, Stein",
+        "Algorithm Design – Jon Kleinberg & Éva Tardos"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM403",
+      "course_name": "Object Oriented Programming",
+      "modules": [
+        { "module_number": 1, "title": "Object-Oriented Concepts" },
+        { "module_number": 2, "title": "Class & Object Properties, Strings, Arrays, I/O" },
+        { "module_number": 3, "title": "Reusability Properties: Inheritance, Interfaces, Packages" },
+        { "module_number": 4, "title": "Exception Handling & Multithreading" },
+        { "module_number": 5, "title": "GUI Programming: AWT & Swing" }
+      ],
+      "recommended_books": [
+        "Program Development in Java – Barbara Liskov",
+        "Core Java for Beginners – R. K. Das",
+        "The Complete Reference Java – Herbert Schildt",
+        "Beginning Java 2 – Ivor Horton",
+        "Java How to Program – Deitel & Deitel"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM404",
+      "course_name": "Formal Language & Automata Theory",
+      "modules": [
+        { "module_number": 1, "title": "Introduction – Grammar & Chomsky Hierarchy" },
+        { "module_number": 2, "title": "Regular Languages & Finite Automata" },
+        { "module_number": 3, "title": "Context-Free Languages & Pushdown Automata" },
+        { "module_number": 4, "title": "Context-Sensitive Languages" },
+        { "module_number": 5, "title": "Turing Machines & Undecidability" }
+      ],
+      "recommended_books": [
+        "Introduction to Automata Theory, Languages, and Computation – Hopcroft, Motwani, Ullman",
+        "Elements of the Theory of Computation – Lewis & Papadimitriou",
+        "Introduction to the Theory of Computation – Michael Sipser",
+        "Introduction to Languages and the Theory of Computation – John Martin"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM405",
+      "course_name": "Discrete Mathematics",
+      "modules": [
+        { "module_number": 1, "title": "Sets, Relations, Functions & Number Theory" },
+        { "module_number": 2, "title": "Counting Techniques" },
+        { "module_number": 3, "title": "Propositional Logic" },
+        { "module_number": 4, "title": "Algebraic Structures & Boolean Algebra" },
+        { "module_number": 5, "title": "Graphs and Trees" }
+      ],
+      "recommended_books": [
+        "Discrete Mathematics and Its Applications – Kenneth Rosen",
+        "Discrete Mathematics with Applications – Susanna Epp",
+        "Elements of Discrete Mathematics – C. L. Liu",
+        "Discrete Mathematical Structures – Tremblay & Manohar",
+        "Discrete Mathematics – Norman L. Biggs",
+        "Schaum’s Outline: Discrete Mathematics – Lipschutz & Lipson"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM491",
+      "course_name": "Operating Systems Lab",
+      "modules": [
+        { "module_number": 1, "title": "Process Management & Scheduling" },
+        { "module_number": 2, "title": "Signal Handling" },
+        { "module_number": 3, "title": "Semaphores & IPC" },
+        { "module_number": 4, "title": "Deadlock Handling" },
+        { "module_number": 5, "title": "Shell Programming" }
+      ],
+      "recommended_books": [
+        "Operating System Concepts Essentials – Silberschatz, Galvin, Gagne",
+        "Operating Systems: Internals and Design Principles – William Stallings"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM492",
+      "course_name": "Design and Analysis of Algorithms Lab",
+      "modules": [
+        { "module_number": 1, "title": "Quick Sort" },
+        { "module_number": 2, "title": "Merge Sort" },
+        { "module_number": 3, "title": "Warshall’s Algorithm" },
+        { "module_number": 4, "title": "0/1 Knapsack" },
+        { "module_number": 5, "title": "Fractional Knapsack" },
+        { "module_number": 6, "title": "Dijkstra’s Algorithm" },
+        { "module_number": 7, "title": "Kruskal’s Algorithm" },
+        { "module_number": 8, "title": "Prim’s Algorithm" },
+        { "module_number": 9, "title": "BFS" },
+        { "module_number": 10, "title": "DFS" },
+        { "module_number": 11, "title": "Floyd’s APSP" },
+        { "module_number": 12, "title": "N-Queen Problem" },
+        { "module_number": 13, "title": "Graph Coloring" },
+        { "module_number": 14, "title": "TSP – Optimal & Approximation" },
+        { "module_number": 15, "title": "Subset Sum Problem" }
+      ],
+      "recommended_books": [
+        "Introduction to the Design and Analysis of Algorithms – Levitin",
+        "Introduction to Algorithms – Cormen et al."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM493",
+      "course_name": "Object Oriented Programming Lab",
+      "modules": [
+        { "module_number": 1, "title": "Basic Java Programs" },
+        { "module_number": 2, "title": "String Handling & Overloading" },
+        { "module_number": 3, "title": "Constructor, Inheritance, Interface" },
+        { "module_number": 4, "title": "Exception Handling & Threads" },
+        { "module_number": 5, "title": "AWT & Swing" }
+      ],
+      "recommended_books": [
+        "Program Development in Java – Barbara Liskov",
+        "Core Java for Beginners – R. K. Das",
+        "Beginning Java 2 – Ivor Horton",
+        "Java How to Program – Deitel & Deitel"
+      ]
+    }
+  ]
+}

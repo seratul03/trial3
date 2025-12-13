@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faculty Directory</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='faculty-cards.css') }}">
+</head>
+<body>
+    <button class="faculty-close-btn" onclick="window.close()" aria-label="Close">×</button>
+    <div class="container">
+        <h1 class="page-title">Faculty Directory</h1>
+        <div class="search-container">
+            <input type="text" id="facultySearchInput" class="search-input" placeholder="Search by name, position, or research area..." oninput="searchFaculty()">
+        </div>
+        <div class="faculty-grid" id="facultyGrid">
+            <!-- Faculty cards will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script>
+        // Fetch faculty data and render cards
+        async function loadFaculty() {
+            try {
+                const response = await fetch('/faculty-data');
+                const facultyData = await response.json();
+                
+                const grid = document.getElementById('facultyGrid');
+                grid.innerHTML = '';
+                
+                facultyData.forEach(faculty => {
+                    const card = createFacultyCard(faculty);
+                    grid.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading faculty:', error);
+            }
+        }
+
+        function createFacultyCard(faculty) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            
+            // Determine the rank for circle color
+            let rankClass = 'blue'; // default
+            if (faculty.position.includes('Professor & HOD') || faculty.position === 'Professor') {
+                rankClass = 'gold';
+            } else if (faculty.position.includes('Associate Professor')) {
+                rankClass = 'silver';
+            }
+            
+            // Default state: collapsed (show name and position only)
+            card.innerHTML = `
+                <div class="profile-pic ${rankClass}">
+                    <img src="/${faculty.photo || 'logo/Brainware_University.jpg'}" alt="${faculty.name}" onerror="this.src='/logo/Brainware_University.jpg'">
+                </div>
+                <div class="card-content">
+                    <div class="name">${faculty.name}</div>
+                    <div class="position">${faculty.position}</div>
+                    
+                    <div class="details-section" style="display: none;">
+                        <div class="detail-item">
+                            <strong>Department:</strong>
+                            <span>${faculty.department}</span>
+                        </div>
+                        ${faculty.research ? `
+                        <div class="detail-item">
+                            <strong>Research Areas:</strong>
+                            <span>${faculty.research}</span>
+                        </div>
+                        ` : ''}
+                        ${faculty.qualification ? `
+                        <div class="detail-item">
+                            <strong>Qualification:</strong>
+                            <span>${faculty.qualification}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                    
+                    <button class="detail-btn" onclick="toggleDetails(this)">
+                        Detailed View
+                    </button>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function toggleDetails(button) {
+            const card = button.closest('.card');
+            const profilePic = card.querySelector('.profile-pic');
+            const detailsSection = card.querySelector('.details-section');
+            const isExpanded = card.classList.contains('expanded');
+            
+            if (isExpanded) {
+                // Collapse - reverse animation
+                detailsSection.classList.remove('show');
+                detailsSection.classList.add('hide');
+                profilePic.classList.remove('minimized');
+                
+                setTimeout(() => {
+                    card.classList.remove('expanded');
+                    detailsSection.style.display = 'none';
+                    detailsSection.classList.remove('hide');
+                }, 400);
+                
+                button.textContent = 'Detailed View';
+            } else {
+                // Expand
+                card.classList.add('expanded');
+                detailsSection.style.display = 'block';
+                
+                setTimeout(() => {
+                    profilePic.classList.add('minimized');
+                    detailsSection.classList.add('show');
+                }, 50);
+                
+                button.textContent = 'Hide Details';
+            }
+        }
+
+        // Search functionality
+        function searchFaculty() {
+            const searchInput = document.getElementById('facultySearchInput').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.card');
+            
+            if (searchInput === '') {
+                // Show all cards if search is empty
+                cards.forEach(card => {
+                    card.style.display = 'flex';
+                });
+                return;
+            }
+            
+            cards.forEach(card => {
+                const nameElement = card.querySelector('.name');
+                const positionElement = card.querySelector('.position');
+                const detailsSection = card.querySelector('.details-section');
+                
+                const name = nameElement ? nameElement.textContent.toLowerCase() : '';
+                const position = positionElement ? positionElement.textContent.toLowerCase() : '';
+                const research = detailsSection ? detailsSection.textContent.toLowerCase() : '';
+                
+                if (name.includes(searchInput) || position.includes(searchInput) || research.includes(searchInput)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Load faculty on page load
+        document.addEventListener('DOMContentLoaded', loadFaculty);
+    </script>
+</body>
+</html>

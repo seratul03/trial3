@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-lg">
+            <div class="p-6 border-b">
+                <h1 class="text-xl font-bold text-gray-800">Admin Panel ● UniBot</h1>
+                <p class="text-sm text-gray-600 mt-1" id="userName">Loading...</p>
+                <p class="text-xs text-gray-500" id="userRole"></p>
+            </div>
+            
+            <nav class="p-4">
+                <a href="dashboard.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Dashboard</a>
+                <a href="announcements.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Announcements</a>
+                <a href="kb.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Knowledge Base</a>
+                <a href="logs.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Query Logs</a>
+                <a href="feedback.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Feedback</a>
+                <a href="analytics.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Analytics</a>
+                <a href="settings.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Settings</a>
+                <button onclick="logout()" class="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 rounded mt-4">Logout</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold text-gray-800">Student Feedback</h1>
+                <p class="text-gray-600 mt-2">Review and act on student feedback</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="mb-6 flex gap-4">
+                <button onclick="filterFeedback('all')" id="filterAll" 
+                    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                    All Feedback
+                </button>
+                <button onclick="filterFeedback('negative')" id="filterNegative"
+                    class="px-4 py-2 bg-white text-gray-700 border rounded hover:bg-gray-50">
+                    👎 Not Helpful
+                </button>
+                <button onclick="filterFeedback('unreviewed')" id="filterUnreviewed"
+                    class="px-4 py-2 bg-white text-gray-700 border rounded hover:bg-gray-50">
+                    ⚠️ Needs Review
+                </button>
+            </div>
+
+            <!-- Feedback List -->
+            <div id="feedbackList" class="space-y-4">
+                <!-- Feedback will be loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script>
+        let allFeedback = [];
+        let currentFilter = 'all';
+
+        async function loadFeedback() {
+            try {
+                const response = await api.getFeedback();
+                allFeedback = response.data;
+                displayFeedback();
+            } catch (error) {
+                console.error('Error loading feedback:', error);
+                showError('Failed to load feedback');
+            }
+        }
+
+        function filterFeedback(filter) {
+            currentFilter = filter;
+            
+            // Update button styles
+            document.querySelectorAll('[id^="filter"]').forEach(btn => {
+                btn.className = 'px-4 py-2 bg-white text-gray-700 border rounded hover:bg-gray-50';
+            });
+            document.getElementById(`filter${filter.charAt(0).toUpperCase() + filter.slice(1)}`)
+                .className = 'px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700';
+            
+            displayFeedback();
+        }
+
+        function displayFeedback() {
+            let filtered = allFeedback;
+            
+            if (currentFilter === 'negative') {
+                filtered = allFeedback.filter(f => f.helpful_bool === false);
+            } else if (currentFilter === 'unreviewed') {
+                filtered = allFeedback.filter(f => !f.reviewed_bool);
+            }
+            
+            const feedbackList = document.getElementById('feedbackList');
+            
+            if (filtered.length === 0) {
+                feedbackList.innerHTML = '<p class="text-center text-gray-500 py-8">No feedback found</p>';
+                return;
+            }
+            
+            feedbackList.innerHTML = filtered.map(feedback => `
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-2xl">${feedback.helpful_bool ? '👍' : '👎'}</span>
+                                <span class="font-semibold text-gray-800">
+                                    ${feedback.helpful_bool ? 'Helpful' : 'Not Helpful'}
+                                </span>
+                                ${!feedback.reviewed_bool ? 
+                                    '<span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Needs Review</span>' : 
+                                    '<span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Reviewed</span>'}
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2">
+                                <strong>Student:</strong> ${escapeHtml(feedback.student_id || 'Anonymous')}
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                <strong>Date:</strong> ${formatDate(feedback.created_at)}
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="text-sm font-medium text-gray-700 mb-2">Question:</p>
+                        <p class="text-gray-800 bg-gray-50 p-3 rounded">
+                            ${escapeHtml(feedback.query?.question_text || 'N/A')}
+                        </p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="text-sm font-medium text-gray-700 mb-2">Bot Answer:</p>
+                        <p class="text-gray-800 bg-gray-50 p-3 rounded">
+                            ${escapeHtml(feedback.query?.bot_answer || 'N/A')}
+                        </p>
+                    </div>
+                    
+                    ${feedback.comment ? `
+                        <div class="mb-4">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Student Comment:</p>
+                            <p class="text-gray-800 bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                                "${escapeHtml(feedback.comment)}"
+                            </p>
+                        </div>
+                    ` : ''}
+                    
+                    <div class="flex gap-2 mt-4">
+                        ${!feedback.reviewed_bool ? `
+                            <button onclick="markReviewed(${feedback.id})" 
+                                class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                                ✓ Mark as Reviewed
+                            </button>
+                        ` : ''}
+                        <button onclick="viewQuery(${feedback.query_id})" 
+                            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                            View Full Query
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        async function markReviewed(feedbackId) {
+            try {
+                await api.reviewFeedback(feedbackId);
+                showSuccess('Feedback marked as reviewed');
+                loadFeedback();
+            } catch (error) {
+                console.error('Error marking feedback as reviewed:', error);
+                showError('Failed to update feedback');
+            }
+        }
+
+        function viewQuery(queryId) {
+            // Query resolver removed - functionality disabled
+            showError('Query resolver has been removed from the system');
+        }
+
+        function logout() {
+            localStorage.removeItem('token');
+            window.location.href = 'index.html';
+        }
+
+        // Load feedback on page load
+        loadFeedback();
+    </script>
+</body>
+</html>

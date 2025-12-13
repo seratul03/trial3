@@ -1,0 +1,44 @@
+{
+  "course_code": "BSCM202",
+  "course_name": "Probability & Statistics",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Descriptive Statistics"
+    },
+    {
+      "module_number": 2,
+      "title": "Probability Theory"
+    },
+    {
+      "module_number": 3,
+      "title": "Probability Distributions"
+    },
+    {
+      "module_number": 4,
+      "title": "Parametric Estimation"
+    },
+    {
+      "module_number": 5,
+      "title": "Testing of Hypothesis"
+    }
+  ],
+  "summary": "Probability & Statistics is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Fundamentals of Mathematical Statistics – S.C. Gupta, V.K. Kapoor",
+    "Probability and Statistics for Engineers and Scientists – Walpole et al.",
+    "Introduction to Probability and Statistics – Sheldon Ross",
+    "Applied Statistics and Probability for Engineers – Montgomery",
+    "Probability & Statistics – Spiegel, Schiller, Srinivasan"
+  ],
+  "course_outcomes": [
+    "Remember and understand descriptive statistics and solve problems in correlation and regression.",
+    "Recall and apply basic probability concepts including conditional probability and Bayes’ Theorem.",
+    "Understand random variables and analyze common probability distributions.",
+    "Illustrate estimation theory and apply estimation techniques such as MLE and method of moments.",
+    "Describe and apply hypothesis testing methods including Z-test, T-test, F-test and ANOVA."
+  ],
+  "prerequisites": [
+    "Basic Knowledge of Set Theory, Linear Algebra and Calculus"
+  ]
+}

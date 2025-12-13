@@ -1,0 +1,42 @@
+{
+  "course_code": "HSMCM101",
+  "course_name": "Communication Skills",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Functional Grammar"
+    },
+    {
+      "module_number": 2,
+      "title": "Vocabulary"
+    },
+    {
+      "module_number": 3,
+      "title": "Pronunciation"
+    },
+    {
+      "module_number": 4,
+      "title": "Communication Theory"
+    },
+    {
+      "module_number": 5,
+      "title": "Comprehension"
+    }
+  ],
+  "summary": "Communication Skills is a foundational course that enhances your ability to express ideas clearly and effectively. This subject builds essential grammar, vocabulary, and pronunciation skills needed for professional settings. You'll learn communication theories and comprehension strategies. The course prepares you for academic writing, presentations, and workplace interactions. These skills are crucial for your entire academic journey and future career.",
+  "recommended_books": [
+    "The Collected Short Stories by Satyajit Ray - Penguin Books",
+    "A Handbook of Grammar - BRAINWARE",
+    "Intermediate English Grammar - Cambridge University Press",
+    "High School English Grammar - Wren and Martin"
+  ],
+  "course_outcomes": [
+    "Equip with knowledge of English as a world language and help them identify, write, and communicate in a grammatically correct manner.",
+    "Understand and apply the strategies and theories of effective verbal and non-verbal communication.",
+    "Demonstrate a thorough command of English and its linguistic structures by enhancing comprehension skills and analyzing various forms of writing.",
+    "Prepare, explain and evaluate high-quality technical oral and written English communication for professional environments."
+  ],
+  "prerequisites": [
+    "Basic knowledge of English"
+  ]
+}

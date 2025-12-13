@@ -1,0 +1,74 @@
+{
+  "course_code": "ESCM393",
+  "course_name": "Introduction to Python Programming Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Variables & Basic Programs"
+    },
+    {
+      "module_number": 2,
+      "title": "Conditional Statements"
+    },
+    {
+      "module_number": 3,
+      "title": "Loops"
+    },
+    {
+      "module_number": 4,
+      "title": "Patterns"
+    },
+    {
+      "module_number": 5,
+      "title": "String Programs"
+    },
+    {
+      "module_number": 6,
+      "title": "List Programs"
+    },
+    {
+      "module_number": 7,
+      "title": "Matrix & Tuple Programs"
+    },
+    {
+      "module_number": 8,
+      "title": "Dictionary Programs"
+    },
+    {
+      "module_number": 9,
+      "title": "Function Programs"
+    },
+    {
+      "module_number": 10,
+      "title": "Function Arguments & Sorting"
+    },
+    {
+      "module_number": 11,
+      "title": "Exception Handling"
+    },
+    {
+      "module_number": 12,
+      "title": "File Handling"
+    },
+    {
+      "module_number": 13,
+      "title": "Object-Oriented Programming"
+    }
+  ],
+  "summary": "Introduction to Python Programming Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 13 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Python Programming: Using Problem Solving Approach – Reema Thareja",
+    "Introduction to Python Programming – Gowrishankar & Veena",
+    "Python Data Science Handbook – Jake VanderPlas"
+  ],
+  "course_outcomes": [
+    "Apply Python syntax and control flow to solve problems.",
+    "Use strings and functions in Python programs.",
+    "Work with lists, tuples, dictionaries and sets.",
+    "Perform file operations, modules and package management.",
+    "Implement OOP concepts in Python."
+  ],
+  "prerequisites": [
+    "Basic knowledge of computer programming language"
+  ]
+}

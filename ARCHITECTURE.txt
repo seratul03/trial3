@@ -1,0 +1,141 @@
+# System Architecture - Admin Panel ↔ Student Chatbot
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     STUDENT CHATBOT (Port 8000)                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  ┌─────────────────┐         ┌──────────────────┐               │
+│  │  Welcome Screen │ ───────→│ "See Latest      │               │
+│  │  • Latest Notice│         │  Notice" Button  │               │
+│  │  • Holiday Info │         └──────────────────┘               │
+│  └─────────────────┘                  │                         │
+│                                       ↓                         │
+│  ┌─────────────────────────────────────────────┐                │
+│  │  Announcements Modal                        │                │
+│  │  • Fetches from admin DB                    │                │
+│  │  • Shows title, body, attachments           │                │
+│  │  • NEW badges for recent items              │                │
+│  └─────────────────────────────────────────────┘                │
+│                                                                 │
+│  ┌────────────────┐         ┌──────────────────┐                │
+│  │  Chat Interface│ ───────→│  Process Query   │                │
+│  │  • User Input  │         │  • Get Answer    │                │
+│  │  • Bot Response│         │  • Log to DB ←───┼──────┐         │
+│  └────────────────┘         └──────────────────┘      │         │
+│                                                       │         │
+│  Endpoints:                                           │         │
+│  • POST /chat          → Process & log queries        │         │
+│  • GET  /api/announcements/active → Get announcements │         │
+│  • GET  /api/admin/stats → Provide real-time stats    │         │
+│                                                       │         │
+└───────────────────────────────────────────────────────┼─────────┘
+                                                        │
+                                                        │
+                    ┌───────────────────────────────────┘
+                    │
+                    ↓
+        ┌───────────────────────────┐
+        │   SHARED DATABASE         │
+        │   college_chatbot.db      │
+        ├───────────────────────────┤
+        │                           │
+        │  Tables:                  │
+        │  • announcements          │
+        │  • student_queries ←────┼─── LOGS EVERY CHAT
+        │  • faqs                  │
+        │  • feedback              │
+        │  • users                 │
+        │  • subjects              │
+        │  • pdf_documents         │
+        │                          │
+        └──────────────────────────┘
+                    ↑
+                    │
+                    └────────────────────────────────────┐
+                                                         │
+┌────────────────────────────────────────────────────────┼───────┐
+│                  ADMIN PANEL                           │       │
+├────────────────────────────────────────────────────────┼───────┤
+│                                                        │       │
+│  Backend (Port 8001)              Frontend (Port 3000) │       │
+│  ┌────────────────────┐           ┌──────────────────┐ │       │
+│  │ Dashboard          │           │  Dashboard UI    │ │       │
+│  │ • Fetch stats from │◄──────────┤  • Queries Today │ │       │
+│  │   student chatbot  │           │  • Pending       │ │       │
+│  │ • Fallback to DB   │           │  • Accuracy      │ │       │
+│  └────────────────────┘           └──────────────────┘ │       │
+│                                                        │       │
+│  ┌────────────────────┐           ┌──────────────────┐ │       │
+│  │ Announcements API  │           │ Announcements UI │ │       │
+│  │ • Create           │◄──────────┤  • Create Form   │ │       │
+│  │ • Update           │           │  • Schedule      │ │       │
+│  │ • Delete           │───────────┤  • Publish       │ │       │
+│  │ • Publish          │           │  • Visibility    │ │       │
+│  └────────────────────┘           └──────────────────┘ │       │
+│            │                                           │       │
+│            └───────────────────────────────────────────┼───────┘
+│                                                        │
+│  ┌────────────────────┐            ┌──────────────────┐│
+│  │ Query Logs API     │            │  Query Logs UI   ││
+│  │ • List queries     │◄───────────┤  • View all      ││
+│  │ • Filter/search    │            │  • Reply         ││
+│  │ • Reply to query   │────────────┤  • Add to KB     ││
+│  └────────────────────┘            └──────────────────┘│
+│                                                        │
+│  ┌────────────────────┐           ┌──────────────────┐ │
+│  │ Analytics API      │           │  Analytics UI    │ │
+│  │ • Top subjects     │◄──────────┤  • Charts        │ │
+│  │ • Confusing Qs     │           │  • Trends        │ │
+│  │ • Improvement      │───────────┤  • Reports       │ │
+│  └────────────────────┘           └──────────────────┘ │
+│                                                        │
+│  Endpoints:                                            │
+│  • GET /api/analytics/dashboard → Real-time stats      │
+│  • GET /api/announcements → List all                   │
+│  • POST /api/announcements → Create new                │
+│  • GET /api/queries → List student queries             │
+│  • GET /api/analytics/logs → Detailed logs             │
+│                                                        │
+└────────────────────────────────────────────────────────┘
+
+
+DATA FLOW:
+══════════
+
+1. ANNOUNCEMENT CREATION:
+   Admin Panel → Create Announcement → Save to DB
+                                     → Student Chatbot fetches
+                                     → Shows in "Latest Notice"
+
+2. STUDENT QUERY:
+   Student Chatbot → User asks question → Process with AI
+                                        → Log to DB (student_queries)
+                                        → Admin Panel reads from DB
+                                        → Shows in Dashboard & Query Logs
+
+3. REAL-TIME STATISTICS:
+   Admin Panel Dashboard → Requests /api/admin/stats
+                        → Student Chatbot queries DB
+                        → Returns live counts
+                        → Admin Dashboard updates
+
+
+KEY INTEGRATION POINTS:
+═══════════════════════
+
+✓ Shared Database (college_chatbot.db)
+✓ Student queries auto-logged on every chat interaction
+✓ Announcements visible in both systems
+✓ Real-time analytics from actual usage
+✓ No mock data - everything is live!
+
+
+SECURITY & ACCESS:
+══════════════════
+
+Student Chatbot:    Public access (no login)
+Admin Panel:        Requires authentication
+                   • Admin account: full access
+                   • Teacher account: limited access
+Database:          Shared, SQLite file-based

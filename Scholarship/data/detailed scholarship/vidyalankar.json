@@ -1,0 +1,112 @@
+{
+  "scholarship_id": "BWU_VIDYALANKAR_01",
+  "scholarship_name": "Brainware Academic Excellence Scholarship (Vidyalankar)",
+  "category": "Merit-Based Scholarship",
+  "offered_by": {
+    "institution": "Brainware University",
+    "country": "India",
+    "type": "Private University"
+  },
+  "short_intro": "Brainware Vidyalankar Scholarship is a prestigious merit-based scholarship awarded to academically outstanding students based on their performance in the qualifying examination. It provides partial or full tuition fee waivers to recognize excellence and encourage high-achieving students.",
+  "detailed_description": "The Brainware Academic Excellence Scholarship (Vidyalankar) is designed to reward students who demonstrate exceptional academic merit in their qualifying examinations (such as Class 12 or equivalent).This scholarship directly reduces the tuition fee burden and acts as a recognition of scholastic achievement at the time of admission.",
+  "eligibility_criteria": {
+    "academic_requirement": [
+      "Marks obtained in the qualifying examination determine eligibility",
+      "Minimum qualifying percentage starts from 90%"
+    ],
+    "student_category": [
+      "Applicable only for Indian domestic students",
+      "Applicable only for new admissions"
+    ]
+  },
+  "scholarship_benefits": {
+    "type": "Tuition Fee Waiver",
+    "waiver_structure_table": {
+      "table_description": "Scholarship benefits based on qualifying examination marks",
+      "columns": [
+        "Qualifying Exam Percentage",
+        "Tuition Fee Benefit"
+      ],
+      "rows": [
+        {
+          "percentage_range": "90% to less than 95%",
+          "benefit": "50% Tuition Fee Waiver",
+          "ui_highlight_color": "#F6C344"
+        },
+        {
+          "percentage_range": "95% and above",
+          "benefit": "100% Tuition Fee Waiver (Full Freeship)",
+          "ui_highlight_color": "#38A169"
+        }
+      ]
+    }
+  },
+  "special_award_for_toppers": {
+    "title": "Institutional Topper Benefit",
+    "description": "Institutional toppers scoring less than 90% in the qualifying examination are eligible for an additional monetary benefit.",
+    "benefit_amount": "₹25,000",
+    "benefit_type": "Additional Fee Reduction",
+    "important_note": "This benefit is provided over and above the regular merit scholarship, if applicable."
+  },
+  "exclusions_and_restrictions": {
+    "not_applicable_for": [
+      {
+        "category": "International Students",
+        "reason": "Scholarship is restricted to domestic Indian students only"
+      },
+      {
+        "category": "Alumni Students",
+        "reason": "Students already associated with Brainware University are not eligible"
+      }
+    ]
+  },
+  "important_rules": {
+    "rules_list": [
+      "Scholarship is awarded strictly based on marks obtained in the qualifying examination",
+      "Only one Brainware University scholarship can be availed by a candidate at a time",
+      "Full or Half Freeship holders are not eligible for Early Bird Offer",
+      "Scholarship benefits are subject to verification of academic documents"
+    ]
+  },
+  "chart_ready_data": {
+    "chart_type": "bar",
+    "chart_title": "Vidyalankar Scholarship Fee Waiver Comparison",
+    "x_axis_label": "Qualifying Exam Percentage",
+    "y_axis_label": "Tuition Fee Waiver (%)",
+    "data_points": [
+      {
+        "label": "90% – <95%",
+        "value": 50
+      },
+      {
+        "label": "≥95%",
+        "value": 100
+      }
+    ]
+  },
+  "ui_display_recommendations": {
+    "card_intro_length": "2–3 lines",
+    "recommended_icons": [
+      "🎓",
+      "🏆",
+      "📊"
+    ],
+    "badge_styles": {
+      "50_percent_waiver": "warning",
+      "100_percent_waiver": "success",
+      "topper_bonus": "info"
+    }
+  },
+  "summary_highlights": [
+    "Merit-based scholarship",
+    "Up to 100% tuition fee waiver",
+    "Extra ₹25,000 for institutional toppers",
+    "Based only on qualifying exam marks",
+    "Not applicable for International & Alumni students"
+  ],
+  "official_source": {
+    "document_name": "BWU Scholarship Policy",
+    "authority": "Brainware University",
+    "reference": "Brainware Academic Excellence Scholarship (Vidyalankar)"
+  }
+}

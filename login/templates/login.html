@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Brainware Login Portal</title>
+    <link rel="stylesheet" href="{{ url_for('login.static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <div class="login-container">
+        <h2 class="title">BWU UNIBOT</h2>
+        <p class="subtitle">Log in with your University ID</p>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="toast">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+        <form id="loginForm" method="POST" action="{{ url_for('login.login') }}" novalidate>
+            <label for="email">University Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your university email"
+                required
+            />
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your portal password"
+                required
+            />
+
+            <button type="submit" class="btn">
+                <span class="btn-text">Log In</span>
+                <span class="btn-loader"></span>
+            </button>
+        </form>
+
+        <p class="hint">
+            Use your official <b>@brainwareuniversity.ac.in</b> email ID to access the portal.
+        </p>
+    </div>
+
+    <script src="{{ url_for('login.static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "course_code": "PEC-CSM501A",
+  "course_name": "Image Processing (Elective-I Option A)",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Digital Image"
+    },
+    {
+      "module_number": 2,
+      "title": "Spatial Domain Image Enhancement"
+    },
+    {
+      "module_number": 3,
+      "title": "Frequency Domain Image Enhancement"
+    },
+    {
+      "module_number": 4,
+      "title": "Image Restoration"
+    },
+    {
+      "module_number": 5,
+      "title": "Segmentation and Image Compression"
+    }
+  ],
+  "summary": "Image Processing (Elective-I Option A) is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Digital Image Processing – Gonzalez & Woods",
+    "Fundamentals of Digital Image Processing – Anil K. Jain"
+  ],
+  "course_outcomes": [
+    "Define image processing concepts mathematically and illustrate sampling and transformations.",
+    "Classify and analyze image enhancement techniques.",
+    "Apply image restoration methods and filtering techniques.",
+    "Estimate compression efficiency and segmentation methods."
+  ],
+  "prerequisites": [
+    "Linear Algebra, Differential Equations, Calculus, Signals and Systems"
+  ]
+}

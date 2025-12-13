@@ -1,0 +1,172 @@
+{
+  "scheme_id": "WB_STUDENT_CREDIT_CARD",
+  "scheme_name": "West Bengal Student Credit Card Scheme",
+  "scheme_type": "Education Loan (Government-backed)",
+  "introduced_by": "Government of West Bengal",
+  "objective": {
+    "title": "🎯 Objective of the Scheme",
+    "description": "To provide easy, low-interest education loans to students of West Bengal so that financial constraints do not stop them from pursuing higher education and professional courses.",
+    "key_points": [
+      "Supports UG, PG & Professional education",
+      "Covers tuition fees and education-related expenses",
+      "Government-facilitated loan with minimal burden on students"
+    ]
+  },
+  "key_highlights": {
+    "title": "✨ Key Highlights",
+    "data": [
+      {
+        "label": "Maximum Loan Amount",
+        "value": "₹10,00,000"
+      },
+      {
+        "label": "Interest Rate",
+        "value": "4% per annum (Simple Interest)"
+      },
+      {
+        "label": "Interest Concession",
+        "value": "1% extra concession if interest is paid during study period"
+      },
+      {
+        "label": "Age Limit",
+        "value": "Below 40 years"
+      },
+      {
+        "label": "Collateral Required",
+        "value": "No"
+      },
+      {
+        "label": "Repayment Starts",
+        "value": "After course completion (as per bank norms)"
+      }
+    ]
+  },
+  "eligibility": {
+    "title": "✅ Eligibility Criteria",
+    "conditions": [
+      "Resident of West Bengal (permanent or long-term stay)",
+      "Age must be below 40 years at the time of application",
+      "Must be enrolled or admitted in a recognized institution",
+      "Applicable for UG / PG / Professional courses",
+      "A co-borrower/guardian is mandatory"
+    ],
+    "eligible_courses": [
+      "Engineering (B.Tech / M.Tech)",
+      "Medical & Paramedical",
+      "Law",
+      "MBA / Management",
+      "General UG & PG courses",
+      "Professional & Technical courses"
+    ]
+  },
+  "loan_details": {
+    "title": "💰 Loan Details",
+    "table": {
+      "headers": [
+        "Parameter",
+        "Details"
+      ],
+      "rows": [
+        [
+          "Maximum Amount",
+          "₹10,00,000"
+        ],
+        [
+          "Interest Rate",
+          "4% Simple Interest per annum"
+        ],
+        [
+          "Interest Subsidy",
+          "1% concession for servicing interest during study period"
+        ],
+        [
+          "Loan Provider",
+          "State Cooperative Banks & Public/Private Sector Banks"
+        ],
+        [
+          "Collateral / Security",
+          "Not Required"
+        ],
+        [
+          "Co-Borrower",
+          "Mandatory (Parent/Guardian)"
+        ]
+      ]
+    }
+  },
+  "documents_required": {
+    "title": "📄 Documents Required",
+    "student_documents": [
+      "Colour Photograph of Student",
+      "Student Signature",
+      "Aadhaar Card (or Class 10 Registration Certificate if Aadhaar unavailable)",
+      "PAN Card (or PAN Undertaking Form)",
+      "Admission Receipt / Offer Letter",
+      "Course Fee Structure / Prospectus Page"
+    ],
+    "guardian_documents": [
+      "Colour Photograph of Guardian (Co-borrower)",
+      "Guardian Signature",
+      "Guardian Address Proof",
+      "Guardian PAN Card (or PAN Undertaking Form)"
+    ]
+  },
+  "application_process": {
+    "title": "📝 Application Process",
+    "steps": [
+      "Step 1: Student fills online application on the official Student Credit Card portal",
+      "Step 2: Upload all required student & guardian documents",
+      "Step 3: Application is verified by concerned authorities",
+      "Step 4: Application forwarded to the assigned bank",
+      "Step 5: Bank processes and sanctions the loan"
+    ]
+  },
+  "interest_chart": {
+    "title": "📊 Interest Comparison Chart (Data)",
+    "description": "Comparison of Student Credit Card interest vs common education loans",
+    "chart_type": "bar",
+    "data": [
+      {
+        "loan_type": "WB Student Credit Card",
+        "interest_rate": 4
+      },
+      {
+        "loan_type": "Normal Education Loan",
+        "interest_rate": 9
+      },
+      {
+        "loan_type": "Private Education Loan",
+        "interest_rate": 12
+      }
+    ]
+  },
+  "benefits": {
+    "title": "🌟 Benefits",
+    "points": [
+      "Very low interest rate compared to normal education loans",
+      "No collateral or property mortgage needed",
+      "Helps students from economically weaker backgrounds",
+      "Covers major education expenses",
+      "Government-backed reliability"
+    ]
+  },
+  "important_notes": {
+    "title": "⚠️ Important Notes",
+    "notes": [
+      "Maximum loan limit is ₹10 lakh",
+      "Loan is provided through approved banks only",
+      "1% interest concession applies only if interest is paid during study period",
+      "False information can lead to rejection or cancellation"
+    ]
+  },
+  "use_case_examples": {
+    "title": "📌 Example Use Cases",
+    "examples": [
+      "A B.Tech student taking ₹6 lakh loan for tuition & academic expenses",
+      "An MBA student financing full course fees",
+      "A medical student managing professional education costs"
+    ]
+  },
+  "last_updated": "As per latest available government guidelines",
+  "source": "West Bengal Government – Student Credit Card Scheme"
+}

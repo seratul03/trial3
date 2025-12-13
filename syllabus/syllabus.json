@@ -1,0 +1,918 @@
+{
+    "university": "Brainware University",
+    "school": "School of Engineering",
+    "department": "Department of Computer Science & Engineering",
+    "program": "B. Tech. Computer Science & Engineering - Artificial Intelligence and Machine Learning",
+    "session": "2023",
+    "notes": "*MOOC/Equivalent MOOC approved by BoS Chair (Evaluation scheme as per Blended Learning and MOOCs Policy)",
+    "total_credits": 160.5,
+    "total_marks": 6200,
+    "semesters": [
+        {
+            "semester": 1,
+            "total_hours": 23,
+            "total_credits": 17.5,
+            "total_marks": 700,
+            "courses": [
+                {
+                    "course_code": "HSMCM101",
+                    "course_name": "Communication Skills",
+                    "course_type": "HS",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "BSCM101",
+                    "course_name": "Semiconductor Physics",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "BSCM102",
+                    "course_name": "Calculus & Linear Algebra",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 4,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 4,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM101",
+                    "course_name": "Basic Electrical and Electronics Engineering",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "BSCM191",
+                    "course_name": "Semiconductor Physics Lab",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM191",
+                    "course_name": "Basic Electrical and Electronics Engineering Lab",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM192",
+                    "course_name": "Engineering Graphics & Design Lab",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "AUM-1",
+                    "course_name": "Environmental Science",
+                    "course_type": "AU",
+                    "hours": {
+                        "L": 1,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 0,
+                    "marks": 0
+                }
+            ]
+        },
+        {
+            "semester": 2,
+            "total_hours": 27,
+            "total_credits": 20,
+            "total_marks": 850,
+            "courses": [
+                {
+                    "course_code": "HSMCM201",
+                    "course_name": "Effective Communication Skills",
+                    "course_type": "HS",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "BSCM201",
+                    "course_name": "Engineering Chemistry",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "BSCM202",
+                    "course_name": "Probability & Statistics",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "BSCM203",
+                    "course_name": "Biology for Engineers",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 2,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 2,
+                    "marks": 50
+                },
+                {
+                    "course_code": "ESCM201",
+                    "course_name": "Programming for Problem Solving",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "HSMCM291",
+                    "course_name": "Effective Communication Skills Lab",
+                    "course_type": "HS",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "BSCM291",
+                    "course_name": "Engineering Chemistry Lab",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM291",
+                    "course_name": "Programming for Problem Solving Lab",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM292",
+                    "course_name": "Workshop / Manufacturing Practices",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "AUM-2",
+                    "course_name": "Yoga and Sports",
+                    "course_type": "AU",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 1
+                    },
+                    "credits": 0,
+                    "marks": 0
+                }
+            ]
+        },
+        {
+            "semester": 3,
+            "total_hours": 26,
+            "total_credits": 22,
+            "total_marks": 800,
+            "courses": [
+                {
+                    "course_code": "BSCM301",
+                    "course_name": "Differential Equation and Complex Analysis",
+                    "course_type": "BS",
+                    "hours": {
+                        "L": 4,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 4,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM301",
+                    "course_name": "Internet of Things",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM302",
+                    "course_name": "Data Structure & Algorithms",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 3,
+                        "T": 1,
+                        "P": 0
+                    },
+                    "credits": 4,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM303",
+                    "course_name": "Introduction to Python Programming",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 3,
+                        "T": 1,
+                        "P": 0
+                    },
+                    "credits": 4,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM301",
+                    "course_name": "Computer Organization & Architecture",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM392",
+                    "course_name": "Data Structure & Algorithms Lab",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "ESCM393",
+                    "course_name": "Introduction to Python Programming Lab",
+                    "course_type": "ES",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM391",
+                    "course_name": "Computer Organization & Architecture Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 2
+                    },
+                    "credits": 1,
+                    "marks": 100
+                },
+                {
+                    "course_code": "AUM-3",
+                    "course_name": "Constitution of India",
+                    "course_type": "AU",
+                    "hours": {
+                        "L": 1,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 0,
+                    "marks": 0
+                }
+            ]
+        },
+        {
+            "semester": 4,
+            "total_hours": 28,
+            "total_credits": 23.5,
+            "total_marks": 900,
+            "courses": [
+                {
+                    "course_code": "HSMCM401",
+                    "course_name": "Design Thinking for Entrepreneurship and Startups",
+                    "course_type": "HS",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM401",
+                    "course_name": "Operating Systems",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM402",
+                    "course_name": "Design and Analysis of Algorithms",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM403",
+                    "course_name": "Object Oriented Programming",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM404",
+                    "course_name": "Formal Language & Automata Theory",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM405",
+                    "course_name": "Discrete Mathematics",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 4,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 4,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM491",
+                    "course_name": "Operating Systems Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM492",
+                    "course_name": "Design and Analysis of Algorithms Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM493",
+                    "course_name": "Object Oriented Programming Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                }
+            ]
+        },
+        {
+            "semester": 5,
+            "total_hours": 27,
+            "total_credits": 21,
+            "total_marks": 900,
+            "courses": [
+                {
+                    "course_code": "PCC-CSM501",
+                    "course_name": "Database Management Systems",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM502",
+                    "course_name": "Computer Networks",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM503",
+                    "course_name": "Artificial Intelligence for Real World Application",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM504",
+                    "course_name": "Compiler Design",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PEC-CSM501",
+                    "course_name": "Elective-I",
+                    "course_type": "PE",
+                    "options": [
+                        "Image Processing",
+                        "Bioinformatics",
+                        "Cloud Computing"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM591",
+                    "course_name": "Database Management Systems Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM592",
+                    "course_name": "Computer Networks Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM593",
+                    "course_name": "Artificial Intelligence for Real World Application Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PEC-CSM591",
+                    "course_name": "Elective-I Lab",
+                    "course_type": "PE",
+                    "options": [
+                        "Image Processing Lab",
+                        "Bioinformatics Lab",
+                        "Cloud Computing Lab"
+                    ],
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                }
+            ]
+        },
+        {
+            "semester": 6,
+            "total_hours": 24,
+            "total_credits": 21.5,
+            "total_marks": 900,
+            "courses": [
+                {
+                    "course_code": "PCC-CSM601",
+                    "course_name": "Machine Learning and its Applications",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM602",
+                    "course_name": "Data Mining and Data Warehousing",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PEC-CSM601",
+                    "course_name": "Elective-II",
+                    "course_type": "PE",
+                    "options": [
+                        "Soft Computing",
+                        "Optimization Techniques",
+                        "Pattern Recognition"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PEC-CSM602",
+                    "course_name": "Elective-III",
+                    "course_type": "PE",
+                    "options": [
+                        "Computer Vision",
+                        "Human Computer Interaction",
+                        "Speech and Natural Language Processing",
+                        "MOOC"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "OEC-CSM601",
+                    "course_name": "Open Elective-I",
+                    "course_type": "OE",
+                    "options": [
+                        "Software Project Management",
+                        "Digital Communication",
+                        "Game Theory with Engineering Applications",
+                        "MOOC"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM691",
+                    "course_name": "Machine Learning and its Applications Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM692",
+                    "course_name": "Data Mining and Data Warehousing Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PEC-CSM691",
+                    "course_name": "Elective-II Lab",
+                    "course_type": "PE",
+                    "options": [
+                        "Soft Computing Lab",
+                        "Optimization Techniques Lab",
+                        "Pattern Recognition Lab"
+                    ],
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 3
+                    },
+                    "credits": 1.5,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PROJ-CSM681",
+                    "course_name": "Technical Seminar with Modern Tool Application",
+                    "course_type": "PROJ",
+                    "hours": {
+                        "L": 0,
+                        "T": null,
+                        "P": 2
+                    },
+                    "credits": null,
+                    "marks": 100
+                }
+            ],
+            "additional_note": "MOOC/Equivalent MOOC evaluation scheme as per Blended Learning and MOOCs Policy"
+        },
+        {
+            "semester": 7,
+            "total_hours": 17,
+            "total_credits": 22,
+            "total_marks": 750,
+            "courses": [
+                {
+                    "course_code": "PCC-CSM701",
+                    "course_name": "Software Engineering",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PEC-CSM701",
+                    "course_name": "Elective-IV",
+                    "course_type": "PE",
+                    "options": [
+                        "Deep Learning",
+                        "Intelligent Multi Agent and Expert Systems",
+                        "Cyber Threat Intelligence",
+                        "MOOC"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PEC-CSM702",
+                    "course_name": "Elective-V",
+                    "course_type": "PE",
+                    "options": [
+                        "Quantum Computing",
+                        "Introduction to Data Analytics and Visualization",
+                        "Data and Internet Security",
+                        "MOOC"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "OEC-CSM701",
+                    "course_name": "Open Elective-II",
+                    "course_type": "OE",
+                    "options": [
+                        "AI with Robotics",
+                        "Digital Signal Processing",
+                        "Intelligent Embedded Systems",
+                        "MOOC"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "OEC-CSM702",
+                    "course_name": "Open Elective-III",
+                    "course_type": "OE",
+                    "options": [
+                        "Soft Skills and Interpersonal Communication",
+                        "Human Resource Development and Organizational Behavior",
+                        "Cyber Law and Ethics",
+                        "MOOC"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PCC-CSM791",
+                    "course_name": "Software Tools and Techniques Lab",
+                    "course_type": "PC",
+                    "hours": {
+                        "L": 0,
+                        "T": 0,
+                        "P": 2
+                    },
+                    "credits": 1,
+                    "marks": 50
+                },
+                {
+                    "course_code": "PROJ-CSM781",
+                    "course_name": "Industrial Training",
+                    "course_type": "PROJ",
+                    "hours": {
+                        "L": 0,
+                        "T": null,
+                        "P": null
+                    },
+                    "credits": 2,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PROJ-CSM782",
+                    "course_name": "Project-I",
+                    "course_type": "PROJ",
+                    "hours": {
+                        "L": 0,
+                        "T": null,
+                        "P": null
+                    },
+                    "credits": 4,
+                    "marks": 100
+                }
+            ]
+        },
+        {
+            "semester": 8,
+            "total_hours": 3,
+            "total_credits": 13,
+            "total_marks": 300,
+            "courses": [
+                {
+                    "course_code": "OEC-CSM801",
+                    "course_name": "Open Elective-IV",
+                    "course_type": "OEC",
+                    "options": [
+                        "Electronic Design Automation",
+                        "VLSI Design",
+                        "MOOC"
+                    ],
+                    "hours": {
+                        "L": 3,
+                        "T": 0,
+                        "P": 0
+                    },
+                    "credits": 3,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PROJ-CSM881",
+                    "course_name": "Grand Viva",
+                    "course_type": "PROJ",
+                    "hours": {
+                        "L": 0,
+                        "T": null,
+                        "P": null
+                    },
+                    "credits": 4,
+                    "marks": 100
+                },
+                {
+                    "course_code": "PROJ-CSM882",
+                    "course_name": "Project-II",
+                    "course_type": "PROJ",
+                    "hours": {
+                        "L": 0,
+                        "T": null,
+                        "P": null
+                    },
+                    "credits": 6,
+                    "marks": 100
+                }
+            ]
+        }
+    ]
+}

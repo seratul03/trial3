@@ -1,0 +1,156 @@
+{
+  "semester": "5",
+  "subjects": [
+    {
+      "course_code": "PCC-CSM501",
+      "course_name": "Database Management Systems",
+      "prerequisites": "Set theory concept of mathematics",
+      "course_outcomes": [
+        "Define data definition aspects, classify data models and produce ER diagrams.",
+        "Describe and compare relational query languages and perform query processing/optimization.",
+        "Explain storage structures like B-Tree and B+Tree and analyze storage policies.",
+        "Analyze transaction processing, serializability and concurrency control policies.",
+        "State database security policies and evaluate database security and design advancements."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM502",
+      "course_name": "Computer Networks",
+      "prerequisites": "Basic knowledge of binary number system",
+      "course_outcomes": [
+        "Explain data communication systems, components and topologies.",
+        "Analyze flow control and error control mechanisms in networks.",
+        "Explain switching techniques, logical addressing, subnetting and routing.",
+        "Discuss transport layer functionality and QoS improvement techniques.",
+        "Categorize application layer protocols and their functionalities."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM503",
+      "course_name": "Artificial Intelligence for Real World Application",
+      "prerequisites": "Knowledge of OOPs, Basic knowledge of Sensors",
+      "course_outcomes": [
+        "Define core AI concepts and tools and their applications.",
+        "Understand and compare search and reasoning techniques in AI.",
+        "Apply AI techniques to develop ML and DL models for real problems.",
+        "Select and analyze time series methods in AI.",
+        "Evaluate TensorFlow implementations for regression and clustering."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM504",
+      "course_name": "Compiler Design",
+      "prerequisites": "Knowledge of automata theory and context free languages",
+      "course_outcomes": [
+        "State different types of translators used in programming.",
+        "Understand symbol table organization and roles of semantic analysis.",
+        "Construct intermediate representations considering type systems.",
+        "Analyze optimization techniques for generated code.",
+        "Assess compiler construction tools and develop simple compilers."
+      ]
+    },
+    {
+      "course_code": "PEC-CSM501A",
+      "course_name": "Image Processing (Elective A)",
+      "prerequisites": "Linear Algebra, Differential Equations, Calculus, Signals and Systems",
+      "course_outcomes": [
+        "Define image processing concepts mathematically and illustrate sampling and transformations.",
+        "Classify and analyze image enhancement techniques.",
+        "Apply image restoration methods and filtering techniques.",
+        "Estimate compression efficiency and segmentation methods."
+      ]
+    },
+    {
+      "course_code": "PEC-CSM501B",
+      "course_name": "Bioinformatics (Elective B)",
+      "prerequisites": "Basic knowledge of Biology, Mathematics and any computer language",
+      "course_outcomes": [
+        "Recall basic biological science concepts with computational approaches.",
+        "Identify sequence similarity and alignment and classify biological data.",
+        "Apply rule mining for pairwise alignment and protein analysis.",
+        "Analyze and construct biological pathways and protein interactions.",
+        "Evaluate algorithms for classifying and clustering biological data."
+      ]
+    },
+    {
+      "course_code": "PEC-CSM501C",
+      "course_name": "Cloud Computing (Elective C)",
+      "prerequisites": "Basics knowledge of networking and computer fundamentals",
+      "course_outcomes": [
+        "Recall basic concepts of cloud computing.",
+        "Identify mechanisms and architectures of cloud computing.",
+        "Analyze cloud security services and architectures.",
+        "Compare different cloud services and case studies."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM591",
+      "course_name": "Database Management Systems Lab",
+      "prerequisites": "Nil",
+      "course_outcomes": [
+        "Apply and analyze basic database system concepts and applications.",
+        "Demonstrate SQL basics and construct queries for database operations.",
+        "Choose models and algorithms to transform data into useful information.",
+        "Develop commercial relational DB systems using SQL (Oracle, MySQL)."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM592",
+      "course_name": "Computer Networks Lab",
+      "prerequisites": "Java programming",
+      "course_outcomes": [
+        "Explain data communications components and network topologies.",
+        "Analyze flow control and error control mechanisms.",
+        "Implement routing protocols and subnetting in simulations.",
+        "Work with transport layer concepts and improve QoS.",
+        "Develop and test application layer protocols and network configuration."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM593",
+      "course_name": "Artificial Intelligence for Real World Application Lab",
+      "prerequisites": "Knowledge of OOPs, Basic knowledge of Sensors",
+      "course_outcomes": [
+        "Understand preprocessing techniques for datasets and AI tool usage.",
+        "Implement supervised, unsupervised and semi-supervised ML models.",
+        "Develop deep learning programs for various models.",
+        "Analyze AI concepts to solve real world problems using TensorFlow and related tools."
+      ]
+    },
+    {
+      "course_code": "PEC-CSM591A",
+      "course_name": "Image Processing Lab",
+      "prerequisites": "Linear Algebra, Image Processing theory course",
+      "course_outcomes": [
+        "Implement image processing operations using MATLAB.",
+        "Apply image enhancement and transformation techniques.",
+        "Analyze and implement image restoration algorithms.",
+        "Develop image segmentation and compression programs."
+      ]
+    },
+    {
+      "course_code": "PEC-CSM591B",
+      "course_name": "Bioinformatics Lab",
+      "prerequisites": "Basic knowledge of Biology and Programming",
+      "course_outcomes": [
+        "Use bioinformatics databases and tools for sequence analysis.",
+        "Implement sequence alignment algorithms like Needleman-Wunsch.",
+        "Apply BLAST and ClustalW for biological sequence comparison.",
+        "Construct phylogenetic trees and perform motif finding.",
+        "Analyze protein families and structural biology data."
+      ]
+    },
+    {
+      "course_code": "PEC-CSM591C",
+      "course_name": "Cloud Computing Lab",
+      "prerequisites": "Basic knowledge of virtualization and cloud concepts",
+      "course_outcomes": [
+        "Install and configure virtual machines using VirtualBox/VMware.",
+        "Deploy applications on Google App Engine.",
+        "Simulate cloud scheduling using CloudSim.",
+        "Implement Hadoop single-node setup and distributed computing.",
+        "Work with OpenStack and VM management in cloud environments."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "course_code": "PCC-CSM592",
+  "course_name": "Computer Networks Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Network Devices & Commands"
+    },
+    {
+      "module_number": 2,
+      "title": "Cisco Packet Tracer: LAN/MAN/WAN"
+    },
+    {
+      "module_number": 3,
+      "title": "Routing Protocols"
+    },
+    {
+      "module_number": 4,
+      "title": "NAT, DHCP, ACL, Telnet"
+    },
+    {
+      "module_number": 5,
+      "title": "Socket Programming (TCP/UDP)"
+    }
+  ],
+  "summary": "Computer Networks Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Computer Networks – Tanenbaum",
+    "Internetworking with TCP/IP – Douglas Comer"
+  ],
+  "course_outcomes": [
+    "Explain data communications components and network topologies.",
+    "Analyze flow control and error control mechanisms.",
+    "Implement routing protocols and subnetting in simulations.",
+    "Work with transport layer concepts and improve QoS.",
+    "Develop and test application layer protocols and network configuration."
+  ],
+  "prerequisites": [
+    "Java programming"
+  ]
+}

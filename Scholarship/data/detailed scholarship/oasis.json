@@ -1,0 +1,179 @@
+{
+  "scholarship_id": "OASIS_WB_2025",
+  "scholarship_name": "OASIS Scholarship (SC / ST / OBC)",
+  "official_name": "Scholarship for SC, ST & OBC Students in West Bengal",
+  "type": "Post-Matric Government Scholarship",
+  "offered_by": {
+    "state": "Government of West Bengal",
+    "departments": [
+      "Backward Classes Welfare Department",
+      "Tribal Development Department"
+    ]
+  },
+  "theme_colors": {
+    "primary": "#1E88E5",
+    "secondary": "#43A047",
+    "warning": "#FB8C00",
+    "danger": "#E53935",
+    "info": "#00897B"
+  },
+  "introduction": {
+    "short_intro": "OASIS Scholarship is a financial assistance scheme by the Government of West Bengal for SC, ST, and OBC students pursuing full-time post-matric education such as Engineering (B.Tech/B.E.).",
+    "objective": [
+      "Reduce financial burden on socially backward students",
+      "Promote higher education among SC, ST & OBC communities",
+      "Ensure Direct Benefit Transfer (DBT) of scholarship amount",
+      "Support students till course completion"
+    ]
+  },
+  "categories_covered": {
+    "SC": {
+      "full_form": "Scheduled Caste",
+      "income_limit": "₹2,50,000 per year",
+      "special_rules": [
+        "Biometric e-KYC is mandatory",
+        "Must not receive any other government scholarship at the same level"
+      ]
+    },
+    "ST": {
+      "full_form": "Scheduled Tribe",
+      "income_limit": "₹2,50,000 per year",
+      "special_rules": [
+        "OTR (One-Time Registration) on NSP Portal is mandatory before applying",
+        "OTR required only once for lifetime"
+      ]
+    },
+    "OBC": {
+      "full_form": "Other Backward Classes",
+      "income_limit": "₹1,00,000 per year",
+      "special_rules": [
+        "If caste certificate issued before 01-08-2025, revalidation is mandatory",
+        "Revalidation portal: castcertificatewb.gov.in"
+      ]
+    }
+  },
+  "eligibility_criteria": {
+    "general_conditions": [
+      "Must be a resident of West Bengal",
+      "Must belong to SC / ST / OBC category",
+      "Must be studying regular full-time course",
+      "Institution must be recognized",
+      "Aadhaar must be linked with bank account (DBT)",
+      "Student must not receive any other government scholarship"
+    ],
+    "course_specific": {
+      "engineering": [
+        "B.Tech / B.E. students are eligible",
+        "Applicable for all years including 1st year (Fresh)"
+      ]
+    }
+  },
+  "application_types": {
+    "fresh_application": {
+      "who_should_apply": "Students applying for the first time",
+      "conditions": [
+        "New admission in current academic year",
+        "Income & caste certificate must be valid",
+        "ST students must complete OTR before applying"
+      ]
+    },
+    "renewal_application": {
+      "who_should_apply": "Students who received OASIS last year",
+      "conditions": [
+        "Must be promoted to next year/semester",
+        "Must pass previous exam (no backlogs)",
+        "Income & category conditions must still be valid"
+      ]
+    }
+  },
+  "required_documents": {
+    "common_documents": [
+      "Caste Certificate",
+      "Annual Family Income Certificate",
+      "Aadhaar Card (DBT enabled)",
+      "Bank Passbook (student name)",
+      "Recent Passport Size Photograph",
+      "Domicile Proof (WB)"
+    ],
+    "academic_documents": {
+      "engineering_fresh": [
+        "Class 10 Marksheet",
+        "Class 12 Marksheet",
+        "Admission Receipt / Fee Receipt",
+        "Bonafide Certificate from College",
+        "Course Fee Structure"
+      ],
+      "renewal": [
+        "Previous Year / Semester Marksheets",
+        "Current Year Admission Receipt",
+        "College ID Card"
+      ]
+    },
+    "category_specific": {
+      "SC": [
+        "Biometric e-KYC (mandatory)"
+      ],
+      "ST": [
+        "OTR Number from NSP Portal"
+      ],
+      "OBC": [
+        "Revalidated caste certificate (if applicable)"
+      ]
+    }
+  },
+  "workflow_steps": [
+    "Register on OASIS Portal",
+    "Fill personal, academic & bank details",
+    "Upload required documents",
+    "Submit application online",
+    "Institute verification",
+    "District verification",
+    "Scholarship credited via DBT"
+  ],
+  "important_rules": {
+    "do": [
+      "Use student’s own bank account",
+      "Ensure Aadhaar is DBT enabled",
+      "Upload clear & readable documents",
+      "Apply within deadline"
+    ],
+    "dont": [
+      "Do not apply if receiving another govt scholarship",
+      "Do not upload expired caste/income certificate",
+      "Do not skip biometric verification (SC)"
+    ]
+  },
+  "status_tracking": {
+    "stages": [
+      "Submitted",
+      "Institute Verified",
+      "District Verified",
+      "Approved",
+      "Fund Released"
+    ]
+  },
+  "faq": [
+    {
+      "q": "Can I apply if I failed last year?",
+      "a": "No. You must be promoted to the next year."
+    },
+    {
+      "q": "Is OASIS applicable for private colleges?",
+      "a": "Yes, if the college is recognized."
+    },
+    {
+      "q": "Is Aadhaar mandatory?",
+      "a": "Yes, for DBT payment."
+    }
+  ],
+  "seo_metadata": {
+    "keywords": [
+      "OASIS Scholarship West Bengal",
+      "SC ST OBC Scholarship",
+      "WB Post Matric Scholarship",
+      "OASIS Engineering Scholarship"
+    ],
+    "last_updated": "2025"
+  },
+  "official_note": "Information is subject to verification and updates by Government of West Bengal."
+}

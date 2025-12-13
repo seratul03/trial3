@@ -1,0 +1,38 @@
+{
+  "course_code": "HSMCM291",
+  "course_name": "Effective Communication Skills Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Listening Skills"
+    },
+    {
+      "module_number": 2,
+      "title": "Speaking Skills"
+    },
+    {
+      "module_number": 3,
+      "title": "Reading and Writing Skills"
+    },
+    {
+      "module_number": 4,
+      "title": "Lab Activities"
+    }
+  ],
+  "summary": "Effective Communication Skills Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 4 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Advanced Manual for Communication Laboratories – D. Sudha Rani",
+    "Cambridge Interchange Series – Jack C. Richards",
+    "Contemporary Communicative English – Pearson",
+    "On Writing Well – David Zinsser"
+  ],
+  "course_outcomes": [
+    "Identify common errors in speaking and writing English and apply proper grammar and sentence structures.",
+    "Read with proper vocabulary and pronunciation and employ academic, non-academic and technical writing.",
+    "Apply listening and speaking skills effectively for industry and entrepreneurship.",
+    "Think critically and express ideas fluently in English."
+  ],
+  "prerequisites": [
+    "Basic knowledge of English"
+  ]
+}

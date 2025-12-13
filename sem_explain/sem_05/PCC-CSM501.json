@@ -1,0 +1,43 @@
+{
+  "course_code": "PCC-CSM501",
+  "course_name": "Database Management Systems",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Database System Architecture & Data Models"
+    },
+    {
+      "module_number": 2,
+      "title": "Relational Query Languages & Database Design"
+    },
+    {
+      "module_number": 3,
+      "title": "Storage Strategies & Transaction Processing"
+    },
+    {
+      "module_number": 4,
+      "title": "Database Security"
+    },
+    {
+      "module_number": 5,
+      "title": "Introduction to Data Warehousing & Data Mining"
+    }
+  ],
+  "summary": "Database Management Systems is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Database System Concepts – Korth & Silberschatz",
+    "Fundamentals of Database Systems – Elmasri & Navathe",
+    "Principles of Database Systems – Ullman",
+    "Introduction to Database Management – C.J. Date"
+  ],
+  "course_outcomes": [
+    "Define data definition aspects, classify data models and produce ER diagrams.",
+    "Describe and compare relational query languages and perform query processing/optimization.",
+    "Explain storage structures like B-Tree and B+Tree and analyze storage policies.",
+    "Analyze transaction processing, serializability and concurrency control policies.",
+    "State database security policies and evaluate database security and design advancements."
+  ],
+  "prerequisites": [
+    "Set theory concept of mathematics"
+  ]
+}

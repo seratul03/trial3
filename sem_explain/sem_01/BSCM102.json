@@ -1,0 +1,44 @@
+{
+  "course_code": "BSCM102",
+  "course_name": "Calculus & Linear Algebra",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Single Variable Calculus"
+    },
+    {
+      "module_number": 2,
+      "title": "Sequences and Series"
+    },
+    {
+      "module_number": 3,
+      "title": "Multivariable Calculus"
+    },
+    {
+      "module_number": 4,
+      "title": "Matrices"
+    },
+    {
+      "module_number": 5,
+      "title": "Vector Spaces"
+    }
+  ],
+  "summary": "Calculus & Linear Algebra provides the mathematical toolkit essential for engineering and science. This course covers differentiation, integration, sequences, series, and vector spaces. You'll develop analytical thinking and problem-solving abilities through rigorous mathematical methods. These concepts are fundamental for modeling real-world phenomena. Mastering this subject opens doors to advanced engineering courses and research opportunities.",
+  "recommended_books": [
+    "Calculus – George B. Thomas & Ross L. Finney",
+    "Advanced Engineering Mathematics – Jain & Iyengar",
+    "Linear Algebra: A Modern Introduction – Poole",
+    "Advanced Engineering Mathematics – Kreyszig",
+    "Higher Engineering Mathematics – B. S. Grewal"
+  ],
+  "course_outcomes": [
+    "Remember various techniques of integration and apply them to evaluate improper integrals.",
+    "Understand sequence and series concepts, tests of convergence, Taylor and power series, and apply them to problems.",
+    "Apply partial differentiation and multiple integration to evaluate engineering problems.",
+    "Understand matrices, determinants, inverse, and solve linear systems using Gauss Elimination.",
+    "Apply vector space concepts, rank-nullity, linear maps, eigenvalues & eigenvectors to solve mathematical problems."
+  ],
+  "prerequisites": [
+    "Function, Limit and Continuity"
+  ]
+}

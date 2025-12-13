@@ -1,0 +1,44 @@
+{
+  "course_code": "PCC-CSM403",
+  "course_name": "Object Oriented Programming",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Object-Oriented Concepts"
+    },
+    {
+      "module_number": 2,
+      "title": "Class & Object Properties, Strings, Arrays, I/O"
+    },
+    {
+      "module_number": 3,
+      "title": "Reusability Properties: Inheritance, Interfaces, Packages"
+    },
+    {
+      "module_number": 4,
+      "title": "Exception Handling & Multithreading"
+    },
+    {
+      "module_number": 5,
+      "title": "GUI Programming: AWT & Swing"
+    }
+  ],
+  "summary": "Object Oriented Programming is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Program Development in Java – Barbara Liskov",
+    "Core Java for Beginners – R. K. Das",
+    "The Complete Reference Java – Herbert Schildt",
+    "Beginning Java 2 – Ivor Horton",
+    "Java How to Program – Deitel & Deitel"
+  ],
+  "course_outcomes": [
+    "Understand core ideas of OOP and its advantages.",
+    "Use constructors, polymorphism and string handling to solve problems.",
+    "Implement inheritance, abstract classes, interfaces, packages and multithreading.",
+    "Handle exceptions and apply exception handling in Java.",
+    "Develop GUI applications using Java."
+  ],
+  "prerequisites": [
+    "Basic programming concept and problem-solving logic"
+  ]
+}

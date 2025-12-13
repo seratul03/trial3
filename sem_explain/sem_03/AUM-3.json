@@ -1,0 +1,44 @@
+{
+  "course_code": "AUM-3",
+  "course_name": "Constitution of India",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Indian Constitution"
+    },
+    {
+      "module_number": 2,
+      "title": "Fundamental Rights"
+    },
+    {
+      "module_number": 3,
+      "title": "Directive Principles"
+    },
+    {
+      "module_number": 4,
+      "title": "Union Government"
+    },
+    {
+      "module_number": 5,
+      "title": "State Government"
+    }
+  ],
+  "summary": "Constitution of India is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "An Introduction to the Constitution of India – M.V. Pylee",
+    "Introduction to the Constitution of India – Durga Das Basu",
+    "Indian Government and Politics – D.C. Gupta",
+    "Constitutional Development and National Movement in India – V.D. Mahajan",
+    "The Constitutional Law of India – J. N. Pandey",
+    "Indian Constitutional Law – M. P. Jain"
+  ],
+  "course_outcomes": [
+    "Identify foundational provisions of the Indian Constitution like Preamble, Fundamental Rights and DPSP.",
+    "Recognize powers of Legislature, Executive and Judiciary and analyze their distinct roles.",
+    "Appraise constitutional provisions, professional ethics and principles of sustainable development.",
+    "Analyze interpretation tools and case laws related to the Indian Constitution."
+  ],
+  "prerequisites": [
+    "General understanding of the Indian Constitution, basic rights and duties"
+  ]
+}

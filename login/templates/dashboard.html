@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | Brainware Portal</title>
+    <link rel="stylesheet" href="{{ url_for('login.static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <div class="dashboard-card">
+        <h2>Welcome, {{ user }} 👋</h2>
+        <p>You have successfully logged into the Brainware University Portal.</p>
+        <p class="small">
+            This is a demo dashboard. Here you can later show attendance, internal marks,
+            notices, internship updates, etc.
+        </p>
+
+        <a class="btn secondary" href="{{ url_for('login.login') }}">Log Out</a>
+    </div>
+</body>
+</html>

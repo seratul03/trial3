@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-lg">
+            <div class="p-6 border-b">
+                <h1 class="text-xl font-bold text-gray-800">Admin Panel ● UniBot</h1>
+                <p class="text-sm text-gray-600 mt-1" id="userName">Loading...</p>
+                <p class="text-xs text-gray-500" id="userRole"></p>
+            </div>
+            
+            <nav class="p-4">
+                <a href="dashboard.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Dashboard</a>
+                <a href="announcements.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Announcements</a>
+                <a href="kb.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Knowledge Base</a>
+                <a href="logs.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Query Logs</a>
+                <a href="feedback.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Feedback</a>
+                <a href="analytics.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Analytics</a>
+                <a href="settings.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Settings</a>
+                <button onclick="logout()" class="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 rounded mt-4">Logout</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold text-gray-800">Analytics & Reports</h1>
+                <p class="text-gray-600 mt-2">Insights into chatbot performance and subject coverage</p>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="grid grid-cols-1 gap-6 mb-6">
+                <!-- Confusing Questions -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">❓ Confusing Questions</h2>
+                    <div id="confusingQuestions" class="space-y-3">
+                        <!-- Will be populated -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Improvement Trend -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold text-gray-800">📈 Chatbot Accuracy Trend</h2>
+                    <div class="flex gap-2">
+                        <button onclick="loadTrend('week')" id="btnWeek" 
+                            class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
+                            Last 7 Days
+                        </button>
+                        <button onclick="loadTrend('month')" id="btnMonth"
+                            class="px-4 py-2 bg-white text-gray-700 border rounded hover:bg-gray-50 text-sm">
+                            Last 30 Days
+                        </button>
+                    </div>
+                </div>
+                <canvas id="trendChart" height="80"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script>
+        let currentPeriod = 'week';
+
+        // Simple bar chart renderer
+        function renderBarChart(canvasId, labels, data, color) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width = canvas.offsetWidth;
+            const height = canvas.height = 300;
+            
+            ctx.clearRect(0, 0, width, height);
+            
+            if (data.length === 0) {
+                ctx.fillStyle = '#9CA3AF';
+                ctx.font = '16px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('No data available', width / 2, height / 2);
+                return;
+            }
+            
+            const maxValue = Math.max(...data);
+            const barWidth = (width - 100) / data.length;
+            const chartHeight = height - 60;
+            
+            data.forEach((value, i) => {
+                const barHeight = (value / maxValue) * chartHeight;
+                const x = 80 + i * barWidth;
+                const y = height - barHeight - 40;
+                
+                // Draw bar
+                ctx.fillStyle = color;
+                ctx.fillRect(x, y, barWidth - 10, barHeight);
+                
+                // Draw value on top
+                ctx.fillStyle = '#374151';
+                ctx.font = 'bold 12px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(value, x + (barWidth - 10) / 2, y - 5);
+                
+                // Draw label
+                ctx.fillStyle = '#6B7280';
+                ctx.font = '11px sans-serif';
+                ctx.save();
+                ctx.translate(x + (barWidth - 10) / 2, height - 20);
+                ctx.rotate(-Math.PI / 6);
+                ctx.textAlign = 'right';
+                ctx.fillText(labels[i], 0, 0);
+                ctx.restore();
+            });
+        }
+
+        // Simple line chart renderer
+        function renderLineChart(canvasId, labels, data) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width = canvas.offsetWidth;
+            const height = canvas.height = 250;
+            
+            ctx.clearRect(0, 0, width, height);
+            
+            if (data.length === 0) {
+                ctx.fillStyle = '#9CA3AF';
+                ctx.font = '16px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('No data available', width / 2, height / 2);
+                return;
+            }
+            
+            const maxValue = Math.max(...data, 100);
+            const chartHeight = height - 60;
+            const pointSpacing = (width - 100) / (data.length - 1);
+            
+            // Draw grid lines
+            ctx.strokeStyle = '#E5E7EB';
+            ctx.lineWidth = 1;
+            for (let i = 0; i <= 5; i++) {
+                const y = 30 + (chartHeight / 5) * i;
+                ctx.beginPath();
+                ctx.moveTo(60, y);
+                ctx.lineTo(width - 20, y);
+                ctx.stroke();
+                
+                // Y-axis labels
+                ctx.fillStyle = '#6B7280';
+                ctx.font = '11px sans-serif';
+                ctx.textAlign = 'right';
+                ctx.fillText(`${Math.round(100 - (100 / 5) * i)}%`, 50, y + 4);
+            }
+            
+            // Draw line
+            ctx.strokeStyle = '#3B82F6';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            
+            data.forEach((value, i) => {
+                const x = 60 + i * pointSpacing;
+                const y = 30 + chartHeight - (value / maxValue) * chartHeight;
+                
+                if (i === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            });
+            ctx.stroke();
+            
+            // Draw points
+            data.forEach((value, i) => {
+                const x = 60 + i * pointSpacing;
+                const y = 30 + chartHeight - (value / maxValue) * chartHeight;
+                
+                ctx.fillStyle = '#3B82F6';
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Value label
+                ctx.fillStyle = '#1F2937';
+                ctx.font = 'bold 11px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(`${value}%`, x, y - 12);
+            });
+            
+            // X-axis labels
+            labels.forEach((label, i) => {
+                const x = 60 + i * pointSpacing;
+                ctx.fillStyle = '#6B7280';
+                ctx.font = '10px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(label, x, height - 10);
+            });
+        }
+
+        async function loadAnalytics() {
+            try {
+                // Load confusing questions
+                const confusing = await api.getConfusingQuestions(5);
+                const confusingList = document.getElementById('confusingQuestions');
+                if (confusing.data.length === 0) {
+                    confusingList.innerHTML = '<p class="text-gray-500 text-sm">No confusing questions found!</p>';
+                } else {
+                    confusingList.innerHTML = confusing.data.map(q => `
+                        <div class="border-l-4 border-red-400 pl-3 py-2 bg-red-50">
+                            <p class="text-sm text-gray-800 font-medium">${escapeHtml(q.question)}</p>
+                            <p class="text-xs text-gray-600 mt-1">${escapeHtml(q.bot_answer || 'No answer')}</p>
+                        </div>
+                    `).join('');
+                }
+                
+                // Load trend
+                loadTrend(currentPeriod);
+                
+            } catch (error) {
+                console.error('Error loading analytics:', error);
+                showError('Failed to load analytics');
+            }
+        }
+
+        async function loadTrend(period) {
+            currentPeriod = period;
+            
+            // Update button styles
+            document.getElementById('btnWeek').className = period === 'week' ? 
+                'px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm' :
+                'px-4 py-2 bg-white text-gray-700 border rounded hover:bg-gray-50 text-sm';
+            document.getElementById('btnMonth').className = period === 'month' ? 
+                'px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm' :
+                'px-4 py-2 bg-white text-gray-700 border rounded hover:bg-gray-50 text-sm';
+            
+            try {
+                const trend = await api.getImprovementTrend(period);
+                const labels = trend.data.map(d => {
+                    const date = new Date(d.date);
+                    return `${date.getMonth() + 1}/${date.getDate()}`;
+                });
+                const values = trend.data.map(d => d.accuracy);
+                renderLineChart('trendChart', labels, values);
+            } catch (error) {
+                console.error('Error loading trend:', error);
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem('token');
+            window.location.href = 'index.html';
+        }
+
+        // Load analytics on page load
+        loadAnalytics();
+    </script>
+</body>
+</html>

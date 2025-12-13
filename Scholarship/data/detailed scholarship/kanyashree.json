@@ -1,0 +1,157 @@
+{
+  "scholarship_name": "🌸 **Kanyashree Prakalpa (K2)**",
+  "state": "West Bengal",
+  "implemented_by": "**Government of West Bengal**",
+  "type": "💰 *One-Time Cash Grant*",
+  "grant_amount": {
+    "amount": "₹25,000",
+    "payment_type": "One-time Direct Benefit Transfer (DBT)",
+    "credited_to": "Student’s own bank account"
+  },
+  "overview": {
+    "objective": [
+      "🎯 **Encourage higher education** among girl students",
+      "🎯 **Prevent early marriage** by supporting unmarried girls",
+      "🎯 **Empower young women** through financial independence",
+      "🎯 Reduce school/college dropout rates"
+    ],
+    "who_can_apply": "*Unmarried girl students of West Bengal who are continuing education after 18 years of age*"
+  },
+  "eligibility_criteria": {
+    "age_criteria": {
+      "minimum_age": "18 years",
+      "maximum_age": "Below 19 years",
+      "note": "*Age is calculated at the time of application*"
+    },
+    "marital_status": {
+      "requirement": "Must be **unmarried**",
+      "proof_required": "Marital status declaration"
+    },
+    "residency": {
+      "condition": "Must be a **resident of West Bengal**"
+    },
+    "educational_status": {
+      "eligible_courses": [
+        "🎓 Undergraduate (BA, BSc, BCom, BTech, etc.)",
+        "🛠 Engineering & Professional Courses",
+        "📘 Vocational / Skill Development Programs",
+        "🏫 Any recognized college or institution"
+      ],
+      "attendance": "Must be currently enrolled and attending"
+    },
+    "income_criteria": {
+      "annual_family_income_limit": "₹1,20,000 per year",
+      "relaxation": [
+        "♿ Differently-abled candidates",
+        "👨‍👩‍👧 Orphan candidates",
+        "*Income limit may be relaxed in special cases*"
+      ]
+    },
+    "bank_account": {
+      "mandatory": true,
+      "condition": "Bank account must be **in the applicant’s own name**"
+    }
+  },
+  "documents_required": {
+    "mandatory_documents": [
+      {
+        "name": "Birth Certificate",
+        "purpose": "Proof of age"
+      },
+      {
+        "name": "Passport Size Photograph",
+        "purpose": "Applicant identification"
+      },
+      {
+        "name": "Marital Status Declaration",
+        "purpose": "Proof that the applicant is unmarried"
+      },
+      {
+        "name": "Bank Passbook (First Page)",
+        "purpose": "Account number & IFSC for DBT"
+      },
+      {
+        "name": "Income Certificate",
+        "purpose": "Proof of annual family income"
+      },
+      {
+        "name": "Enrollment / Bonafide Certificate",
+        "purpose": "Proof of admission from Head of Institution"
+      }
+    ],
+    "attestation_note": "*Documents generally need attestation by Gazetted Officer / MLA / MP / Pradhan / Principal (as per district rules)*"
+  },
+  "application_process": {
+    "mode": "🖥 **Online Application**",
+    "steps": [
+      "🔹 Register on the **Kanyashree Portal**",
+      "🔹 Fill in personal, educational & bank details",
+      "🔹 Upload scanned documents",
+      "🔹 Submit application",
+      "🔹 Verification by Institution & Local Authority",
+      "🔹 Amount credited directly to bank account"
+    ]
+  },
+  "important_rules": {
+    "one_time_benefit": "Applicant can receive **K2 only once**",
+    "false_information": "Providing incorrect details may lead to **rejection or recovery**",
+    "bank_details": "Incorrect bank details will delay payment",
+    "education_continuation": "Must be actively continuing education"
+  },
+  "comparison_table": {
+    "columns": [
+      "Parameter",
+      "Details"
+    ],
+    "rows": [
+      [
+        "Scheme Name",
+        "Kanyashree Prakalpa (K2)"
+      ],
+      [
+        "Benefit Amount",
+        "₹25,000 (One-Time)"
+      ],
+      [
+        "Age Limit",
+        "18 – below 19 years"
+      ],
+      [
+        "Marital Status",
+        "Unmarried"
+      ],
+      [
+        "Income Limit",
+        "₹1,20,000 per year"
+      ],
+      [
+        "Education Required",
+        "Enrolled in recognized institution"
+      ],
+      [
+        "Bank Account",
+        "Mandatory (in student’s name)"
+      ]
+    ]
+  },
+  "visual_representation": {
+    "flow_chart": [
+      "👧 Girl turns 18",
+      "📘 Continues education",
+      "📝 Applies for Kanyashree K2",
+      "🏫 Institution verification",
+      "💰 ₹25,000 credited to bank"
+    ]
+  },
+  "use_cases_for_website": {
+    "badges": [
+      "🎓 Education Support",
+      "👩 Women Empowerment",
+      "💰 Financial Aid"
+    ],
+    "highlight_text": "**Best suited for college-going girl students in West Bengal**",
+    "call_to_action": "Apply early after turning 18 to avoid missing eligibility window"
+  },
+  "official_reference_note": "Details are based on official West Bengal Government guidelines and institutional scholarship documentation.",
+  "source_reference": ":contentReference[oaicite:0]{index=0}"
+}

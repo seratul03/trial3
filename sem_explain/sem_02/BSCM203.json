@@ -1,0 +1,46 @@
+{
+  "course_code": "BSCM203",
+  "course_name": "Biology for Engineers",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Biomolecules and Biopolymers"
+    },
+    {
+      "module_number": 2,
+      "title": "Transport Phenomena and Communications in Biological Systems"
+    },
+    {
+      "module_number": 3,
+      "title": "Engineering Perspectives of Biological Sciences"
+    },
+    {
+      "module_number": 4,
+      "title": "Biosensors"
+    },
+    {
+      "module_number": 5,
+      "title": "Bioinformatics"
+    }
+  ],
+  "summary": "Biology for Engineers is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Biology for Engineers – Rajiv Singal, Gaurav Agarwal, Ritu Bir",
+    "Biomimetics- Biologically Inspired Technologies – Yoseph Bar-Cohen",
+    "Data Mining Concepts and Techniques – Han & Kamber",
+    "Introduction to Bioinformatics – Arthur M. Lesk",
+    "Developing Bioinformatics Computer Skills – Gibas & Jambeck",
+    "An Introduction to Bioinformatics Algorithms – Jones & Pevzner",
+    "Molecular Biology of the Cell – Alberts et al.",
+    "Bioinformatics: Sequence and Genome Analysis – David W. Mount"
+  ],
+  "course_outcomes": [
+    "Remember and understand basic biological principles and organizational structure of living systems at molecular level.",
+    "Understand energy transformations and information processing in biological systems from an engineering perspective.",
+    "Know different biosensors and evaluate their applications in bio-engineering contexts.",
+    "Analyze programming algorithms and compare different models (in bioinformatics/biological computation contexts)."
+  ],
+  "prerequisites": [
+    "Knowledge of basic Biology of Class 12th"
+  ]
+}

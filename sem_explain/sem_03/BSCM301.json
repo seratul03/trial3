@@ -1,0 +1,47 @@
+{
+  "course_code": "BSCM301",
+  "course_name": "Differential Equation and Complex Analysis",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Vector Calculus - I"
+    },
+    {
+      "module_number": 2,
+      "title": "Vector Calculus - II"
+    },
+    {
+      "module_number": 3,
+      "title": "Ordinary Differential Equation of Higher Order"
+    },
+    {
+      "module_number": 4,
+      "title": "Complex Variable I"
+    },
+    {
+      "module_number": 5,
+      "title": "Complex Variable II"
+    }
+  ],
+  "summary": "Differential Equation and Complex Analysis is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Higher Engineering Mathematics – B. V. Ramana",
+    "Higher Engineering Mathematics – B. S. Grewal",
+    "Advance Engineering Mathematics – R. K. Jain & S. R. K. Iyenger",
+    "Foundation of Complex Analysis – S. Ponnuswamy",
+    "Advanced Engineering Mathematics – E. Kreyszig",
+    "Advanced Engineering Mathematics – Peter V. O’Neil",
+    "Calculus – Maurice D. Weir, Joel Hass, Frank R. Giordano",
+    "Complex Variables and Applications – Brown & Churchill"
+  ],
+  "course_outcomes": [
+    "Understand differentiation of vector functions and evaluate definite integrals for surface areas and volumes.",
+    "Solve differential equations by various methods.",
+    "Illustrate limits, continuity and differentiability of complex functions and solve related problems.",
+    "Analyze analytic functions and evaluate related problems.",
+    "Solve complex integration problems, use Taylor and Laurent series, and understand singularities and residues."
+  ],
+  "prerequisites": [
+    "Single Variable Calculus"
+  ]
+}

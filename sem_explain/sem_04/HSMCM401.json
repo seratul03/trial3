@@ -1,0 +1,58 @@
+{
+  "course_code": "HSMCM401",
+  "course_name": "Design Thinking for Entrepreneurship and Startups",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Entrepreneurship & Design Thinking"
+    },
+    {
+      "module_number": 2,
+      "title": "Being Ingenious & Fixing Problem"
+    },
+    {
+      "module_number": 3,
+      "title": "Process of Product Design"
+    },
+    {
+      "module_number": 4,
+      "title": "Prototyping & Testing"
+    },
+    {
+      "module_number": 5,
+      "title": "Design Thinking & Customer Centricity"
+    },
+    {
+      "module_number": 6,
+      "title": "Business Ideas and their Implementation"
+    },
+    {
+      "module_number": 7,
+      "title": "Managing the Business: Idea to Start-up"
+    },
+    {
+      "module_number": 8,
+      "title": "Intellectual Property Rights (IPR)"
+    }
+  ],
+  "summary": "Design Thinking for Entrepreneurship and Startups is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 8 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Engineering Design – John R. Karsnitz, O’Brien, Hutchinson",
+    "The Design of Business – Roger Martin",
+    "Design Thinking – Plattner, Meinel, Leifer",
+    "Design Thinking for Strategic Innovation – Idris Mootee",
+    "The Startup Owner’s Manual – Steve Blank & Bob Dorf",
+    "The Lean Startup – Eric Ries",
+    "Demand – Adrian J. Slywotzky"
+  ],
+  "course_outcomes": [
+    "Describe entrepreneurship and visualize designing processes for business.",
+    "Construct innovative thinking and design creative products and services.",
+    "Evaluate market needs and focus on prototype development.",
+    "Develop ideas and prepare business plans.",
+    "Recognize and analyze implications of IPR in a global context."
+  ],
+  "prerequisites": [
+    "Good knowledge of Fundamentals of Software Engineering and Management"
+  ]
+}

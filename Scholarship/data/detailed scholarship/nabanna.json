@@ -1,0 +1,181 @@
+{
+  "scholarship_id": "WB_CMRF_NABANNA",
+  "official_name": "West Bengal Chief Minister Relief Fund (Nabanna) Scholarship",
+  "popular_name": "Nabanna Scholarship",
+  "managed_by": {
+    "authority": "Government of West Bengal",
+    "department": "Chief Minister Relief Fund (CMRF)",
+    "office_location": "Nabanna, Howrah, West Bengal"
+  },
+  "overview": {
+    "description": "Nabanna Scholarship is a need-based financial assistance provided by the Government of West Bengal to meritorious but financially weak students studying in Higher Secondary, Undergraduate, and Postgraduate courses.",
+    "objective_points": [
+      "Support students from low-income families",
+      "Reduce dropout due to financial hardship",
+      "Encourage continuation of higher education",
+      "Provide yearly financial assistance"
+    ],
+    "nature_of_support": "Direct Financial Grant (Non-Repayable)"
+  },
+  "eligibility_criteria": {
+    "domicile": "Applicant must be a permanent resident of West Bengal.",
+    "academic_background": [
+      "Must have passed Higher Secondary / Graduation from a recognized Board, Council or University of West Bengal",
+      "Must be currently studying in a recognized institution within West Bengal"
+    ],
+    "marks_requirement": {
+      "higher_secondary_or_ug": {
+        "minimum": "50%",
+        "maximum": "Less than 60%",
+        "note": "Applicable for HS & UG level assistance"
+      },
+      "post_graduate": {
+        "minimum": "50%",
+        "maximum": "Less than 53%",
+        "note": "Applicable for PG level assistance"
+      }
+    },
+    "income_limit": {
+      "annual_family_income": "≤ ₹1,20,000",
+      "income_type": "Combined yearly income of family"
+    },
+    "exclusions": [
+      "Students receiving any other Government or Non-Government scholarship for the same course",
+      "Applicants applying more than once within 365 days"
+    ]
+  },
+  "course_levels_supported": [
+    {
+      "level": "Higher Secondary (HS)",
+      "qualifying_exam": "Madhyamik or equivalent"
+    },
+    {
+      "level": "Undergraduate (UG)",
+      "qualifying_exam": "Higher Secondary or equivalent"
+    },
+    {
+      "level": "Postgraduate (PG)",
+      "qualifying_exam": "Graduation"
+    }
+  ],
+  "application_frequency": {
+    "rule": "Once per year",
+    "cooling_period": "365 days from last successful registration"
+  },
+  "document_submission_timeline": {
+    "upload_deadline": "Within 90 days from the date of registration",
+    "mode": "Online submission with scanned documents"
+  },
+  "required_documents": {
+    "mandatory_documents": [
+      {
+        "name": "Application Prayer Letter",
+        "description": "A written prayer addressed to the Hon’ble Chief Minister of West Bengal, signed by the applicant, mentioning full address, mobile number and email ID."
+      },
+      {
+        "name": "Recommendation Letter",
+        "description": "Recommendation from local MLA or MP."
+      },
+      {
+        "name": "Family Income Certificate",
+        "issued_by": [
+          "Minister-in-Charge",
+          "Minister of State",
+          "District Magistrate (DM)",
+          "Sub-Divisional Officer (SDO)",
+          "Block Development Officer (BDO)",
+          "Joint BDO",
+          "Executive Officer (Municipality Area)",
+          "Deputy Commissioner or above (Municipal Corporation Area)"
+        ]
+      },
+      {
+        "name": "Self-Declaration Certificate",
+        "description": "Declaration stating current course, year/semester, and confirmation of not receiving any other scholarship. Must be countersigned by Head of Institution with seal."
+      },
+      {
+        "name": "Admit Card (Class 10)",
+        "description": "Admit card of Madhyamik (Class 10) examination."
+      },
+      {
+        "name": "Marksheet of Qualifying Examination",
+        "description": "HS / Graduation marksheet depending on level applied."
+      },
+      {
+        "name": "Bank Passbook",
+        "description": "First page of active savings account showing Account Number, IFSC & Account Holder Name."
+      },
+      {
+        "name": "Admission Receipt",
+        "description": "Current academic year / semester admission or fee receipt."
+      }
+    ],
+    "additional_documents_for_professional_courses": [
+      "Entrance Examination Rank Card",
+      "Allotment Letter for professional courses (Engineering, Medical, Law, Pharmacy, Nursing, etc.)"
+    ]
+  },
+  "visual_eligibility_table": {
+    "title": "📊 Eligibility Summary Table",
+    "columns": [
+      "Criteria",
+      "Requirement"
+    ],
+    "rows": [
+      [
+        "Domicile",
+        "Resident of West Bengal"
+      ],
+      [
+        "HS / UG Marks",
+        "50% – < 60%"
+      ],
+      [
+        "PG Marks",
+        "50% – < 53%"
+      ],
+      [
+        "Annual Income",
+        "≤ ₹1,20,000"
+      ],
+      [
+        "Other Scholarships",
+        "Not Allowed"
+      ],
+      [
+        "Application Gap",
+        "365 Days"
+      ]
+    ]
+  },
+  "important_rules": [
+    "No dual scholarship allowed for the same course",
+    "Incorrect or incomplete documents may lead to rejection",
+    "All declarations must be institution-verified",
+    "Submission beyond 90 days will invalidate the application"
+  ],
+  "benefit_details": {
+    "type": "Financial Assistance",
+    "amount": "Variable (Decided by CMRF based on merit & need)",
+    "payment_mode": "Direct Bank Transfer (DBT)",
+    "repayment": "Not Required"
+  },
+  "status_tracking": {
+    "mode": "Online",
+    "note": "Applicants should regularly check application status after submission"
+  },
+  "use_case_note": {
+    "website_ready": true,
+    "frontend_friendly": true,
+    "recommended_rendering": [
+      "Accordion sections",
+      "Eligibility tables",
+      "Checklist UI for documents",
+      "Highlighted warnings for exclusions"
+    ]
+  },
+  "official_reference": {
+    "source": "West Bengal Chief Minister Relief Fund (Nabanna)",
+    "verified_from_document": true
+  }
+}

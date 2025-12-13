@@ -1,0 +1,60 @@
+{
+  "course_code": "ESCM291",
+  "course_name": "Programming for Problem Solving Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Problem Solving Using Computers"
+    },
+    {
+      "module_number": 2,
+      "title": "Variables and Type Conversions"
+    },
+    {
+      "module_number": 3,
+      "title": "Branching and Logical Expressions"
+    },
+    {
+      "module_number": 4,
+      "title": "Loops"
+    },
+    {
+      "module_number": 5,
+      "title": "1D Arrays"
+    },
+    {
+      "module_number": 6,
+      "title": "2D Arrays and Strings"
+    },
+    {
+      "module_number": 7,
+      "title": "Functions"
+    },
+    {
+      "module_number": 8,
+      "title": "Recursion"
+    },
+    {
+      "module_number": 9,
+      "title": "Pointers and Structures"
+    },
+    {
+      "module_number": 10,
+      "title": "File Handling"
+    }
+  ],
+  "summary": "Programming for Problem Solving Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 10 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Computer Concepts and Programming in C – R. S. Salaria"
+  ],
+  "course_outcomes": [
+    "Apply arithmetic and logical expressions to solve problems using C.",
+    "Implement conditional statements to solve real-life problems.",
+    "Develop programs using loops and iteration for computational tasks.",
+    "Use functions to modularize solutions and simplify program execution.",
+    "Use structures and different storage methods to solve real-life problems."
+  ],
+  "prerequisites": [
+    "Basic Computer Fundamentals"
+  ]
+}

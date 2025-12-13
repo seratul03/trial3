@@ -1,0 +1,161 @@
+{
+  "scholarship_id": "svmcm_wb",
+  "scholarship_name": "Swami Vivekananda Merit-cum-Means Scholarship",
+  "popular_name": "Vivekananda Scholarship",
+  "state": "West Bengal",
+  "category": "Government Scholarship (State)",
+  "managed_by": "Government of West Bengal",
+  "objective": {
+    "title": "🎯 Objective",
+    "description": "The Swami Vivekananda Merit-cum-Means Scholarship aims to support meritorious but economically weaker students of West Bengal so they can continue higher education without financial burden."
+  },
+  "applicable_levels": [
+    "Higher Secondary (HS)",
+    "Under Graduate (UG)",
+    "Post Graduate (PG)",
+    "Diploma (AICTE Approved)",
+    "Lateral Entry Engineering",
+    "M.Phil",
+    "Ph.D"
+  ],
+  "eligibility": {
+    "fresh_application": {
+      "title": "✅ Eligibility – Fresh Application",
+      "criteria": [
+        "Academic Requirement: Minimum 60% marks in the last qualifying examination",
+        "Board / Institution: Passed from WBCHSE / Madrasa Board / AICTE-approved institutes",
+        "Diploma Holders: Minimum 60% marks (for Lateral Entry – 2nd year Engineering)",
+        "Year Condition: Must pass and take admission in the current academic year",
+        "Family Income Limit: ₹2,50,000 per year",
+        "Domicile: Applicant must be a resident of West Bengal"
+      ],
+      "income_exception_note": "Income limit is NOT applicable for: Board Toppers, Kanyashree (K3) applicants, M.Phil & Ph.D students"
+    },
+    "renewal_application": {
+      "title": "🔁 Eligibility – Renewal",
+      "criteria": [
+        "Must be promoted to the next academic year",
+        "Must maintain minimum 60% aggregate marks in previous year",
+        "Exams should generally be cleared in first attempt",
+        "Scholarship must have been approved in the previous year"
+      ]
+    }
+  },
+  "scholarship_amount": {
+    "title": "💰 Scholarship Amount (Indicative)",
+    "note": "Amount varies based on course & level. Paid yearly through DBT.",
+    "table": {
+      "headers": [
+        "Education Level",
+        "Approx. Amount (₹ / Year)"
+      ],
+      "rows": [
+        [
+          "Higher Secondary",
+          "₹10,000 – ₹18,000"
+        ],
+        [
+          "Under Graduate (Arts/Science/Commerce)",
+          "₹12,000 – ₹30,000"
+        ],
+        [
+          "Under Graduate (Engineering/Professional)",
+          "₹30,000 – ₹50,000"
+        ],
+        [
+          "Post Graduate",
+          "₹36,000 – ₹60,000"
+        ],
+        [
+          "M.Phil / Ph.D",
+          "₹60,000 – ₹1,00,000"
+        ]
+      ]
+    }
+  },
+  "documents_required": {
+    "title": "📄 Required Documents",
+    "list": [
+      "Marksheet of last qualifying examination (both sides)",
+      "Admission Receipt / Enrollment Proof",
+      "Family Income Certificate (Not required for Kanyashree applicants)",
+      "Domicile Proof (Aadhaar / Voter ID / Ration Card / Govt Certificate)",
+      "Bank Passbook (First Page with A/C No & IFSC)",
+      "Passport Size Photograph",
+      "Institute Verification (as required)"
+    ],
+    "special_case": "Year Gap: Declaration from Head of Institution required if qualifying year ≠ current year"
+  },
+  "application_rules": {
+    "important_rules": [
+      "Only ONE scholarship can be availed at a time",
+      "Cannot receive any other Government scholarship for the same course",
+      "One-time grants or institutional fee waivers are allowed",
+      "False information may lead to cancellation & recovery"
+    ]
+  },
+  "application_process": {
+    "title": "📝 Application Process",
+    "steps": [
+      "Visit the official scholarship portal",
+      "Register using valid personal & academic details",
+      "Fill application form carefully",
+      "Upload scanned documents",
+      "Submit and note Application ID",
+      "Institute verifies the application",
+      "Government approves & disburses amount via DBT"
+    ]
+  },
+  "renewal_process": {
+    "title": "🔄 Renewal Process",
+    "steps": [
+      "Login using previous credentials",
+      "Choose Renewal Application",
+      "Update academic details",
+      "Upload latest marksheets",
+      "Submit for verification"
+    ]
+  },
+  "disbursement": {
+    "mode": "Direct Benefit Transfer (DBT)",
+    "credited_to": "Student’s Bank Account",
+    "frequency": "Once per Academic Year"
+  },
+  "visual_data": {
+    "chart_suggestion": {
+      "type": "bar",
+      "x_axis": [
+        "HS",
+        "UG",
+        "PG",
+        "PhD"
+      ],
+      "y_axis": [
+        "18000",
+        "50000",
+        "60000",
+        "100000"
+      ],
+      "label": "Max Scholarship Amount (₹)"
+    }
+  },
+  "status_check": {
+    "methods": [
+      "Online portal login",
+      "Institute notice board",
+      "SMS / Email alerts (if enabled)"
+    ]
+  },
+  "official_notes": [
+    "Selection is merit-cum-means based",
+    "Approval depends on verification by institution & government",
+    "Incomplete applications are rejected"
+  ],
+  "keywords": [
+    "Vivekananda Scholarship",
+    "SVMCM",
+    "WB Merit Scholarship",
+    "West Bengal Scholarship",
+    "Merit Cum Means"
+  ]
+}

@@ -1,0 +1,9 @@
+{"daily_queries": 500, "response_size": "Short", "monthly_input_tokens": 750000, "monthly_output_tokens": 3000000, "cost_input_usd": 0.225, "cost_output_usd": 7.5, "cost_total_usd": 7.725}
+{"daily_queries": 500, "response_size": "Medium", "monthly_input_tokens": 750000, "monthly_output_tokens": 7500000, "cost_input_usd": 0.225, "cost_output_usd": 18.75, "cost_total_usd": 18.975}
+{"daily_queries": 500, "response_size": "Long", "monthly_input_tokens": 750000, "monthly_output_tokens": 22500000, "cost_input_usd": 0.225, "cost_output_usd": 56.25, "cost_total_usd": 56.475}
+{"daily_queries": 5000, "response_size": "Short", "monthly_input_tokens": 7500000, "monthly_output_tokens": 30000000, "cost_input_usd": 2.25, "cost_output_usd": 75.0, "cost_total_usd": 77.25}
+{"daily_queries": 5000, "response_size": "Medium", "monthly_input_tokens": 7500000, "monthly_output_tokens": 75000000, "cost_input_usd": 2.25, "cost_output_usd": 187.5, "cost_total_usd": 189.75}
+{"daily_queries": 5000, "response_size": "Long", "monthly_input_tokens": 7500000, "monthly_output_tokens": 225000000, "cost_input_usd": 2.25, "cost_output_usd": 562.5, "cost_total_usd": 564.75}
+{"daily_queries": 50000, "response_size": "Short", "monthly_input_tokens": 75000000, "monthly_output_tokens": 300000000, "cost_input_usd": 22.5, "cost_output_usd": 750.0, "cost_total_usd": 772.5}
+{"daily_queries": 50000, "response_size": "Medium", "monthly_input_tokens": 75000000, "monthly_output_tokens": 750000000, "cost_input_usd": 22.5, "cost_output_usd": 1875.0, "cost_total_usd": 1897.5}
+{"daily_queries": 50000, "response_size": "Long", "monthly_input_tokens": 75000000, "monthly_output_tokens": 2250000000, "cost_input_usd": 22.5, "cost_output_usd": 5625.0, "cost_total_usd": 5647.5}

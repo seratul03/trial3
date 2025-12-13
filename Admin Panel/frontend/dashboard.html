@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-lg">
+            <div class="p-6 border-b">
+                <h1 class="text-xl font-bold text-gray-800">Admin Panel ● UniBot</h1>
+                <p class="text-sm text-gray-600 mt-1" id="userName">Loading...</p>
+                <p class="text-xs text-gray-500" id="userRole"></p>
+            </div>
+            
+            <nav class="p-4">
+                <a href="dashboard.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Dashboard</a>
+                <a href="announcements.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Announcements</a>
+                <a href="kb.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Knowledge Base</a>
+                <a href="logs.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Query Logs</a>
+                <a href="feedback.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Feedback</a>
+                <a href="analytics.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Analytics</a>
+                <a href="settings.html" class="sidebar-link block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded mb-2">Settings</a>
+                <button onclick="logout()" class="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 rounded mt-4">Logout</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto">
+            <!-- Header -->
+            <header class="bg-white shadow-sm p-6">
+                <h2 class="text-2xl font-bold text-gray-800">Dashboard</h2>
+            </header>
+
+            <!-- Content -->
+            <div class="p-6">
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600">Queries Today</p>
+                                <p class="text-3xl font-bold text-gray-800 mt-2" id="queriesToday">0</p>
+                            </div>
+                            <div class="text-4xl">📩</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600">Pending Queries</p>
+                                <p class="text-3xl font-bold text-orange-600 mt-2" id="pendingQueries">0</p>
+                            </div>
+                            <div class="text-4xl">⏳</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600">Chatbot Accuracy</p>
+                                <p class="text-3xl font-bold text-green-600 mt-2" id="chatbotAccuracy">0%</p>
+                            </div>
+                            <div class="text-4xl">✅</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600">Total FAQs</p>
+                                <p class="text-3xl font-bold text-blue-600 mt-2" id="totalFAQs">0</p>
+                            </div>
+                            <div class="text-4xl">❓</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Tags and Recent Activity -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Top Tags -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Most Asked Topics</h3>
+                        <div id="topTags" class="space-y-3">
+                            <div class="flex justify-center items-center h-32">
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Recent Activity</h3>
+                        <div id="recentActivity" class="space-y-3">
+                            <div class="flex justify-center items-center h-32">
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script>
+        async function loadDashboard() {
+            try {
+                const response = await api.getDashboardStats();
+                
+                if (response && response.success) {
+                    const { stats, top_tags, recent_activity } = response.data;
+                    
+                    // Update stats cards
+                    document.getElementById('queriesToday').textContent = stats.queries_today;
+                    document.getElementById('pendingQueries').textContent = stats.pending_queries;
+                    document.getElementById('chatbotAccuracy').textContent = stats.chatbot_accuracy + '%';
+                    document.getElementById('totalFAQs').textContent = stats.total_faqs;
+                    
+                    // Render top tags
+                    const topTagsContainer = document.getElementById('topTags');
+                    if (top_tags && top_tags.length > 0) {
+                        topTagsContainer.innerHTML = top_tags.map(tag => `
+                            <div class="flex items-center justify-between border-b pb-2">
+                                <span class="text-gray-700">${escapeHtml(tag.name)}</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">${tag.count}</span>
+                            </div>
+                        `).join('');
+                    } else {
+                        topTagsContainer.innerHTML = '<p class="text-gray-500 text-center">No data available</p>';
+                    }
+                    
+                    // Render recent activity
+                    const activityContainer = document.getElementById('recentActivity');
+                    if (recent_activity && recent_activity.length > 0) {
+                        activityContainer.innerHTML = recent_activity.slice(0, 5).map(activity => `
+                            <div class="border-l-4 border-blue-500 pl-3 py-2">
+                                <p class="text-sm text-gray-700">${truncate(escapeHtml(activity.text), 60)}</p>
+                                <div class="flex items-center justify-between mt-1">
+                                    <span class="text-xs text-gray-500">${formatRelativeTime(activity.created_at)}</span>
+                                    ${getStatusBadge(activity.status)}
+                                </div>
+                            </div>
+                        `).join('');
+                    } else {
+                        activityContainer.innerHTML = '<p class="text-gray-500 text-center">No recent activity</p>';
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+                showToast('Error loading dashboard data', 'error');
+            }
+        }
+
+        // Load dashboard on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            if (checkAuth()) {
+                loadDashboard();
+            }
+        });
+    </script>
+</body>
+</html>

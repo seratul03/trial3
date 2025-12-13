@@ -1,0 +1,45 @@
+{
+  "course_code": "PCC-CSM504",
+  "course_name": "Compiler Design",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction & Phases of Compilation"
+    },
+    {
+      "module_number": 2,
+      "title": "Lexical Analysis"
+    },
+    {
+      "module_number": 3,
+      "title": "Syntax Analysis"
+    },
+    {
+      "module_number": 4,
+      "title": "Semantic Analysis, Symbol Table, Intermediate Code, Optimization"
+    },
+    {
+      "module_number": 5,
+      "title": "Architecture-dependent Optimization & Code Generation"
+    }
+  ],
+  "summary": "Compiler Design is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Compilers: Principles, Techniques and Tools – Aho, Lam, Sethi, Ullman",
+    "Compiler Design – O.G. Kakde",
+    "lex & yacc – John Levine, Tony Mason, Doug Brown",
+    "Engineering a Compiler – Cooper & Torczon",
+    "Compiler Construction – K.C. Louden",
+    "Compiler Design – Santanu Chattopadhyay"
+  ],
+  "course_outcomes": [
+    "State different types of translators used in programming.",
+    "Understand symbol table organization and roles of semantic analysis.",
+    "Construct intermediate representations considering type systems.",
+    "Analyze optimization techniques for generated code.",
+    "Assess compiler construction tools and develop simple compilers."
+  ],
+  "prerequisites": [
+    "Knowledge of automata theory and context free languages"
+  ]
+}

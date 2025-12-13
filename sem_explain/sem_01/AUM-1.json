@@ -1,0 +1,49 @@
+{
+  "course_code": "AUM-1",
+  "course_name": "Environmental Science",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "The Multidisciplinary Nature of Environmental Studies"
+    },
+    {
+      "module_number": 2,
+      "title": "Natural Resources"
+    },
+    {
+      "module_number": 3,
+      "title": "Ecosystems"
+    },
+    {
+      "module_number": 4,
+      "title": "Environmental Pollution"
+    },
+    {
+      "module_number": 5,
+      "title": "Social Issues and the Environment"
+    },
+    {
+      "module_number": 6,
+      "title": "Human Population and the Environment"
+    }
+  ],
+  "summary": "Environmental Science is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 6 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Basic Environmental Engineering and Elementary Biology – G. Dasmahapatra",
+    "Environmental Chemistry – A.K. De",
+    "Ecology and Environment – P. D. Sharma",
+    "Environmental Chemistry – B. K. Sharma",
+    "Environment and Ecology – De & Dey",
+    "Textbook of Environmental Studies – D. K. Asthana",
+    "Fundamentals of Environmental Studies – Basu & Xavier"
+  ],
+  "course_outcomes": [
+    "Identify natural resources and distinguish different ecosystems.",
+    "Define and visualize basic environmental concepts.",
+    "Explain and interpret food chain, food web and ecological pyramids.",
+    "Analyze environmental pollution and population-related issues.",
+    "Describe and apply acts related to environmental protection.",
+    "Predict and propose solutions for environmental pollution and population growth."
+  ],
+  "prerequisites": []
+}

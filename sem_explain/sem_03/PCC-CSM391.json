@@ -1,0 +1,33 @@
+{
+  "course_code": "PCC-CSM391",
+  "course_name": "Computer Organization & Architecture Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "HDL Programming"
+    },
+    {
+      "module_number": 2,
+      "title": "Register & Memory Design"
+    },
+    {
+      "module_number": 3,
+      "title": "CPU & ALU Design"
+    }
+  ],
+  "summary": "Computer Organization & Architecture Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 3 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Computer Organization and Design – Patterson & Hennessy",
+    "Computer Organization – Carl Hamacher",
+    "Computer Organization and Architecture – William Stallings"
+  ],
+  "course_outcomes": [
+    "Apply HDL to design combinational and sequential logic.",
+    "Implement logic gates and basic arithmetic using HDL.",
+    "Design register and memory units and perform memory operations.",
+    "Design simple ALU and CPU and interface CPU and memory."
+  ],
+  "prerequisites": [
+    "Fundamental of computers"
+  ]
+}

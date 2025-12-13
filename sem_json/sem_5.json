@@ -1,0 +1,228 @@
+{
+  "semester": "SEMESTER – V",
+  "subjects": [
+    {
+      "course_code": "PCC-CSM501",
+      "course_name": "Database Management Systems",
+      "modules": [
+        { "module_number": 1, "title": "Database System Architecture & Data Models" },
+        { "module_number": 2, "title": "Relational Query Languages & Database Design" },
+        { "module_number": 3, "title": "Storage Strategies & Transaction Processing" },
+        { "module_number": 4, "title": "Database Security" },
+        { "module_number": 5, "title": "Introduction to Data Warehousing & Data Mining" }
+      ],
+      "recommended_books": [
+        "Database System Concepts – Korth & Silberschatz",
+        "Fundamentals of Database Systems – Elmasri & Navathe",
+        "Principles of Database Systems – Ullman",
+        "Introduction to Database Management – C.J. Date"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM502",
+      "course_name": "Computer Networks",
+      "modules": [
+        { "module_number": 1, "title": "Data Communication Components & OSI Model" },
+        { "module_number": 2, "title": "Data Link Layer & MAC Layer Protocols" },
+        { "module_number": 3, "title": "Network Layer: IP, Routing Protocols" },
+        { "module_number": 4, "title": "Transport Layer: TCP, UDP & QoS" },
+        { "module_number": 5, "title": "Application Layer Protocols" }
+      ],
+      "recommended_books": [
+        "Data Communication and Networking – Forouzan",
+        "Data and Computer Communications – William Stallings",
+        "Computer Networks – Andrew S. Tanenbaum",
+        "Internetworking with TCP/IP – Douglas Comer"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM503",
+      "course_name": "Artificial Intelligence for Real World Application",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Artificial Intelligence" },
+        { "module_number": 2, "title": "Search Techniques" },
+        { "module_number": 3, "title": "Reasoning" },
+        { "module_number": 4, "title": "Machine Learning" },
+        { "module_number": 5, "title": "Deep Learning" },
+        { "module_number": 6, "title": "Time Series Analysis" },
+        { "module_number": 7, "title": "TensorFlow for ML/DL" }
+      ],
+      "recommended_books": [
+        "Artificial Intelligence and Machine Learning – Chandra S.S.V.",
+        "A First Course in Artificial Intelligence – Deepak Khemani"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM504",
+      "course_name": "Compiler Design",
+      "modules": [
+        { "module_number": 1, "title": "Introduction & Phases of Compilation" },
+        { "module_number": 2, "title": "Lexical Analysis" },
+        { "module_number": 3, "title": "Syntax Analysis" },
+        { "module_number": 4, "title": "Semantic Analysis, Symbol Table, Intermediate Code, Optimization" },
+        { "module_number": 5, "title": "Architecture-dependent Optimization & Code Generation" }
+      ],
+      "recommended_books": [
+        "Compilers: Principles, Techniques and Tools – Aho, Lam, Sethi, Ullman",
+        "Compiler Design – O.G. Kakde",
+        "lex & yacc – John Levine, Tony Mason, Doug Brown",
+        "Engineering a Compiler – Cooper & Torczon",
+        "Compiler Construction – K.C. Louden",
+        "Compiler Design – Santanu Chattopadhyay"
+      ]
+    },
+    {
+      "course_code": "PEC-CSM501A",
+      "course_name": "Image Processing (Elective-I Option A)",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Digital Image" },
+        { "module_number": 2, "title": "Spatial Domain Image Enhancement" },
+        { "module_number": 3, "title": "Frequency Domain Image Enhancement" },
+        { "module_number": 4, "title": "Image Restoration" },
+        { "module_number": 5, "title": "Segmentation and Image Compression" }
+      ],
+      "recommended_books": [
+        "Digital Image Processing – Gonzalez & Woods",
+        "Fundamentals of Digital Image Processing – Anil K. Jain"
+      ]
+    },
+    {
+      "course_code": "PEC-CSM501B",
+      "course_name": "Bioinformatics (Elective-I Option B)",
+      "modules": [
+        { "module_number": 1, "title": "Cell Biology & Biological Databases" },
+        { "module_number": 2, "title": "Sequence Similarity, Alignment & Phylogeny" },
+        { "module_number": 3, "title": "Biological Pathways" },
+        { "module_number": 4, "title": "Clustering, Classification & Rule Mining" },
+        { "module_number": 5, "title": "Protein Analysis" },
+        { "module_number": 6, "title": "Statistical Approaches" }
+      ],
+      "recommended_books": [
+        "Molecular Biology of the Cell – Alberts et al.",
+        "Bioinformatics: Sequence and Genome Analysis – David W. Mount",
+        "Bioinformatics and Functional Genomics – Pevsner",
+        "Data Mining – Han & Kamber",
+        "Introduction to Bioinformatics – Lesk",
+        "Developing Bioinformatics Computer Skills – Gibas & Jambeck"
+      ]
+    },
+    {
+      "course_code": "PEC-CSM501C",
+      "course_name": "Cloud Computing (Elective-I Option C)",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Cloud Computing" },
+        { "module_number": 2, "title": "Cloud Architecture" },
+        { "module_number": 3, "title": "Cloud Management & Virtualization" },
+        { "module_number": 4, "title": "Cloud Security" },
+        { "module_number": 5, "title": "Market-Based Management & Case Studies" }
+      ],
+      "recommended_books": [
+        "Mastering Cloud Computing – Buyya & Selvi",
+        "Cloud Computing – Kumar Saurabh",
+        "Cloud Computing: A Practical Approach – Velte",
+        "Architecting the Cloud – Michael J. Kavis"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM591",
+      "course_name": "Database Management Systems Lab",
+      "modules": [
+        { "module_number": 1, "title": "ER to Tables" },
+        { "module_number": 2, "title": "DB & Table Creation" },
+        { "module_number": 3, "title": "Table & Record Handling" },
+        { "module_number": 4, "title": "SELECT, INSERT, UPDATE, DELETE" },
+        { "module_number": 5, "title": "Retrieving Data & Filtering" },
+        { "module_number": 6, "title": "Aggregate Functions & JOINS" },
+        { "module_number": 7, "title": "Correlated Queries" },
+        { "module_number": 8, "title": "Views" },
+        { "module_number": 9, "title": "PL/SQL: Procedures, Functions, Cursors, Triggers" },
+        { "module_number": 10, "title": "MongoDB & NoSQL" }
+      ],
+      "recommended_books": [
+        "SQL, PL/SQL – Ivan Bayross"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM592",
+      "course_name": "Computer Networks Lab",
+      "modules": [
+        { "module_number": 1, "title": "Network Devices & Commands" },
+        { "module_number": 2, "title": "Cisco Packet Tracer: LAN/MAN/WAN" },
+        { "module_number": 3, "title": "Routing Protocols" },
+        { "module_number": 4, "title": "NAT, DHCP, ACL, Telnet" },
+        { "module_number": 5, "title": "Socket Programming (TCP/UDP)" }
+      ],
+      "recommended_books": [
+        "Computer Networks – Tanenbaum",
+        "Internetworking with TCP/IP – Douglas Comer"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM593",
+      "course_name": "Artificial Intelligence for Real World Application Lab",
+      "modules": [
+        { "module_number": 1, "title": "AI Tools" },
+        { "module_number": 2, "title": "Search Techniques" },
+        { "module_number": 3, "title": "Rule-Based & Probabilistic Reasoning" },
+        { "module_number": 4, "title": "Machine Learning Models" },
+        { "module_number": 5, "title": "Deep Learning Models" },
+        { "module_number": 6, "title": "Time Series Analysis" },
+        { "module_number": 7, "title": "TensorFlow Implementation" }
+      ],
+      "recommended_books": [
+        "Artificial Intelligence and Machine Learning – Chandra S.S.V.",
+        "A First Course in Artificial Intelligence – Deepak Khemani"
+      ]
+    },
+    {
+      "course_code": "PEC-CSM591A",
+      "course_name": "Image Processing Lab",
+      "modules": [
+        { "module_number": 1, "title": "MATLAB & Image Basics" },
+        { "module_number": 2, "title": "Contrast Stretching, Histogram Mapping" },
+        { "module_number": 3, "title": "Bit Planes & Fourier Transform" },
+        { "module_number": 4, "title": "Image Restoration" },
+        { "module_number": 5, "title": "Segmentation & Compression" }
+      ],
+      "recommended_books": [
+        "Digital Image Processing – Gonzalez & Woods",
+        "Digital Image Processing – William K. Pratt"
+      ]
+    },
+    {
+      "course_code": "PEC-CSM591B",
+      "course_name": "Bioinformatics Lab",
+      "modules": [
+        { "module_number": 1, "title": "Structural Biology & Sequence Databases" },
+        { "module_number": 2, "title": "Protein Family Analysis" },
+        { "module_number": 3, "title": "Needleman-Wunsch Implementation" },
+        { "module_number": 4, "title": "BLAST, ClustalW" },
+        { "module_number": 5, "title": "MSA & Motif Finding" },
+        { "module_number": 6, "title": "Phylogenetic Tree Construction" }
+      ],
+      "recommended_books": [
+        "Molecular Biology of the Cell – Alberts et al.",
+        "Bioinformatics: Sequence and Genome Analysis – Mount",
+        "Bioinformatics and Functional Genomics – Pevsner",
+        "Data Mining – Han & Kamber",
+        "Introduction to Bioinformatics – Lesk",
+        "Developing Bioinformatics Computer Skills – Gibas"
+      ]
+    },
+    {
+      "course_code": "PEC-CSM591C",
+      "course_name": "Cloud Computing Lab",
+      "modules": [
+        { "module_number": 1, "title": "VirtualBox/VMware Installation & Programs" },
+        { "module_number": 2, "title": "Google App Engine Apps" },
+        { "module_number": 3, "title": "CloudSim Scheduling Simulation" },
+        { "module_number": 4, "title": "VM-to-VM File Transfer & TryStack" },
+        { "module_number": 5, "title": "Hadoop Single Node Setup" }
+      ],
+      "recommended_books": [
+        "Cloud Computing: Concepts, Technology & Architecture – Thomas Erl",
+        "Architecting the Cloud – Michael J. Kavis"
+      ]
+    }
+  ]
+}

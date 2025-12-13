@@ -1,0 +1,49 @@
+{
+  "course_code": "PCC-CSM401",
+  "course_name": "Operating Systems",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Operating Systems"
+    },
+    {
+      "module_number": 2,
+      "title": "Processes & Scheduling"
+    },
+    {
+      "module_number": 3,
+      "title": "Inter-process Communication & Synchronization"
+    },
+    {
+      "module_number": 4,
+      "title": "Deadlocks"
+    },
+    {
+      "module_number": 5,
+      "title": "Memory Management & Virtual Memory"
+    },
+    {
+      "module_number": 6,
+      "title": "I/O System, Device Management, File System, Disk Scheduling"
+    }
+  ],
+  "summary": "Operating Systems is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 6 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Operating System Concepts Essentials – Silberschatz, Galvin, Gagne",
+    "Operating Systems: Internals and Design Principles – William Stallings",
+    "Operating Systems: A Design-Oriented Approach – Charles Crowley",
+    "Operating Systems: A Modern Perspective – Gary J. Nutt",
+    "Design of the Unix Operating System – Maurice Bach",
+    "Understanding the Linux Kernel – Bovet & Cesati"
+  ],
+  "course_outcomes": [
+    "Define role of Operating System and explain OS design and control units.",
+    "Analyze CPU scheduling, synchronization and deadlock handling.",
+    "Explain paging, segmentation and virtual memory concepts.",
+    "Explain protection and security and compare UNIX and Windows OS.",
+    "Understand I/O systems, device management and disk scheduling algorithms."
+  ],
+  "prerequisites": [
+    "Basic programming logic, Data Structure & Algorithm concepts, Basic mathematics and digital electronics"
+  ]
+}

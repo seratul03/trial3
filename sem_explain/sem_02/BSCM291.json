@@ -1,0 +1,63 @@
+{
+  "course_code": "BSCM291",
+  "course_name": "Engineering Chemistry Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Conductometric Titration"
+    },
+    {
+      "module_number": 2,
+      "title": "pH Metric Titration"
+    },
+    {
+      "module_number": 3,
+      "title": "Dissolved Oxygen Determination"
+    },
+    {
+      "module_number": 4,
+      "title": "Chloride Ion by Argentometric Method"
+    },
+    {
+      "module_number": 5,
+      "title": "Surface Tension and Viscosity"
+    },
+    {
+      "module_number": 6,
+      "title": "Thin Layer Chromatography"
+    },
+    {
+      "module_number": 7,
+      "title": "Rate Constant Determination"
+    },
+    {
+      "module_number": 8,
+      "title": "Cell Constant Determination"
+    },
+    {
+      "module_number": 9,
+      "title": "Saponification/Acid Value"
+    },
+    {
+      "module_number": 10,
+      "title": "Chemical Analysis of a Salt"
+    }
+  ],
+  "summary": "Engineering Chemistry Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 10 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Vogel's Qualitative Inorganic Analysis – G. Svehla",
+    "Vogel’s Quantitative Chemical Analysis – Mendham et al.",
+    "Practical Physical Chemistry – Palit & De",
+    "B.Sc. Honours Practical Chemistry – S. Dutta"
+  ],
+  "course_outcomes": [
+    "Examine water testing parameters and predict water quality.",
+    "Explain and evaluate liquid properties like viscosity and surface tension.",
+    "Describe conductometric and pH metric titration and perform quantitative estimations.",
+    "Analyze elemental composition of salts and evaluate real-world implications.",
+    "Interpret TLC principles and apply separation techniques for amino acids."
+  ],
+  "prerequisites": [
+    "12th level Chemistry"
+  ]
+}

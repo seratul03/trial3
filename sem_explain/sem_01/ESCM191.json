@@ -1,0 +1,77 @@
+{
+  "course_code": "ESCM191",
+  "course_name": "Basic Electrical and Electronics Engineering Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "pn junction diode IV characteristics"
+    },
+    {
+      "module_number": 2,
+      "title": "Zener diode characteristics"
+    },
+    {
+      "module_number": 3,
+      "title": "Zener diode voltage regulation"
+    },
+    {
+      "module_number": 4,
+      "title": "Half wave rectifier"
+    },
+    {
+      "module_number": 5,
+      "title": "Bridge rectifier"
+    },
+    {
+      "module_number": 6,
+      "title": "Transistor CE characteristics"
+    },
+    {
+      "module_number": 7,
+      "title": "Measuring instruments"
+    },
+    {
+      "module_number": 8,
+      "title": "Calibration of ammeter and wattmeter"
+    },
+    {
+      "module_number": 9,
+      "title": "Network theorem verification"
+    },
+    {
+      "module_number": 10,
+      "title": "RL-C steady state response"
+    },
+    {
+      "module_number": 11,
+      "title": "Transformer demonstration"
+    },
+    {
+      "module_number": 12,
+      "title": "OC & SC test of transformer"
+    },
+    {
+      "module_number": 13,
+      "title": "Three phase power measurement"
+    },
+    {
+      "module_number": 14,
+      "title": "DC motor control"
+    }
+  ],
+  "summary": "Basic Electrical and Electronics Engineering Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 14 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Electronics Fundamentals and Applications – Chattopadhyay & Rakshit",
+    "Electrical Technology Vol-II – B. L. Theraja"
+  ],
+  "course_outcomes": [
+    "Explain and apply the working and characteristics of electrical machines and rectifiers.",
+    "Analyze and verify characteristics of discrete electronic components such as diodes and BJT.",
+    "Design and demonstrate Zener voltage regulator, rectifiers and transformer-based circuits.",
+    "Verify and analyze basic circuit theorems.",
+    "Measure and calculate power in AC circuits."
+  ],
+  "prerequisites": [
+    "Knowledge of drawing of graphs with proper choice of unit"
+  ]
+}

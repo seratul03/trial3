@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Notice Page — Fixed Filters</title>
+<style>
+  :root{
+    --accent-1:#9ad6ff;
+    --accent-2:#2f7dd9;
+    --card-radius:18px;
+    --font: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    min-height:100vh;
+    font-family:var(--font);
+    background:
+      radial-gradient(400px 200px at 70% 50%, rgba(255,255,255,0.9), transparent),
+      linear-gradient(135deg, var(--accent-1), #d4ecff, #ffffff, var(--accent-2));
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#0b2336;
+  }
+
+  .top-bar{
+    width:100%;
+    padding:28px 24px 6px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .title{
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:0.2px;
+  }
+
+  .controls{
+    width:92%;
+    max-width:980px;
+    margin-top:18px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+  }
+
+  .search-box{
+    flex:1;
+    background:#fff;
+    padding:12px 16px;
+    border-radius:999px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    border:1px solid rgba(0,0,0,0.12);
+    box-shadow:0 4px 18px rgba(47,125,217,0.06);
+  }
+  .search-box input{
+    border:0;
+    outline:0;
+    font-size:16px;
+    background:transparent;
+    width:100%;
+  }
+
+  .filter-wrap{
+    position:relative;
+  }
+  .filter-btn{
+    background:#fff;
+    border:1px solid rgba(0,0,0,0.12);
+    padding:10px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  }
+
+  /* filter menu */
+  .filter-menu{
+    position:absolute;
+    right:0;
+    top:48px;
+    width:320px;
+    background:#fff;
+    border-radius:12px;
+    padding:10px;
+    box-shadow:0 12px 34px rgba(0,0,0,0.12);
+    border:1px solid rgba(0,0,0,0.06);
+    z-index:60;
+    display:none;
+  }
+  .filter-section{
+    padding:8px 6px;
+    border-radius:8px;
+    margin-bottom:8px;
+  }
+  .filter-label{
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:8px;
+  }
+  .filter-item{
+    padding:8px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .filter-item:hover{ background:#f6f9ff; }
+  .filter-list{ display:flex; flex-direction:column; gap:6px; }
+
+  .date-controls{ display:flex; flex-direction:column; gap:8px; margin-top:6px; }
+  .date-row{ display:flex; gap:8px; align-items:center; }
+  .date-row input[type="date"],
+  .date-row input[type="month"],
+  .date-row input[type="number"]{
+    padding:8px 10px;
+    border-radius:8px;
+    border:1px solid rgba(0,0,0,0.12);
+    font-size:14px;
+    background:#fff;
+  }
+  .apply-row{
+    margin-top:8px;
+    display:flex;
+    gap:8px;
+    justify-content:flex-end;
+  }
+  .btn{
+    padding:8px 10px;
+    border-radius:8px;
+    border:0;
+    cursor:pointer;
+    font-weight:600;
+    font-size:14px;
+  }
+  .btn-ghost{ background:transparent; color:#0b2336; border:1px solid rgba(0,0,0,0.07); }
+  .btn-primary{ background:var(--accent-2); color:white; }
+
+  /* notices */
+  .notice-list{
+    width:92%;
+    max-width:980px;
+    margin-top:28px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    padding-bottom:60px;
+  }
+  .notice-card{
+    background:#fff;
+    border-radius:var(--card-radius);
+    padding:14px 18px;
+    box-shadow:0 10px 28px rgba(15,70,120,0.06);
+    border:1px solid rgba(0,0,0,0.04);
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .notice-card:hover{ transform:translateY(-4px); box-shadow:0 18px 40px rgba(15,70,120,0.09); }
+  .notice-title{ font-size:16px; font-weight:700; color:#062032; }
+  .notice-sub{ font-size:14px; color:#455a69; margin-top:4px; }
+  .notice-meta{ font-size:12px; color:#7b8b98; margin-top:8px; }
+
+  .empty{ padding:18px; text-align:center; color:#062032; background:rgba(255,255,255,0.6); border-radius:12px; }
+
+  @media (max-width:720px){
+    .controls{ flex-direction:column; align-items:stretch; gap:10px; }
+    .filter-menu{ left:0; right:auto; width:100%; top:54px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="title" role="heading" aria-level="1">Notices</div>
+  </div>
+
+  <div class="controls" aria-label="Search and filter">
+    <div class="search-box" role="search" aria-label="Search notices">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="opacity:0.85">
+        <circle cx="11" cy="11" r="7" stroke="#163241" stroke-width="1.6"></circle>
+        <path d="M21 21l-4.5-4.5" stroke="#163241" stroke-width="1.6" stroke-linecap="round"></path>
+      </svg>
+      <input id="searchInput" type="search" placeholder="Search notices..." aria-label="Search notices">
+    </div>
+
+    <div class="filter-wrap">
+      <button id="filterBtn" class="filter-btn" aria-haspopup="true" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="opacity:0.9">
+          <path d="M3 5h18M7 12h10M10 19h4" stroke="#163241" stroke-width="1.6" stroke-linecap="round"></path>
+        </svg>
+        <span style="font-weight:600">Filter</span>
+      </button>
+
+      <div id="filterMenu" class="filter-menu" role="dialog" aria-label="Filter menu">
+        <!-- Quick filter list -->
+        <div class="filter-section">
+          <div class="filter-label">Quick Filters</div>
+          <div class="filter-list" id="quickFilterList">
+            <div class="filter-item" data-filter="newest">Newest First</div>
+            <div class="filter-item" data-filter="dateDesc">Date: New → Old</div>
+            <div class="filter-item" data-filter="dateAsc">Date: Old → New</div>
+            <div class="filter-item" data-filter="recent">Last 7 Days</div>
+          </div>
+        </div>
+
+        <!-- Date search controls -->
+        <div class="filter-section" style="background:#fbfdff">
+          <div class="filter-label">Search by Date</div>
+
+          <div style="display:flex; gap:8px; align-items:center;">
+            <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
+              <input type="radio" name="dateMode" value="specific" checked>
+              <span style="font-size:13px">Specific date</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
+              <input type="radio" name="dateMode" value="month">
+              <span style="font-size:13px">Month</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
+              <input type="radio" name="dateMode" value="year">
+              <span style="font-size:13px">Year</span>
+            </label>
+          </div>
+
+          <div class="date-controls" id="dateControls">
+            <div class="date-row" data-mode="specific">
+              <input id="dateInput" type="date" aria-label="Choose date">
+            </div>
+            <div class="date-row" data-mode="month" style="display:none">
+              <input id="monthInput" type="month" aria-label="Choose month">
+            </div>
+            <div class="date-row" data-mode="year" style="display:none">
+              <input id="yearInput" type="number" min="1990" max="2100" placeholder="e.g. 2025" aria-label="Enter year">
+            </div>
+
+            <div class="apply-row">
+              <button id="clearDate" class="btn btn-ghost">Clear</button>
+              <button id="applyDate" class="btn btn-primary">Apply</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <main class="notice-list" id="noticeList" aria-live="polite" aria-label="Notices list">
+    <!-- populated by JS -->
+  </main>
+
+<script>
+  // Use the uploaded file path as the PDF placeholder
+  const PDF_PLACEHOLDER = "/mnt/data/Notice.png";
+
+  // demo data - replace with backend data when integrating
+  const initialNotices = [
+    { id: 1, title: "Exam Schedule Released", sub1: "Semester 4 - CSE", sub2: "Hall allotment & timings", date: "2025-11-18T10:00:00Z", pdf: PDF_PLACEHOLDER },
+    { id: 2, title: "Library Fine Waiver", sub1: "Only for this month", sub2: "Apply at the desk", date: "2025-11-10T08:00:00Z", pdf: PDF_PLACEHOLDER },
+    { id: 3, title: "Guest Lecture on AI", sub1: "Room 201, 2 PM", sub2: "All are welcome", date: "2025-10-31T12:00:00Z", pdf: PDF_PLACEHOLDER },
+    { id: 4, title: "Maintenance Notice", sub1: "Water shutdown", sub2: "2:00 AM - 5:00 AM", date: "2025-10-15T02:00:00Z", pdf: PDF_PLACEHOLDER },
+    { id: 5, title: "New Course: ML Basics", sub1: "Enroll by Nov 30", sub2: "Limited seats", date: "2025-09-25T09:00:00Z", pdf: PDF_PLACEHOLDER }
+  ];
+
+  // state
+  let notices = initialNotices.slice();
+  let currentFilter = "newest";
+  let dateFilter = null;
+
+  // elements
+  const noticeListEl = document.getElementById("noticeList");
+  const searchInput = document.getElementById("searchInput");
+  const filterBtn = document.getElementById("filterBtn");
+  const filterMenu = document.getElementById("filterMenu");
+  const dateControls = document.getElementById("dateControls");
+  const dateInput = document.getElementById("dateInput");
+  const monthInput = document.getElementById("monthInput");
+  const yearInput = document.getElementById("yearInput");
+  const applyDateBtn = document.getElementById("applyDate");
+  const clearDateBtn = document.getElementById("clearDate");
+  const quickFilterList = document.getElementById("quickFilterList");
+
+  // --- Menu open/close (robust) ---
+  filterBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  function toggleMenu(open) {
+    const isOpen = getComputedStyle(filterMenu).display === "block";
+    const shouldOpen = typeof open === "boolean" ? open : !isOpen;
+    filterMenu.style.display = shouldOpen ? "block" : "none";
+    filterBtn.setAttribute("aria-expanded", String(shouldOpen));
+  }
+
+  // Click outside closes menu
+  document.addEventListener("click", (e) => {
+    if (!filterMenu.contains(e.target) && !filterBtn.contains(e.target)) {
+      toggleMenu(false);
+    }
+  });
+
+  // Prevent clicks inside menu from bubbling up
+  filterMenu.addEventListener("click", (e) => { e.stopPropagation(); });
+
+  // --- Quick filters: explicit listeners to avoid delegation confusion ---
+  Array.from(quickFilterList.querySelectorAll('.filter-item')).forEach(item => {
+    item.addEventListener('click', (e) => {
+      const f = item.dataset.filter;
+      if (!f) return;
+      currentFilter = f;
+      // Optional: clear dateFilter on quick filter selection so results reflect only quick filter
+      dateFilter = null;
+      // close menu so user sees updated results (you can change to keep it open)
+      toggleMenu(false);
+      render();
+    });
+  });
+
+  // Date mode toggles (show/hide inputs)
+  const dateRadios = Array.from(document.querySelectorAll('input[name="dateMode"]'));
+  function showDateMode(mode){
+    Array.from(dateControls.querySelectorAll('[data-mode]')).forEach(el => {
+      el.style.display = el.dataset.mode === mode ? "flex" : "none";
+    });
+  }
+  dateRadios.forEach(r => r.addEventListener("change", () => showDateMode(r.value)));
+
+  // Apply date filter
+  applyDateBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const mode = document.querySelector('input[name="dateMode"]:checked').value;
+    if (mode === "specific") {
+      if (!dateInput.value) { alert("Please pick a date"); return; }
+      dateFilter = { mode:"specific", value: new Date(dateInput.value) };
+    } else if (mode === "month") {
+      if (!monthInput.value) { alert("Please pick a month"); return; }
+      const [y, m] = monthInput.value.split("-").map(Number);
+      dateFilter = { mode:"month", value:{ year:y, month:m } };
+    } else if (mode === "year") {
+      const y = parseInt(yearInput.value, 10);
+      if (!y || isNaN(y)) { alert("Please enter a valid year"); return; }
+      dateFilter = { mode:"year", value: y };
+    }
+    // When applying a date filter we want results ordered newest-first (or keep previous quick filter if you prefer)
+    currentFilter = "newest";
+    toggleMenu(false);
+    render();
+  });
+
+  // Clear date filter
+  clearDateBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dateFilter = null;
+    dateInput.value = "";
+    monthInput.value = "";
+    yearInput.value = "";
+    // keep menu open so user can continue selecting other options
+    render();
+  });
+
+  // Search input
+  searchInput.addEventListener("input", debounce(() => render(), 160));
+
+  // Rendering logic
+  function render(){
+    const q = (searchInput.value || "").trim().toLowerCase();
+
+    let result = notices.filter(n => {
+      if (!q) return true;
+      return n.title.toLowerCase().includes(q) || n.sub1.toLowerCase().includes(q) || n.sub2.toLowerCase().includes(q);
+    });
+
+    // apply dateFilter if present
+    if (dateFilter) {
+      if (dateFilter.mode === "specific") {
+        const targetDay = startOfDay(dateFilter.value).getTime();
+        result = result.filter(n => startOfDay(new Date(n.date)).getTime() === targetDay);
+      } else if (dateFilter.mode === "month") {
+        const {year, month} = dateFilter.value; // month: 1-12
+        result = result.filter(n => {
+          const d = new Date(n.date);
+          return d.getFullYear() === year && (d.getMonth()+1) === month;
+        });
+      } else if (dateFilter.mode === "year") {
+        const y = dateFilter.value;
+        result = result.filter(n => new Date(n.date).getFullYear() === y);
+      }
+    }
+
+    // apply ordering
+    if (currentFilter === "dateAsc") result.sort((a,b)=> new Date(a.date) - new Date(b.date));
+    else result.sort((a,b)=> new Date(b.date) - new Date(a.date)); // newest/default
+
+    // apply 'recent' trim after sorting
+    if (currentFilter === "recent") {
+      const cutoff = Date.now() - 7*24*60*60*1000;
+      result = result.filter(n => new Date(n.date).getTime() >= cutoff);
+    }
+
+    // render list (always replace content so further clicks still work)
+    noticeListEl.innerHTML = "";
+    if (result.length === 0) {
+      // show an unobtrusive empty state that does not block UI
+      const empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.innerHTML = `
+        <div style="font-weight:700;margin-bottom:6px">No notices match your search.</div>
+        <div style="font-size:13px;color:#274b66">Try clearing the date filter or choosing a different month/year.</div>
+      `;
+      noticeListEl.appendChild(empty);
+      return;
+    }
+
+    result.forEach(n => {
+      const card = document.createElement("div");
+      card.className = "notice-card";
+      card.tabIndex = 0;
+      card.setAttribute("role","button");
+      card.setAttribute("aria-label", `${n.title} - ${n.sub1} - ${n.sub2}`);
+      card.innerHTML = `
+        <div class="notice-title">${escapeHtml(n.title)}</div>
+        <div class="notice-sub">${escapeHtml(n.sub1)}</div>
+        <div class="notice-sub">${escapeHtml(n.sub2)}</div>
+        <div class="notice-meta">${new Date(n.date).toLocaleString()}</div>
+      `;
+      card.addEventListener("click", () => openPdf(n));
+      card.addEventListener("keydown", (e) => { if (e.key === "Enter") openPdf(n); });
+      noticeListEl.appendChild(card);
+    });
+  }
+
+  function openPdf(notice){
+    const url = notice.pdf || PDF_PLACEHOLDER;
+    window.open(url, "_blank");
+  }
+
+  // utilities
+  function startOfDay(d){
+    const x = new Date(d);
+    x.setHours(0,0,0,0);
+    return x;
+  }
+  function escapeHtml(s){ return (""+s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+  function debounce(fn, wait=200){
+    let t;
+    return (...args)=>{ clearTimeout(t); t = setTimeout(()=>fn(...args), wait); };
+  }
+
+  // initial UI setup
+  showDateMode('specific'); // show date input by default
+  render();
+</script>
+</body>
+</html>

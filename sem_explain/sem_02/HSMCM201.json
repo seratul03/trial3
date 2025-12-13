@@ -1,0 +1,41 @@
+{
+  "course_code": "HSMCM201",
+  "course_name": "Effective Communication Skills",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Effective Verbal Communication"
+    },
+    {
+      "module_number": 2,
+      "title": "Effective Reading Strategies"
+    },
+    {
+      "module_number": 3,
+      "title": "Writing Skills"
+    },
+    {
+      "module_number": 4,
+      "title": "Communication Skills for Employability"
+    }
+  ],
+  "summary": "Effective Communication Skills is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 4 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Rizvi Ashraf, Professional Communication, Tata McGraw Hill Education",
+    "David F. Beer and David McMurrey, Guide to Writing as an Engineer, John Willey",
+    "Agna Fernandez, Generic Skills for Employability, Cambridge",
+    "Raman Sharma, Technical Communications, Oxford Publication",
+    "Roald Dahl ‘Lamb to the Slaughter’ and Saki ‘The Open Window’",
+    "Dale Jungk, Applied Writing for Technicians, McGraw Hill",
+    "Sharma, R. and Mohan, K. Business Correspondence and Report Writing, TMH"
+  ],
+  "course_outcomes": [
+    "Express ideas with clarity and precision, and articulate themselves with confidence.",
+    "Apply effective reading strategies, analyse content and develop comprehension skills through rapid reading techniques.",
+    "Develop writing skills, identify errors, editorialize and write various technical and non-technical content using proper style and language.",
+    "Apply self-assessment techniques to identify areas for personal growth in communication skills and use goal-setting strategies to enhance productivity."
+  ],
+  "prerequisites": [
+    "Basic Knowledge of the English Language"
+  ]
+}
