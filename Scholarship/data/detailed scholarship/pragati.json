@@ -1,0 +1,95 @@
+{
+  "scholarship_id": "pragati_aicte",
+  "scholarship_name": "Pragati Scholarship",
+  "official_name": "AICTE Pragati Scholarship for Girl Students",
+  "scholarship_type": "Central Government Scholarship (AICTE)",
+  "target_group": "Female Students in Technical Education",
+  "academic_level": [
+    "B.Tech",
+    "Diploma in Engineering"
+  ],
+  "introduction": "Pragati Scholarship is an initiative by the All India Council for Technical Education (AICTE) to empower girl students pursuing technical education. The scheme aims to encourage more female participation in engineering and technical fields by providing substantial financial support.",
+  "eligibility_criteria": {
+    "basic_requirements": [
+      "Applicant must be a female student",
+      "Must be enrolled in first or second year of AICTE-approved technical degree/diploma program",
+      "Must be studying in a recognized institution",
+      "Only two girl children per family are eligible"
+    ],
+    "academic_requirements": {
+      "description": "Must have secured admission through central/state level entrance examination or merit-based selection"
+    },
+    "income_criteria": {
+      "maximum_family_income": "₹8,00,000 per year",
+      "issued_by": "Competent authority as per state government norms"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "₹50,000 per annum per student",
+    "description": "Financial assistance to cover tuition fees and other academic expenses.",
+    "components": [
+      "Tuition Fee Reimbursement",
+      "College Fees",
+      "Other Academic Expenses"
+    ]
+  },
+  "documents_required": [
+    "Class 10th and 12th Marksheets",
+    "Current Year Admission Proof",
+    "Income Certificate (≤ ₹8 Lakh)",
+    "Bank Passbook/Cancelled Cheque",
+    "Aadhaar Card",
+    "Passport-size Photograph",
+    "Institution Verification Certificate",
+    "Bonafide Student Certificate"
+  ],
+  "application_process": {
+    "mode": "Online Application through AICTE Portal",
+    "portal": "National Scholarship Portal (NSP)",
+    "steps": [
+      "Visit National Scholarship Portal",
+      "Register as a new applicant",
+      "Login with credentials",
+      "Fill Pragati Scholarship application form",
+      "Upload all required documents",
+      "Submit application",
+      "Get verification from institute",
+      "Await approval from AICTE",
+      "Scholarship credited to bank account"
+    ]
+  },
+  "selection_process": [
+    "Merit-based selection",
+    "Based on qualifying examination marks",
+    "AICTE approves final beneficiary list",
+    "Direct Benefit Transfer to student's account"
+  ],
+  "important_notes": [
+    "Only for girl students - gender-specific scholarship",
+    "Maximum two girls per family can avail this scholarship",
+    "AICTE-approved institutions only",
+    "First and second year students are eligible",
+    "Cannot be combined with any other scholarship providing full fee waiver",
+    "Annual renewal possible for second year students"
+  ],
+  "faq": [
+    {
+      "question": "Can third-year students apply?",
+      "answer": "No, only first and second year students are eligible for Pragati Scholarship."
+    },
+    {
+      "question": "Is this scholarship renewable?",
+      "answer": "Yes, first year students can renew for second year if they maintain good academic standing."
+    },
+    {
+      "question": "Can I avail Pragati along with other scholarships?",
+      "answer": "You cannot combine it with another scholarship that provides full fee waiver, but partial scholarships may be acceptable."
+    }
+  ],
+  "official_authority": {
+    "department": "All India Council for Technical Education (AICTE)",
+    "ministry": "Ministry of Education, Government of India"
+  },
+  "last_updated": "2025",
+  "data_source": "Official AICTE Scholarship Guidelines"
+}

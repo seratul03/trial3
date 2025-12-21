@@ -1,0 +1,17 @@
+{
+  "scholarship_id": "tripura_st_pms",
+  "scholarship_name": "Post Matric Scholarship for ST Students (Tripura)",
+  "scholarship_type": "State Government Scholarship",
+  "offered_by": "Tribal Welfare Department, Govt of Tripura",
+  "eligibility_criteria": {
+    "domicile": "Permanent resident of Tripura",
+    "category": "Scheduled Tribe (ST)",
+    "income_criteria": { "maximum_family_income": "₹2,50,000 per annum" }
+  },
+  "scholarship_benefits": {
+    "amount": "Variable (Maintenance + Fees)",
+    "description": "Includes maintenance allowance for hostellers and day scholars."
+  },
+  "documents_required": ["ST Certificate", "PRC (Permanent Resident Certificate)", "Income Certificate", "Marksheets"],
+  "last_updated": "2025"
+}

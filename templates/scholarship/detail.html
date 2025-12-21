@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholarship Information Portal</title>
+    <style>
+      /* --- CSS VARIABLES & RESET --- */
+      :root {
+        --primary: #1e3a8a; /* Deep Blue */
+        --primary-light: #3b82f6; /* Bright Blue */
+        --accent: #f59e0b; /* Amber */
+        --bg-sidebar: #f1f5f9;
+        --bg-main: #ffffff;
+        --text-heading: #0f172a;
+        --text-body: #334155;
+        --border: #e2e8f0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        color: var(--text-body);
+        background-color: #eef2f6;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin: 20px 0 0 40px;
+        padding: 10px 20px;
+        background-color: var(--primary);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: background-color 0.2s ease;
+      }
+
+      .back-button:hover {
+        background-color: var(--primary-light);
+      }
+
+      /* --- MAIN CONTENT AREA --- */
+      .main-content {
+        padding: 20px 40px 40px 40px;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        background: var(--bg-main);
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        min-height: 90vh;
+      }
+
+      /* Typography */
+      h1 {
+        font-size: 2.2rem;
+        color: var(--text-heading);
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+
+      .header-meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 14px;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        background: #f1f5f9;
+        color: #475569;
+        border: 1px solid #e2e8f0;
+      }
+
+      .badge-primary {
+        background: #dbeafe;
+        color: #1e40af;
+        border-color: #bfdbfe;
+      }
+
+      .section {
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #f1f5f9;
+      }
+
+      .section:last-child {
+        border-bottom: none;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        color: var(--primary);
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+      }
+
+      h2::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 24px;
+        background: var(--accent);
+        margin-right: 12px;
+        border-radius: 2px;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #1e293b;
+      }
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 15px;
+        color: #475569;
+      }
+
+      p {
+        line-height: 1.75;
+        margin-bottom: 12px;
+        color: #334155;
+        font-size: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        margin-bottom: 20px;
+      }
+
+      li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 8px;
+        line-height: 1.6;
+      }
+
+      li::before {
+        content: "•";
+        color: var(--primary-light);
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        font-size: 1.2em;
+        line-height: 1.4;
+      }
+
+      /* --- TABLES --- */
+      .table-wrapper {
+        overflow-x: auto;
+        margin: 20px 0;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+      }
+
+      th,
+      td {
+        padding: 14px 18px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
+
+      th {
+        background-color: #f8fafc;
+        font-weight: 600;
+        color: var(--text-heading);
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover td {
+        background-color: #fcfcfc;
+      }
+
+      /* --- EMPTY STATE --- */
+      .empty-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: #94a3b8;
+        text-align: center;
+      }
+
+      .empty-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        opacity: 0.5;
+      }
+
+      /* --- RESPONSIVE --- */
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column;
+          overflow: auto;
+        }
+        .sidebar {
+          width: 100%;
+          height: auto;
+          max-height: 300px;
+        }
+        .main-content {
+          padding: 20px;
+        }
+        .container {
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-content">
+      <a href="/" class="back-button">← Back to Home</a>
+      <div class="container" id="detailView">
+        <div class="empty-state">
+          <div class="empty-icon">🎓</div>
+          <h2>Welcome to the Portal</h2>
+          <p>Select a scholarship from the sidebar to view full details.</p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // 1. RICH DATASET (Populated from your uploaded JSONs)
+      const scholarships = [
+        {
+          id: "svmcm",
+          name: "Swami Vivekananda Merit-cum-Means Scholarship",
+          category: "Government (State)",
+          provider: "Government of West Bengal",
+          intro:
+            "The Swami Vivekananda Merit-cum-Means Scholarship aims to support meritorious but economically weaker students of West Bengal so they can continue higher education without financial burden.",
+          description: {
+            Objective:
+              "To support meritorious students from economically weaker sections. It covers HS, UG, PG, M.Phil, and Ph.D levels. The scheme acts as a safety net to prevent dropouts due to financial constraints.",
+            "Applicable Levels": [
+              "Higher Secondary (HS)",
+              "Under Graduate (UG)",
+              "Post Graduate (PG)",
+              "Diploma (AICTE Approved)",
+              "Lateral Entry Engineering",
+              "M.Phil & Ph.D",
+            ],
+          },
+          eligibility: {
+            "Fresh Application": [
+              "Academic: Minimum 60% marks in the last qualifying examination (WBCHSE / Madrasa / AICTE).",
+              "Family Income: Less than ₹2,50,000 per year.",
+              "Domicile: Applicant must be a resident of West Bengal.",
+              "Year Gap: Allowed with declaration from Head of Institution.",
+            ],
+            "Renewal Application": [
+              "Must be promoted to the next academic year.",
+              "Must maintain minimum 60% aggregate marks in the previous year.",
+              "Exams should generally be cleared in the first attempt.",
+            ],
+          },
+          benefits: {
+            headers: ["Education Level", "Approx. Amount (Per Year)"],
+            rows: [
+              ["Higher Secondary", "₹10,000 – ₹18,000"],
+              ["UG (Arts/Science/Commerce)", "₹12,000 – ₹30,000"],
+              ["UG (Engineering/Professional)", "₹30,000 – ₹50,000"],
+              ["Post Graduate", "₹36,000 – ₹60,000"],
+              ["M.Phil / Ph.D", "₹60,000 – ₹1,00,000"],
+            ],
+          },
+          documents: [
+            "Marksheet of last qualifying examination (both sides)",
+            "Admission Receipt / Enrollment Proof",
+            "Family Income Certificate (Not required for Kanyashree applicants)",
+            "Domicile Proof (Aadhaar / Voter ID / Ration Card)",
+            "Bank Passbook (First Page with A/C No & IFSC)",
+            "Institute Verification",
+          ],
+          rules: [
+            "Only ONE scholarship can be availed at a time.",
+            "Cannot receive any other Government scholarship for the same course.",
+            "Income limit is NOT applicable for Board Toppers, Kanyashree (K3), and Research Scholars.",
+          ],
+          source: "Official SVMCM Portal (svmcm.wbhed.gov.in)",
+        },
+        {
+          id: "vidyalankar",
+          name: "Brainware Academic Excellence Scholarship (Vidyalankar)",
+          category: "Merit-Based (Private)",
+          provider: "Brainware University",
+          intro:
+            "A prestigious merit-based scholarship awarded to academically outstanding students based on their performance in the qualifying examination (Class 12/Equivalent).",
+          description: {
+            Overview:
+              "Designed to reward students who demonstrate exceptional academic merit. This scholarship directly reduces the tuition fee burden and acts as a recognition of scholastic achievement at the time of admission.",
+            "Key Highlights":
+              "Offers up to 100% tuition fee waiver based solely on marks.",
+          },
+          eligibility: {
+            Criteria: [
+              "Must have scored 90% or above in the qualifying examination.",
+              "Applicable only for Indian domestic students.",
+              "Applicable only for new admissions.",
+            ],
+            Exclusions: [
+              "Not applicable for International Students.",
+              "Not applicable for Alumni Students.",
+            ],
+          },
+          benefits: {
+            headers: ["Qualifying Exam Percentage", "Tuition Fee Waiver"],
+            rows: [
+              ["90% to less than 95%", "50% Tuition Fee Waiver"],
+              ["95% and above", "100% Tuition Fee Waiver (Full Freeship)"],
+            ],
+          },
+          special_award:
+            "Institutional toppers scoring less than 90% in the qualifying examination are eligible for an additional monetary benefit of ₹25,000.",
+          rules: [
+            "Scholarship is awarded strictly based on marks obtained in the qualifying examination.",
+            "Only one Brainware University scholarship can be availed by a candidate at a time.",
+            "Full or Half Freeship holders are not eligible for Early Bird Offers.",
+          ],
+          source: "Brainware University Scholarship Policy",
+        },
+        {
+          id: "creditcard",
+          name: "West Bengal Student Credit Card Scheme",
+          category: "Education Loan",
+          provider: "Government of West Bengal",
+          intro:
+            "A government-backed education loan scheme providing up to ₹10 Lakhs at a low interest rate to help students pursue higher education.",
+          description: {
+            Objective:
+              "To provide easy, low-interest education loans to students of West Bengal so that financial constraints do not stop them from pursuing higher education and professional courses.",
+            Coverage:
+              "Supports UG, PG, Professional courses, competitive exam coaching, and accommodation expenses.",
+          },
+          eligibility: {
+            Student: [
+              "Resident of West Bengal (permanent or long-term stay).",
+              "Age must be below 40 years at the time of application.",
+              "Must be enrolled in a recognized institution (India or Abroad).",
+            ],
+            "Co-Borrower": "Parent or Legal Guardian is mandatory.",
+          },
+          benefits: {
+            headers: ["Parameter", "Details"],
+            rows: [
+              ["Maximum Loan Amount", "₹10,00,000"],
+              ["Interest Rate", "4% Simple Interest per annum"],
+              [
+                "Concession",
+                "1% interest concession if interest is serviced during study period",
+              ],
+              ["Collateral", "No Collateral or Security required"],
+              [
+                "Repayment",
+                "Starts 1 year after course completion or employment (whichever is earlier)",
+              ],
+            ],
+          },
+          documents: [
+            "Student: Colour Photo, Signature, Aadhaar Card, PAN Card, Admission Receipt.",
+            "Guardian: Colour Photo, Signature, Address Proof, PAN Card.",
+          ],
+          process: [
+            "Student fills online application on the official Student Credit Card portal.",
+            "Institution verifies the application.",
+            "Application forwarded to the Higher Education Department and then to the Bank.",
+            "Bank processes and sanctions the loan.",
+          ],
+          source: "wbscc.wb.gov.in",
+        },
+      ];
+
+      // Minimal client-side logic to populate details via hash or query string could be added here.
+    </script>
+  </body>
+</html>

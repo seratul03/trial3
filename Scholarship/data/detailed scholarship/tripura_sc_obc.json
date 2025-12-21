@@ -1,0 +1,16 @@
+{
+  "scholarship_id": "tripura_sc_obc",
+  "scholarship_name": "Post Matric Scholarship for SC/OBC Students (Tripura)",
+  "scholarship_type": "State Government Scholarship",
+  "offered_by": "Directorate for Welfare of SCs & OBCs, Tripura",
+  "eligibility_criteria": {
+    "domicile": "Permanent resident of Tripura",
+    "category": "SC or OBC",
+    "income_criteria": {
+      "sc": "₹2,50,000 per annum",
+      "obc": "₹1,50,000 per annum"
+    }
+  },
+  "scholarship_benefits": { "amount": "Financial assistance for tuition and maintenance" },
+  "last_updated": "2025"
+}

@@ -1,0 +1,143 @@
+{
+  "scholarship_id": "BWU-MERIT-MEDHA-BRITTI",
+  "scholarship_name": "Brainware Merit Scholarship (Brainware Medha Britti)",
+  "category": "Merit-Based Institutional Scholarship",
+  "provider": {
+    "institution": "Brainware University",
+    "type": "Private University Scholarship"
+  },
+  "short_intro": "Brainware Medha Britti is a merit-based scholarship designed to financially support academically consistent students pursuing undergraduate programs at Brainware University. The scholarship amount is awarded based on 10+2 academic performance and is deducted from the final semester tuition fees.",
+  "objective": [
+    "Encourage academic consistency throughout a student's career",
+    "Reward meritorious students with financial assistance",
+    "Reduce the financial burden of higher education",
+    "Promote excellence in technical and professional education"
+  ],
+  "eligibility_criteria": {
+    "minimum_academic_requirement": {
+      "overall": "Candidate must have secured minimum 60% marks throughout the entire academic career (Class 10 onwards).",
+      "note": "Failure to maintain 60% at any stage makes the candidate ineligible."
+    },
+    "course_specific": {
+      "applicable_course": "B.Tech (CSE – Artificial Intelligence & Machine Learning)",
+      "academic_basis": "Marks obtained in 10+2 (Higher Secondary)"
+    }
+  },
+  "scholarship_amount_structure": {
+    "description": "Scholarship amount varies based on 10+2 percentage range. Higher performance attracts higher benefits.",
+    "currency": "INR",
+    "deduction_policy": "All scholarship amounts are deducted from the last semester tuition fees.",
+    "table": {
+      "headers": [
+        "10+2 Marks Range",
+        "Scholarship Amount",
+        "Performance Level"
+      ],
+      "rows": [
+        {
+          "marks_range": "≥ 65% and < 70%",
+          "amount": "₹30,000",
+          "level": "Good"
+        },
+        {
+          "marks_range": "≥ 70% and < 80%",
+          "amount": "₹50,000",
+          "level": "Very Good"
+        },
+        {
+          "marks_range": "≥ 80% and < 90%",
+          "amount": "₹60,000",
+          "level": "Excellent"
+        },
+        {
+          "marks_range": "≥ 90%",
+          "amount": "₹70,000",
+          "level": "Outstanding"
+        }
+      ]
+    }
+  },
+  "visual_representation": {
+    "chart_type": "bar",
+    "x_axis": "10+2 Marks Percentage",
+    "y_axis": "Scholarship Amount (INR)",
+    "data_points": [
+      {
+        "marks": "65–70%",
+        "amount": 30000
+      },
+      {
+        "marks": "70–80%",
+        "amount": 50000
+      },
+      {
+        "marks": "80–90%",
+        "amount": 60000
+      },
+      {
+        "marks": "90%+",
+        "amount": 70000
+      }
+    ],
+    "color_theme": [
+      "#AED6F1",
+      "#5DADE2",
+      "#2E86C1",
+      "#1B4F72"
+    ]
+  },
+  "important_conditions": [
+    "Not applicable if Brainware Vidyalankar Scholarship is availed",
+    "Only one Brainware University scholarship can be opted at a time",
+    "Candidate must maintain academic consistency",
+    "Scholarship is non-transferable",
+    "Scholarship amount is not refundable"
+  ],
+  "not_applicable_for": [
+    "Lateral Entry students",
+    "Ph.D. candidates",
+    "International students (implicit as institutional merit rule)",
+    "Candidates not meeting 60% academic consistency rule"
+  ],
+  "application_process": {
+    "mode": "Offline / University Admission Process",
+    "when_applied": "At the time of admission",
+    "verification": [
+      "10+2 Marksheet verification",
+      "Academic records verification",
+      "University approval"
+    ]
+  },
+  "documents_required": [
+    "Class 10 Marksheet",
+    "Class 12 Marksheet",
+    "University Admission Receipt",
+    "Government-issued Photo ID"
+  ],
+  "renewal_policy": {
+    "renewal_required": false,
+    "reason": "Scholarship amount is awarded once and adjusted in the final semester fees."
+  },
+  "faqs": [
+    {
+      "question": "When is the scholarship amount adjusted?",
+      "answer": "The scholarship amount is deducted from the last semester tuition fees."
+    },
+    {
+      "question": "Can I apply if I scored below 65% in 10+2?",
+      "answer": "No. Minimum eligibility starts from 65% in 10+2."
+    },
+    {
+      "question": "Can this scholarship be combined with other Brainware scholarships?",
+      "answer": "No. Only one Brainware University scholarship scheme can be availed."
+    }
+  ],
+  "display_tags": [
+    "Merit Based",
+    "Brainware University",
+    "B.Tech AI ML",
+    "Medha Britti",
+    "Tuition Fee Benefit"
+  ],
+  "last_updated": "As per official Brainware University Scholarship Document"
+}

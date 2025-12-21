@@ -1,0 +1,107 @@
+{
+  "_metadata": {
+    "title": "University Holiday Calendar 2025",
+    "description": "Complete list of holidays, vacation days, and university closed dates for the academic year 2025. This includes all public holidays, festival celebrations, and semester breaks.",
+    "keywords": "holiday, holidays, vacation, leave, off, closed, university closed, semester break, festival, celebration, public holiday, break, upcoming holiday, next holiday, holiday list, holiday calendar, holiday dates, when is holiday, which day is holiday"
+  },
+  "holidays": [
+  {
+    "date": "1 January 2025",
+    "day": "Wednesday",
+    "event": "New Year's Day",
+    "duration": "1 day",
+    "type": "Public Holiday"
+  },
+  {
+    "date": "23 January 2025",
+    "day": "Thursday",
+    "event": "Netaji's Birthday",
+    "duration": "1 day",
+    "type": "Public Holiday"
+  },
+  {
+    "date": "26 January 2025",
+    "day": "Sunday",
+    "event": "Republic Day",
+    "duration": "1 day",
+    "type": "National Holiday"
+  },
+  {
+    "date": "2 February 2025",
+    "day": "Sunday",
+    "event": "Saraswati Puja (Vasant Panchami)",
+    "duration": "1 day",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "14 March 2025",
+    "day": "Friday",
+    "event": "Doljatra / Holi",
+    "duration": "1 day",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "31 March 2025",
+    "day": "Monday",
+    "event": "Id-Ul-Fitr",
+    "duration": "1 day",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "18 April 2025",
+    "day": "Friday",
+    "event": "Good Friday",
+    "duration": "1 day",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "7 June 2025",
+    "day": "Saturday",
+    "event": "Id-Ud-Zoha (Bakrid)",
+    "duration": "1 day",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "6 July 2025",
+    "day": "Sunday",
+    "event": "Muharram",
+    "duration": "1 day",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "15 August 2025",
+    "day": "Friday",
+    "event": "Independence Day",
+    "duration": "1 day",
+    "type": "National Holiday"
+  },
+  {
+    "date": "28 September 2025 to 6 October 2025",
+    "day": "Sunday to Monday",
+    "event": "Sasthi to Lakshmi Puja",
+    "duration": "8 days",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "2 October 2025",
+    "day": "Thursday",
+    "event": "Gandhi's Birthday",
+    "duration": "1 day",
+    "type": "National Holiday"
+  },
+  {
+    "date": "20 October 2025 to 23 October 2025",
+    "day": "Monday to Thursday",
+    "event": "Deepabali to Bhatriditiya",
+    "duration": "4 days",
+    "type": "Festival Holiday"
+  },
+  {
+    "date": "25 December 2025",
+    "day": "Thursday",
+    "event": "Christmas Day",
+    "duration": "1 day",
+    "type": "Festival Holiday"
+  }
+]
+}

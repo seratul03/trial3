@@ -1,0 +1,43 @@
+{
+  "course_code": "PCC-CSM502",
+  "course_name": "Computer Networks",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Data Communication Components & OSI Model"
+    },
+    {
+      "module_number": 2,
+      "title": "Data Link Layer & MAC Layer Protocols"
+    },
+    {
+      "module_number": 3,
+      "title": "Network Layer: IP, Routing Protocols"
+    },
+    {
+      "module_number": 4,
+      "title": "Transport Layer: TCP, UDP & QoS"
+    },
+    {
+      "module_number": 5,
+      "title": "Application Layer Protocols"
+    }
+  ],
+  "summary": "Computer Networks is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Data Communication and Networking – Forouzan",
+    "Data and Computer Communications – William Stallings",
+    "Computer Networks – Andrew S. Tanenbaum",
+    "Internetworking with TCP/IP – Douglas Comer"
+  ],
+  "course_outcomes": [
+    "Explain data communication systems, components and topologies.",
+    "Analyze flow control and error control mechanisms in networks.",
+    "Explain switching techniques, logical addressing, subnetting and routing.",
+    "Discuss transport layer functionality and QoS improvement techniques.",
+    "Categorize application layer protocols and their functionalities."
+  ],
+  "prerequisites": [
+    "Basic knowledge of binary number system"
+  ]
+}

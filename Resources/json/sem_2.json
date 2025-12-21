@@ -1,0 +1,192 @@
+{
+  "semester": "SEMESTER – II",
+  "subjects": [
+    {
+      "course_code": "HSMCM201",
+      "course_name": "Effective Communication Skills",
+      "modules": [
+        { "module_number": 1, "title": "Effective Verbal Communication" },
+        { "module_number": 2, "title": "Effective Reading Strategies" },
+        { "module_number": 3, "title": "Writing Skills" },
+        { "module_number": 4, "title": "Communication Skills for Employability" }
+      ],
+      "recommended_books": [
+        "Rizvi Ashraf, Professional Communication, Tata McGraw Hill Education",
+        "David F. Beer and David McMurrey, Guide to Writing as an Engineer, John Willey",
+        "Agna Fernandez, Generic Skills for Employability, Cambridge",
+        "Raman Sharma, Technical Communications, Oxford Publication",
+        "Roald Dahl ‘Lamb to the Slaughter’ and Saki ‘The Open Window’",
+        "Dale Jungk, Applied Writing for Technicians, McGraw Hill",
+        "Sharma, R. and Mohan, K. Business Correspondence and Report Writing, TMH"
+      ]
+    },
+    {
+      "course_code": "BSCM201",
+      "course_name": "Engineering Chemistry",
+      "modules": [
+        { "module_number": 1, "title": "Atomic and Molecular Structure" },
+        { "module_number": 2, "title": "Spectroscopic Techniques and Applications" },
+        { "module_number": 3, "title": "Periodic Properties" },
+        { "module_number": 4, "title": "Use of Free Energy in Chemical Equilibrium" },
+        { "module_number": 5, "title": "Stereochemistry" },
+        { "module_number": 6, "title": "Organic Reactions" }
+      ],
+      "recommended_books": [
+        "A Text Book of Physical Chemistry – KK Sharma and LK Sharma",
+        "Physical Chemistry – Peter Atkins and Julio de Paula",
+        "Inorganic Chemistry – Huheey, Keiter, Keiter",
+        "Concise Inorganic Chemistry – J.D. Lee",
+        "Organic Chemistry: Structure and Function – Volhardt & Schore",
+        "Fundamentals of Molecular Spectroscopy – C.N. Banwell",
+        "Organic Chemistry Vol 1 – I.L. Finar",
+        "A.S. Negi and S.C. Anand – Physical Chemistry",
+        "Organic Chemistry – Volhardt & Schore"
+      ]
+    },
+    {
+      "course_code": "BSCM202",
+      "course_name": "Probability & Statistics",
+      "modules": [
+        { "module_number": 1, "title": "Descriptive Statistics" },
+        { "module_number": 2, "title": "Probability Theory" },
+        { "module_number": 3, "title": "Probability Distributions" },
+        { "module_number": 4, "title": "Parametric Estimation" },
+        { "module_number": 5, "title": "Testing of Hypothesis" }
+      ],
+      "recommended_books": [
+        "Fundamentals of Mathematical Statistics – S.C. Gupta, V.K. Kapoor",
+        "Probability and Statistics for Engineers and Scientists – Walpole et al.",
+        "Introduction to Probability and Statistics – Sheldon Ross",
+        "Applied Statistics and Probability for Engineers – Montgomery",
+        "Probability & Statistics – Spiegel, Schiller, Srinivasan"
+      ]
+    },
+    {
+      "course_code": "BSCM203",
+      "course_name": "Biology for Engineers",
+      "modules": [
+        { "module_number": 1, "title": "Biomolecules and Biopolymers" },
+        { "module_number": 2, "title": "Transport Phenomena and Communications in Biological Systems" },
+        { "module_number": 3, "title": "Engineering Perspectives of Biological Sciences" },
+        { "module_number": 4, "title": "Biosensors" },
+        { "module_number": 5, "title": "Bioinformatics" }
+      ],
+      "recommended_books": [
+        "Biology for Engineers – Rajiv Singal, Gaurav Agarwal, Ritu Bir",
+        "Biomimetics- Biologically Inspired Technologies – Yoseph Bar-Cohen",
+        "Data Mining Concepts and Techniques – Han & Kamber",
+        "Introduction to Bioinformatics – Arthur M. Lesk",
+        "Developing Bioinformatics Computer Skills – Gibas & Jambeck",
+        "An Introduction to Bioinformatics Algorithms – Jones & Pevzner",
+        "Molecular Biology of the Cell – Alberts et al.",
+        "Bioinformatics: Sequence and Genome Analysis – David W. Mount"
+      ]
+    },
+    {
+      "course_code": "ESCM201",
+      "course_name": "Programming for Problem Solving",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Programming" },
+        { "module_number": 2, "title": "Arrays, Functions, Recursion" },
+        { "module_number": 3, "title": "Structure" },
+        { "module_number": 4, "title": "Pointers" },
+        { "module_number": 5, "title": "File Handling" }
+      ],
+      "recommended_books": [
+        "Programming in ANSI C – E. Balaguruswamy",
+        "Outline of Programming with C – Byron Gottfried",
+        "The C Programming Language – Kernighan & Ritchie",
+        "Computer Concepts and Programming in C – R. S. Salaria"
+      ]
+    },
+    {
+      "course_code": "HSMCM291",
+      "course_name": "Effective Communication Skills Lab",
+      "modules": [
+        { "module_number": 1, "title": "Listening Skills" },
+        { "module_number": 2, "title": "Speaking Skills" },
+        { "module_number": 3, "title": "Reading and Writing Skills" },
+        { "module_number": 4, "title": "Lab Activities" }
+      ],
+      "recommended_books": [
+        "Advanced Manual for Communication Laboratories – D. Sudha Rani",
+        "Cambridge Interchange Series – Jack C. Richards",
+        "Contemporary Communicative English – Pearson",
+        "On Writing Well – David Zinsser"
+      ]
+    },
+    {
+      "course_code": "BSCM291",
+      "course_name": "Engineering Chemistry Lab",
+      "modules": [
+        { "module_number": 1, "title": "Conductometric Titration" },
+        { "module_number": 2, "title": "pH Metric Titration" },
+        { "module_number": 3, "title": "Dissolved Oxygen Determination" },
+        { "module_number": 4, "title": "Chloride Ion by Argentometric Method" },
+        { "module_number": 5, "title": "Surface Tension and Viscosity" },
+        { "module_number": 6, "title": "Thin Layer Chromatography" },
+        { "module_number": 7, "title": "Rate Constant Determination" },
+        { "module_number": 8, "title": "Cell Constant Determination" },
+        { "module_number": 9, "title": "Saponification/Acid Value" },
+        { "module_number": 10, "title": "Chemical Analysis of a Salt" }
+      ],
+      "recommended_books": [
+        "Vogel's Qualitative Inorganic Analysis – G. Svehla",
+        "Vogel’s Quantitative Chemical Analysis – Mendham et al.",
+        "Practical Physical Chemistry – Palit & De",
+        "B.Sc. Honours Practical Chemistry – S. Dutta"
+      ]
+    },
+    {
+      "course_code": "ESCM291",
+      "course_name": "Programming for Problem Solving Lab",
+      "modules": [
+        { "module_number": 1, "title": "Problem Solving Using Computers" },
+        { "module_number": 2, "title": "Variables and Type Conversions" },
+        { "module_number": 3, "title": "Branching and Logical Expressions" },
+        { "module_number": 4, "title": "Loops" },
+        { "module_number": 5, "title": "1D Arrays" },
+        { "module_number": 6, "title": "2D Arrays and Strings" },
+        { "module_number": 7, "title": "Functions" },
+        { "module_number": 8, "title": "Recursion" },
+        { "module_number": 9, "title": "Pointers and Structures" },
+        { "module_number": 10, "title": "File Handling" }
+      ],
+      "recommended_books": [
+        "Computer Concepts and Programming in C – R. S. Salaria"
+      ]
+    },
+    {
+      "course_code": "ESCM292",
+      "course_name": "Workshop / Manufacturing Practices",
+      "modules": [
+        { "module_number": 1, "title": "Carpentry" },
+        { "module_number": 2, "title": "Fitting" },
+        { "module_number": 3, "title": "Welding" },
+        { "module_number": 4, "title": "Machine Shop" },
+        { "module_number": 5, "title": "Black Smithy Shop / Sheet Metal Working" }
+      ],
+      "recommended_books": [
+        "Workshop Technology – S.K. Hajara Chaudhary",
+        "Workshop Technology – B.S. Raghuwanshi",
+        "Workshop Practice Manual – K. Venkat Reddy",
+        "Kents Mechanical Engineering Handbook – John Wiley"
+      ]
+    },
+    {
+      "course_code": "AUM-2",
+      "course_name": "Yoga and Sports",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Physical Education and Yoga" },
+        { "module_number": 2, "title": "Physical Fitness & Wellness" },
+        { "module_number": 3, "title": "Yoga, Asanas, Pranayama & Meditation" },
+        { "module_number": 4, "title": "Yoga for Various Health Problems" }
+      ],
+      "recommended_books": [
+        "Health, Yoga And Physical Education – Dr. H.L. Khatri & Dr. Suman Lata",
+        "Modern Trends and Physical Education – Prof. Ajmer Singh",
+        "Light On Yoga – B.K.S. Iyengar"
+      ]
+    }
+  ]
+}

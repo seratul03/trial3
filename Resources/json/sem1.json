@@ -1,0 +1,99 @@
+{
+  "semester": "1",
+  "subjects": [
+    {
+      "course_code": "HSMCM101",
+      "course_name": "Communication Skills",
+      "prerequisites": "Basic knowledge of English",
+      "course_outcomes": [
+        "Equip with knowledge of English as a world language and help them identify, write, and communicate in a grammatically correct manner.",
+        "Understand and apply the strategies and theories of effective verbal and non-verbal communication.",
+        "Demonstrate a thorough command of English and its linguistic structures by enhancing comprehension skills and analyzing various forms of writing.",
+        "Prepare, explain and evaluate high-quality technical oral and written English communication for professional environments."
+      ]
+    },
+    {
+      "course_code": "BSCM101",
+      "course_name": "Semiconductor Physics",
+      "prerequisites": "Knowledge of ordinary and partial differential equations and their solutions.",
+      "course_outcomes": [
+        "Apply preliminary concepts of quantum mechanics to analyze real-world physical problems.",
+        "Understand band structure and differentiate between metals, semiconductors and insulators.",
+        "Understand carrier transport mechanisms and evaluate performance of devices based on charge transport.",
+        "Identify different optical transitions and explain lasing action in various laser devices.",
+        "Understand Hall-effect and four-probe method and interpret measured physical parameters."
+      ]
+    },
+    {
+      "course_code": "BSCM102",
+      "course_name": "Calculus & Linear Algebra",
+      "prerequisites": "Function, Limit and Continuity",
+      "course_outcomes": [
+        "Remember various techniques of integration and apply them to evaluate improper integrals.",
+        "Understand sequence and series concepts, tests of convergence, Taylor and power series, and apply them to problems.",
+        "Apply partial differentiation and multiple integration to evaluate engineering problems.",
+        "Understand matrices, determinants, inverse, and solve linear systems using Gauss Elimination.",
+        "Apply vector space concepts, rank-nullity, linear maps, eigenvalues & eigenvectors to solve mathematical problems."
+      ]
+    },
+    {
+      "course_code": "ESCM101",
+      "course_name": "Basic Electrical and Electronics Engineering",
+      "prerequisites": "None",
+      "course_outcomes": [
+        "Describe and apply network theorems to analyze DC and AC circuits.",
+        "Explain and analyze the construction and operation of transformers and electrical machines.",
+        "Understand and interpret semiconductor physics.",
+        "Understand and compare characteristics and applications of various diodes and transistors."
+      ]
+    },
+    {
+      "course_code": "BSCM191",
+      "course_name": "Semiconductor Physics Lab",
+      "prerequisites": "Knowledge of graphical presentation with proper choice of unit.",
+      "course_outcomes": [
+        "Interpret I–V characteristics of p-n and Zener diodes and evaluate d.c and a.c resistances.",
+        "Estimate performance of Zener diode through load and line regulation and design regulators.",
+        "Measure voltage across capacitor and resistor, determine resonant frequency and Q-factor of LCR circuit.",
+        "Categorize optical fiber using numerical aperture and attenuation.",
+        "Measure and explain band-gap and carrier concentration of a semiconductor."
+      ]
+    },
+    {
+      "course_code": "ESCM191",
+      "course_name": "Basic Electrical and Electronics Engineering Lab",
+      "prerequisites": "Knowledge of drawing of graphs with proper choice of unit",
+      "course_outcomes": [
+        "Explain and apply the working and characteristics of electrical machines and rectifiers.",
+        "Analyze and verify characteristics of discrete electronic components such as diodes and BJT.",
+        "Design and demonstrate Zener voltage regulator, rectifiers and transformer-based circuits.",
+        "Verify and analyze basic circuit theorems.",
+        "Measure and calculate power in AC circuits."
+      ]
+    },
+    {
+      "course_code": "ESCM192",
+      "course_name": "Engineering Graphics & Design Lab",
+      "prerequisites": "Unambiguous and clear visualization; sound pictorial intelligence.",
+      "course_outcomes": [
+        "Analyze and develop sense of scale and drawing techniques of various curves.",
+        "Develop drafting and sketching skills and understand Indian Standards for engineering drawing.",
+        "Analyze orthographic projections and visualize 3D objects; draw isometric projections.",
+        "Familiarize with AutoCAD and develop drafting skills using different commands."
+      ]
+    },
+    {
+      "course_code": "AUM-1",
+      "course_name": "Environmental Science",
+      "prerequisites": "None",
+      "course_outcomes": [
+        "Identify natural resources and distinguish different ecosystems.",
+        "Define and visualize basic environmental concepts.",
+        "Explain and interpret food chain, food web and ecological pyramids.",
+        "Analyze environmental pollution and population-related issues.",
+        "Describe and apply acts related to environmental protection.",
+        "Predict and propose solutions for environmental pollution and population growth."
+      ]
+    }
+  ]
+}

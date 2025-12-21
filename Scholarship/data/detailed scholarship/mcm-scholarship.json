@@ -1,0 +1,75 @@
+{
+  "scholarship_id": "mcm_scholarship",
+  "scholarship_name": "MERIT CUM MEANS SCHOLARSHIP (MCM)",
+  "official_name": "AIKYASHREE: Merit Cum Means Scholarship for Professional Courses",
+  "scholarship_type": "State Government Scholarship",
+  "target_group": "Minority Students in Professional Courses",
+  "academic_level": [
+    "Undergraduate (UG)",
+    "Postgraduate (PG)",
+    "Medical",
+    "Engineering",
+    "Management",
+    "Law"
+  ],
+  "introduction": "Merit Cum Means Scholarship (MCM) under AIKYASHREE is designed specifically for minority students pursuing professional and technical courses like Medical, Engineering, Management, and Law. This scholarship recognizes both merit and financial need.",
+  "eligibility_criteria": {
+    "basic_requirements": [
+      "Applicant must be a permanent resident of West Bengal",
+      "Applicant must belong to an officially notified minority community",
+      "Must be enrolled in Medical, Engineering, Management, or Law programs"
+    ],
+    "academic_requirements": {
+      "minimum_marks": "50% in qualifying examination"
+    },
+    "income_criteria": {
+      "maximum_family_income": "₹2,50,000 per year",
+      "issued_by": "BDO / SDO or any competent government authority"
+    }
+  },
+  "scholarship_benefits": {
+    "description": "Financial assistance covering tuition fees and other educational expenses for professional courses.",
+    "components": [
+      "Tuition Fee Support",
+      "Maintenance Allowance",
+      "Book Allowance",
+      "Course-related Expenses"
+    ]
+  },
+  "documents_required": [
+    "Marksheet of qualifying examination (minimum 50%)",
+    "Income Certificate (≤ ₹2.5 Lakh)",
+    "Bank Passbook (First Page)",
+    "Course Enrollment Proof",
+    "Institute Verification Form",
+    "Aadhaar Card",
+    "Domicile Certificate",
+    "Minority Community Certificate",
+    "Passport-size Photograph"
+  ],
+  "application_process": {
+    "mode": "Online Application through AIKYASHREE portal",
+    "steps": [
+      "Visit AIKYASHREE official website",
+      "Complete online registration",
+      "Fill MCM scholarship application form",
+      "Upload all required documents",
+      "Submit application online",
+      "Get institution verification",
+      "Await approval from WBMDFC",
+      "Receive scholarship via DBT"
+    ]
+  },
+  "important_notes": [
+    "Specifically for Medical, Engineering, Management, and Law students",
+    "Higher income limit of ₹2.5 Lakh compared to general Post Matric",
+    "Merit and means both are considered",
+    "Renewable annually with good academic performance"
+  ],
+  "official_authority": {
+    "department": "West Bengal Minority Development & Finance Corporation (WBMDFC)",
+    "government": "Government of West Bengal"
+  },
+  "last_updated": "2025",
+  "data_source": "Official AIKYASHREE Scholarship Documentation"
+}

@@ -1,0 +1,43 @@
+{
+  "course_code": "ESCM201",
+  "course_name": "Programming for Problem Solving",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Programming"
+    },
+    {
+      "module_number": 2,
+      "title": "Arrays, Functions, Recursion"
+    },
+    {
+      "module_number": 3,
+      "title": "Structure"
+    },
+    {
+      "module_number": 4,
+      "title": "Pointers"
+    },
+    {
+      "module_number": 5,
+      "title": "File Handling"
+    }
+  ],
+  "summary": "Programming for Problem Solving is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Programming in ANSI C – E. Balaguruswamy",
+    "Outline of Programming with C – Byron Gottfried",
+    "The C Programming Language – Kernighan & Ritchie",
+    "Computer Concepts and Programming in C – R. S. Salaria"
+  ],
+  "course_outcomes": [
+    "Define, describe and develop algorithms and flowcharts to solve logical and numerical problems.",
+    "Explain and apply arithmetic, logical and conditional expressions to develop C programs.",
+    "Describe and classify loop structures to solve problems using C.",
+    "Differentiate among functions and determine their applications to structure programs.",
+    "Define and differentiate structures and data storage to illustrate data handling in C programming."
+  ],
+  "prerequisites": [
+    "Basic Computer Fundamentals"
+  ]
+}

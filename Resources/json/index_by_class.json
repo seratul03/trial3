@@ -1,0 +1,67 @@
+{
+  "University Vision & Mission": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/university_vision_and_mission.jsonl",
+    "json": "/mnt/data/student_rules_by_class/university_vision_and_mission.json"
+  },
+  "Admissions & Eligibility": {
+    "count": 4,
+    "jsonl": "/mnt/data/student_rules_by_class/admissions_and_eligibility.jsonl",
+    "json": "/mnt/data/student_rules_by_class/admissions_and_eligibility.json"
+  },
+  "Finance & Scholarships": {
+    "count": 2,
+    "jsonl": "/mnt/data/student_rules_by_class/finance_and_scholarships.jsonl",
+    "json": "/mnt/data/student_rules_by_class/finance_and_scholarships.json"
+  },
+  "Attendance & Examinations": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/attendance_and_examinations.jsonl",
+    "json": "/mnt/data/student_rules_by_class/attendance_and_examinations.json"
+  },
+  "Campus Rules & Facilities": {
+    "count": 5,
+    "jsonl": "/mnt/data/student_rules_by_class/campus_rules_and_facilities.jsonl",
+    "json": "/mnt/data/student_rules_by_class/campus_rules_and_facilities.json"
+  },
+  "Conduct & Discipline": {
+    "count": 3,
+    "jsonl": "/mnt/data/student_rules_by_class/conduct_and_discipline.jsonl",
+    "json": "/mnt/data/student_rules_by_class/conduct_and_discipline.json"
+  },
+  "Social Media & Communication": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/social_media_and_communication.jsonl",
+    "json": "/mnt/data/student_rules_by_class/social_media_and_communication.json"
+  },
+  "Laboratories & Safety": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/laboratories_and_safety.jsonl",
+    "json": "/mnt/data/student_rules_by_class/laboratories_and_safety.json"
+  },
+  "Co-curricular & Outreach": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/co-curricular_and_outreach.jsonl",
+    "json": "/mnt/data/student_rules_by_class/co-curricular_and_outreach.json"
+  },
+  "Health & Counselling": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/health_and_counselling.jsonl",
+    "json": "/mnt/data/student_rules_by_class/health_and_counselling.json"
+  },
+  "Other": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/other.jsonl",
+    "json": "/mnt/data/student_rules_by_class/other.json"
+  },
+  "Library & Reading Room": {
+    "count": 2,
+    "jsonl": "/mnt/data/student_rules_by_class/library_and_reading_room.jsonl",
+    "json": "/mnt/data/student_rules_by_class/library_and_reading_room.json"
+  },
+  "Legal & Jurisdiction": {
+    "count": 1,
+    "jsonl": "/mnt/data/student_rules_by_class/legal_and_jurisdiction.jsonl",
+    "json": "/mnt/data/student_rules_by_class/legal_and_jurisdiction.json"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "semester": "2",
+  "subjects": [
+    {
+      "course_code": "HSMCM201",
+      "course_name": "Effective Communication Skills",
+      "prerequisites": "Basic Knowledge of the English Language",
+      "course_outcomes": [
+        "Express ideas with clarity and precision, and articulate themselves with confidence.",
+        "Apply effective reading strategies, analyse content and develop comprehension skills through rapid reading techniques.",
+        "Develop writing skills, identify errors, editorialize and write various technical and non-technical content using proper style and language.",
+        "Apply self-assessment techniques to identify areas for personal growth in communication skills and use goal-setting strategies to enhance productivity."
+      ]
+    },
+    {
+      "course_code": "BSCM201",
+      "course_name": "Engineering Chemistry",
+      "prerequisites": "12th level Chemistry",
+      "course_outcomes": [
+        "Describe atomic and molecular structure in terms of wave functions and represent energy levels via spectroscopic methods.",
+        "Interpret periodic variation of elemental properties and deduce quantitative information about heat engines.",
+        "Establish molecular orbital diagrams and relate electrochemistry to thermodynamics.",
+        "Relate empirical rate constants to molecular processes and evaluate experiments in chemical equilibria and kinetics.",
+        "Develop knowledge of fundamental properties of organic compounds and analyze changes in orbital energy levels in coordination compounds."
+      ]
+    },
+    {
+      "course_code": "BSCM202",
+      "course_name": "Probability & Statistics",
+      "prerequisites": "Basic Knowledge of Set Theory, Linear Algebra and Calculus",
+      "course_outcomes": [
+        "Remember and understand descriptive statistics and solve problems in correlation and regression.",
+        "Recall and apply basic probability concepts including conditional probability and Bayes’ Theorem.",
+        "Understand random variables and analyze common probability distributions.",
+        "Illustrate estimation theory and apply estimation techniques such as MLE and method of moments.",
+        "Describe and apply hypothesis testing methods including Z-test, T-test, F-test and ANOVA."
+      ]
+    },
+    {
+      "course_code": "BSCM203",
+      "course_name": "Biology for Engineers",
+      "prerequisites": "Knowledge of basic Biology of Class 12th",
+      "course_outcomes": [
+        "Remember and understand basic biological principles and organizational structure of living systems at molecular level.",
+        "Understand energy transformations and information processing in biological systems from an engineering perspective.",
+        "Know different biosensors and evaluate their applications in bio-engineering contexts.",
+        "Analyze programming algorithms and compare different models (in bioinformatics/biological computation contexts)."
+      ]
+    },
+    {
+      "course_code": "ESCM201",
+      "course_name": "Programming for Problem Solving",
+      "prerequisites": "Basic Computer Fundamentals",
+      "course_outcomes": [
+        "Define, describe and develop algorithms and flowcharts to solve logical and numerical problems.",
+        "Explain and apply arithmetic, logical and conditional expressions to develop C programs.",
+        "Describe and classify loop structures to solve problems using C.",
+        "Differentiate among functions and determine their applications to structure programs.",
+        "Define and differentiate structures and data storage to illustrate data handling in C programming."
+      ]
+    },
+    {
+      "course_code": "HSMCM291",
+      "course_name": "Effective Communication Skills Lab",
+      "prerequisites": "Basic knowledge of English",
+      "course_outcomes": [
+        "Identify common errors in speaking and writing English and apply proper grammar and sentence structures.",
+        "Read with proper vocabulary and pronunciation and employ academic, non-academic and technical writing.",
+        "Apply listening and speaking skills effectively for industry and entrepreneurship.",
+        "Think critically and express ideas fluently in English."
+      ]
+    },
+    {
+      "course_code": "BSCM291",
+      "course_name": "Engineering Chemistry Lab",
+      "prerequisites": "12th level Chemistry",
+      "course_outcomes": [
+        "Examine water testing parameters and predict water quality.",
+        "Explain and evaluate liquid properties like viscosity and surface tension.",
+        "Describe conductometric and pH metric titration and perform quantitative estimations.",
+        "Analyze elemental composition of salts and evaluate real-world implications.",
+        "Interpret TLC principles and apply separation techniques for amino acids."
+      ]
+    },
+    {
+      "course_code": "ESCM291",
+      "course_name": "Programming for Problem Solving Lab",
+      "prerequisites": "Basic Computer Fundamentals",
+      "course_outcomes": [
+        "Apply arithmetic and logical expressions to solve problems using C.",
+        "Implement conditional statements to solve real-life problems.",
+        "Develop programs using loops and iteration for computational tasks.",
+        "Use functions to modularize solutions and simplify program execution.",
+        "Use structures and different storage methods to solve real-life problems."
+      ]
+    },
+    {
+      "course_code": "ESCM292",
+      "course_name": "Workshop / Manufacturing Practices",
+      "prerequisites": "None",
+      "course_outcomes": [
+        "Acquire skills in basic engineering practices and use various tools and machines.",
+        "Understand job drawings and develop jobs as per specifications.",
+        "Inspect and develop jobs to desired dimensions used in manufacturing.",
+        "Illustrate and analyze machines and equipment while adopting safety practices."
+      ]
+    },
+    {
+      "course_code": "AUM-2",
+      "course_name": "Yoga and Sports",
+      "prerequisites": "None",
+      "course_outcomes": [
+        "Identify and explain aims and objectives of Yoga and Physical Education.",
+        "Evaluate components of physical fitness and differentiate health-related fitness and wellness.",
+        "Assess effectiveness of specific yoga poses in managing health conditions like hypertension, obesity, back pain, diabetes and asthma."
+      ]
+    }
+  ]
+}

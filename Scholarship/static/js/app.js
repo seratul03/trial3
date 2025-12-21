@@ -1,43 +1,7 @@
 const cards = Array.from(document.querySelectorAll(".card"));
 const searchInput = document.getElementById("searchInput");
-const overlay = document.getElementById("overlay");
 
-let activeCard = null;
 let debounceTimer = null;
-
-// Store original order
-cards.forEach((card, index) => {
-  card.dataset.originalOrder = index;
-});
-
-// Expand / close
-function openCard(card) {
-  if (activeCard) closeCard();
-  activeCard = card;
-  card.classList.add("expanded");
-  overlay.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-
-function closeCard() {
-  if (!activeCard) return;
-  activeCard.classList.remove("expanded");
-  overlay.classList.remove("active");
-  document.body.style.overflow = "";
-  activeCard = null;
-}
-
-// Events
-cards.forEach((card) => {
-  const btn = card.querySelector(".card-button");
-  btn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    openCard(card);
-  });
-});
-
-overlay.addEventListener("click", closeCard);
-document.addEventListener("keydown", (e) => e.key === "Escape" && closeCard());
 
 // Highlight helper
 function highlight(text, term) {
@@ -65,7 +29,6 @@ searchInput.addEventListener("input", () => {
 
       if (!value) {
         card.classList.remove("hidden");
-        card.style.order = card.dataset.originalOrder;
         return;
       }
 
@@ -73,13 +36,10 @@ searchInput.addEventListener("input", () => {
 
       if (isMatch) {
         card.classList.remove("hidden");
-        card.style.order = 0;
-
         titleEl.innerHTML = highlight(card.dataset.originalTitle, value);
         introEl.innerHTML = highlight(card.dataset.originalIntro, value);
       } else {
         card.classList.add("hidden");
-        card.style.order = 1;
       }
     });
   }, 180);

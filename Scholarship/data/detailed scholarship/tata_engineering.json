@@ -1,0 +1,44 @@
+{
+  "scholarship_id": "tata_trust_engineering",
+  "scholarship_name": "Tata Scholarship for Engineering",
+  "official_name": "Tata Trusts Professional Enhancement Grant",
+  "scholarship_type": "Private Trust Scholarship",
+  "offered_by": "Tata Trusts",
+  "target_group": "Engineering Students (PG)",
+  "academic_level": ["Postgraduate (PG)", "Engineering"],
+  "introduction": "The Tata Trusts Professional Enhancement Grant is a prestigious scholarship designed to support meritorious Indian students pursuing postgraduate engineering studies.",
+  "eligibility_criteria": {
+    "basic_requirements": [
+      "Applicant must be an Indian citizen",
+      "Age must be under 45 years as of June 30, 2025",
+      "Must be enrolled in a Postgraduate Engineering program"
+    ],
+    "academic_requirements": {
+      "minimum_marks": "60% average in Undergraduate studies"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "₹1,00,000 to ₹10,00,000",
+    "description": "Scholarship amount is decided based on the norms set by Tata Trusts and the candidate's financial need.",
+    "components": ["Tuition Fee Support", "Academic Expenses"]
+  },
+  "application_process": {
+    "mode": "Online Application",
+    "steps": [
+      "Visit the Tata Trusts official website",
+      "Navigate to 'Individual Grants' -> 'Education Grants'",
+      "Read instructions and click 'Apply'",
+      "Submit personal and academic details",
+      "Upload required documents",
+      "Submit the application"
+    ]
+  },
+  "documents_required": [
+    "Attested copies of Marksheets (UG & PG)",
+    "Fee Receipt / Admission Letter",
+    "Cancel Cheque / Bank Passbook",
+    "Aadhaar Card",
+    "Income Proof"
+  ],
+  "last_updated": "2025"
+}

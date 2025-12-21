@@ -1,0 +1,49 @@
+{
+  "course_code": "PEC-CSM501B",
+  "course_name": "Bioinformatics (Elective-I Option B)",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Cell Biology & Biological Databases"
+    },
+    {
+      "module_number": 2,
+      "title": "Sequence Similarity, Alignment & Phylogeny"
+    },
+    {
+      "module_number": 3,
+      "title": "Biological Pathways"
+    },
+    {
+      "module_number": 4,
+      "title": "Clustering, Classification & Rule Mining"
+    },
+    {
+      "module_number": 5,
+      "title": "Protein Analysis"
+    },
+    {
+      "module_number": 6,
+      "title": "Statistical Approaches"
+    }
+  ],
+  "summary": "Bioinformatics (Elective-I Option B) is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 6 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Molecular Biology of the Cell – Alberts et al.",
+    "Bioinformatics: Sequence and Genome Analysis – David W. Mount",
+    "Bioinformatics and Functional Genomics – Pevsner",
+    "Data Mining – Han & Kamber",
+    "Introduction to Bioinformatics – Lesk",
+    "Developing Bioinformatics Computer Skills – Gibas & Jambeck"
+  ],
+  "course_outcomes": [
+    "Recall basic biological science concepts with computational approaches.",
+    "Identify sequence similarity and alignment and classify biological data.",
+    "Apply rule mining for pairwise alignment and protein analysis.",
+    "Analyze and construct biological pathways and protein interactions.",
+    "Evaluate algorithms for classifying and clustering biological data."
+  ],
+  "prerequisites": [
+    "Basic knowledge of Biology, Mathematics and any computer language"
+  ]
+}

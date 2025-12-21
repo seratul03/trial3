@@ -1,0 +1,41 @@
+{
+  "course_code": "PCC-CSM491",
+  "course_name": "Operating Systems Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Process Management & Scheduling"
+    },
+    {
+      "module_number": 2,
+      "title": "Signal Handling"
+    },
+    {
+      "module_number": 3,
+      "title": "Semaphores & IPC"
+    },
+    {
+      "module_number": 4,
+      "title": "Deadlock Handling"
+    },
+    {
+      "module_number": 5,
+      "title": "Shell Programming"
+    }
+  ],
+  "summary": "Operating Systems Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Operating System Concepts Essentials – Silberschatz, Galvin, Gagne",
+    "Operating Systems: Internals and Design Principles – William Stallings"
+  ],
+  "course_outcomes": [
+    "Understand OS abstractions like process and threads and apply them.",
+    "Analyze process scheduling algorithms.",
+    "Implement semaphores and IPC mechanisms.",
+    "Apply memory and deadlock management techniques to solve problems.",
+    "Perform OS tasks in Linux and use shell scripting."
+  ],
+  "prerequisites": [
+    "Basic programming logic, Data Structure & Algorithm concepts, Basic mathematics and digital electronics"
+  ]
+}

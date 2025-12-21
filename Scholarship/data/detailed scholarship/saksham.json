@@ -1,0 +1,32 @@
+{
+  "scholarship_id": "saksham_aicte",
+  "scholarship_name": "Saksham Scholarship",
+  "official_name": "AICTE Saksham Scholarship Scheme for Specially-Abled Students",
+  "scholarship_type": "Central Government (AICTE)",
+  "target_group": "Differently-abled Students in Technical Education",
+  "academic_level": ["Diploma", "Degree (B.Tech/B.E)"],
+  "introduction": "Saksham is a MHRD Scheme being implemented by AICTE aimed at providing encouragement and support to specially-abled children to pursue technical education.",
+  "eligibility_criteria": {
+    "disability_criteria": "Not less than 40% disability",
+    "academic_requirements": "Admitted to First year of Degree/Diploma level course in AICTE approved Institution",
+    "income_criteria": {
+      "maximum_family_income": "₹8,00,000 per annum"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "₹50,000 per annum",
+    "description": "Amount is provided for every year of study."
+  },
+  "documents_required": [
+    "Disability Certificate (>=40%)",
+    "Class 10/12 Marksheet",
+    "Admission Proof",
+    "Income Certificate",
+    "Bank Passbook",
+    "Aadhaar Card"
+  ],
+  "application_process": {
+    "mode": "Online via National Scholarship Portal (NSP)"
+  },
+  "last_updated": "2025"
+}

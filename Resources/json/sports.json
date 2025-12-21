@@ -1,0 +1,116 @@
+{
+  "scholarship_id": "BWU_SPORTS_KRIRA_RATNA",
+  "scholarship_name": "Brainware Sports Scholarship (Brainware Krira Ratna)",
+  "category": "Sports-Based Scholarship",
+  "offered_by": "Brainware University",
+  "academic_year": "Applicable for all current admission cycles",
+  "overview": {
+    "short_intro": "Brainware Krira Ratna is a prestigious sports scholarship designed to reward students who have represented and excelled in sports at district, state, national, or international levels. The scholarship provides substantial tuition fee waivers based on the level of sports achievement.",
+    "objective": [
+      "Encourage excellence in sports alongside academics",
+      "Support talented sportspersons financially",
+      "Promote sports culture within the university",
+      "Recognize competitive achievements at various levels"
+    ]
+  },
+  "scholarship_benefits": {
+    "benefit_type": "Tuition Fee Waiver",
+    "benefit_structure_table": {
+      "table_headers": [
+        "Sports Achievement Level",
+        "Required Proof",
+        "Tuition Fee Waiver"
+      ],
+      "table_rows": [
+        [
+          "International Level(Medal / Trophy / Certificate)",
+          "International federation / authority certificate",
+          "100% Tuition Fee Waiver"
+        ],
+        [
+          "National Level(Medal / Trophy / Certificate)",
+          "National sports authority certificate",
+          "100% Tuition Fee Waiver"
+        ],
+        [
+          "State Level(Medal / Trophy / Certificate)",
+          "State sports association certificate",
+          "50% Tuition Fee Waiver"
+        ],
+        [
+          "District Level(Medal / Trophy / Certificate)",
+          "District sports authority certificate",
+          "25% Tuition Fee Waiver"
+        ]
+      ]
+    },
+    "important_note": "Tuition fee waiver applies only after verification of valid sports documents."
+  },
+  "eligibility_criteria": {
+    "academic_requirement": [
+      "Candidate must have secured minimum 60% throughout their academic career"
+    ],
+    "sports_requirement": [
+      "Must possess valid medal / trophy / certificate",
+      "Sports achievement must be at District / State / National / International level"
+    ],
+    "citizenship_restrictions": [
+      "Not applicable for International Students"
+    ]
+  },
+  "document_requirements": {
+    "mandatory_documents": [
+      "Original sports certificate / medal / trophy",
+      "Official sports authority verification",
+      "Academic marksheets (all levels)",
+      "University admission proof"
+    ],
+    "verification_policy": "Documents must be submitted and verified every semester"
+  },
+  "rules_and_conditions": {
+    "general_rules": [
+      "A candidate can opt for only ONE Brainware University scholarship scheme",
+      "Students availing Full or Half Freeship are NOT eligible for Early Bird Offer",
+      "Scholarship continuation depends on document re-verification every semester"
+    ],
+    "exclusivity_clause": "Brainware Krira Ratna cannot be combined with other Brainware scholarships."
+  },
+  "early_bird_offer_interaction": {
+    "early_bird_description": "Early Bird Offer provides ₹30,000 fee reduction for early admissions",
+    "eligibility_with_sports_scholarship": "NOT applicable if student receives Full or Half Freeship under Krira Ratna"
+  },
+  "renewal_policy": {
+    "renewal_required": true,
+    "renewal_frequency": "Every Semester",
+    "renewal_conditions": [
+      "Submission of updated and valid sports documents",
+      "Maintaining minimum academic eligibility",
+      "No violation of university scholarship rules"
+    ]
+  },
+  "visual_data_for_charts": {
+    "recommended_chart_type": "Pie Chart / Bar Chart",
+    "data_points": [
+      {
+        "label": "International/National",
+        "value": 100
+      },
+      {
+        "label": "State Level",
+        "value": 50
+      },
+      {
+        "label": "District Level",
+        "value": 25
+      }
+    ]
+  },
+  "important_highlights": [
+    "🎖️ Rewards real sports achievements",
+    "💰 Offers up to 100% tuition fee waiver",
+    "📄 Requires strict document verification",
+    "🚫 Not applicable for international students",
+    "🔁 Renewable every semester"
+  ],
+  "disclaimer": "Scholarship rules and benefits are subject to university policies and document verification. Final approval lies with Brainware University."
+}

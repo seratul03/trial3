@@ -480,6 +480,59 @@ body {
     bottom: 14px;
 }
 
+/* Rating stars */
+.rating {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.rating .fa-star {
+    color: #d1d5db; /* light gray for empty */
+    font-size: 14px;
+}
+.rating .fas.fa-star {
+    color: #f6c518; /* gold for filled stars */
+}
+
+.action-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.contact-btn {
+    padding: 8px 14px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(90deg, #5b6bff, #7a8cff);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(91,107,255,0.2);
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+.contact-btn i { font-size: 14px; }
+.contact-btn:hover { transform: translateY(-2px); }
+
+/* Ensure detail button sits inline in the action row */
+.action-row .detail-btn {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    padding: 8px 14px;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #e8e8e8, #ffffff);
+    color: #333;
+    box-shadow: 3px 3px 8px #bebebe, -3px -3px 8px #ffffff;
+}
+.action-row .detail-btn:hover { transform: translateY(-2px); }
+.action-row .detail-btn:active { transform: none; }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .faculty-grid {

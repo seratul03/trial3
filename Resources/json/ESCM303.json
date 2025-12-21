@@ -1,0 +1,65 @@
+{
+  "course_code": "ESCM303",
+  "course_name": "Introduction to Python Programming",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Python"
+    },
+    {
+      "module_number": 2,
+      "title": "Conditional & Control Statements"
+    },
+    {
+      "module_number": 3,
+      "title": "String Manipulation"
+    },
+    {
+      "module_number": 4,
+      "title": "Lists"
+    },
+    {
+      "module_number": 5,
+      "title": "Tuple"
+    },
+    {
+      "module_number": 6,
+      "title": "Dictionaries"
+    },
+    {
+      "module_number": 7,
+      "title": "Functions"
+    },
+    {
+      "module_number": 8,
+      "title": "Modules & File I/O"
+    },
+    {
+      "module_number": 9,
+      "title": "Exception Handling"
+    },
+    {
+      "module_number": 10,
+      "title": "Object-Oriented Programming"
+    }
+  ],
+  "summary": "Introduction to Python Programming is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 10 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Core Python Programming – R. Nageswara Rao",
+    "Introduction to Python Programming – Gowrishankar & Veena",
+    "Python Data Science Handbook – Jake VanderPlas",
+    "Hands-On Machine Learning – Aurelien Geron",
+    "Core Python Applications Programming – Wesley J Chun",
+    "Flask Web Development – Miguel Grinberg"
+  ],
+  "course_outcomes": [
+    "Describe Python syntax and semantics and analyze control flow statements.",
+    "Demonstrate proficiency in string handling and functions.",
+    "Create and manipulate data structures like lists, dictionaries, tuples and sets.",
+    "Use file operations, modules and packages effectively.",
+    "Apply object-oriented programming concepts in Python to solve problems."
+  ],
+  "prerequisites": [
+    "Basic knowledge of computer programming language"
+  ]
+}

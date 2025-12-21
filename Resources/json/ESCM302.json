@@ -1,0 +1,43 @@
+{
+  "course_code": "ESCM302",
+  "course_name": "Data Structure & Algorithms",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Data Structures & Algorithm Analysis"
+    },
+    {
+      "module_number": 2,
+      "title": "Arrays, Stacks, Queues"
+    },
+    {
+      "module_number": 3,
+      "title": "Linked Lists"
+    },
+    {
+      "module_number": 4,
+      "title": "Searching, Sorting, Hashing"
+    },
+    {
+      "module_number": 5,
+      "title": "Trees and Graphs"
+    }
+  ],
+  "summary": "Data Structure & Algorithms is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Fundamentals of Data Structures in C – Horowitz, Sahni, Anderson-Freed",
+    "Data Structures Through C – Yashavant Kanetkar",
+    "Data Structures – S. Lipschutz",
+    "Data Structures and Algorithm Analysis in C – Mark Allen Weiss",
+    "Data Structures and Program Design in C – Kruse et al."
+  ],
+  "course_outcomes": [
+    "Define and analyze time and space complexities of algorithms.",
+    "Describe linear data structures (stacks, queues, linked lists) and their applications.",
+    "Differentiate and demonstrate searching, sorting and hashing techniques.",
+    "State and illustrate non-linear data structures like trees and graphs and write programs using them."
+  ],
+  "prerequisites": [
+    "Basic Mathematics, Basic knowledge of Problem solving"
+  ]
+}

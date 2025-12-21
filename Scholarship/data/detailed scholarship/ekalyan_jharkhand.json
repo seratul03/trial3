@@ -1,0 +1,17 @@
+{
+  "scholarship_id": "jharkhand_ekalyan",
+  "scholarship_name": "e-Kalyan Scholarship (Jharkhand)",
+  "scholarship_type": "State Government Scholarship",
+  "state": "Jharkhand",
+  "eligibility_criteria": {
+    "domicile": "Resident of Jharkhand",
+    "category": "SC / ST / BC",
+    "income_criteria": {
+      "sc_st": "₹2,50,000 per annum",
+      "bc": "₹2,50,000 per annum"
+    }
+  },
+  "scholarship_benefits": { "description": "Tuition fee and maintenance allowance." },
+  "documents_required": ["Income Certificate", "Caste Certificate", "Residency Certificate", "Bonafide Certificate"],
+  "last_updated": "2025"
+}

@@ -1,0 +1,44 @@
+{
+  "scholarship_id": "ffe_scholarship",
+  "scholarship_name": "Foundation for Excellence (FFE) Scholarship",
+  "official_name": "FFE Scholarship Program",
+  "scholarship_type": "Private Trust Scholarship",
+  "offered_by": "Foundation for Excellence",
+  "target_group": "Meritorious students in Engineering and Medicine",
+  "academic_level": ["B.E./B.Tech", "MBBS", "Integrated M.Tech (5-year)"],
+  "introduction": "FFE awards scholarships to exceptionally bright students who have financial constraints, enabling them to pursue professional degrees in Engineering and Medicine.",
+  "eligibility_criteria": {
+    "academic_requirements": [
+      "70% or above in Class 12",
+      "Good rank in entrance exams (JEE Mains/Adv, NEET, State CET)"
+    ],
+    "income_criteria": {
+      "maximum_family_income": "₹3,00,000 per annum"
+    },
+    "year": "Must be in 1st year of the degree program"
+  },
+  "scholarship_benefits": {
+    "amount": "₹40,000 to ₹50,000 per year",
+    "coverage": "Tuition fees, books, and other allowances",
+    "mentorship": "Includes mentorship and soft-skills training programs"
+  },
+  "documents_required": [
+    "Class 10 & 12 Marksheets",
+    "Entrance Exam Rank Card",
+    "Income Certificate",
+    "Receipt of Tuition Fees paid",
+    "Bank Passbook",
+    "Statement of Estimated Expenses from College"
+  ],
+  "application_process": {
+    "mode": "Online via FFE Portal",
+    "steps": [
+      "Fill Preliminary Application Form on FFE website",
+      "If shortlisted, fill Detailed Application",
+      "Upload documents",
+      "Telephonic/Video Interview with FFE Facilitator",
+      "Final Selection"
+    ]
+  },
+  "last_updated": "2025"
+}

@@ -1,0 +1,39 @@
+{
+  "academic": "📚 Academic Information:\n\n• Academic calendar: July to June\n• Odd semester: July to December\n• Even semester: January to June\n• Mid-sem exams: Sept (odd) / March (even)\n• End-sem exams: Nov-Dec (odd) / May-June (even)\n• Results: Declared within 30 days\n\nWhat specific academic information would you like to know?",
+  
+  "faculty": "👨‍🏫 Faculty Information:\n\n• Our faculty members are highly qualified with M.Tech and Ph.D. degrees\n• Experienced professors in CSE, AI & ML, and other departments\n• Regular workshops and training programs\n• Research-oriented teaching approach\n\nWould you like to know about a specific department or faculty member?",
+  
+  "examination": "📝 Examination Information:\n\n• Mid-sem exams: September (odd sem) and March (even sem)\n• End-sem exams: Nov-Dec (odd sem) and May-June (even sem)\n• Results: Declared within 30 days\n• Re-registration: Forms issued before each semester\n• Back paper: Forms available at the start of semester\n\nNeed help with exam schedules or results?",
+  
+  "holiday": "🏖️ Holiday Information:\n\n• Winter break: End of December\n• Summer break: After June examinations\n• National holidays: As per government calendar\n• Festival holidays: Announced in advance\n\nThe complete holiday list is available on the university portal!",
+  
+  "academic calendar": "📅 The academic year at Brainware University begins in July each year and runs till June of the next year.",
+  "semester start": "🕓 Odd semester: July to December | Even semester: January to June.",
+  "semester end": "🎯 Odd semester exams are held in Nov–Dec, and even semester exams in May–June.",
+  "course start": "🎓 Courses for new batches usually start in July–August every year.",
+  "course end": "📘 Final semester generally completes by May–June, followed by final examinations.",
+  "mid sem exam": "📝 Mid-sem exams are usually held in September (odd sem) and March (even sem).",
+  "end sem exam": "🎯 End-sem exams occur in Nov–Dec (odd sem) and May–June (even sem).",
+  "vacation": "🌴 Short winter break in December-end and summer break after June.",
+  "result": "📊 Results are declared within 30 days after end-semester exams.",
+  "re registration": "🧾 Re-registration and back paper forms are issued before the start of each new semester.",
+
+  "admission": "Admissions open from July to September every year. Apply via the official Brainware University website.",
+  "courses": "We offer B.Tech (CSE, AI & ML), BCA, MCA, and Diploma programs.",
+  "fees": "The yearly fees vary by course. B.Tech AI & ML is approximately ₹1,00,000 per year.",
+  "placement": "We have an active placement cell with tie-ups with leading companies like TCS, Wipro, and Infosys.",
+  "library": "The central library is open 9 AM to 6 PM with digital resources and reading zones.",
+  "sports": "Facilities include cricket, football, badminton, table tennis, and a gymnasium.",
+  "canteen": "The canteen offers hygienic, affordable food and is open till 7 PM.",
+  "thanks": "You're welcome! 😊",
+  "hi": "Hello! 👋 I'm the Brainware University AI Assistant. How can I help you today?",
+  "hello": "Hi there! 👋 Welcome to Brainware University. Ask me anything about academics, courses, faculty, exams, or campus facilities!",
+  "hey": "Hey! 👋 How can I assist you today?",
+  "good morning": "Good morning! ☀️ How can I help you today?",
+  "good afternoon": "Good afternoon! 🌤️ What can I do for you?",
+  "good evening": "Good evening! 🌙 How may I assist you?",
+  "namaste": "Namaste! 🙏 I'm here to help. What would you like to know about Brainware University?",
+  "default": "Sorry, I'm not sure about that. Please ask about admissions, courses, or campus facilities."
+
+
+}

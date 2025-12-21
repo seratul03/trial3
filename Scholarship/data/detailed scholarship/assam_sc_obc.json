@@ -1,0 +1,20 @@
+{
+  "scholarship_id": "assam_post_matric",
+  "scholarship_name": "Post Matric Scholarship for SC/OBC Students (Assam)",
+  "scholarship_type": "State Government Scholarship",
+  "offered_by": "Government of Assam",
+  "eligibility_criteria": {
+    "domicile": "Permanent resident of Assam",
+    "category": "Scheduled Caste (SC) or Other Backward Class (OBC)",
+    "income_criteria": {
+      "sc_limit": "₹2,50,000 per annum",
+      "obc_limit": "₹1,50,000 per annum"
+    }
+  },
+  "scholarship_benefits": {
+    "components": ["Maintenance Allowance", "Study Tour Charges", "Thesis Typing/Printing Charges", "Book Allowance"]
+  },
+  "documents_required": ["Caste Certificate", "Income Certificate", "Bonafide Certificate", "Bank Passbook"],
+  "application_process": { "mode": "Online via NSP" },
+  "last_updated": "2025"
+}

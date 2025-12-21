@@ -1,0 +1,50 @@
+{
+  "course_code": "ESCM301",
+  "course_name": "Internet of Things",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "IoT Fundamentals"
+    },
+    {
+      "module_number": 2,
+      "title": "IoT Reference Architecture, Software Design"
+    },
+    {
+      "module_number": 3,
+      "title": "Technologies behind IoT"
+    },
+    {
+      "module_number": 4,
+      "title": "Resource Management in IoT"
+    },
+    {
+      "module_number": 5,
+      "title": "From the Internet of Things to the Web of Things"
+    },
+    {
+      "module_number": 6,
+      "title": "Applications of IoT"
+    },
+    {
+      "module_number": 7,
+      "title": "Recent Trends"
+    }
+  ],
+  "summary": "Internet of Things is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 7 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Internet of Things: Architectures, Protocols and Standards – Cirani et al.",
+    "Internet of Things: A Hands-On Approach – Bahga & Madisetti"
+  ],
+  "course_outcomes": [
+    "Define and describe fundamentals of Internet of Things (IoT).",
+    "Describe and identify IoT reference architecture and design.",
+    "Discuss IoT technologies and protocols.",
+    "Analyze and evaluate resource management in IoT.",
+    "Evaluate IoT applications in different environments and recent trends.",
+    "Demonstrate recent IoT application trends."
+  ],
+  "prerequisites": [
+    "Basic knowledge of the fundamentals of computers"
+  ]
+}

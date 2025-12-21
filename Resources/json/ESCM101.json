@@ -1,0 +1,52 @@
+{
+  "course_code": "ESCM101",
+  "course_name": "Basic Electrical and Electronics Engineering",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "DC Circuit"
+    },
+    {
+      "module_number": 2,
+      "title": "AC Circuits"
+    },
+    {
+      "module_number": 3,
+      "title": "Transformers"
+    },
+    {
+      "module_number": 4,
+      "title": "Electrical Machines"
+    },
+    {
+      "module_number": 5,
+      "title": "Physics of Semiconductors"
+    },
+    {
+      "module_number": 6,
+      "title": "p-n junction and Semiconductor Diodes"
+    },
+    {
+      "module_number": 7,
+      "title": "Bipolar Junction Transistor"
+    }
+  ],
+  "summary": "Basic Electrical and Electronics Engineering bridges theory with practical circuit applications. This course covers DC/AC circuits, transformers, machines, and semiconductor devices. You'll learn to analyze electrical systems and understand electronic components. The subject provides hands-on experience with fundamental electrical concepts. These skills are applicable across all engineering disciplines.",
+  "recommended_books": [
+    "A Textbook of Electrical Technology – B. L. Theraja",
+    "Basic Electrical Engineering – Kothari & Nagrath",
+    "Basic Electrical Engineering – Kulshreshtha",
+    "Electronics Fundamentals and Applications – Chattopadhyay & Rakshit",
+    "Integrated Electronics – Millman & Halkias",
+    "Basic Electronics – K. K. Ghosh",
+    "J. B. Gupta – Basic Electrical Engineering",
+    "Horowitz & Hill – The Art of Electronics"
+  ],
+  "course_outcomes": [
+    "Describe and apply network theorems to analyze DC and AC circuits.",
+    "Explain and analyze the construction and operation of transformers and electrical machines.",
+    "Understand and interpret semiconductor physics.",
+    "Understand and compare characteristics and applications of various diodes and transistors."
+  ],
+  "prerequisites": []
+}

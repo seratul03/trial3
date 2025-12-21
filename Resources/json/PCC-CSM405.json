@@ -1,0 +1,45 @@
+{
+  "course_code": "PCC-CSM405",
+  "course_name": "Discrete Mathematics",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Sets, Relations, Functions & Number Theory"
+    },
+    {
+      "module_number": 2,
+      "title": "Counting Techniques"
+    },
+    {
+      "module_number": 3,
+      "title": "Propositional Logic"
+    },
+    {
+      "module_number": 4,
+      "title": "Algebraic Structures & Boolean Algebra"
+    },
+    {
+      "module_number": 5,
+      "title": "Graphs and Trees"
+    }
+  ],
+  "summary": "Discrete Mathematics is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Discrete Mathematics and Its Applications – Kenneth Rosen",
+    "Discrete Mathematics with Applications – Susanna Epp",
+    "Elements of Discrete Mathematics – C. L. Liu",
+    "Discrete Mathematical Structures – Tremblay & Manohar",
+    "Discrete Mathematics – Norman L. Biggs",
+    "Schaum’s Outline: Discrete Mathematics – Lipschutz & Lipson"
+  ],
+  "course_outcomes": [
+    "Understand functions, mathematical induction and GCD.",
+    "Understand algebraic structures like groups and rings.",
+    "Apply counting techniques and algorithms to computer problems.",
+    "Analyze graph theory concepts and solve related problems.",
+    "Use propositional logic to evaluate mathematical statements."
+  ],
+  "prerequisites": [
+    "Algebra, Geometry and Precalculus"
+  ]
+}

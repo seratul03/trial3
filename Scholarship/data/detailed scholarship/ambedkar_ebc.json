@@ -1,0 +1,13 @@
+{
+  "scholarship_id": "ambedkar_ebc_tripura",
+  "scholarship_name": "Dr. B.R. Ambedkar Post Matric Scholarship for EBC",
+  "scholarship_type": "State Government Scholarship",
+  "target_group": "Economically Backward Classes (EBC)",
+  "state": "Tripura",
+  "eligibility_criteria": {
+    "category": "General Category (EBC) - Not covered under SC/ST/OBC",
+    "income_criteria": { "maximum_family_income": "₹1,00,000 per annum" }
+  },
+  "scholarship_benefits": { "description": "Maintenance allowance and fee reimbursement." },
+  "last_updated": "2025"
+}

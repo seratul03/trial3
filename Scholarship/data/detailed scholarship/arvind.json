@@ -1,0 +1,39 @@
+{
+  "scholarship_id": "arvind_foundation",
+  "scholarship_name": "Arvind Foundation Scholarship",
+  "official_name": "Arvind Foundation Scholarship for Undergraduate Students",
+  "scholarship_type": "Corporate CSR Scholarship",
+  "offered_by": "Arvind Foundation",
+  "target_group": "Students from low-income families",
+  "academic_level": ["Undergraduate (UG)"],
+  "introduction": "The Arvind Foundation Scholarship is designed to provide financial assistance to students from lower-income backgrounds who are pursuing undergraduate courses.",
+  "eligibility_criteria": {
+    "academic_requirements": "Minimum 50% marks in Class 12",
+    "income_criteria": {
+      "maximum_family_income": "₹5,00,000 per annum"
+    },
+    "course_type": "Open to students in any Undergraduate course (B.A, B.Com, B.Sc, B.Tech, etc.)"
+  },
+  "scholarship_benefits": {
+    "amount": "Up to ₹20,000 per year",
+    "usage": "Tuition fees and academic expenses"
+  },
+  "application_process": {
+    "mode": "Online via Vidyasaarathi Portal",
+    "steps": [
+      "Register on Vidyasaarathi",
+      "Browse 'Arvind Foundation Scholarship'",
+      "Complete the application form",
+      "Upload required documents",
+      "Submit for review"
+    ]
+  },
+  "documents_required": [
+    "Class 12 Marksheet",
+    "Income Certificate",
+    "Student Bank Passbook",
+    "College Admission Letter/Bonafide Certificate",
+    "Aadhaar Card"
+  ],
+  "last_updated": "2025"
+}

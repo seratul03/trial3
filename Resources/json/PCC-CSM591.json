@@ -1,0 +1,59 @@
+{
+  "course_code": "PCC-CSM591",
+  "course_name": "Database Management Systems Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "ER to Tables"
+    },
+    {
+      "module_number": 2,
+      "title": "DB & Table Creation"
+    },
+    {
+      "module_number": 3,
+      "title": "Table & Record Handling"
+    },
+    {
+      "module_number": 4,
+      "title": "SELECT, INSERT, UPDATE, DELETE"
+    },
+    {
+      "module_number": 5,
+      "title": "Retrieving Data & Filtering"
+    },
+    {
+      "module_number": 6,
+      "title": "Aggregate Functions & JOINS"
+    },
+    {
+      "module_number": 7,
+      "title": "Correlated Queries"
+    },
+    {
+      "module_number": 8,
+      "title": "Views"
+    },
+    {
+      "module_number": 9,
+      "title": "PL/SQL: Procedures, Functions, Cursors, Triggers"
+    },
+    {
+      "module_number": 10,
+      "title": "MongoDB & NoSQL"
+    }
+  ],
+  "summary": "Database Management Systems Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 10 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "SQL, PL/SQL – Ivan Bayross"
+  ],
+  "course_outcomes": [
+    "Apply and analyze basic database system concepts and applications.",
+    "Demonstrate SQL basics and construct queries for database operations.",
+    "Choose models and algorithms to transform data into useful information.",
+    "Develop commercial relational DB systems using SQL (Oracle, MySQL)."
+  ],
+  "prerequisites": [
+    "Nil"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "scholarship_id": "nagaland_minority",
+  "scholarship_name": "Post-Matric Scholarship for Minority (Nagaland)",
+  "scholarship_type": "State Scholarship",
+  "state": "Nagaland",
+  "eligibility_criteria": {
+    "domicile": "Resident of Nagaland",
+    "religion": "Minority Community (Christian, Muslim, Sikh, Buddhist, Parsi, Jain)",
+    "income_criteria": { "maximum_family_income": "₹2,00,000 per annum" },
+    "academic": "Minimum 50% marks in previous exam"
+  },
+  "scholarship_benefits": { "description": "Admission and tuition fees + Maintenance allowance." },
+  "last_updated": "2025"
+}

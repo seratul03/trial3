@@ -1,0 +1,43 @@
+{
+  "course_code": "PCC-CSM404",
+  "course_name": "Formal Language & Automata Theory",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction – Grammar & Chomsky Hierarchy"
+    },
+    {
+      "module_number": 2,
+      "title": "Regular Languages & Finite Automata"
+    },
+    {
+      "module_number": 3,
+      "title": "Context-Free Languages & Pushdown Automata"
+    },
+    {
+      "module_number": 4,
+      "title": "Context-Sensitive Languages"
+    },
+    {
+      "module_number": 5,
+      "title": "Turing Machines & Undecidability"
+    }
+  ],
+  "summary": "Formal Language & Automata Theory is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Introduction to Automata Theory, Languages, and Computation – Hopcroft, Motwani, Ullman",
+    "Elements of the Theory of Computation – Lewis & Papadimitriou",
+    "Introduction to the Theory of Computation – Michael Sipser",
+    "Introduction to Languages and the Theory of Computation – John Martin"
+  ],
+  "course_outcomes": [
+    "Explain and manipulate concepts in automata theory and formal languages.",
+    "Describe language acceptance by automata and prove properties formally.",
+    "Sketch automata for languages and simplify automata and grammars.",
+    "Distinguish normal forms and transform between PDA and CFG.",
+    "Define Turing machines and use pumping lemma to judge language classes."
+  ],
+  "prerequisites": [
+    "Set theory"
+  ]
+}

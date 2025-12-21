@@ -1,0 +1,171 @@
+{
+  "semester": "SEMESTER – III",
+  "subjects": [
+    {
+      "course_code": "BSCM301",
+      "course_name": "Differential Equation and Complex Analysis",
+      "modules": [
+        { "module_number": 1, "title": "Vector Calculus - I" },
+        { "module_number": 2, "title": "Vector Calculus - II" },
+        { "module_number": 3, "title": "Ordinary Differential Equation of Higher Order" },
+        { "module_number": 4, "title": "Complex Variable I" },
+        { "module_number": 5, "title": "Complex Variable II" }
+      ],
+      "recommended_books": [
+        "Higher Engineering Mathematics – B. V. Ramana",
+        "Higher Engineering Mathematics – B. S. Grewal",
+        "Advance Engineering Mathematics – R. K. Jain & S. R. K. Iyenger",
+        "Foundation of Complex Analysis – S. Ponnuswamy",
+        "Advanced Engineering Mathematics – E. Kreyszig",
+        "Advanced Engineering Mathematics – Peter V. O’Neil",
+        "Calculus – Maurice D. Weir, Joel Hass, Frank R. Giordano",
+        "Complex Variables and Applications – Brown & Churchill"
+      ]
+    },
+    {
+      "course_code": "ESCM301",
+      "course_name": "Internet of Things",
+      "modules": [
+        { "module_number": 1, "title": "IoT Fundamentals" },
+        { "module_number": 2, "title": "IoT Reference Architecture, Software Design" },
+        { "module_number": 3, "title": "Technologies behind IoT" },
+        { "module_number": 4, "title": "Resource Management in IoT" },
+        { "module_number": 5, "title": "From the Internet of Things to the Web of Things" },
+        { "module_number": 6, "title": "Applications of IoT" },
+        { "module_number": 7, "title": "Recent Trends" }
+      ],
+      "recommended_books": [
+        "Internet of Things: Architectures, Protocols and Standards – Cirani et al.",
+        "Internet of Things: A Hands-On Approach – Bahga & Madisetti"
+      ]
+    },
+    {
+      "course_code": "ESCM302",
+      "course_name": "Data Structure & Algorithms",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Data Structures & Algorithm Analysis" },
+        { "module_number": 2, "title": "Arrays, Stacks, Queues" },
+        { "module_number": 3, "title": "Linked Lists" },
+        { "module_number": 4, "title": "Searching, Sorting, Hashing" },
+        { "module_number": 5, "title": "Trees and Graphs" }
+      ],
+      "recommended_books": [
+        "Fundamentals of Data Structures in C – Horowitz, Sahni, Anderson-Freed",
+        "Data Structures Through C – Yashavant Kanetkar",
+        "Data Structures – S. Lipschutz",
+        "Data Structures and Algorithm Analysis in C – Mark Allen Weiss",
+        "Data Structures and Program Design in C – Kruse et al."
+      ]
+    },
+    {
+      "course_code": "ESCM303",
+      "course_name": "Introduction to Python Programming",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Python" },
+        { "module_number": 2, "title": "Conditional & Control Statements" },
+        { "module_number": 3, "title": "String Manipulation" },
+        { "module_number": 4, "title": "Lists" },
+        { "module_number": 5, "title": "Tuple" },
+        { "module_number": 6, "title": "Dictionaries" },
+        { "module_number": 7, "title": "Functions" },
+        { "module_number": 8, "title": "Modules & File I/O" },
+        { "module_number": 9, "title": "Exception Handling" },
+        { "module_number": 10, "title": "Object-Oriented Programming" }
+      ],
+      "recommended_books": [
+        "Core Python Programming – R. Nageswara Rao",
+        "Introduction to Python Programming – Gowrishankar & Veena",
+        "Python Data Science Handbook – Jake VanderPlas",
+        "Hands-On Machine Learning – Aurelien Geron",
+        "Core Python Applications Programming – Wesley J Chun",
+        "Flask Web Development – Miguel Grinberg"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM301",
+      "course_name": "Computer Organization & Architecture",
+      "modules": [
+        { "module_number": 1, "title": "Functional Blocks of a Computer" },
+        { "module_number": 2, "title": "Data Representation & Computer Arithmetic" },
+        { "module_number": 3, "title": "Memory System Design" },
+        { "module_number": 4, "title": "Pipelining" },
+        { "module_number": 5, "title": "Memory Organization" }
+      ],
+      "recommended_books": [
+        "Computer Organization and Design – Patterson & Hennessy",
+        "Computer Organization – Carl Hamacher",
+        "Computer Organization and Architecture – William Stallings"
+      ]
+    },
+    {
+      "course_code": "ESCM392",
+      "course_name": "Data Structure & Algorithms Lab",
+      "modules": [
+        { "module_number": 1, "title": "Stacks, Queues, Linked Lists" },
+        { "module_number": 2, "title": "Sparse Matrices & Trees" },
+        { "module_number": 3, "title": "Graphs, Dijkstra, Hashing" }
+      ],
+      "recommended_books": [
+        "Algorithms, Data Structures, and Problem Solving with C++ – Mark Allen Weiss",
+        "How to Solve it by Computer – R. G. Dromey"
+      ]
+    },
+    {
+      "course_code": "ESCM393",
+      "course_name": "Introduction to Python Programming Lab",
+      "modules": [
+        { "module_number": 1, "title": "Variables & Basic Programs" },
+        { "module_number": 2, "title": "Conditional Statements" },
+        { "module_number": 3, "title": "Loops" },
+        { "module_number": 4, "title": "Patterns" },
+        { "module_number": 5, "title": "String Programs" },
+        { "module_number": 6, "title": "List Programs" },
+        { "module_number": 7, "title": "Matrix & Tuple Programs" },
+        { "module_number": 8, "title": "Dictionary Programs" },
+        { "module_number": 9, "title": "Function Programs" },
+        { "module_number": 10, "title": "Function Arguments & Sorting" },
+        { "module_number": 11, "title": "Exception Handling" },
+        { "module_number": 12, "title": "File Handling" },
+        { "module_number": 13, "title": "Object-Oriented Programming" }
+      ],
+      "recommended_books": [
+        "Python Programming: Using Problem Solving Approach – Reema Thareja",
+        "Introduction to Python Programming – Gowrishankar & Veena",
+        "Python Data Science Handbook – Jake VanderPlas"
+      ]
+    },
+    {
+      "course_code": "PCC-CSM391",
+      "course_name": "Computer Organization & Architecture Lab",
+      "modules": [
+        { "module_number": 1, "title": "HDL Programming" },
+        { "module_number": 2, "title": "Register & Memory Design" },
+        { "module_number": 3, "title": "CPU & ALU Design" }
+      ],
+      "recommended_books": [
+        "Computer Organization and Design – Patterson & Hennessy",
+        "Computer Organization – Carl Hamacher",
+        "Computer Organization and Architecture – William Stallings"
+      ]
+    },
+    {
+      "course_code": "AUM-3",
+      "course_name": "Constitution of India",
+      "modules": [
+        { "module_number": 1, "title": "Introduction to Indian Constitution" },
+        { "module_number": 2, "title": "Fundamental Rights" },
+        { "module_number": 3, "title": "Directive Principles" },
+        { "module_number": 4, "title": "Union Government" },
+        { "module_number": 5, "title": "State Government" }
+      ],
+      "recommended_books": [
+        "An Introduction to the Constitution of India – M.V. Pylee",
+        "Introduction to the Constitution of India – Durga Das Basu",
+        "Indian Government and Politics – D.C. Gupta",
+        "Constitutional Development and National Movement in India – V.D. Mahajan",
+        "The Constitutional Law of India – J. N. Pandey",
+        "Indian Constitutional Law – M. P. Jain"
+      ]
+    }
+  ]
+}

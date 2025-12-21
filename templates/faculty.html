@@ -14,9 +14,10 @@
         <div class="search-container">
             <input type="text" id="facultySearchInput" class="search-input" placeholder="Search by name, position, or research area..." oninput="searchFaculty()">
         </div>
-        <div class="faculty-grid" id="facultyGrid">
-            <!-- Faculty cards will be dynamically loaded here -->
-        </div>
+            <div class="faculty-grid" id="facultyGrid">
+                <!-- Faculty cards will be dynamically loaded here -->
+            </div>
+            </div>
     </div>
 
     <script>
@@ -24,12 +25,29 @@
         async function loadFaculty() {
             try {
                 const response = await fetch('/faculty-data');
-                const facultyData = await response.json();
-                
+                const rawList = await response.json();
+                const list = Array.isArray(rawList) ? rawList : (rawList.faculty || rawList.teachers || []);
+
+                const facultyMap = {};
+                const keys = [];
+
+                function slugify(name) {
+                    return (name||'').toString().toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,'').replace(/\-+/g,'-').replace(/^-|-$/g,'');
+                }
+
+                list.forEach((faculty, idx) => {
+                    const key = faculty.key || faculty.id || slugify(faculty.name) || `f${idx}`;
+                    facultyMap[key] = faculty;
+                    facultyMap[key].__key = key;
+                    keys.push(key);
+                });
+
+                const listEl = document.getElementById('facultyList');
                 const grid = document.getElementById('facultyGrid');
                 grid.innerHTML = '';
-                
-                facultyData.forEach(faculty => {
+
+                // Build grid cards (name + position + rating + contact + view card + details)
+                list.forEach((faculty, idx) => {
                     const card = createFacultyCard(faculty);
                     grid.appendChild(card);
                 });
@@ -41,33 +59,58 @@
         function createFacultyCard(faculty) {
             const card = document.createElement('div');
             card.className = 'card';
-            
+
             // Determine the rank for circle color
-            let rankClass = 'blue'; // default
-            if (faculty.position.includes('Professor & HOD') || faculty.position === 'Professor') {
+            let rankClass = 'blue';
+            if ((faculty.position || '').includes('Professor & HOD') || (faculty.position || '') === 'Professor') {
                 rankClass = 'gold';
-            } else if (faculty.position.includes('Associate Professor')) {
+            } else if ((faculty.position || '').includes('Associate Professor')) {
                 rankClass = 'silver';
             }
-            
-            // Default state: collapsed (show name and position only)
+
+            // Determine rating
+            let rating = 4;
+            if ((faculty.position || '').toLowerCase().includes('hod') || (faculty.position || '').toLowerCase().includes('head')) {
+                rating = 5;
+            }
+
+            let starsHtml = '<div class="rating">';
+            for (let i = 1; i <= 5; i++) {
+                starsHtml += (i <= rating) ? '<i class="fas fa-star" aria-hidden="true"></i>' : '<i class="far fa-star" aria-hidden="true"></i>';
+            }
+            starsHtml += '</div>';
+
+            // Contact link
+            let contactHref = '#';
+            if (faculty.email) contactHref = `mailto:${faculty.email}`;
+
+            const connectId = faculty.key ? encodeURIComponent(faculty.key) : encodeURIComponent((faculty.name||'').toString().toLowerCase().replace(/\s+/g,'-'));
+            const connectUrl = `/faculty_card?name=${connectId}`;
+
+            let actionButtonsHtml = `<div class="action-row">`;
+            actionButtonsHtml += `<button class="viewcard-btn" onclick="handleConnect(event, '${connectUrl}')"><i class="fas fa-id-card"></i> View Card</button>`;
+            if (faculty.email) actionButtonsHtml += `<button class="contact-btn" onclick="handleContact(event, '${contactHref}')"><i class="fas fa-envelope"></i> Contact</button>`;
+            actionButtonsHtml += `<button class="detail-btn" onclick="toggleDetails(this)">Detailed View</button>`;
+            actionButtonsHtml += `</div>`;
+
             card.innerHTML = `
                 <div class="profile-pic ${rankClass}">
-                    <img src="/${faculty.photo || 'logo/Brainware_University.jpg'}" alt="${faculty.name}" onerror="this.src='/logo/Brainware_University.jpg'">
+                    <img src="/${faculty.photo || 'logo/Brainware_University.jpg'}" alt="${faculty.name || ''}" onerror="this.src='/logo/Brainware_University.jpg'">
                 </div>
                 <div class="card-content">
-                    <div class="name">${faculty.name}</div>
-                    <div class="position">${faculty.position}</div>
-                    
+                    <div class="name">${faculty.name || ''}</div>
+                    <div class="position">${faculty.position || ''}</div>
+                    ${starsHtml}
+                    ${actionButtonsHtml}
                     <div class="details-section" style="display: none;">
                         <div class="detail-item">
                             <strong>Department:</strong>
-                            <span>${faculty.department}</span>
+                            <span>${faculty.department || ''}</span>
                         </div>
-                        ${faculty.research ? `
+                        ${(faculty.research || faculty.research_area) ? `
                         <div class="detail-item">
                             <strong>Research Areas:</strong>
-                            <span>${faculty.research}</span>
+                            <span>${(faculty.research || (faculty.research_area || []).join(', '))}</span>
                         </div>
                         ` : ''}
                         ${faculty.qualification ? `
@@ -77,13 +120,9 @@
                         </div>
                         ` : ''}
                     </div>
-                    
-                    <button class="detail-btn" onclick="toggleDetails(this)">
-                        Detailed View
-                    </button>
                 </div>
             `;
-            
+
             return card;
         }
 
@@ -117,6 +156,49 @@
                 }, 50);
                 
                 button.textContent = 'Hide Details';
+            }
+        }
+
+        // Handle contact button click: open mailto/tel or show alert when not available
+        function handleContact(event, href) {
+            // prevent card toggle when clicking contact
+            event.stopPropagation();
+            if (!href || href === '#') {
+                alert('Contact information is not available for this faculty.');
+                return;
+            }
+            window.location.href = href;
+        }
+
+        function renderProfileInPlace(key, facultyMap) {
+            const faculty = facultyMap[key];
+            if (!faculty) return;
+            const container = document.getElementById('profileContainer');
+            container.innerHTML = '';
+            const card = createFacultyCard(faculty);
+            // Add Connect button wired to open faculty_card viewer (preserve previous behavior)
+            const connectId = faculty.key ? encodeURIComponent(faculty.key) : encodeURIComponent(faculty.name || '');
+            const connectUrl = `faculty_card/index.html?name=${connectId}`;
+            const actionRow = card.querySelector('.action-row');
+            if (actionRow) {
+                const connectBtn = document.createElement('button');
+                connectBtn.className = 'connect-btn';
+                connectBtn.innerHTML = '<i class="fas fa-link"></i> Connect';
+                connectBtn.onclick = (e) => { e.stopPropagation(); try { window.open(connectUrl,'_blank'); } catch { window.location.href = connectUrl; } };
+                actionRow.insertAdjacentElement('afterbegin', connectBtn);
+            }
+            container.appendChild(card);
+        }
+
+        // Handle Connect: open the faculty_card viewer and pass id or name
+        function handleConnect(event, url) {
+            event.stopPropagation();
+            // open in a new tab/window so student keeps directory open
+            try {
+                window.open(url, '_blank');
+            } catch (e) {
+                // fallback: navigate
+                window.location.href = url;
             }
         }
 

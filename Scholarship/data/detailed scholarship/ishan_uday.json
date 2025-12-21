@@ -1,0 +1,47 @@
+{
+  "scholarship_id": "ishan_uday_ner",
+  "scholarship_name": "Ishan Uday Special Scholarship Scheme",
+  "official_name": "Ishan Uday Special Scholarship Scheme for North Eastern Region",
+  "scholarship_type": "UGC Scholarship (Central)",
+  "offered_by": "University Grants Commission (UGC)",
+  "target_group": "Students from North Eastern Region (NER)",
+  "academic_level": ["Undergraduate (General & Professional)"],
+  "introduction": "The Ministry of Education and UGC launched the 'Ishan Uday' Special Scholarship Scheme to promote higher education in the North Eastern Region (NER) and encourage children from economically weaker sections to pursue professional education.",
+  "eligibility_criteria": {
+    "domicile": "Student must be a domicile of North Eastern states (Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura)",
+    "academic_requirements": [
+      "Passed Class 12 or equivalent in the preceding year",
+      "Secured admission in the first year of any general, technical, or professional degree course"
+    ],
+    "income_criteria": {
+      "maximum_family_income": "₹4,50,000 per annum"
+    },
+    "exclusions": "Students pursuing courses through Open Universities or Distance Mode are NOT eligible."
+  },
+  "scholarship_benefits": {
+    "amount": "₹5,400 to ₹7,800 per month",
+    "structure": [
+      "General Degree Courses: ₹5,400 per month",
+      "Technical/Medical/Professional/Paramedical Courses: ₹7,800 per month"
+    ],
+    "distribution": "Direct Benefit Transfer (DBT) via Canara Bank"
+  },
+  "application_process": {
+    "mode": "Online via National Scholarship Portal (NSP)",
+    "steps": [
+      "Register on National Scholarship Portal (NSP)",
+      "Select 'UGC Schemes'",
+      "Choose 'Ishan Uday Special Scholarship'",
+      "Upload Domicile and Income Certificates",
+      "Submit for Institute Verification"
+    ]
+  },
+  "documents_required": [
+    "Domicile Certificate of NER State",
+    "Class 12 Marksheet",
+    "Annual Family Income Certificate",
+    "Aadhaar Card",
+    "Admission Proof / Fee Receipt"
+  ],
+  "last_updated": "2025"
+}

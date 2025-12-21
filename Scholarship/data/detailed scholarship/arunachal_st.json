@@ -1,0 +1,13 @@
+{
+  "scholarship_id": "arunachal_st_stipend",
+  "scholarship_name": "Award of Stipend to Scheduled Tribe Students (Arunachal Pradesh)",
+  "scholarship_type": "State Stipend",
+  "state": "Arunachal Pradesh",
+  "eligibility_criteria": {
+    "domicile": "Permanent resident of Arunachal Pradesh",
+    "category": "Scheduled Tribe (ST)",
+    "academic": "Must maintain 75% attendance"
+  },
+  "scholarship_benefits": { "amount": "Monthly stipend varying by course level (₹1000 - ₹1400 approx)" },
+  "last_updated": "2025"
+}

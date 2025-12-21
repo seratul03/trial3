@@ -1,0 +1,40 @@
+{
+  "course_code": "PEC-CSM591A",
+  "course_name": "Image Processing Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "MATLAB & Image Basics"
+    },
+    {
+      "module_number": 2,
+      "title": "Contrast Stretching, Histogram Mapping"
+    },
+    {
+      "module_number": 3,
+      "title": "Bit Planes & Fourier Transform"
+    },
+    {
+      "module_number": 4,
+      "title": "Image Restoration"
+    },
+    {
+      "module_number": 5,
+      "title": "Segmentation & Compression"
+    }
+  ],
+  "summary": "Image Processing Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Digital Image Processing – Gonzalez & Woods",
+    "Digital Image Processing – William K. Pratt"
+  ],
+  "course_outcomes": [
+    "Implement image processing operations using MATLAB.",
+    "Apply image enhancement and transformation techniques.",
+    "Analyze and implement image restoration algorithms.",
+    "Develop image segmentation and compression programs."
+  ],
+  "prerequisites": [
+    "Linear Algebra, Image Processing theory course"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "course_code": "BSCM201",
+  "course_name": "Engineering Chemistry",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Atomic and Molecular Structure"
+    },
+    {
+      "module_number": 2,
+      "title": "Spectroscopic Techniques and Applications"
+    },
+    {
+      "module_number": 3,
+      "title": "Periodic Properties"
+    },
+    {
+      "module_number": 4,
+      "title": "Use of Free Energy in Chemical Equilibrium"
+    },
+    {
+      "module_number": 5,
+      "title": "Stereochemistry"
+    },
+    {
+      "module_number": 6,
+      "title": "Organic Reactions"
+    }
+  ],
+  "summary": "Engineering Chemistry is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 6 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "A Text Book of Physical Chemistry – KK Sharma and LK Sharma",
+    "Physical Chemistry – Peter Atkins and Julio de Paula",
+    "Inorganic Chemistry – Huheey, Keiter, Keiter",
+    "Concise Inorganic Chemistry – J.D. Lee",
+    "Organic Chemistry: Structure and Function – Volhardt & Schore",
+    "Fundamentals of Molecular Spectroscopy – C.N. Banwell",
+    "Organic Chemistry Vol 1 – I.L. Finar",
+    "A.S. Negi and S.C. Anand – Physical Chemistry",
+    "Organic Chemistry – Volhardt & Schore"
+  ],
+  "course_outcomes": [
+    "Describe atomic and molecular structure in terms of wave functions and represent energy levels via spectroscopic methods.",
+    "Interpret periodic variation of elemental properties and deduce quantitative information about heat engines.",
+    "Establish molecular orbital diagrams and relate electrochemistry to thermodynamics.",
+    "Relate empirical rate constants to molecular processes and evaluate experiments in chemical equilibria and kinetics.",
+    "Develop knowledge of fundamental properties of organic compounds and analyze changes in orbital energy levels in coordination compounds."
+  ],
+  "prerequisites": [
+    "12th level Chemistry"
+  ]
+}

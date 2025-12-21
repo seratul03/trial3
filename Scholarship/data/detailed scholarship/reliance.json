@@ -1,0 +1,154 @@
+{
+  "scholarship_id": "reliance_foundation",
+  "scholarship_name": "Reliance Foundation Scholarship",
+  "official_name": "Reliance Foundation Undergraduate and Postgraduate Scholarship",
+  "scholarship_type": "Private Corporate Scholarship",
+  "target_group": "Meritorious Students in Technical and Scientific Fields",
+  "academic_level": [
+    "Undergraduate (UG)",
+    "Postgraduate (PG)",
+    "Engineering",
+    "Technology",
+    "Energy",
+    "Life Sciences"
+  ],
+  "introduction": "Reliance Foundation Scholarship is one of India's most prestigious corporate scholarships, offering comprehensive financial support to meritorious students from economically weaker sections. The scholarship supports undergraduate and postgraduate students pursuing studies in Engineering, Technology, Energy, and Life Sciences.",
+  "eligibility_criteria": {
+    "undergraduate": {
+      "basic_requirements": [
+        "Must be a resident Indian citizen",
+        "Enrolled in first year of full-time undergraduate degree",
+        "Studying Engineering, Technology, Energy, or Life Sciences"
+      ],
+      "academic_requirements": {
+        "minimum_marks": "60% in Class 12 examination",
+        "aptitude_test": "Must answer the mandatory Aptitude Test conducted by Reliance Foundation"
+      },
+      "income_criteria": {
+        "maximum_family_income": "₹15,00,000 per year"
+      }
+    },
+    "postgraduate": {
+      "basic_requirements": [
+        "Must be a resident Indian citizen",
+        "Enrolled in first year of full-time regular postgraduate degree",
+        "Studying Engineering, Technology, Energy, or Life Sciences"
+      ],
+      "academic_requirements": {
+        "minimum_cgpa": "7.5 or above in undergraduate CGPA"
+      },
+      "income_criteria": {
+        "maximum_family_income": "₹15,00,000 per year"
+      }
+    }
+  },
+  "scholarship_benefits": {
+    "undergraduate": {
+      "amount": "Up to ₹2,00,000",
+      "duration": "Over the duration of the degree programme",
+      "coverage": [
+        "Tuition Fees",
+        "Academic Expenses",
+        "Books and Study Materials",
+        "Living Expenses"
+      ]
+    },
+    "postgraduate": {
+      "amount": "Up to ₹6,00,000",
+      "duration": "Over the duration of the degree programme",
+      "coverage": [
+        "Tuition Fees",
+        "Research Expenses",
+        "Books and Study Materials",
+        "Living and Accommodation Expenses",
+        "Conference/Workshop Participation"
+      ]
+    }
+  },
+  "documents_required": {
+    "common_documents": [
+      "Class 10th and 12th Marksheets",
+      "Undergraduate Degree Marksheet (for PG applicants)",
+      "Current Year Admission Letter",
+      "Income Certificate (≤ ₹15 Lakh)",
+      "Bank Account Details",
+      "Aadhaar Card",
+      "Passport-size Photograph",
+      "Statement of Purpose (SOP)",
+      "Recommendation Letters (if applicable)"
+    ]
+  },
+  "application_process": {
+    "mode": "Online Application through Reliance Foundation Portal",
+    "steps": [
+      "Visit Reliance Foundation Scholarship official website",
+      "Register with email and create account",
+      "Login and fill detailed application form",
+      "Upload all required documents",
+      "For UG: Complete the mandatory Aptitude Test",
+      "For PG: Submit academic transcripts and SOP",
+      "Submit application before deadline",
+      "Attend interview if shortlisted",
+      "Await final selection results",
+      "Scholarship disbursed to selected candidates"
+    ]
+  },
+  "selection_process": [
+    "Initial screening based on eligibility criteria",
+    "Academic merit evaluation",
+    "Aptitude Test evaluation (for UG)",
+    "Personal interview for shortlisted candidates",
+    "Financial need assessment",
+    "Final selection by Reliance Foundation Scholarship Committee",
+    "Offer letter issued to selected scholars",
+    "Annual renewal based on academic performance"
+  ],
+  "unique_features": [
+    "One of the highest scholarship amounts in India for private scholarships",
+    "Covers entire duration of degree programme",
+    "Comprehensive support including tuition, books, and living expenses",
+    "Mentorship opportunities with Reliance professionals",
+    "Networking events and workshops for scholars",
+    "Career guidance and placement support",
+    "Alumni network of Reliance Scholars"
+  ],
+  "important_notes": [
+    "Family income limit is ₹15 Lakh - higher than most scholarships",
+    "UG applicants MUST take and pass the mandatory Aptitude Test",
+    "PG applicants need minimum 7.5 CGPA in undergraduate studies",
+    "Renewable annually based on satisfactory academic progress",
+    "UG scholarship: Up to ₹2,00,000 over 4 years",
+    "PG scholarship: Up to ₹6,00,000 over 2 years",
+    "Statement of Purpose (SOP) is crucial for selection",
+    "Only for Engineering, Technology, Energy, and Life Sciences"
+  ],
+  "faq": [
+    {
+      "question": "What is the Aptitude Test for UG applicants?",
+      "answer": "The Aptitude Test assesses logical reasoning, analytical skills, and subject knowledge. It is mandatory for all undergraduate applicants and conducted online during the application process."
+    },
+    {
+      "question": "Is the scholarship renewable?",
+      "answer": "Yes, the scholarship is renewable every year based on satisfactory academic performance and continued enrollment in the program."
+    },
+    {
+      "question": "Can I apply if my family income is exactly ₹15 Lakh?",
+      "answer": "The income limit is ₹15 Lakh per annum. Income slightly above this threshold may not be eligible."
+    },
+    {
+      "question": "What courses are covered under Life Sciences?",
+      "answer": "Life Sciences include Biotechnology, Biochemistry, Microbiology, Genetics, Bioinformatics, and related fields."
+    },
+    {
+      "question": "Do I need to attend an interview?",
+      "answer": "Yes, shortlisted candidates are typically invited for a personal interview as part of the final selection process."
+    }
+  ],
+  "official_authority": {
+    "provider": "Reliance Foundation",
+    "parent_organization": "Reliance Industries Limited",
+    "type": "Corporate Social Responsibility (CSR) Initiative"
+  },
+  "last_updated": "2025",
+  "data_source": "Reliance Foundation Official Scholarship Guidelines"
+}

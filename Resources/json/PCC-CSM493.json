@@ -1,0 +1,43 @@
+{
+  "course_code": "PCC-CSM493",
+  "course_name": "Object Oriented Programming Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Basic Java Programs"
+    },
+    {
+      "module_number": 2,
+      "title": "String Handling & Overloading"
+    },
+    {
+      "module_number": 3,
+      "title": "Constructor, Inheritance, Interface"
+    },
+    {
+      "module_number": 4,
+      "title": "Exception Handling & Threads"
+    },
+    {
+      "module_number": 5,
+      "title": "AWT & Swing"
+    }
+  ],
+  "summary": "Object Oriented Programming Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Program Development in Java – Barbara Liskov",
+    "Core Java for Beginners – R. K. Das",
+    "Beginning Java 2 – Ivor Horton",
+    "Java How to Program – Deitel & Deitel"
+  ],
+  "course_outcomes": [
+    "Apply OOP concepts to solve real-time problems using Java.",
+    "Use polymorphism and string class features in Java programs.",
+    "Implement inheritance, abstract classes and interfaces.",
+    "Handle exceptions and errors using Java's error handling.",
+    "Develop GUI and multithreaded applications."
+  ],
+  "prerequisites": [
+    "Algorithm concepts and basic programming logic"
+  ]
+}

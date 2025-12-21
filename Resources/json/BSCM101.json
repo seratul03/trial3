@@ -1,0 +1,47 @@
+{
+  "course_code": "BSCM101",
+  "course_name": "Semiconductor Physics",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction to Quantum Mechanics"
+    },
+    {
+      "module_number": 2,
+      "title": "Electronic materials"
+    },
+    {
+      "module_number": 3,
+      "title": "Semiconductors"
+    },
+    {
+      "module_number": 4,
+      "title": "Optical transitions in semiconductors"
+    },
+    {
+      "module_number": 5,
+      "title": "Measurements"
+    }
+  ],
+  "summary": "Semiconductor Physics introduces the quantum mechanical principles governing modern electronic devices. This course explores how materials behave at the atomic level and their applications in technology. You'll understand semiconductors, optical transitions, and measurement techniques. The knowledge forms the foundation for advanced electronics and optoelectronics. This subject is essential for anyone pursuing careers in electronics, photonics, or materials science.",
+  "recommended_books": [
+    "Atomic Physics, S. N. Ghoshal, S. Chand Publishing",
+    "Elements of Physics-II, Dr. Subrata Kamilya, Knowledge Group Publications",
+    "J. Singh, Semiconductor Optoelectronics: Physics and Technology, McGraw-Hill Inc.",
+    "Saleh & Teich, Fundamentals of Photonics, John Wiley & Sons",
+    "S. M. Sze, Semiconductor Devices: Physics and Technology, Wiley",
+    "A. Yariv and P. Yeh, Photonics: Optical Electronics in Modern Communications",
+    "P. Bhattacharya, Semiconductor Optoelectronic Devices",
+    "NPTEL courses by M R Shenoy, Monica Katiyar, Deepak Gupta"
+  ],
+  "course_outcomes": [
+    "Apply preliminary concepts of quantum mechanics to analyze real-world physical problems.",
+    "Understand band structure and differentiate between metals, semiconductors and insulators.",
+    "Understand carrier transport mechanisms and evaluate performance of devices based on charge transport.",
+    "Identify different optical transitions and explain lasing action in various laser devices.",
+    "Understand Hall-effect and four-probe method and interpret measured physical parameters."
+  ],
+  "prerequisites": [
+    "Knowledge of ordinary and partial differential equations and their solutions."
+  ]
+}

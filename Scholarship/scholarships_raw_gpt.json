@@ -1,0 +1,520 @@
+[
+  {
+    "scholarship_id": "1-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "POST MATRIC SCHOLARSHIP",
+    "programme": "UG and PG",
+    "eligible_candidate": "MINORITY",
+    "state": "WEST BENGAL",
+    "minimum_marks_fraction": "0.5",
+    "annual_income_limit_raw": "<= 2 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 2
+    }
+  },
+  {
+    "scholarship_id": "2-MERIT_CUM_MEANS_SCHO",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "MERIT CUM MEANS SCHOLARSHIP ( MCM)",
+    "programme": "UG and PG -\nMedical, Engg, Management, Law",
+    "eligible_candidate": "MINORITY",
+    "state": "WEST BENGAL",
+    "minimum_marks_fraction": "0.5",
+    "annual_income_limit_raw": "<= 2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 4
+    }
+  },
+  {
+    "scholarship_id": "3-SWAMI_VIVEKANANADA_M",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "SWAMI VIVEKANANADA MERIT CUM MEANS SCHOLARSHIP ( SVMCM)",
+    "programme": "UG Arts & Commerce, all BBA, All Law degrees",
+    "eligible_candidate": "MINORITY",
+    "state": "WEST BENGAL",
+    "minimum_marks_fraction": "0.6",
+    "annual_income_limit_raw": "<=2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 5
+    }
+  },
+  {
+    "scholarship_id": "4-SWAMI_VIVEKANANADA_M",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "SWAMI VIVEKANANADA MERIT CUM MEANS SCHOLARSHIP ( SVMCM)",
+    "programme": "UG Arts & Commerce, all BBA, All Law degrees (DPI)",
+    "eligible_candidate": "HINDU",
+    "state": "WEST BENGAL",
+    "minimum_marks_fraction": "0.6",
+    "annual_income_limit_raw": "<=2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 11
+    }
+  },
+  {
+    "scholarship_id": "5-WEST_BENGAL_CHIEF_MI",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "WEST BENGAL CHIEF MINISTER RELIEF FUND SCHOLARSHIP ( NABANNA SCHOLARSHIP)",
+    "programme": "Diploma and UG",
+    "eligible_candidate": "ALL",
+    "state": "WEST BENGAL",
+    "minimum_marks_fraction": ">=50% and <60%",
+    "annual_income_limit_raw": "<= 1.2 lakh",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 20
+    }
+  },
+  {
+    "scholarship_id": "6-POST_MATRIC_SC,ST,OB",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "POST MATRIC SC,ST,OBC SCHOLARSHIP",
+    "programme": "Diploma and UG",
+    "eligible_candidate": "SC/ST/OBC",
+    "state": "WEST BENGAL",
+    "minimum_marks_fraction": "50%  in HS & UG",
+    "annual_income_limit_raw": "<=2 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 23
+    }
+  },
+  {
+    "scholarship_id": "7-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post Matric Scholarships Scheme for Minorities",
+    "programme": "UG ,PG and Diploma",
+    "eligible_candidate": "MINORITY",
+    "state": "West Bengal & others",
+    "minimum_marks_fraction": "marks- 50%",
+    "annual_income_limit_raw": "< 2 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 26
+    }
+  },
+  {
+    "scholarship_id": "8-MERIT_CUM_MEANS_SCHO",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Merit Cum Means Scholarship for Professional and Technical Courses CS",
+    "programme": "UG,PG and Diploma",
+    "eligible_candidate": "MINORITY",
+    "state": "West Bengal & others",
+    "minimum_marks_fraction": "marks- 50%",
+    "annual_income_limit_raw": "< 2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 27
+    }
+  },
+  {
+    "scholarship_id": "9-POST-MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post-Matric Scholarship for Students with Disabilities",
+    "programme": "UG and PG",
+    "eligible_candidate": "40% Disable with certification ( max 2 disable students from one family can able to apply )",
+    "state": "West Bengal & others",
+    "minimum_marks_fraction": "Scholarship will be awarded to the students who have disability not less than 40% (certified by component authority) and the annual income of whose parents/guardian from all sources does not exceed Rs.2.50 lakh",
+    "annual_income_limit_raw": "< 2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 28
+    }
+  },
+  {
+    "scholarship_id": "10-FINANCIAL_ASSISTANCE",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Financial Assistance for Education of the Wards of Beedi/Cine/ IOMC/LSDM Workers - Post-Matric",
+    "programme": "UG,PG and Diploma",
+    "eligible_candidate": "Students whose guardians have beedi/cine card",
+    "state": "West Bengal & others",
+    "minimum_marks_fraction": "no backlog in last examination",
+    "annual_income_limit_raw": "Less than 1.2 Lakh/annum ( for Beedi & Mine )  Less than 1 lakh/annum ( for Cine )",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 29
+    }
+  },
+  {
+    "scholarship_id": "11-CENTRAL_SECTOR_SCHEM",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Central Sector Scheme of Scholarships for College and University Students_x000D_\n_x000D_",
+    "programme": "UG and PG",
+    "eligible_candidate": "All  students",
+    "state": "West Bengal & others",
+    "minimum_marks_fraction": "Scholarship will be awarded to the students who have secured not less than 80% marks or equivalent grade in the 10+2 examination and the annual income of whose parents/guardian from all sources does not exceed Rs.6.00 lakh.",
+    "annual_income_limit_raw": "< 4.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 30
+    }
+  },
+  {
+    "scholarship_id": "12-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post Matric Scholarship for SC/OBC Students",
+    "programme": "UG and PG",
+    "eligible_candidate": "SC / OBC",
+    "state": "Assam",
+    "minimum_marks_fraction": "must be pass out from a recognised University or Board of Secondary Education or recognised institution/college/university",
+    "annual_income_limit_raw": "< 2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 31
+    }
+  },
+  {
+    "scholarship_id": "13-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post Matric Scholarship for ST Students",
+    "programme": "UG,PG and Diploma",
+    "eligible_candidate": "ST",
+    "state": "Tripura",
+    "minimum_marks_fraction": "must be pass out from a recognised University or Board of Secondary Education or recognised institution/college/university",
+    "annual_income_limit_raw": "< 2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 32
+    }
+  },
+  {
+    "scholarship_id": "14-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post Matric Scholarship for SC/OBC Students",
+    "programme": "UG,PG and Diploma",
+    "eligible_candidate": "SC / OBC",
+    "state": "Tripura",
+    "minimum_marks_fraction": "must be pass out from a recognised University or Board of Secondary Education or recognised institution/college/university",
+    "annual_income_limit_raw": "< 2.5 LAKH (SC) \n < 1.5 LAKH(OBC)",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 33
+    }
+  },
+  {
+    "scholarship_id": "15-DR._B.R._AMBEDKAR_PO",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Dr. B.R. Ambedkar Post Matric Scholarship for Economically Backward Classes (EBC) And NEC Merit Scholarship",
+    "programme": "UG and PG",
+    "eligible_candidate": "Economically Backward Classes (EBC)",
+    "state": "Tripura",
+    "minimum_marks_fraction": "must be pass out from a recognised University or Board of Secondary Education or recognised institution/college/university",
+    "annual_income_limit_raw": "< 1 LKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 34
+    }
+  },
+  {
+    "scholarship_id": "16-UMBRELLA_SCHEME_FOR_",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Umbrella Scheme for Education of ST Children - Post Matric Scholarship (PMS) for ST Students",
+    "programme": "UG and PG and Diploma",
+    "eligible_candidate": "ST",
+    "state": "Tripura",
+    "minimum_marks_fraction": "student should belong to the Scheduled Tribe (ST) category",
+    "annual_income_limit_raw": "< 2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 41
+    }
+  },
+  {
+    "scholarship_id": "17-AWARD_OF_STIPEND_TO_",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Award of Stipend to the scheduled tribe students",
+    "programme": "UG and PG",
+    "eligible_candidate": "ST",
+    "state": "Arunachal Pradesh",
+    "minimum_marks_fraction": "a student must be a permanent resident of the state and belong to a tribe recognized as a Scheduled Tribe under the Constitution",
+    "annual_income_limit_raw": "<=2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 42
+    }
+  },
+  {
+    "scholarship_id": "18-POST-MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post-Matric Scholarship for Scheduled Tribes Students",
+    "programme": "UG and PG",
+    "eligible_candidate": "ST",
+    "state": "Mizoram",
+    "minimum_marks_fraction": "marks- 50%",
+    "annual_income_limit_raw": "< 2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 43
+    }
+  },
+  {
+    "scholarship_id": "19-POST-MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post-matric scholarship for students belonging to the minority",
+    "programme": "UG and PG and Diploma",
+    "eligible_candidate": "Minority",
+    "state": "Nagaland",
+    "minimum_marks_fraction": "marks- 70% - 80%",
+    "annual_income_limit_raw": "< 2 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 44
+    }
+  },
+  {
+    "scholarship_id": "20-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post Matric Scholarship for SC / ST / OBC Students & other merit scholarships",
+    "programme": "UG and PG",
+    "eligible_candidate": "SC/ST/OBC",
+    "state": "Sikkim",
+    "minimum_marks_fraction": "marks- 80%",
+    "annual_income_limit_raw": "< 1.2 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 45
+    }
+  },
+  {
+    "scholarship_id": "21-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post Matric Scholarship for SC / ST / OBC / EBC Students",
+    "programme": "UG,PG and Diploma",
+    "eligible_candidate": "SC / ST / OBC / EBC",
+    "state": "Bihar",
+    "minimum_marks_fraction": "Eligibility for an Economically Backward Class (EBC) scholarship varies by state and scheme.",
+    "annual_income_limit_raw": "< 3 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 46
+    }
+  },
+  {
+    "scholarship_id": "22-ISHAN_UDAY_SCHOLARSH",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Ishan Uday Scholarship – A Special Scholarship Scheme for North Eastern Region",
+    "programme": "UG and PG",
+    "eligible_candidate": "General",
+    "state": "Tripura",
+    "minimum_marks_fraction": "Domiciled students of NER admitted to the 1st year of a degree course [general or professional (technical/medical/professional/paramedical courses)]",
+    "annual_income_limit_raw": "<=4.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 47
+    }
+  },
+  {
+    "scholarship_id": "23-POST_MATRIC_SCHOLARS",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Post Matric Scholarships Scheme / E-KALYAN",
+    "programme": "UG,PG  and Diploma",
+    "eligible_candidate": "SC/ST/OBC",
+    "state": "Jharkhand",
+    "minimum_marks_fraction": "The candidate should be a resident of Jharkhand.",
+    "annual_income_limit_raw": "<2.5 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 51
+    }
+  },
+  {
+    "scholarship_id": "24-KANNYASHREE_(K2)",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Kannyashree (K2)",
+    "programme": "Diploma and UG",
+    "eligible_candidate": "Girl students within 18 years",
+    "state": "West Bengal",
+    "minimum_marks_fraction": "Unmarried girl(within 18 yrs) students  be a resident of West Bengal",
+    "annual_income_limit_raw": "< 1.20 LAKH",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 53
+    }
+  },
+  {
+    "scholarship_id": "1-VIRTUSA_ENGINEERING_",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Virtusa Engineering execellence scholarship",
+    "programme": "UG",
+    "eligible_candidate": "Be enrolled in the first or second year of a full-time B. Tech/BE program at a recognized institution in India \nHave a minimum score of 70% in the 12th-grade examinations \nHave an annual family income from all sources of less than INR 6,00,000 \nNot be the child of an employee of Virtusa Corporation or Buddy4Study",
+    "state": "one-time grant of INR 50,000 to support academic-related expenses",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 60
+    }
+  },
+  {
+    "scholarship_id": "2-TATA_SCHOLOASRHIP_FO",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Tata Scholoasrhip for Engineering",
+    "programme": "PG",
+    "eligible_candidate": "Applicants must be Indian citizens\nApplicants must be under 45 years of age as of June 30, 2025\nApplicants must have graduated from a recognized Indian university with at least 60% marks on average in their undergraduate or post-graduate studies",
+    "state": "The scholarship amount ranges from INR 1 lac to INR 10 lac based on the scholarship norms.",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 61
+    }
+  },
+  {
+    "scholarship_id": "3-ONGC_SCHOLARSHIP_FOR",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "ONGC Scholarship for Engineering",
+    "programme": "Engg and MBA",
+    "eligible_candidate": "Applicants must be Indian citizens",
+    "state": "48,000 per annum (₹4,000 per month)",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 62
+    }
+  },
+  {
+    "scholarship_id": "4-HDFC_BANK_PARIVARTAN",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "HDFC Bank Parivartan ECS Scholarship",
+    "programme": "B.Tech. M.Tech. LLB, B.SC. Nursing, MBA",
+    "eligible_candidate": "Marks : 55% and Annual income <2.5 LAKH",
+    "state": "UG: 50,000\nPG: 75000",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 66
+    }
+  },
+  {
+    "scholarship_id": "5-ARVIND_FOUNDATION_SC",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Arvind Foundation Scholarship",
+    "programme": "UG",
+    "eligible_candidate": "family income below ₹5,00,000",
+    "state": "Offers up to ₹20,000 to undergraduate students",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 67
+    }
+  },
+  {
+    "scholarship_id": "6-COMMONWEALTH_DISTANC",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Commonwealth Distance Learning Scholarship",
+    "programme": "PG",
+    "eligible_candidate": "",
+    "state": "Covers tuition fees and study grants for students from Commonwealth countries who wish to study a master's program in the UK.",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 68
+    }
+  },
+  {
+    "scholarship_id": "7-JK_TYRE_SHIKSHA_SART",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "JK Tyre Shiksha Sarthi Scholarship for Girls",
+    "programme": "B.TECH",
+    "eligible_candidate": "A CSR initiative supporting underprivileged students, especially girls, in engineering studies",
+    "state": "one-time scholarship of up to INR 25,000",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 69
+    }
+  },
+  {
+    "scholarship_id": "8-RELIANCE_FOUNDATION_",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Reliance Foundation Scholarship",
+    "programme": "UG & PG",
+    "eligible_candidate": "Be a resident Indian citizen , FOR UG- Have passed Class 12 with minimum 60% marks, income less than INR 15 lakhs/Year , Answer the mandatory Aptitude Test , FOR PG- First-year of a full-time regular postgraduate degree Engineering, Technology, Energy and Life-Sciences , Must have scored 7.5 or above in their undergraduate CGPA",
+    "state": "UG: Up to INR 2,00,000 ,  PG: Up to INR 6,00,000 (over the duration of the degree programme.)",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 70
+    }
+  },
+  {
+    "scholarship_id": "1-PRAGATI_SCHOLARSHIP",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Pragati Scholarship",
+    "programme": "B.TECH & DIPLOMA",
+    "eligible_candidate": "Only female students in the first or second year of an AICTE-approved technical degree/diploma program",
+    "state": "₹50,000 per annum per student",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 72
+    }
+  },
+  {
+    "scholarship_id": "2-SAKSHAM_SCHOLARSHIP",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Saksham Scholarship",
+    "programme": "B.TECH & DIPLOMA",
+    "eligible_candidate": "Minimum 40% disability",
+    "state": "",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 75
+    }
+  },
+  {
+    "scholarship_id": "3-SWANATH_SCHOLARSHIP",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Swanath Scholarship",
+    "programme": "B.TECH & DIPLOMA",
+    "eligible_candidate": "For orphans, children of parents who died due to COVID-19,wards of martyred defense personnel",
+    "state": "",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 79
+    }
+  },
+  {
+    "scholarship_id": "4-FOUNDATION_FOR_EXCEL",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "Foundation for Excellence (FFE) Scholarship",
+    "programme": "TECHNICAL,LAW & MBBS",
+    "eligible_candidate": "Must be in the first year of B.E./B.Tech, MBBS, or a 5-year integrated M.Tech/Law program",
+    "state": "Financial support covering tuition fees and other academic expenses.",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 83
+    }
+  },
+  {
+    "scholarship_id": "5-NEC_MERIT_SCHOLARSHI",
+    "provider": "AIKYASHREE : W.B. Minorities' Development & Finance Corporation",
+    "scholarship_name": "NEC Merit Scholarship for North Eastern Region (NER)",
+    "programme": "DIPLOMA , UG,PG,M.PHIL & PhD",
+    "eligible_candidate": "Permanent residents of North Eastern states (except Sikkim)",
+    "state": "Diploma: ₹20,000/year",
+    "minimum_marks_fraction": "",
+    "annual_income_limit_raw": "",
+    "source_reference": {
+      "sheet": "STATE & CENTRAL & PRIVATE",
+      "row_index": 89
+    }
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "semester": "4",
+  "subjects": [
+    {
+      "course_code": "HSMCM401",
+      "course_name": "Design Thinking for Entrepreneurship and Startups",
+      "prerequisites": "Good knowledge of Fundamentals of Software Engineering and Management",
+      "course_outcomes": [
+        "Describe entrepreneurship and visualize designing processes for business.",
+        "Construct innovative thinking and design creative products and services.",
+        "Evaluate market needs and focus on prototype development.",
+        "Develop ideas and prepare business plans.",
+        "Recognize and analyze implications of IPR in a global context."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM401",
+      "course_name": "Operating Systems",
+      "prerequisites": "Basic programming logic, Data Structure & Algorithm concepts, Basic mathematics and digital electronics",
+      "course_outcomes": [
+        "Define role of Operating System and explain OS design and control units.",
+        "Analyze CPU scheduling, synchronization and deadlock handling.",
+        "Explain paging, segmentation and virtual memory concepts.",
+        "Explain protection and security and compare UNIX and Windows OS.",
+        "Understand I/O systems, device management and disk scheduling algorithms."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM402",
+      "course_name": "Design and Analysis of Algorithms",
+      "prerequisites": "Programming Knowledge, Fundamental Mathematics",
+      "course_outcomes": [
+        "Define and analyze complexity of algorithms.",
+        "Explain different algorithmic techniques and compare their behavior.",
+        "Discuss graph traversal and related algorithms.",
+        "Understand complexity classes like P, NP, NP-hard and NP-complete.",
+        "Define and evaluate approximation and randomized algorithms.",
+        "Apply algorithmic case studies to solve real problems."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM403",
+      "course_name": "Object Oriented Programming",
+      "prerequisites": "Basic programming concept and problem-solving logic",
+      "course_outcomes": [
+        "Understand core ideas of OOP and its advantages.",
+        "Use constructors, polymorphism and string handling to solve problems.",
+        "Implement inheritance, abstract classes, interfaces, packages and multithreading.",
+        "Handle exceptions and apply exception handling in Java.",
+        "Develop GUI applications using Java."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM404",
+      "course_name": "Formal Language & Automata Theory",
+      "prerequisites": "Set theory",
+      "course_outcomes": [
+        "Explain and manipulate concepts in automata theory and formal languages.",
+        "Describe language acceptance by automata and prove properties formally.",
+        "Sketch automata for languages and simplify automata and grammars.",
+        "Distinguish normal forms and transform between PDA and CFG.",
+        "Define Turing machines and use pumping lemma to judge language classes."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM405",
+      "course_name": "Discrete Mathematics",
+      "prerequisites": "Algebra, Geometry and Precalculus",
+      "course_outcomes": [
+        "Understand functions, mathematical induction and GCD.",
+        "Understand algebraic structures like groups and rings.",
+        "Apply counting techniques and algorithms to computer problems.",
+        "Analyze graph theory concepts and solve related problems.",
+        "Use propositional logic to evaluate mathematical statements."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM491",
+      "course_name": "Operating Systems Lab",
+      "prerequisites": "Basic programming logic, Data Structure & Algorithm concepts, Basic mathematics and digital electronics",
+      "course_outcomes": [
+        "Understand OS abstractions like process and threads and apply them.",
+        "Analyze process scheduling algorithms.",
+        "Implement semaphores and IPC mechanisms.",
+        "Apply memory and deadlock management techniques to solve problems.",
+        "Perform OS tasks in Linux and use shell scripting."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM492",
+      "course_name": "Design and Analysis of Algorithms Lab",
+      "prerequisites": "Programming Knowledge",
+      "course_outcomes": [
+        "Solve problems and analyze complexity for different algorithms.",
+        "Compare algorithm behaviours experimentally.",
+        "Implement graph traversal and shortest path algorithms.",
+        "Evaluate and choose best algorithms for specific applications.",
+        "Design algorithms for real-life case studies."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM493",
+      "course_name": "Object Oriented Programming Lab",
+      "prerequisites": "Algorithm concepts and basic programming logic",
+      "course_outcomes": [
+        "Apply OOP concepts to solve real-time problems using Java.",
+        "Use polymorphism and string class features in Java programs.",
+        "Implement inheritance, abstract classes and interfaces.",
+        "Handle exceptions and errors using Java's error handling.",
+        "Develop GUI and multithreaded applications."
+      ]
+    }
+  ]
+}

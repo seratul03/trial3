@@ -1,0 +1,35 @@
+{
+  "scholarship_id": "commonwealth_dl",
+  "scholarship_name": "Commonwealth Distance Learning Scholarship",
+  "official_name": "Commonwealth Distance Learning Scholarships for Candidates from Least Developed Countries",
+  "scholarship_type": "International Scholarship",
+  "offered_by": "Commonwealth Scholarship Commission (CSC), UK",
+  "target_group": "Professionals from Commonwealth countries",
+  "academic_level": ["Postgraduate (Master's)"],
+  "introduction": "This scholarship allows talented and motivated individuals to access high-quality training and educational opportunities by studying for a UK Master's degree by distance learning.",
+  "eligibility_criteria": {
+    "citizenship": "Must be a citizen of or refugee in a Commonwealth country",
+    "residency": "Must be permanently resident in a developing Commonwealth country",
+    "academic_requirements": "Hold a first degree of at least upper second class (2:1) standard"
+  },
+  "scholarship_benefits": {
+    "coverage": "Full Tuition Fees",
+    "additional": "Study grants for course-related costs (internet, books, etc.)"
+  },
+  "application_process": {
+    "mode": "Online via CSC Application System",
+    "steps": [
+      "Secure admission in a participating UK University",
+      "Apply through the CSC online application system",
+      "Submit supporting references",
+      "University nominates candidates to CSC"
+    ]
+  },
+  "documents_required": [
+    "Proof of Citizenship",
+    "University Degree Transcripts",
+    "References (Academic/Professional)",
+    "Offer Letter from UK University"
+  ],
+  "last_updated": "2025"
+}

@@ -1,0 +1,39 @@
+{
+  "scholarship_id": "swanath_aicte",
+  "scholarship_name": "Swanath Scholarship",
+  "official_name": "AICTE Swanath Scholarship Scheme",
+  "scholarship_type": "Central Government (AICTE)",
+  "offered_by": "All India Council for Technical Education (AICTE)",
+  "target_group": "Orphans, Wards of Martyrs, Covid-affected families",
+  "academic_level": ["Diploma", "Degree (B.Tech)"],
+  "introduction": "The Swanath Scholarship is a special scheme to provide financial support to orphans, wards of parents who died due to COVID-19, and wards of Armed Forces/Central Paramilitary Forces martyred in action.",
+  "eligibility_criteria": {
+    "category": [
+      "Orphan",
+      "Both parents died due to COVID-19",
+      "Ward of Armed Forces/Paramilitary Martyrs"
+    ],
+    "academic": "Enrolled in AICTE approved Degree or Diploma institution"
+  },
+  "scholarship_benefits": {
+    "amount": "₹50,000 per annum",
+    "duration": "For every year of study (Max 4 years for Degree, 3 years for Diploma)"
+  },
+  "application_process": {
+    "mode": "Online via National Scholarship Portal (NSP)",
+    "steps": [
+      "Register on NSP",
+      "Apply under AICTE Schemes -> Swanath Scholarship",
+      "Upload Death Certificates/Martyr Certificate",
+      "Institute verification"
+    ]
+  },
+  "documents_required": [
+    "Death Certificate of Parents (for orphans/COVID)",
+    "Martyr Certificate (for defense wards)",
+    "Admission Letter",
+    "Bonafide Certificate",
+    "Class 10/12 Marksheet"
+  ],
+  "last_updated": "2025"
+}

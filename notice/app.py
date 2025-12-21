@@ -1,10 +1,13 @@
 from flask import Flask, render_template, jsonify, send_from_directory
 import os
 from datetime import datetime
+from pathlib import Path
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
-PDF_FOLDER = os.path.join(os.path.dirname(__file__), 'pdfs')
+# Use project root for consistent paths (parent of this notice folder)
+ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
+PDF_FOLDER = os.path.join(ROOT_DIR, 'notice', 'pdfs')
 
 
 def parse_filename(fn):

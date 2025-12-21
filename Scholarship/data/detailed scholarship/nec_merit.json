@@ -1,0 +1,43 @@
+{
+  "scholarship_id": "nec_merit_scholarship",
+  "scholarship_name": "NEC Merit Scholarship",
+  "official_name": "Financial Support to the Students of NER for Higher Professional Courses",
+  "scholarship_type": "Central Government (NEC)",
+  "offered_by": "North Eastern Council (NEC)",
+  "target_group": "Students of North East India",
+  "academic_level": ["Diploma", "Degree", "PG", "PhD"],
+  "introduction": "This scholarship is funded by the North Eastern Council to support students from the 8 North Eastern states pursuing professional and technical courses.",
+  "eligibility_criteria": {
+    "domicile": "Permanent resident of any North Eastern State",
+    "academic_requirements": "Minimum 60% (Degree/Diploma) or 70% (General courses) in previous exam",
+    "income_criteria": {
+      "maximum_family_income": "₹4,50,000 per annum"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "Varies by level",
+    "structure": [
+      "Diploma: ₹20,000 per annum",
+      "Degree: ₹22,000 per annum",
+      "Post Graduate: ₹25,000 per annum",
+      "PhD: ₹30,000 per annum"
+    ]
+  },
+  "application_process": {
+    "mode": "Online via National Scholarship Portal (NSP)",
+    "steps": [
+      "Register on NSP",
+      "Select 'North Eastern Council (NEC) Scheme'",
+      "Submit application and documents",
+      "Verify at Institute level"
+    ]
+  },
+  "documents_required": [
+    "Permanent Resident Certificate (PRC)",
+    "Income Certificate",
+    "Mark sheets of previous exam",
+    "Bonafide Certificate from Head of Institution",
+    "Aadhaar Card"
+  ],
+  "last_updated": "2025"
+}

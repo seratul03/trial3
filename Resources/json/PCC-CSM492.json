@@ -1,0 +1,81 @@
+{
+  "course_code": "PCC-CSM492",
+  "course_name": "Design and Analysis of Algorithms Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Quick Sort"
+    },
+    {
+      "module_number": 2,
+      "title": "Merge Sort"
+    },
+    {
+      "module_number": 3,
+      "title": "Warshall’s Algorithm"
+    },
+    {
+      "module_number": 4,
+      "title": "0/1 Knapsack"
+    },
+    {
+      "module_number": 5,
+      "title": "Fractional Knapsack"
+    },
+    {
+      "module_number": 6,
+      "title": "Dijkstra’s Algorithm"
+    },
+    {
+      "module_number": 7,
+      "title": "Kruskal’s Algorithm"
+    },
+    {
+      "module_number": 8,
+      "title": "Prim’s Algorithm"
+    },
+    {
+      "module_number": 9,
+      "title": "BFS"
+    },
+    {
+      "module_number": 10,
+      "title": "DFS"
+    },
+    {
+      "module_number": 11,
+      "title": "Floyd’s APSP"
+    },
+    {
+      "module_number": 12,
+      "title": "N-Queen Problem"
+    },
+    {
+      "module_number": 13,
+      "title": "Graph Coloring"
+    },
+    {
+      "module_number": 14,
+      "title": "TSP – Optimal & Approximation"
+    },
+    {
+      "module_number": 15,
+      "title": "Subset Sum Problem"
+    }
+  ],
+  "summary": "Design and Analysis of Algorithms Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 15 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Introduction to the Design and Analysis of Algorithms – Levitin",
+    "Introduction to Algorithms – Cormen et al."
+  ],
+  "course_outcomes": [
+    "Solve problems and analyze complexity for different algorithms.",
+    "Compare algorithm behaviours experimentally.",
+    "Implement graph traversal and shortest path algorithms.",
+    "Evaluate and choose best algorithms for specific applications.",
+    "Design algorithms for real-life case studies."
+  ],
+  "prerequisites": [
+    "Programming Knowledge"
+  ]
+}

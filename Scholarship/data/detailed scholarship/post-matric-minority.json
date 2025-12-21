@@ -1,0 +1,77 @@
+{
+  "scholarship_id": "post_matric_minority",
+  "scholarship_name": "POST MATRIC SCHOLARSHIP",
+  "official_name": "AIKYASHREE: Post Matric Scholarship for Minorities",
+  "scholarship_type": "State Government Scholarship",
+  "target_group": "Minority Students of West Bengal",
+  "academic_level": [
+    "Undergraduate (UG)",
+    "Postgraduate (PG)"
+  ],
+  "introduction": "Post Matric Scholarship is provided by W.B. Minorities' Development & Finance Corporation under AIKYASHREE scheme to support minority students pursuing higher education. This scholarship aims to reduce financial barriers for minority community students.",
+  "minority_communities_covered": [
+    "Muslim",
+    "Christian",
+    "Sikh",
+    "Buddhist",
+    "Jain",
+    "Parsi"
+  ],
+  "eligibility_criteria": {
+    "basic_requirements": [
+      "Applicant must be a permanent resident of West Bengal",
+      "Applicant must belong to an officially notified minority community",
+      "Applicant must be studying in a recognized institution"
+    ],
+    "academic_requirements": {
+      "minimum_marks": "50% in qualifying examination"
+    },
+    "income_criteria": {
+      "maximum_family_income": "₹2,00,000 per year",
+      "issued_by": "BDO / SDO or any competent government authority"
+    }
+  },
+  "scholarship_benefits": {
+    "description": "Financial assistance is provided directly to the student's bank account through DBT (Direct Benefit Transfer).",
+    "components": [
+      "Tuition Fee Support",
+      "Maintenance Allowance",
+      "Course-related Academic Expenses"
+    ]
+  },
+  "documents_required": [
+    "Marksheet of last examination passed (minimum 50%)",
+    "Annual Income Certificate (≤ ₹2 Lakh)",
+    "Bank Passbook (First Page)",
+    "Institute Verification Form",
+    "Aadhaar Card",
+    "Domicile Certificate",
+    "Minority Community Certificate",
+    "Passport-size Photograph"
+  ],
+  "application_process": {
+    "mode": "Online Application through AIKYASHREE portal",
+    "steps": [
+      "Visit the official AIKYASHREE portal",
+      "Register using basic details",
+      "Login and fill the application form",
+      "Upload required documents",
+      "Submit application",
+      "Institution verification by college",
+      "Final approval by WBMDFC",
+      "Scholarship amount credited via DBT"
+    ]
+  },
+  "important_notes": [
+    "Aadhaar-linked bank account ensures faster payment",
+    "False information may lead to rejection",
+    "Institute verification is mandatory",
+    "Annual family income must not exceed ₹2 Lakh"
+  ],
+  "official_authority": {
+    "department": "West Bengal Minority Development & Finance Corporation (WBMDFC)",
+    "government": "Government of West Bengal"
+  },
+  "last_updated": "2025",
+  "data_source": "Official AIKYASHREE Scholarship Documentation"
+}

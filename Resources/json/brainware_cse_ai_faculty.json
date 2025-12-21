@@ -1,0 +1,1351 @@
+{
+  "department": "Department of Computer Science & Engineering (AI)",
+  "exported_at": "2025-11-08T18:30:50.886399Z",
+  "teacher_count": 51,
+  "faculty": {
+    "shivnath-ghosh": {
+      "name": "Dr. Shivnath Ghosh",
+      "position": "Professor & HOD",
+      "qualification": "PhD",
+      "research_area": [
+        "Soft Computing",
+        "IoT",
+        "AI"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Shivnath Ghosh.jpg"
+    },
+    "kasturi-ghosh": {
+      "name": "Dr. Kasturi Ghosh",
+      "position": "Associate Professor",
+      "qualification": "PhD",
+      "research_area": [
+        "VLSI",
+        "Nanoelectronics",
+        "Design and testing of ICs using Artificial Intelligence and Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Kasturi Ghosh.jpg"
+    },
+    "biswarup-mukherjee": {
+      "name": "Dr. Biswarup Mukherjee",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Low power VLSI"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Biswarup Mukherjee.jpg"
+    },
+    "saumya-das": {
+      "name": "Dr. Saumya Das",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Artificial Intelligence",
+        "Machine Learning for Wireless Communication",
+        "Medical Image Analysis",
+        "Natural Language Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr Saumya Das.jpg"
+    },
+    "abhigyan-ganguly": {
+      "name": "Dr. Abhigyan Ganguly",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Abhigyan Ganguly.jpg"
+    },
+    "arup-roy": {
+      "name": "Dr. Arup Roy",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Machine Learning",
+        "Data Compression"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Arup Roy.jpg"
+    },
+    "amit-roy": {
+      "name": "Dr. Amit Roy",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Wearable Antenna",
+        "GNSS",
+        "Satellite Communication"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Amit Roy.jpg"
+    },
+    "amitava-podder": {
+      "name": "Amitava Podder",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "Computer Networking",
+        "Image Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Amitava Podder.jpg"
+    },
+    "anindita-chakraborty": {
+      "name": "Anindita Chakraborty",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech",
+      "research_area": [
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Anindita Chakraborty.jpeg"
+    },
+    "anupama-sen": {
+      "name": "Anupama Sen",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Anupama Sen.jpeg"
+    },
+    "bablu-pramanik": {
+      "name": "Bablu Pramanik",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": [
+        "Natural Language Processing",
+        "Sentiment Analysis"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Bablu Pramanik.jpeg"
+    },
+    "sandipan-biswas": {
+      "name": "Dr. Sandipan Biswas",
+      "position": "Assistant Professor",
+      "qualification": "PhD",
+      "research_area": [
+        "Data Science",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Sandipan Biswas.jpg"
+    },
+    "shukla-banik": {
+      "name": "Dr. Shukla Banik",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D",
+      "research_area": [
+        "VLSI Design and Testing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Shukla Banik.jpeg"
+    },
+    "snigdha-madhab-ghosh": {
+      "name": "Dr. Snigdha Madhab Ghosh",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Snigdha Madhab Ghosh.jpg"
+    },
+    "kaushik-paul": {
+      "name": "Kaushik Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Kaushik Paul.jpg"
+    },
+    "kaustav-roy": {
+      "name": "Kaustav Roy",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": [
+        "Grid Computing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Kaustav Roy.jpg"
+    },
+    "priyanka-saha": {
+      "name": "Dr. Priyanka Saha",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Electronics and Communication - Nano Electronics"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr Priyanka Saha.jpg"
+    },
+    "rudranath-mitra": {
+      "name": "Rudranath Mitra",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "Wireless Sensor Networks",
+        "Machine Learning",
+        "Distributed Databases"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Rudranath Mitra.jpg"
+    },
+    "chittabarni-sarkar": {
+      "name": "Chittabarni Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Chittabarni Sarkar.jpg"
+    },
+    "sourav-ghosh": {
+      "name": "Dr. Sourav Ghosh",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr Sourav Ghosh.jpg"
+    },
+    "manas-kanti-saha": {
+      "name": "Manas Kanti Saha",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Manas Kanti Saha.jpg"
+    },
+    "nobhonil-roy-choudhury": {
+      "name": "Nobhonil Roy Choudhury",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Nobhonil Roy Choudhury.jpg"
+    },
+    "piyal-roy": {
+      "name": "Piyal Roy",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., NET, Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Piyal Roy.jpg"
+    },
+    "pranashi-chakraborty": {
+      "name": "Pranashi Chakraborty",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Pranashi Chakraborty.jpg"
+    },
+    "raja-khara": {
+      "name": "Raja Khara",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech, Ph.D. (Enrolled)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Raja Khara.jpg"
+    },
+    "sabyasachi-chandra": {
+      "name": "Sabyasachi Chandra",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sabyasachi Chandra.jpg"
+    },
+    "sampurna-mandal": {
+      "name": "Sampurna Mandal",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., NET",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sampurna Mandal.jpg"
+    },
+    "saptarshi-kumar-sarkar": {
+      "name": "Saptarshi Kumar Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Saptarshi Kumar Sarkar.jpg"
+    },
+    "shouvik-sarkar": {
+      "name": "Shouvik Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Shouvik Sarkar.jpg"
+    },
+    "shyamalendu-paul": {
+      "name": "Shyamalendu Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Shyamalendu Paul.jpg"
+    },
+    "subrata-paul": {
+      "name": "Subrata Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Subrata Paul.jpg"
+    },
+    "suvabrata-guharay": {
+      "name": "Suvabrata Guharay",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "Bio-Metric with Sensor Technology"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Suvabrata Guharay.jpg"
+    },
+    "ditu-barai": {
+      "name": "Ditu Barai",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Natural Language Processing",
+        "Spelling Correction"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Ditu Barai.jpg"
+    },
+    "anirbit-sengupta": {
+      "name": "Anirbit Sengupta",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "IoT",
+        "Machine Learning",
+        "Embedded System",
+        "Agriculture"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Anirbit Sengupta.jpg"
+    },
+    "somashri-pal-kar": {
+      "name": "Somashri Pal Kar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Artificial Intelligence",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Somashri Pal Kar.jpg"
+    },
+    "riya-das": {
+      "name": "Riya Das",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning",
+        "Image Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Riya Das.jpg"
+    },
+    "sunanda-das": {
+      "name": "Sunanda Das",
+      "position": "Assistant Professor",
+      "qualification": "M.E., SET, Ph.D. (Thesis Submitted)",
+      "research_area": [
+        "Machine Learning",
+        "Image Processing",
+        "Soft Computing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sunanda Das.jpg"
+    },
+    "sumana-mahanta": {
+      "name": "Sumana Mahanta",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech., Ph.D. (Enrolled)",
+      "research_area": [
+        "Enhancing Agricultural Productivity with Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sumana Mahanta.jpg"
+    },
+    "sudipta-ghosh": {
+      "name": "Sudipta Ghosh",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Bioinformatics in ML",
+        "Deep Learning",
+        "Natural Language Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sudipta Ghosh.jpg"
+    },
+    "mohit-kumar-halder": {
+      "name": "Mohit Kumar Halder",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Enrolled)",
+      "research_area": [
+        "Deep Learning",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Mohit Kumar Halder.jpg"
+    },
+    "rubi-sarkar": {
+      "name": "Rubi Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Enrolled)",
+      "research_area": [
+        "Blockchain",
+        "Machine Learning",
+        "Deep Learning",
+        "IoT"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Rubi Sarkar.jpg"
+    },
+    "rohit-bahadur": {
+      "name": "Rohit Bahadur",
+      "position": "Assistant Professor",
+      "qualification": "M.Sc",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning",
+        "Hyperspectral Image Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Rohit Bahadur.jpg"
+    },
+    "pritam-paul": {
+      "name": "Pritam Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, NET",
+      "research_area": [
+        "Deep Learning",
+        "Medical Data Analysis"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Pritam Paul.jpg"
+    },
+    "subhajeet-das": {
+      "name": "Subhajeet Das",
+      "position": "Assistant Professor",
+      "qualification": "ME, NET",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning",
+        "Medical Image Analysis"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Subhajeet Das.jpg"
+    },
+    "sarbani-karak": {
+      "name": "Sarbani Karak",
+      "position": "Assistant Professor",
+      "qualification": "M.Sc., M.Tech",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sarbani Karak.jpg"
+    },
+    "gulfishan-mobin": {
+      "name": "Gulfishan Mobin",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Enrolled)",
+      "research_area": [
+        "Cloud Computing",
+        "Artificial Intelligence"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Gulfishan Mobin.jpg"
+    },
+    "aishee-chakraborty": {
+      "name": "Aishee Chakraborty",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Deep Learning",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Aishee Chakraborty.jpg"
+    },
+    "olivia-jana": {
+      "name": "Olivia Jana",
+      "position": "Technical Assistant (Visiting)",
+      "qualification": "B.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Olivia Jana.jpg"
+    },
+    "sanchita-ghosh": {
+      "name": "Sanchita Ghosh",
+      "position": "Technical Assistant (Visiting)",
+      "qualification": "BCA",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sanchita Ghosh.jpg"
+    },
+    "chandrima-thakur": {
+      "name": "Dr. Chandrima Thakur",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Machine Learning and Deep Learning for Wireless Communication",
+        "IRS",
+        "IoT"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Chandrima Thakur.jpg"
+    },
+    "sharmistha-dey": {
+      "name": "Sharmistha Dey",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Registered)",
+      "research_area": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Cognitive Science"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sharmistha Dey.jpg"
+    }
+  },
+  "teachers": {
+    "shivnath-ghosh": {
+      "name": "Dr. Shivnath Ghosh",
+      "position": "Professor & HOD",
+      "qualification": "PhD",
+      "research_area": [
+        "Soft Computing",
+        "IoT",
+        "AI"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Shivnath Ghosh.jpg"
+    },
+    "kasturi-ghosh": {
+      "name": "Dr. Kasturi Ghosh",
+      "position": "Associate Professor",
+      "qualification": "PhD",
+      "research_area": [
+        "VLSI",
+        "Nanoelectronics",
+        "Design and testing of ICs using Artificial Intelligence and Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Kasturi Ghosh.jpg"
+    },
+    "biswarup-mukherjee": {
+      "name": "Dr. Biswarup Mukherjee",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Low power VLSI"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Biswarup Mukherjee.jpg"
+    },
+    "saumya-das": {
+      "name": "Dr. Saumya Das",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Artificial Intelligence",
+        "Machine Learning for Wireless Communication",
+        "Medical Image Analysis",
+        "Natural Language Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr Saumya Das.jpg"
+    },
+    "abhigyan-ganguly": {
+      "name": "Dr. Abhigyan Ganguly",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Abhigyan Ganguly.jpg"
+    },
+    "arup-roy": {
+      "name": "Dr. Arup Roy",
+      "position": "Associate Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Machine Learning",
+        "Data Compression"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Arup Roy.jpg"
+    },
+    "amit-roy": {
+      "name": "Dr. Amit Roy",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Wearable Antenna",
+        "GNSS",
+        "Satellite Communication"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Amit Roy.jpg"
+    },
+    "amitava-podder": {
+      "name": "Amitava Podder",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "Computer Networking",
+        "Image Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Amitava Podder.jpg"
+    },
+    "anindita-chakraborty": {
+      "name": "Anindita Chakraborty",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech",
+      "research_area": [
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Anindita Chakraborty.jpeg"
+    },
+    "anupama-sen": {
+      "name": "Anupama Sen",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Anupama Sen.jpeg"
+    },
+    "bablu-pramanik": {
+      "name": "Bablu Pramanik",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": [
+        "Natural Language Processing",
+        "Sentiment Analysis"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Bablu Pramanik.jpeg"
+    },
+    "sandipan-biswas": {
+      "name": "Dr. Sandipan Biswas",
+      "position": "Assistant Professor",
+      "qualification": "PhD",
+      "research_area": [
+        "Data Science",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Sandipan Biswas.jpg"
+    },
+    "shukla-banik": {
+      "name": "Dr. Shukla Banik",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D",
+      "research_area": [
+        "VLSI Design and Testing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Shukla Banik.jpeg"
+    },
+    "snigdha-madhab-ghosh": {
+      "name": "Dr. Snigdha Madhab Ghosh",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Snigdha Madhab Ghosh.jpg"
+    },
+    "kaushik-paul": {
+      "name": "Kaushik Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Kaushik Paul.jpg"
+    },
+    "kaustav-roy": {
+      "name": "Kaustav Roy",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Enrolled)",
+      "research_area": [
+        "Grid Computing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Kaustav Roy.jpg"
+    },
+    "priyanka-saha": {
+      "name": "Dr. Priyanka Saha",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Electronics and Communication - Nano Electronics"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr Priyanka Saha.jpg"
+    },
+    "rudranath-mitra": {
+      "name": "Rudranath Mitra",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "Wireless Sensor Networks",
+        "Machine Learning",
+        "Distributed Databases"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Rudranath Mitra.jpg"
+    },
+    "chittabarni-sarkar": {
+      "name": "Chittabarni Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Chittabarni Sarkar.jpg"
+    },
+    "sourav-ghosh": {
+      "name": "Dr. Sourav Ghosh",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr Sourav Ghosh.jpg"
+    },
+    "manas-kanti-saha": {
+      "name": "Manas Kanti Saha",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Manas Kanti Saha.jpg"
+    },
+    "nobhonil-roy-choudhury": {
+      "name": "Nobhonil Roy Choudhury",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Nobhonil Roy Choudhury.jpg"
+    },
+    "piyal-roy": {
+      "name": "Piyal Roy",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., NET, Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Piyal Roy.jpg"
+    },
+    "pranashi-chakraborty": {
+      "name": "Pranashi Chakraborty",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Pranashi Chakraborty.jpg"
+    },
+    "raja-khara": {
+      "name": "Raja Khara",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech, Ph.D. (Enrolled)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Raja Khara.jpg"
+    },
+    "sabyasachi-chandra": {
+      "name": "Sabyasachi Chandra",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sabyasachi Chandra.jpg"
+    },
+    "sampurna-mandal": {
+      "name": "Sampurna Mandal",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., NET",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sampurna Mandal.jpg"
+    },
+    "saptarshi-kumar-sarkar": {
+      "name": "Saptarshi Kumar Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Saptarshi Kumar Sarkar.jpg"
+    },
+    "shouvik-sarkar": {
+      "name": "Shouvik Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Shouvik Sarkar.jpg"
+    },
+    "shyamalendu-paul": {
+      "name": "Shyamalendu Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Shyamalendu Paul.jpg"
+    },
+    "subrata-paul": {
+      "name": "Subrata Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Subrata Paul.jpg"
+    },
+    "suvabrata-guharay": {
+      "name": "Suvabrata Guharay",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "Bio-Metric with Sensor Technology"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Suvabrata Guharay.jpg"
+    },
+    "ditu-barai": {
+      "name": "Ditu Barai",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Natural Language Processing",
+        "Spelling Correction"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Ditu Barai.jpg"
+    },
+    "anirbit-sengupta": {
+      "name": "Anirbit Sengupta",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech., Ph.D. (Registered)",
+      "research_area": [
+        "IoT",
+        "Machine Learning",
+        "Embedded System",
+        "Agriculture"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Anirbit Sengupta.jpg"
+    },
+    "somashri-pal-kar": {
+      "name": "Somashri Pal Kar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Artificial Intelligence",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Somashri Pal Kar.jpg"
+    },
+    "riya-das": {
+      "name": "Riya Das",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning",
+        "Image Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Riya Das.jpg"
+    },
+    "sunanda-das": {
+      "name": "Sunanda Das",
+      "position": "Assistant Professor",
+      "qualification": "M.E., SET, Ph.D. (Thesis Submitted)",
+      "research_area": [
+        "Machine Learning",
+        "Image Processing",
+        "Soft Computing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sunanda Das.jpg"
+    },
+    "sumana-mahanta": {
+      "name": "Sumana Mahanta",
+      "position": "Assistant Professor",
+      "qualification": "MCA, M.Tech., Ph.D. (Enrolled)",
+      "research_area": [
+        "Enhancing Agricultural Productivity with Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sumana Mahanta.jpg"
+    },
+    "sudipta-ghosh": {
+      "name": "Sudipta Ghosh",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Bioinformatics in ML",
+        "Deep Learning",
+        "Natural Language Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sudipta Ghosh.jpg"
+    },
+    "mohit-kumar-halder": {
+      "name": "Mohit Kumar Halder",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Enrolled)",
+      "research_area": [
+        "Deep Learning",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Mohit Kumar Halder.jpg"
+    },
+    "rubi-sarkar": {
+      "name": "Rubi Sarkar",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Enrolled)",
+      "research_area": [
+        "Blockchain",
+        "Machine Learning",
+        "Deep Learning",
+        "IoT"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Rubi Sarkar.jpg"
+    },
+    "rohit-bahadur": {
+      "name": "Rohit Bahadur",
+      "position": "Assistant Professor",
+      "qualification": "M.Sc",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning",
+        "Hyperspectral Image Processing"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Rohit Bahadur.jpg"
+    },
+    "pritam-paul": {
+      "name": "Pritam Paul",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, NET",
+      "research_area": [
+        "Deep Learning",
+        "Medical Data Analysis"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Pritam Paul.jpg"
+    },
+    "subhajeet-das": {
+      "name": "Subhajeet Das",
+      "position": "Assistant Professor",
+      "qualification": "ME, NET",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning",
+        "Medical Image Analysis"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Subhajeet Das.jpg"
+    },
+    "sarbani-karak": {
+      "name": "Sarbani Karak",
+      "position": "Assistant Professor",
+      "qualification": "M.Sc., M.Tech",
+      "research_area": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sarbani Karak.jpg"
+    },
+    "gulfishan-mobin": {
+      "name": "Gulfishan Mobin",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Enrolled)",
+      "research_area": [
+        "Cloud Computing",
+        "Artificial Intelligence"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Gulfishan Mobin.jpg"
+    },
+    "aishee-chakraborty": {
+      "name": "Aishee Chakraborty",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech.",
+      "research_area": [
+        "Deep Learning",
+        "Machine Learning"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Aishee Chakraborty.jpg"
+    },
+    "olivia-jana": {
+      "name": "Olivia Jana",
+      "position": "Technical Assistant (Visiting)",
+      "qualification": "B.Tech.",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Olivia Jana.jpg"
+    },
+    "sanchita-ghosh": {
+      "name": "Sanchita Ghosh",
+      "position": "Technical Assistant (Visiting)",
+      "qualification": "BCA",
+      "research_area": null,
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sanchita Ghosh.jpg"
+    },
+    "chandrima-thakur": {
+      "name": "Dr. Chandrima Thakur",
+      "position": "Assistant Professor",
+      "qualification": "Ph.D.",
+      "research_area": [
+        "Machine Learning and Deep Learning for Wireless Communication",
+        "IRS",
+        "IoT"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Dr. Chandrima Thakur.jpg"
+    },
+    "sharmistha-dey": {
+      "name": "Sharmistha Dey",
+      "position": "Assistant Professor",
+      "qualification": "M.Tech, Ph.D. (Registered)",
+      "research_area": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Cognitive Science"
+      ],
+      "roles": [
+        "faculty",
+        "teacher"
+      ],
+      "photo": "Faculty/Photos/Sharmistha Dey.jpg"
+    }
+  }
+}

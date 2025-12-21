@@ -1,0 +1,13 @@
+{
+  "scholarship_id": "mizoram_st_pms",
+  "scholarship_name": "Post-Matric Scholarship for ST Students (Mizoram)",
+  "scholarship_type": "State Scholarship",
+  "state": "Mizoram",
+  "eligibility_criteria": {
+    "domicile": "Permanent resident of Mizoram",
+    "category": "ST",
+    "income_criteria": { "maximum_family_income": "₹2,50,000 per annum" }
+  },
+  "scholarship_benefits": { "description": "Full maintenance allowance and tuition fees for eligible students." },
+  "last_updated": "2025"
+}

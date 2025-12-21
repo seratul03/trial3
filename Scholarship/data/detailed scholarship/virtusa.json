@@ -1,0 +1,101 @@
+{
+  "scholarship_id": "virtusa_engineering",
+  "scholarship_name": "Virtusa Engineering Excellence Scholarship",
+  "official_name": "Virtusa Engineering Excellence Scholarship Programme",
+  "scholarship_type": "Private Corporate Scholarship",
+  "target_group": "Engineering Students with Strong Academic Performance",
+  "academic_level": [
+    "Undergraduate (B.Tech/BE) - First or Second Year"
+  ],
+  "introduction": "Virtusa Engineering Excellence Scholarship is a prestigious corporate scholarship offered by Virtusa Corporation in partnership with Buddy4Study. This one-time scholarship of ₹50,000 recognizes and rewards engineering students who demonstrate exceptional academic performance and financial need.",
+  "eligibility_criteria": {
+    "basic_requirements": [
+      "Must be an Indian citizen",
+      "Enrolled in first or second year of full-time B.Tech/BE program",
+      "Must be studying at a recognized institution in India",
+      "Not a child of Virtusa Corporation or Buddy4Study employee"
+    ],
+    "academic_requirements": {
+      "minimum_marks": "70% in 12th-grade examinations",
+      "description": "Strong academic track record with minimum 70% in Class 12"
+    },
+    "income_criteria": {
+      "maximum_family_income": "₹6,00,000 per year",
+      "description": "Annual family income from all sources must be less than ₹6 Lakh"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "₹50,000 (One-time grant)",
+    "description": "A one-time financial assistance of ₹50,000 to support academic-related expenses.",
+    "usage": [
+      "Tuition Fees",
+      "Books and Study Materials",
+      "Laptop/Computer Equipment",
+      "Internet and Online Learning Resources",
+      "Other Academic Expenses"
+    ]
+  },
+  "documents_required": [
+    "Class 12th Marksheet (showing minimum 70%)",
+    "Current Year Admission Proof (B.Tech/BE)",
+    "Income Certificate (< ₹6 Lakh)",
+    "Bank Account Details",
+    "Aadhaar Card",
+    "Passport-size Photograph",
+    "Bonafide Student Certificate",
+    "Declaration - Not a child of Virtusa/Buddy4Study employee"
+  ],
+  "application_process": {
+    "mode": "Online Application through Buddy4Study Platform",
+    "steps": [
+      "Visit Buddy4Study scholarship portal",
+      "Search for 'Virtusa Engineering Excellence Scholarship'",
+      "Register/Login to the platform",
+      "Fill the online application form",
+      "Upload all required documents",
+      "Submit the application",
+      "Await selection and verification",
+      "Selected candidates receive scholarship amount"
+    ]
+  },
+  "selection_process": [
+    "Application screening based on eligibility criteria",
+    "Academic merit evaluation (12th marks)",
+    "Financial need assessment (income certificate)",
+    "Final selection by Virtusa Scholarship Committee",
+    "Direct credit to selected student's bank account"
+  ],
+  "important_notes": [
+    "This is a ONE-TIME scholarship, not renewable",
+    "Children of Virtusa Corporation or Buddy4Study employees are NOT eligible",
+    "Minimum 70% required in Class 12th examination",
+    "Only for B.Tech/BE students in first or second year",
+    "Family income must be below ₹6 Lakh per annum",
+    "Application deadlines are announced on Buddy4Study portal"
+  ],
+  "faq": [
+    {
+      "question": "Is this scholarship renewable every year?",
+      "answer": "No, Virtusa Engineering Excellence Scholarship is a one-time grant of ₹50,000."
+    },
+    {
+      "question": "Can third or fourth year students apply?",
+      "answer": "No, only first and second year B.Tech/BE students are eligible."
+    },
+    {
+      "question": "What is the application deadline?",
+      "answer": "Application deadlines are announced annually on the Buddy4Study platform. Check the official portal for current dates."
+    },
+    {
+      "question": "Can diploma students apply?",
+      "answer": "No, this scholarship is exclusively for B.Tech/BE (full-time degree) students."
+    }
+  ],
+  "official_authority": {
+    "provider": "Virtusa Corporation",
+    "platform": "Buddy4Study",
+    "type": "Corporate Social Responsibility (CSR) Initiative"
+  },
+  "last_updated": "2025",
+  "data_source": "Virtusa and Buddy4Study Official Scholarship Information"
+}

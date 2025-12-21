@@ -1,0 +1,17 @@
+{
+  "scholarship_id": "bihar_pms",
+  "scholarship_name": "Post Matric Scholarship (Bihar)",
+  "scholarship_type": "State Government Scholarship",
+  "offered_by": "Education Department, Govt of Bihar",
+  "eligibility_criteria": {
+    "domicile": "Resident of Bihar",
+    "category": "SC / ST / BC / EBC",
+    "income_criteria": { "maximum_family_income": "₹3,00,000 per annum" }
+  },
+  "scholarship_benefits": {
+    "amount": "₹2,000 to ₹15,000 per annum",
+    "description": "Varies based on course tier (I, II, or III)."
+  },
+  "application_process": { "mode": "Online via PMS Bihar Portal (pmsonline.bih.nic.in)" },
+  "last_updated": "2025"
+}

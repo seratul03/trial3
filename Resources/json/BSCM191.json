@@ -1,0 +1,58 @@
+{
+  "course_code": "BSCM191",
+  "course_name": "Semiconductor Physics Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "pn junction diode characteristics"
+    },
+    {
+      "module_number": 2,
+      "title": "Zener diode characteristics"
+    },
+    {
+      "module_number": 3,
+      "title": "Load and line regulation"
+    },
+    {
+      "module_number": 4,
+      "title": "L-C-R circuit resonance"
+    },
+    {
+      "module_number": 5,
+      "title": "Numerical aperture of optical fiber"
+    },
+    {
+      "module_number": 6,
+      "title": "Optical fiber attenuation"
+    },
+    {
+      "module_number": 7,
+      "title": "Band gap by four probe method"
+    },
+    {
+      "module_number": 8,
+      "title": "Hall coefficient"
+    },
+    {
+      "module_number": 9,
+      "title": "Planck’s constant by photoelectric effect"
+    }
+  ],
+  "summary": "Semiconductor Physics Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 9 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Practical Physics – K. G. Mazumder & B. Ghosh",
+    "Advanced Practical Physics – D. Chattopadhyay & P. C. Rakshit",
+    "B.Sc. Practical Physics – C. L. Arora"
+  ],
+  "course_outcomes": [
+    "Interpret I–V characteristics of p-n and Zener diodes and evaluate d.c and a.c resistances.",
+    "Estimate performance of Zener diode through load and line regulation and design regulators.",
+    "Measure voltage across capacitor and resistor, determine resonant frequency and Q-factor of LCR circuit.",
+    "Categorize optical fiber using numerical aperture and attenuation.",
+    "Measure and explain band-gap and carrier concentration of a semiconductor."
+  ],
+  "prerequisites": [
+    "Knowledge of graphical presentation with proper choice of unit."
+  ]
+}

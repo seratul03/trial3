@@ -1,0 +1,111 @@
+{
+  "semester": "3",
+  "subjects": [
+    {
+      "course_code": "BSCM301",
+      "course_name": "Differential Equation and Complex Analysis",
+      "prerequisites": "Single Variable Calculus",
+      "course_outcomes": [
+        "Understand differentiation of vector functions and evaluate definite integrals for surface areas and volumes.",
+        "Solve differential equations by various methods.",
+        "Illustrate limits, continuity and differentiability of complex functions and solve related problems.",
+        "Analyze analytic functions and evaluate related problems.",
+        "Solve complex integration problems, use Taylor and Laurent series, and understand singularities and residues."
+      ]
+    },
+    {
+      "course_code": "ESCM301",
+      "course_name": "Internet of Things",
+      "prerequisites": "Basic knowledge of the fundamentals of computers",
+      "course_outcomes": [
+        "Define and describe fundamentals of Internet of Things (IoT).",
+        "Describe and identify IoT reference architecture and design.",
+        "Discuss IoT technologies and protocols.",
+        "Analyze and evaluate resource management in IoT.",
+        "Evaluate IoT applications in different environments and recent trends.",
+        "Demonstrate recent IoT application trends."
+      ]
+    },
+    {
+      "course_code": "ESCM302",
+      "course_name": "Data Structure & Algorithms",
+      "prerequisites": "Basic Mathematics, Basic knowledge of Problem solving",
+      "course_outcomes": [
+        "Define and analyze time and space complexities of algorithms.",
+        "Describe linear data structures (stacks, queues, linked lists) and their applications.",
+        "Differentiate and demonstrate searching, sorting and hashing techniques.",
+        "State and illustrate non-linear data structures like trees and graphs and write programs using them."
+      ]
+    },
+    {
+      "course_code": "ESCM303",
+      "course_name": "Introduction to Python Programming",
+      "prerequisites": "Basic knowledge of computer programming language",
+      "course_outcomes": [
+        "Describe Python syntax and semantics and analyze control flow statements.",
+        "Demonstrate proficiency in string handling and functions.",
+        "Create and manipulate data structures like lists, dictionaries, tuples and sets.",
+        "Use file operations, modules and packages effectively.",
+        "Apply object-oriented programming concepts in Python to solve problems."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM301",
+      "course_name": "Computer Organization & Architecture",
+      "prerequisites": "Fundamental of computers",
+      "course_outcomes": [
+        "Define and explain functional blocks of a computer, pipeline and memory concepts.",
+        "Design data representation in digital computers.",
+        "Explain memory systems and pipeline architecture.",
+        "Apply data representation and evaluate memory system applications.",
+        "Illustrate CPU, ALU and building blocks for various domains."
+      ]
+    },
+    {
+      "course_code": "ESCM392",
+      "course_name": "Data Structure & Algorithms Lab",
+      "prerequisites": "Basic concept of Computer Programming Language",
+      "course_outcomes": [
+        "Apply arrays to solve real-life problems.",
+        "Implement stacks and queues to solve critical problems.",
+        "Develop and test sorting and searching algorithms.",
+        "Implement non-linear data structures and graph algorithms.",
+        "Apply hashing algorithms to real problems."
+      ]
+    },
+    {
+      "course_code": "ESCM393",
+      "course_name": "Introduction to Python Programming Lab",
+      "prerequisites": "Basic knowledge of computer programming language",
+      "course_outcomes": [
+        "Apply Python syntax and control flow to solve problems.",
+        "Use strings and functions in Python programs.",
+        "Work with lists, tuples, dictionaries and sets.",
+        "Perform file operations, modules and package management.",
+        "Implement OOP concepts in Python."
+      ]
+    },
+    {
+      "course_code": "PCC-CSM391",
+      "course_name": "Computer Organization & Architecture Lab",
+      "prerequisites": "Fundamental of computers",
+      "course_outcomes": [
+        "Apply HDL to design combinational and sequential logic.",
+        "Implement logic gates and basic arithmetic using HDL.",
+        "Design register and memory units and perform memory operations.",
+        "Design simple ALU and CPU and interface CPU and memory."
+      ]
+    },
+    {
+      "course_code": "AUM-3",
+      "course_name": "Constitution of India",
+      "prerequisites": "General understanding of the Indian Constitution, basic rights and duties",
+      "course_outcomes": [
+        "Identify foundational provisions of the Indian Constitution like Preamble, Fundamental Rights and DPSP.",
+        "Recognize powers of Legislature, Executive and Judiciary and analyze their distinct roles.",
+        "Appraise constitutional provisions, professional ethics and principles of sustainable development.",
+        "Analyze interpretation tools and case laws related to the Indian Constitution."
+      ]
+    }
+  ]
+}

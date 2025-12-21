@@ -1,0 +1,95 @@
+{
+  "fallback_contact": {
+    "name": "Registrar’s Office",
+    "phone": "033-69010507",
+    "note": "If the AI cannot find a relevant category, tell the student to contact the Registrar’s Office."
+  },
+
+  "categories": [
+    {
+      "keywords": ["scholarship", "kanyashree", "aikyashree", "nsp", "national scholarship", "post-matric", "svmcm", "nabanna", "railway concession", "concession"],
+      "contact_person": "Ms. Deepanwita Dey",
+      "department": "Registrar’s Office",
+      "phone": "033-69010532"
+    },
+    {
+      "keywords": ["student credit card", "wb student credit card", "credit card"],
+      "contact_person": "Mr. Siddhartha Sanyal",
+      "department": "Registrar’s Office",
+      "phone": "033-69010517"
+    },
+    {
+      "keywords": ["grade card", "grade cards", "certificate collection", "marksheet", "result certificate"],
+      "contact_person": "Mr. Angshuman Sikder",
+      "department": "Examination",
+      "phone": "033-69010529"
+    },
+    {
+      "keywords": ["id card", "identity card"],
+      "contact_person": "Mr. Santanu Baral",
+      "department": "Registrar’s Office",
+      "phone": "033-69010507"
+    },
+    {
+      "keywords": ["registration certificate", "registration card"],
+      "contact_person": "Ms. Reena Chatterjee",
+      "department": "Registrar’s Office",
+      "phone": "033-69010507"
+    },
+    {
+      "keywords": ["admission kit", "dress material", "uniform", "kit"],
+      "contact_person": "Mr. Subrata Dey",
+      "department": "Admission",
+      "phone": "033-69010561"
+    },
+    {
+      "keywords": ["bonafide", "bonafide letter", "loan letter", "education loan"],
+      "contact_person": "Ms. Mahua Bhaduri",
+      "department": "Finance",
+      "phone": "033-69010634"
+    },
+    {
+      "keywords": ["bonafide international", "international student bonafide"],
+      "contact_person": "Ms. Suchorita Das",
+      "department": "Students Relations",
+      "phone": "033-69010562"
+    },
+    {
+      "keywords": ["doctor", "medical", "counselor", "counselling", "consultation"],
+      "contact_person": "Ms. Deepanwita Dey",
+      "department": "Registrar’s Office",
+      "phone": "033-69010532"
+    },
+    {
+      "keywords": ["student forum", "password", "profile update"],
+      "contact_person": "Ms. Reena Chatterjee",
+      "department": "Registrar’s Office",
+      "phone": "033-69010507"
+    },
+    {
+      "keywords": ["mail id", "email password", "email reset", "mail setup", "synchronization", "email help"],
+      "contact_persons": [
+        {"name": "Mr. Ujjal Mukherjee", "phone": "9748041317"},
+        {"name": "Mr. Biswajit Mahato", "phone": "8328778052"},
+        {"name": "Mr. Anupam Dey", "phone": "8697953581"}
+      ],
+      "department": "IT Support"
+    },
+    {
+      "keywords": ["email password", "mail password", "email issue", "webmail", "password update", "login issue"],
+      "contact_person": "IT Support WhatsApp",
+      "phone": "8981706777"
+    },
+    {
+      "keywords": ["payment", "fees", "fee issue"],
+      "contact_person": "Ms. Mahua Bhaduri",
+      "department": "Finance",
+      "phone": "033-69010634"
+    },
+    {
+      "keywords": ["cse ai department", "computer science artificial intelligence", "cse ai"],
+      "contact_person": "CSE (AI) Department Office",
+      "phone": "+91 33 69010628/629"
+    }
+  ]
+}

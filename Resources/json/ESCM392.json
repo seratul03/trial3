@@ -1,0 +1,33 @@
+{
+  "course_code": "ESCM392",
+  "course_name": "Data Structure & Algorithms Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Stacks, Queues, Linked Lists"
+    },
+    {
+      "module_number": 2,
+      "title": "Sparse Matrices & Trees"
+    },
+    {
+      "module_number": 3,
+      "title": "Graphs, Dijkstra, Hashing"
+    }
+  ],
+  "summary": "Data Structure & Algorithms Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 3 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Algorithms, Data Structures, and Problem Solving with C++ – Mark Allen Weiss",
+    "How to Solve it by Computer – R. G. Dromey"
+  ],
+  "course_outcomes": [
+    "Apply arrays to solve real-life problems.",
+    "Implement stacks and queues to solve critical problems.",
+    "Develop and test sorting and searching algorithms.",
+    "Implement non-linear data structures and graph algorithms.",
+    "Apply hashing algorithms to real problems."
+  ],
+  "prerequisites": [
+    "Basic concept of Computer Programming Language"
+  ]
+}

@@ -42,14 +42,14 @@
         │                           │
         │  Tables:                  │
         │  • announcements          │
-        │  • student_queries ←────┼─── LOGS EVERY CHAT
-        │  • faqs                  │
-        │  • feedback              │
-        │  • users                 │
-        │  • subjects              │
-        │  • pdf_documents         │
-        │                          │
-        └──────────────────────────┘
+        │  • student_queries ←──────┼─── LOGS EVERY CHAT
+        │  • faqs                   │
+        │  • feedback               │
+        │  • users                  │
+        │  • subjects               │
+        │  • pdf_documents          │
+        │                           │
+        └───────────────────────────┘
                     ↑
                     │
                     └────────────────────────────────────┐

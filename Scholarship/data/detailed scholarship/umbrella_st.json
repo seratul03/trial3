@@ -1,0 +1,14 @@
+{
+  "scholarship_id": "umbrella_st_pms",
+  "scholarship_name": "Umbrella Scheme for Education of ST Children",
+  "scholarship_type": "Central Sponsored Scheme",
+  "target_group": "Scheduled Tribe (ST) Students",
+  "eligibility_criteria": {
+    "category": "ST",
+    "income_criteria": { "maximum_family_income": "₹2,50,000 per annum" }
+  },
+  "scholarship_benefits": {
+    "components": ["Maintenance Allowance", "Disability Allowance (if applicable)", "Tour Charges"]
+  },
+  "last_updated": "2025"
+}

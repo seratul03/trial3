@@ -1,0 +1,137 @@
+{
+  "scholarship_id": "aikyashree_wb_minority",
+  "scholarship_name": "Aikyashree Scholarship",
+  "official_name": "West Bengal Minority Development & Finance Corporation (WBMDFC) Scholarship",
+  "scholarship_type": "State Government Scholarship",
+  "target_group": "Minority Community Students of West Bengal",
+  "academic_level": [
+    "Undergraduate (UG)",
+    "Postgraduate (PG)",
+    "Professional & Technical Courses (Engineering, Medical, Law, etc.)"
+  ],
+  "introduction": "Aikyashree Scholarship is a flagship scholarship scheme of the Government of West Bengal aimed at providing financial assistance to students belonging to minority communities. The scheme ensures that economically weaker minority students can continue their education without financial burden.",
+  "minority_communities_covered": [
+    "Muslim",
+    "Christian",
+    "Sikh",
+    "Buddhist",
+    "Jain",
+    "Parsi"
+  ],
+  "application_types": {
+    "fresh_application": {
+      "title": "Fresh Application",
+      "who_should_apply": "Students applying for the Aikyashree Scholarship for the first time in the current academic year"
+    },
+    "renewal_application": {
+      "title": "Renewal Application",
+      "who_should_apply": "Students who received the scholarship in the previous year and are continuing their studies"
+    }
+  },
+  "eligibility_criteria": {
+    "basic_requirements": [
+      "Applicant must be a permanent resident of West Bengal",
+      "Applicant must belong to an officially notified minority community",
+      "Applicant must be studying in a recognized institution",
+      "Distance education courses are not eligible"
+    ],
+    "academic_requirements": {
+      "fresh": "Must have passed the last qualifying examination (Class 12 or equivalent) with minimum 55%–60% marks (varies by course)",
+      "renewal": "Must be promoted to the next year/semester with satisfactory academic performance (generally around 60%)"
+    },
+    "income_criteria": {
+      "maximum_family_income": "₹2,50,000 per year",
+      "issued_by": "BDO / SDO or any competent government authority"
+    }
+  },
+  "scholarship_benefits": {
+    "description": "Financial assistance is provided directly to the student's bank account through DBT (Direct Benefit Transfer).",
+    "components": [
+      "Tuition Fee Support",
+      "Maintenance Allowance",
+      "Course-related Academic Expenses"
+    ]
+  },
+  "documents_required": {
+    "fresh_application": [
+      "Marksheet of last examination passed (Class 12 / previous qualifying exam)",
+      "Annual Income Certificate",
+      "Bank Passbook (First Page)",
+      "Institute Verification Form (signed by Head of Institution)",
+      "Aadhaar Card",
+      "Domicile Certificate (if required)",
+      "Minority Community Certificate",
+      "Passport-size Photograph"
+    ],
+    "renewal_application": [
+      "Latest Marksheets of previous year/semester (all cleared)",
+      "Updated Income Certificate",
+      "Bank Passbook (First Page)",
+      "Institute Verification Form (Renewal)",
+      "Aadhaar Card",
+      "Minority Community Certificate",
+      "Domicile Certificate"
+    ]
+  },
+  "application_process": {
+    "mode": "Online Application",
+    "steps": [
+      "Visit the official Aikyashree portal",
+      "Register using basic details",
+      "Login and fill the application form",
+      "Upload required documents",
+      "Submit application",
+      "Institution verification by college",
+      "Final approval by authority",
+      "Scholarship amount credited via DBT"
+    ]
+  },
+  "renewal_rules": [
+    "Do not register as fresh if already applied earlier",
+    "Use the same login credentials",
+    "Must pass previous academic year",
+    "Income and minority status must remain valid"
+  ],
+  "important_notes": [
+    "Aadhaar-linked bank account ensures faster payment",
+    "False information may lead to rejection",
+    "Institute verification is mandatory",
+    "Only one scholarship can be availed at a time for the same course"
+  ],
+  "chart_data_sample": {
+    "eligibility_distribution": [
+      {
+        "criteria": "Minority Community",
+        "value": 100
+      },
+      {
+        "criteria": "Income ≤ ₹2.5L",
+        "value": 85
+      },
+      {
+        "criteria": "Academic Eligibility",
+        "value": 75
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Who can apply for Aikyashree Scholarship?",
+      "answer": "Students from minority communities who are residents of West Bengal and meet income & academic criteria."
+    },
+    {
+      "question": "Can distance education students apply?",
+      "answer": "No, distance education courses are not eligible."
+    },
+    {
+      "question": "Is Aadhaar mandatory?",
+      "answer": "Yes, Aadhaar is required for faster DBT credit."
+    }
+  ],
+  "official_authority": {
+    "department": "West Bengal Minority Development & Finance Corporation (WBMDFC)",
+    "government": "Government of West Bengal"
+  },
+  "last_updated": "2025",
+  "data_source": "Official University & Government Scholarship Documentation"
+}

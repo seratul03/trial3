@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>
+        {% if data %}
+            {{ data.scholarship_name or data.scheme_name or "Scholarship Details" }}
+        {% else %}
+            Scholarship Details
+        {% endif %}
+    </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scholarship/static/css/style.css" />
+    <style>
+        :root {
+            --primary: #2563eb;       /* Professional Blue */
+            --primary-dark: #1e40af;
+            --secondary: #64748b;     /* Slate Gray */
+            --bg-page: #f8fafc;       /* Light Blue-Grey Background */
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Layout & Container --- */
+        .detail-wrapper {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .nav-bar {
+            margin-bottom: 24px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--primary); }
+        .back-link svg { margin-right: 6px; }
+
+        /* --- Hero Section --- */
+        .hero-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), #60a5fa);
+        }
+
+        .scholarship-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .provider-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* --- Quick Info Grid (Highlights) --- */
+        .quick-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* --- Main Content Cards --- */
+        .content-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .section-icon {
+            width: 32px;
+            height: 32px;
+            background: #eff6ff;
+            color: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 0;
+        }
+
+        /* --- Data Rendering Styling --- */
+        /* Key-Value Grid for Dictionaries */
+        .kv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            border-radius: 10px;
+        }
+
+        .kv-item {
+            background: #f8fafc;
+            padding: 16px;
+            padding-right: 100px !important;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 12px;
+            padding-right: 100px !important;
+        }
+
+        .kv-key {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .kv-val {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        /* Professional Lists */
+        .pro-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pro-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        .pro-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+        
+        th {
+            background: #f8fafc;
+            text-align: left;
+            padding: 12px 16px;
+            font-weight: 600;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+        
+        tr:last-child td { border-bottom: none; }
+
+        /* Charts */
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .chart-box {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            background: white;
+        }
+        .chart-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Error State */
+        .error-box {
+            text-align: center;
+            padding: 60px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+        }
+    </style>
+</head>
+<body>
+
+<div class="detail-wrapper">
+    <div class="nav-bar">
+        <a href="/scholarship" class="back-link">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Scholarships
+        </a>
+    </div>
+
+    {% if error %}
+        <div class="error-box">
+            <h2 style="color: var(--text-main);">😕 Data Unavailable</h2>
+            <p style="color: var(--secondary);">{{ error }}</p>
+            <p style="margin-top:20px"><a href="/scholarship" class="back-link">Return to Search</a></p>
+        </div>
+    {% else %}
+
+    <div class="hero-card">
+        <div class="provider-badge">
+            {# SAFE PROVIDER LOGIC: Checks various keys without crashing if one is missing #}
+            {% if data.provider %}
+                {{ data.provider }}
+            {% elif data.offered_by is mapping %}
+                {{ data.offered_by.institution or data.offered_by.department or "Scholarship Scheme" }}
+            {% elif data.offered_by %}
+                {{ data.offered_by }}
+            {% elif data.managed_by is mapping %}
+                {{ data.managed_by.authority or "Government Scheme" }}
+            {% elif data.introduced_by %}
+                {{ data.introduced_by }}
+            {% else %}
+                Scholarship Scheme
+            {% endif %}
+        </div>
+        <h1 class="scholarship-title">
+            {{ data.scholarship_name or data.scheme_name or data.title }}
+        </h1>
+        <p class="intro-text">
+            {{ data.introduction or data.intro or data.short_intro or data.overview.description or data.overview.short_intro or "Review the details below to understand eligibility and benefits." }}
+        </p>
+    </div>
+
+    <div class="quick-info-grid">
+        {% if data.scholarship_type or data.category or data.scheme_type %}
+        <div class="info-card">
+            <span class="info-label">Type</span>
+            <span class="info-value">{{ data.scholarship_type or data.category or data.scheme_type }}</span>
+        </div>
+        {% endif %}
+        
+        {% if data.state or data.location %}
+        <div class="info-card">
+            <span class="info-label">Location</span>
+            <span class="info-value">{{ data.state or data.location }}</span>
+        </div>
+        {% endif %}
+        
+        {% if data.academic_level or data.applicable_levels %}
+        <div class="info-card">
+            <span class="info-label">Level</span>
+            <span class="info-value">
+                {% if data.academic_level is iterable and data.academic_level is not string %}
+                    {{ data.academic_level[0] }}{% if data.academic_level|length > 1 %}+{% endif %}
+                {% else %}
+                    {{ data.academic_level or data.applicable_levels or "Various" }}
+                {% endif %}
+            </span>
+        </div>
+        {% endif %}
+    </div>
+
+    {% if charts and charts|length > 0 %}
+    <div class="content-card">
+        <div class="section-header">
+            <div class="section-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+            </div>
+            <h2 class="section-title">Visual Analytics</h2>
+        </div>
+        <div class="chart-grid">
+            {% if charts.grant_amount %}
+                <div class="chart-box"><img src="{{ charts.grant_amount }}" alt="Grant Amount"></div>
+            {% endif %}
+            {% if charts.eligibility %}
+                <div class="chart-box"><img src="{{ charts.eligibility }}" alt="Eligibility"></div>
+            {% endif %}
+            {% if charts.documents %}
+                <div class="chart-box"><img src="{{ charts.documents }}" alt="Documents"></div>
+            {% endif %}
+            {% if charts.timeline %}
+                <div class="chart-box" style="grid-column: 1 / -1;"><img src="{{ charts.timeline }}" alt="Timeline"></div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% macro render_data(item) %}
+        {% if item is string or item is number %}
+            <div class="kv-val">{{ item }}</div>
+            
+        {% elif item is mapping %}
+            {# Check if it looks like a table data #}
+            {% if 'headers' in item and 'rows' in item %}
+                <div class="table-container">
+                    <table>
+                        <thead><tr>{% for h in item.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+                        <tbody>
+                        {% for row in item.rows %}
+                            <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% elif 'table_rows' in item %}
+                 {# Handle variant table format #}
+                 <div class="table-container">
+                    <table>
+                        <thead><tr>{% for h in item.table_headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+                        <tbody>
+                        {% for row in item.table_rows %}
+                            <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                {# Regular Dictionary - Render as Grid #}
+                <div class="kv-grid">
+                    {% for k, v in item.items() %}
+                        {% if k not in ['ui_highlight_color', 'note', 'description', 'intro'] %}
+                            <div class="kv-item">
+                                <span class="kv-key">{{ k | replace('_', ' ') }}</span>
+                                {{ render_data(v) }}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+        {% elif item is iterable %}
+            {# Render lists cleanly #}
+            <ul class="pro-list">
+                {% for sub in item %}
+                    <li>
+                        {% if sub is mapping %}
+                            {# If list item is complex, render inline #}
+                            {% for k, v in sub.items() %}
+                                <strong>{{ k|replace('_',' ')|title }}:</strong> {{ v }}
+                            {% endfor %}
+                        {% else %}
+                            {{ sub }}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            {{ item }}
+        {% endif %}
+    {% endmacro %}
+
+    {# Define section order and icons #}
+    {% set sections = [
+        ('eligibility_criteria', 'Eligibility Criteria', 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'),
+        ('scholarship_benefits', 'Benefits & Amount', 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'),
+        ('documents_required', 'Documents Required', 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'),
+        ('application_process', 'Application Process', 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z')
+    ] %}
+
+    {# Loop through defined priority sections first #}
+    {% for key, title, path in sections %}
+        {# Check multiple key variations #}
+        {% set content = data[key] or data[key|replace('_', ' ')] or data.get(key) %}
+        
+        {# Special handle for alternate keys #}
+        {% if key == 'scholarship_benefits' and not content %}{% set content = data.scholarship_amount or data.grant_amount %}{% endif %}
+        {% if key == 'documents_required' and not content %}{% set content = data.required_documents %}{% endif %}
+        {% if key == 'eligibility_criteria' and not content %}{% set content = data.eligibility %}{% endif %}
+        
+        {% if content %}
+        <div class="content-card">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ path }}" />
+                    </svg>
+                </div>
+                <h2 class="section-title">{{ title }}</h2>
+            </div>
+            {{ render_data(content) }}
+        </div>
+        {% endif %}
+    {% endfor %}
+
+    {# Catch-all for other fields #}
+    {% for key, value in data.items() %}
+        {% if key not in [
+            'scholarship_id', 'scholarship_name', 'scheme_name', 'title', 'intro', 'short_intro', 
+            'introduction', 'overview', 'slug', 'ui_display_recommendations', 'source', 'last_updated', 'visual_data',
+            'eligibility_criteria', 'eligibility', 
+            'scholarship_benefits', 'scholarship_amount', 'grant_amount', 'benefit_details',
+            'documents_required', 'required_documents',
+            'application_process', 'application_steps', 'visual_data_for_charts', 'charts',
+            'provider', 'offered_by', 'state', 'category', 'scholarship_type', 'academic_level', 'applicable_levels', 'managed_by', 'introduced_by'
+        ] %}
+        <div class="content-card">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h2 class="section-title">{{ key | replace('_', ' ') | title }}</h2>
+            </div>
+            {{ render_data(value) }}
+        </div>
+        {% endif %}
+    {% endfor %}
+
+    {% endif %}
+</div>
+
+</body>
+</html>

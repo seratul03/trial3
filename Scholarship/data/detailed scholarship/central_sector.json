@@ -1,0 +1,44 @@
+{
+  "scholarship_id": "central_sector_scheme",
+  "scholarship_name": "Central Sector Scheme of Scholarships",
+  "official_name": "Central Sector Scheme of Scholarships for College and University Students",
+  "scholarship_type": "Central Government Scholarship",
+  "offered_by": "Department of Higher Education, Ministry of Education (GoI)",
+  "target_group": "Meritorious Students in Higher Education",
+  "academic_level": ["Undergraduate (UG)", "Postgraduate (PG)"],
+  "introduction": "The Central Sector Scheme of Scholarship offers financial support to economically weaker students from general, SC, ST, and OBC categories who have secured good marks in Class 12.",
+  "eligibility_criteria": {
+    "academic_requirements": {
+      "percentile": "Above 80th percentile in Class 12 Board Examination",
+      "status": "Pursuing regular course from a recognized college/university"
+    },
+    "income_criteria": {
+      "maximum_family_income": "₹4,50,000 per annum"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "₹10,000 to ₹20,000 per annum",
+    "structure": [
+      "UG Level: ₹10,000 per annum",
+      "PG Level: ₹20,000 per annum"
+    ]
+  },
+  "application_process": {
+    "mode": "Online via National Scholarship Portal (NSP)",
+    "steps": [
+      "Register on NSP",
+      "Choose 'Central Sector Scheme of Scholarship'",
+      "Fill application and upload documents",
+      "Institute verification",
+      "DBT Transfer"
+    ]
+  },
+  "documents_required": [
+    "Class 12 Marksheet",
+    "Income Certificate",
+    "Aadhaar Card",
+    "Bank Passbook",
+    "Admission Proof"
+  ],
+  "last_updated": "2025"
+}

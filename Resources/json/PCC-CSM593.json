@@ -1,0 +1,48 @@
+{
+  "course_code": "PCC-CSM593",
+  "course_name": "Artificial Intelligence for Real World Application Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "AI Tools"
+    },
+    {
+      "module_number": 2,
+      "title": "Search Techniques"
+    },
+    {
+      "module_number": 3,
+      "title": "Rule-Based & Probabilistic Reasoning"
+    },
+    {
+      "module_number": 4,
+      "title": "Machine Learning Models"
+    },
+    {
+      "module_number": 5,
+      "title": "Deep Learning Models"
+    },
+    {
+      "module_number": 6,
+      "title": "Time Series Analysis"
+    },
+    {
+      "module_number": 7,
+      "title": "TensorFlow Implementation"
+    }
+  ],
+  "summary": "Artificial Intelligence for Real World Application Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 7 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Artificial Intelligence and Machine Learning – Chandra S.S.V.",
+    "A First Course in Artificial Intelligence – Deepak Khemani"
+  ],
+  "course_outcomes": [
+    "Understand preprocessing techniques for datasets and AI tool usage.",
+    "Implement supervised, unsupervised and semi-supervised ML models.",
+    "Develop deep learning programs for various models.",
+    "Analyze AI concepts to solve real world problems using TensorFlow and related tools."
+  ],
+  "prerequisites": [
+    "Knowledge of OOPs, Basic knowledge of Sensors"
+  ]
+}

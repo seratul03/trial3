@@ -1,0 +1,40 @@
+{
+  "course_code": "ESCM292",
+  "course_name": "Workshop / Manufacturing Practices",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Carpentry"
+    },
+    {
+      "module_number": 2,
+      "title": "Fitting"
+    },
+    {
+      "module_number": 3,
+      "title": "Welding"
+    },
+    {
+      "module_number": 4,
+      "title": "Machine Shop"
+    },
+    {
+      "module_number": 5,
+      "title": "Black Smithy Shop / Sheet Metal Working"
+    }
+  ],
+  "summary": "Workshop / Manufacturing Practices is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Workshop Technology – S.K. Hajara Chaudhary",
+    "Workshop Technology – B.S. Raghuwanshi",
+    "Workshop Practice Manual – K. Venkat Reddy",
+    "Kents Mechanical Engineering Handbook – John Wiley"
+  ],
+  "course_outcomes": [
+    "Acquire skills in basic engineering practices and use various tools and machines.",
+    "Understand job drawings and develop jobs as per specifications.",
+    "Inspect and develop jobs to desired dimensions used in manufacturing.",
+    "Illustrate and analyze machines and equipment while adopting safety practices."
+  ],
+  "prerequisites": []
+}

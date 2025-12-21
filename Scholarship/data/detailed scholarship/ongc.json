@@ -1,0 +1,36 @@
+{
+  "scholarship_id": "ongc_scholarship",
+  "scholarship_name": "ONGC Scholarship",
+  "official_name": "ONGC Foundation Scholarship for Meritorious SC/ST/OBC/General Category Students",
+  "scholarship_type": "CSR Scholarship (PSU)",
+  "offered_by": "ONGC Foundation",
+  "academic_level": ["Engineering", "MBBS", "MBA", "Masters in Geology/Geophysics"],
+  "introduction": "The ONGC Scholarship Scheme provides financial assistance to meritorious students belonging to SC/ST/OBC and General categories who are pursuing professional courses.",
+  "eligibility_criteria": {
+    "academic_requirements": "First class (60% marks) in Class 12 or Graduation",
+    "income_criteria": {
+      "maximum_family_income": "₹2,00,000 (General/OBC) to ₹4,50,000 (SC/ST)"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "₹48,000 per annum",
+    "distribution": "₹4,000 per month"
+  },
+  "application_process": {
+    "mode": "Online via ONGC Scholar Portal",
+    "steps": [
+      "Register on ONGC Foundation website",
+      "Fill the application form",
+      "Upload certified documents",
+      "Submit before deadline"
+    ]
+  },
+  "documents_required": [
+    "Caste Certificate (if applicable)",
+    "Income Certificate",
+    "Mark sheets of qualifying exam",
+    "Bank details",
+    "Aadhaar Copy"
+  ],
+  "last_updated": "2025"
+}

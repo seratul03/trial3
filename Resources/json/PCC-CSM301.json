@@ -1,0 +1,42 @@
+{
+  "course_code": "PCC-CSM301",
+  "course_name": "Computer Organization & Architecture",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Functional Blocks of a Computer"
+    },
+    {
+      "module_number": 2,
+      "title": "Data Representation & Computer Arithmetic"
+    },
+    {
+      "module_number": 3,
+      "title": "Memory System Design"
+    },
+    {
+      "module_number": 4,
+      "title": "Pipelining"
+    },
+    {
+      "module_number": 5,
+      "title": "Memory Organization"
+    }
+  ],
+  "summary": "Computer Organization & Architecture is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Computer Organization and Design – Patterson & Hennessy",
+    "Computer Organization – Carl Hamacher",
+    "Computer Organization and Architecture – William Stallings"
+  ],
+  "course_outcomes": [
+    "Define and explain functional blocks of a computer, pipeline and memory concepts.",
+    "Design data representation in digital computers.",
+    "Explain memory systems and pipeline architecture.",
+    "Apply data representation and evaluate memory system applications.",
+    "Illustrate CPU, ALU and building blocks for various domains."
+  ],
+  "prerequisites": [
+    "Fundamental of computers"
+  ]
+}

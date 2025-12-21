@@ -1,0 +1,12 @@
+{
+  "scholarship_id": "sikkim_merit",
+  "scholarship_name": "Post Matric Scholarship for SC/ST/OBC (Sikkim)",
+  "scholarship_type": "State Scholarship",
+  "state": "Sikkim",
+  "eligibility_criteria": {
+    "domicile": "Subject of Sikkim",
+    "income_criteria": { "maximum_family_income": "₹2,50,000 (SC/ST), ₹1,50,000 (OBC)" }
+  },
+  "scholarship_benefits": { "description": "Financial assistance for post-matriculation studies." },
+  "last_updated": "2025"
+}

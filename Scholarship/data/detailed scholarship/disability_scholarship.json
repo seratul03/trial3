@@ -1,0 +1,34 @@
+{
+  "scholarship_id": "disability_pms",
+  "scholarship_name": "Post-Matric Scholarship for Students with Disabilities",
+  "scholarship_type": "Central Government Scheme",
+  "offered_by": "Department of Empowerment of Persons with Disabilities, GoI",
+  "academic_level": ["Undergraduate", "Postgraduate", "Diploma"],
+  "introduction": "This scholarship supports students with disabilities to pursue post-matric education. It provides maintenance allowance, book allowance, and disability allowance.",
+  "eligibility_criteria": {
+    "disability": "More than 40% disability (Certified by competent medical authority)",
+    "income_criteria": {
+      "maximum_family_income": "₹2,50,000 per annum"
+    }
+  },
+  "scholarship_benefits": {
+    "amount": "Maintenence + Disability Allowances",
+    "components": [
+      "Maintenance Allowance",
+      "Disability Allowance",
+      "Book Allowance",
+      "Reimbursement of Compulsory Non-Refundable Fees"
+    ]
+  },
+  "documents_required": [
+    "Disability Certificate (>40%)",
+    "Income Certificate",
+    "Previous Year Marksheet",
+    "Aadhaar Card",
+    "Fee Receipt"
+  ],
+  "application_process": {
+    "mode": "Online via National Scholarship Portal (NSP)"
+  },
+  "last_updated": "2025"
+}

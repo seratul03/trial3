@@ -1,0 +1,41 @@
+{
+  "course_code": "PEC-CSM591C",
+  "course_name": "Cloud Computing Lab",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "VirtualBox/VMware Installation & Programs"
+    },
+    {
+      "module_number": 2,
+      "title": "Google App Engine Apps"
+    },
+    {
+      "module_number": 3,
+      "title": "CloudSim Scheduling Simulation"
+    },
+    {
+      "module_number": 4,
+      "title": "VM-to-VM File Transfer & TryStack"
+    },
+    {
+      "module_number": 5,
+      "title": "Hadoop Single Node Setup"
+    }
+  ],
+  "summary": "Cloud Computing Lab is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 5 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Cloud Computing: Concepts, Technology & Architecture – Thomas Erl",
+    "Architecting the Cloud – Michael J. Kavis"
+  ],
+  "course_outcomes": [
+    "Install and configure virtual machines using VirtualBox/VMware.",
+    "Deploy applications on Google App Engine.",
+    "Simulate cloud scheduling using CloudSim.",
+    "Implement Hadoop single-node setup and distributed computing.",
+    "Work with OpenStack and VM management in cloud environments."
+  ],
+  "prerequisites": [
+    "Basic knowledge of virtualization and cloud concepts"
+  ]
+}

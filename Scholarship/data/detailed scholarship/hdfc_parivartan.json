@@ -1,0 +1,42 @@
+{
+  "scholarship_id": "hdfc_parivartan_ecs",
+  "scholarship_name": "HDFC Bank Parivartan ECS Scholarship",
+  "official_name": "HDFC Bank Parivartan's ECSS Programme",
+  "scholarship_type": "Corporate CSR Scholarship",
+  "offered_by": "HDFC Bank",
+  "target_group": "Meritorious students facing financial crisis",
+  "academic_level": ["B.Tech", "M.Tech", "MBA", "LLB", "Nursing", "B.Sc"],
+  "introduction": "HDFC Bank Parivartan's Educational Crisis Support Scholarship (ECSS) aims to support meritorious and needy students belonging to underprivileged sections of society to help them complete their education.",
+  "eligibility_criteria": {
+    "academic_requirements": "Minimum 55% marks in the previous qualifying examination",
+    "income_criteria": {
+      "maximum_family_income": "₹2,50,000 per annum"
+    },
+    "special_condition": "Preference given to students facing personal or family crises (loss of job, death of earning member, etc.)"
+  },
+  "scholarship_benefits": {
+    "amount": "Up to ₹75,000",
+    "structure": [
+      "Undergraduate Courses (B.Tech, B.Sc, etc.): Up to ₹50,000",
+      "Postgraduate Courses (M.Tech, MBA, etc.): Up to ₹75,000"
+    ]
+  },
+  "documents_required": [
+    "Mark sheets of previous year",
+    "Family Income Proof (Salary Slip / IT Return / Income Certificate)",
+    "Proof of Family/Personal Crisis (if applicable)",
+    "Admission Proof (Fee Receipt / ID Card)",
+    "Bank Account Details"
+  ],
+  "application_process": {
+    "mode": "Online via Buddy4Study",
+    "steps": [
+      "Visit Buddy4Study portal",
+      "Search for HDFC Parivartan Scholarship",
+      "Login/Register and fill the form",
+      "Upload documents proving crisis (if any)",
+      "Submit application"
+    ]
+  },
+  "last_updated": "2025"
+}

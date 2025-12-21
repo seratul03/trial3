@@ -1,0 +1,50 @@
+{
+  "course_code": "PCC-CSM402",
+  "course_name": "Design and Analysis of Algorithms",
+  "modules": [
+    {
+      "module_number": 1,
+      "title": "Introduction & Recurrence Solving"
+    },
+    {
+      "module_number": 2,
+      "title": "Algorithm Design Techniques"
+    },
+    {
+      "module_number": 3,
+      "title": "String Matching Algorithms"
+    },
+    {
+      "module_number": 4,
+      "title": "Graph Algorithms"
+    },
+    {
+      "module_number": 5,
+      "title": "Complexity Classes: P, NP, NP Complete"
+    },
+    {
+      "module_number": 6,
+      "title": "Approximation and Randomized Algorithms"
+    },
+    {
+      "module_number": 7,
+      "title": "Current Trends"
+    }
+  ],
+  "summary": "Design and Analysis of Algorithms is a comprehensive course designed to build strong foundational knowledge in this important area. This subject covers 7 key modules that progressively develop your understanding. You'll gain both theoretical insights and practical skills through lectures and assignments. The course prepares you for advanced studies and professional applications. Mastering this subject will significantly contribute to your academic and career success.",
+  "recommended_books": [
+    "Introduction to Algorithms – Cormen, Leiserson, Rivest, Stein",
+    "Algorithm Design – Jon Kleinberg & Éva Tardos"
+  ],
+  "course_outcomes": [
+    "Define and analyze complexity of algorithms.",
+    "Explain different algorithmic techniques and compare their behavior.",
+    "Discuss graph traversal and related algorithms.",
+    "Understand complexity classes like P, NP, NP-hard and NP-complete.",
+    "Define and evaluate approximation and randomized algorithms.",
+    "Apply algorithmic case studies to solve real problems."
+  ],
+  "prerequisites": [
+    "Programming Knowledge, Fundamental Mathematics"
+  ]
+}
