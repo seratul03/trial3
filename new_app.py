@@ -357,6 +357,11 @@ def serve_faculty_files(filename):
     """Serve files from the Faculty directory."""
     return send_from_directory(BASE_DIR / 'Faculty', filename)
 
+@app.route('/intro/<path:filename>')
+def serve_intro_files(filename):
+    """Serve files from the intro directory."""
+    return send_from_directory(BASE_DIR / 'intro', filename)
+
 # ============================================================================
 # SEMESTER & SUBJECTS API
 # ============================================================================

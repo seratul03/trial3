@@ -1030,21 +1030,23 @@
       }
 
       function startChatting() {
-        const welcomeScreen = document.getElementById("welcomeScreen");
+        const videoIntroScreen = document.getElementById("videoIntroScreen");
+        const chatContainer = document.getElementById("chatContainer");
         const chatInterface = document.getElementById("chatInterface");
         const introVideo = document.getElementById("introVideo");
         
-        // Add fade-out animation
-        welcomeScreen.classList.add("fade-out");
-        
-        // Pause video if it exists
+        // Pause video
         if (introVideo) {
           introVideo.pause();
         }
         
-        // Wait for animation to complete before hiding
+        // Add fade-out animation to video intro
+        videoIntroScreen.classList.add("fade-out");
+        
+        // Wait for animation to complete before showing chat
         setTimeout(() => {
-          welcomeScreen.style.display = "none";
+          videoIntroScreen.style.display = "none";
+          chatContainer.style.display = "flex";
           chatInterface.style.display = "flex";
         }, 600);
       }

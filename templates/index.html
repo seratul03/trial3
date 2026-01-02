@@ -19,12 +19,13 @@
   </head>
 
   <body>
-    <!-- Floating Chat Button -->
+    <!-- Floating Chat Button (Hidden initially) -->
     <button
       class="chat-float-btn"
       id="chatFloatBtn"
       onclick="openChat()"
       aria-label="Open chat"
+      style="display: none;"
     >
       <svg
         class="chat-icon"
@@ -42,49 +43,37 @@
       </svg>
     </button>
 
-    <!-- Chat Container -->
-    <div class="chat-container" id="chatContainer">
-      <!-- Welcome Screen with Video Intro -->
-      <div class="welcome-screen" id="welcomeScreen">
-        <button
-          class="animated-close-btn"
-          onclick="closeChat()"
-          aria-label="Close chat"
-        >
-          ×
-        </button>
-        <div class="welcome-content">
-          <div class="video-intro-container">
-            <div class="video-wrapper">
-              <video
-                id="introVideo"
-                class="intro-video"
-                autoplay
-                loop
-                muted
-                playsinline
-              >
-                <source src="/intro/Avatar 1080_001.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="video-intro-text">
-              <h2 class="video-intro-title">Welcome to BWU UniBot</h2>
-              <p class="video-intro-subtitle">Your 24/7 University Assistant</p>
-            </div>
-          </div>
-          <button class="lets-start-btn video-start-btn" onclick="startChatting()">
-            Start Chatting
-            <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
+    <!-- Video Intro Screen -->
+    <div class="video-intro-screen" id="videoIntroScreen">
+      <div class="video-intro-wrapper">
+        <div class="video-player-container">
+          <video
+            id="introVideo"
+            class="intro-video"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="/intro/Avatar 1080_001.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+        <button class="start-chat-btn" onclick="startChatting()">
+          Start Chatting
+          <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
       </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container" id="chatContainer" style="display: none;">
 
       <!-- Chat Interface -->
       <div class="chat-interface" id="chatInterface">

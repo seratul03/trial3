@@ -63,18 +63,20 @@ Integrated context extraction to filter relevant information before sending to L
 
 ### Context Size Reduction:
 
-| Query Type | Before (chars) | After (chars) | Improvement |
-|------------|----------------|---------------|-------------|
-| HOD Query  | 78,085         | 181           | 430x smaller |
-| Person Query | 78,085       | 242           | 322x smaller |
-| Scholarship | 9,696         | 8,454         | 1.1x smaller |
-| Holiday    | 5,985          | 5,260         | 1.1x smaller |
-
+----------------------------------------------------------------
+| Query Type   | Before (chars) | After (chars) | Improvement  |
+|--------------|----------------|---------------|--------------|
+| HOD Query    | 78,085         | 181           | 430x smaller |
+| Person Query | 78,085         | 242           | 322x smaller |
+| Scholarship  | 9,696          | 8,454         | 1.1x smaller |
+| Holiday      | 5,985          | 5,260         | 1.1x smaller |
+----------------------------------------------------------------
 ### Prompt Size Reduction:
-
+----------------------------------------------------------------
 | Query Type | Before (chars) | After (chars) | Token Savings |
 |------------|----------------|---------------|---------------|
 | HOD Query  | 86,529         | 8,625         | ~78,000 chars |
+----------------------------------------------------------------
 
 ## 🎯 Expected Results
 
