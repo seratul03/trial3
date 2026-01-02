@@ -671,6 +671,11 @@ def serve_sidebar(filename):
     """Serve sidebar assets"""
     return send_from_directory(BASE_DIR / 'sidebar', filename)
 
+@app.route("/intro/<path:filename>")
+def serve_intro(filename):
+    """Serve intro video files"""
+    return send_from_directory(BASE_DIR / 'intro', filename)
+
 
 # ============================================================================
 # API STATUS ENDPOINT

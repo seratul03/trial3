@@ -123,9 +123,108 @@ html, body {
   filter: blur(60px);
 }
 .welcome-screen.hidden {display: none;}
+.welcome-screen.fade-out {
+  animation: fadeOutWelcome 0.6s ease-out forwards;
+}
+
+@keyframes fadeOutWelcome {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
 .welcome-content {position: relative; z-index: 1; animation: fadeInScale 0.5s ease;}
 
 @keyframes fadeInScale {from {opacity: 0; transform: scale(0.9);} to {opacity: 1; transform: scale(1);}}
+
+/* Video Intro Styles */
+.video-intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.2);
+  animation: videoFloat 3s ease-in-out infinite;
+}
+
+@keyframes videoFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.intro-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-intro-text {
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.video-intro-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-intro-subtitle {
+  font-size: 16px;
+  opacity: 0.95;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.video-start-btn {
+  animation: fadeInUp 0.8s ease-out 0.5s both, pulse 2s ease-in-out 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  }
+}
 
 .university-logo {
   width: 96px; height: 96px;
@@ -390,11 +489,10 @@ body.dark-theme .message-bubble.error {background: #742a2a; color: #feb2b2; bord
 .sticky-welcome-message .message-content {
   color: rgb(16, 103, 223) !important;
   font-weight: 500;
-  /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
 }
 
 .sticky-welcome-message .message-time {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .sticky-welcome-message .message-avatar img {
@@ -694,6 +792,18 @@ body.dark-theme .sticky-welcome-message .message-bubble {
   .welcome-title {font-size: 24px;}
   .message-bubble {max-width: 85%;}
   
+  .video-wrapper {
+    max-width: 320px;
+  }
+  
+  .video-intro-title {
+    font-size: 22px;
+  }
+  
+  .video-intro-subtitle {
+    font-size: 14px;
+  }
+  
   .faculty-modal {padding: 0;}
   .faculty-modal-content {
     max-width: 100%;
@@ -713,6 +823,23 @@ body.dark-theme .sticky-welcome-message .message-bubble {
   .action-text {display: none;}
   .quick-action-btn {padding: 10px;}
   .message-bubble {max-width: 90%;}
+  
+  .video-wrapper {
+    max-width: 280px;
+  }
+  
+  .video-intro-container {
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .video-intro-title {
+    font-size: 20px;
+  }
+  
+  .video-intro-subtitle {
+    font-size: 13px;
+  }
   
   .faculty-modal-header {padding: 20px;}
   .faculty-modal-header h2 {font-size: 20px;}

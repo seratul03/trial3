@@ -44,7 +44,7 @@
 
     <!-- Chat Container -->
     <div class="chat-container" id="chatContainer">
-      <!-- Welcome Screen -->
+      <!-- Welcome Screen with Video Intro -->
       <div class="welcome-screen" id="welcomeScreen">
         <button
           class="animated-close-btn"
@@ -54,35 +54,26 @@
           ×
         </button>
         <div class="welcome-content">
-          <div class="university-logo">
-            <img
-              src="/logo/Brainware_University.jpg"
-              alt="Brainware University Logo"
-            />
-          </div>
-          <h1 class="welcome-title">Welcome to BWU UniBot</h1>
-          <p class="welcome-subtitle">Your 24/7 University Assistant</p>
-          <div class="welcome-features">
-            <div
-              class="feature-item"
-              onclick="openAnnouncementsModal()"
-              style="cursor: pointer"
-            >
-              <span class="feature-icon">📢</span>
-              <span class="feature-text">See Latest Notice</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">📅</span>
-              <span class="feature-text" id="welcomeUpcomingHoliday"
-                >See Upcoming Holiday</span
+          <div class="video-intro-container">
+            <div class="video-wrapper">
+              <video
+                id="introVideo"
+                class="intro-video"
+                autoplay
+                loop
+                muted
+                playsinline
               >
+                <source src="/intro/Avatar 1080_001.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-intro-text">
+              <h2 class="video-intro-title">Welcome to BWU UniBot</h2>
+              <p class="video-intro-subtitle">Your 24/7 University Assistant</p>
             </div>
           </div>
-          <div
-            id="welcomeUpcomingHolidayCard"
-            style="display: none; margin-top: 12px"
-          ></div>
-          <button class="lets-start-btn" onclick="startChatting()">
+          <button class="lets-start-btn video-start-btn" onclick="startChatting()">
             Start Chatting
             <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
               <path

@@ -1030,8 +1030,23 @@
       }
 
       function startChatting() {
-        document.getElementById("welcomeScreen").style.display = "none";
-        document.getElementById("chatInterface").style.display = "flex";
+        const welcomeScreen = document.getElementById("welcomeScreen");
+        const chatInterface = document.getElementById("chatInterface");
+        const introVideo = document.getElementById("introVideo");
+        
+        // Add fade-out animation
+        welcomeScreen.classList.add("fade-out");
+        
+        // Pause video if it exists
+        if (introVideo) {
+          introVideo.pause();
+        }
+        
+        // Wait for animation to complete before hiding
+        setTimeout(() => {
+          welcomeScreen.style.display = "none";
+          chatInterface.style.display = "flex";
+        }, 600);
       }
 
       function handleKeyPress(event) {
