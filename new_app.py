@@ -9,7 +9,7 @@ from datetime import datetime
 import requests
 
 # Import core chatbot modules
-from app.core.intent import detect_intent
+from app.core.intent import detect_intent, find_scholarship, find_all_scholarships
 from app.core.retriever import retrieve
 from app.core.prompt_builder import build_prompt
 from app.vectorstore.index import VectorIndex
@@ -156,6 +156,57 @@ def chat():
 
     intent = detect_intent(query)
 
+    # Check if this is a scholarship query
+    if intent == "scholarship":
+        print(f"[DEBUG] Scholarship intent detected for query: {query}")
+        
+        # Find all matching scholarships
+        matched_scholarships = find_all_scholarships(query)
+        print(f"[DEBUG] Found {len(matched_scholarships)} matching scholarships")
+        
+        if len(matched_scholarships) > 1:
+            # Multiple matches - need disambiguation
+            print(f"[DEBUG] Multiple matches found, sending disambiguation")
+            
+            options = []
+            for idx, sch in enumerate(matched_scholarships, 1):
+                options.append({
+                    "number": idx,
+                    "name": sch.get("scholarship_name", ""),
+                    "slug": sch.get("slug", ""),
+                    "id": sch.get("scholarship_id", "")
+                })
+            
+            return jsonify({
+                "intent": intent,
+                "needs_disambiguation": True,
+                "options": options,
+                "response": "I found multiple scholarships matching your query. Please choose the one you want to know about:"
+            })
+        
+        elif len(matched_scholarships) == 1:
+            # Single match - return directly
+            matched_scholarship = matched_scholarships[0]
+            intro = matched_scholarship.get("intro", "")
+            scholarship_slug = matched_scholarship.get("slug", "")
+            scholarship_name = matched_scholarship.get("scholarship_name", "")
+            
+            print(f"[DEBUG] Single match - slug: {scholarship_slug}, name: {scholarship_name}")
+            
+            # Format response with intro and link
+            response_text = f"{intro}\n\nPlease go through our scholarship portal for more details.\n🔗 View {scholarship_name} Details"
+            
+            response_data = {
+                "intent": intent,
+                "response": response_text,
+                "scholarship_slug": scholarship_slug,
+                "scholarship_name": scholarship_name,
+                "has_scholarship_link": True
+            }
+            print(f"[DEBUG] Returning response with slug: {scholarship_slug}")
+            return jsonify(response_data)
+
+    # Default AI response flow
     docs = retrieve(
         query=query,
         intent=intent,
@@ -171,6 +222,36 @@ def chat():
         "intent": intent,
         "response": answer
     })
+
+
+@app.route("/scholarship-by-slug", methods=["POST"])
+def get_scholarship_by_slug():
+    """Get specific scholarship details by slug"""
+    data = request.get_json(force=True)
+    slug = data.get("slug", "").strip()
+    
+    if not slug:
+        return jsonify({"error": "Slug required"}), 400
+    
+    # Find scholarship by slug
+    all_scholarships = find_all_scholarships("scholarship")  # Get all
+    
+    for sch in all_scholarships:
+        if sch.get("slug") == slug:
+            intro = sch.get("intro", "")
+            scholarship_name = sch.get("scholarship_name", "")
+            
+            response_text = f"{intro}\n\nPlease go through our scholarship portal for more details.\n🔗 View {scholarship_name} Details"
+            
+            return jsonify({
+                "intent": "scholarship",
+                "response": response_text,
+                "scholarship_slug": slug,
+                "scholarship_name": scholarship_name,
+                "has_scholarship_link": True
+            })
+    
+    return jsonify({"error": "Scholarship not found"}), 404
 
 
 # ============================================================================

@@ -1,0 +1,92 @@
+[
+  {
+    "scholarship_id": "1-POST_MATRIC_SCHOLARS",
+    "scholarship_name": "Post Matric Scholarship (Minority)",
+    "keywords": ["post matric", "post matric minority", "aikyashree post matric", "wb post matric", "aikyashree"],
+    "intro": "For minority students studying after Class 10. Helps cover tuition and academic expenses. Focuses on financially weaker families. Encourages continuation of higher education. Reduces dropout rates. Easy to understand eligibility. Widely used across West Bengal."
+  },
+  {
+    "scholarship_id": "2-MERIT_CUM_MEANS_SCHO",
+    "scholarship_name": "Merit Cum Means Scholarship (MCM)",
+    "keywords": ["mcm", "merit cum means", "aikyashree mcm", "minority professional scholarship"],
+    "intro": "For minority students in professional courses. Supports Engineering, Medical, Law and Management. Rewards good academic performance. Helps students from low-income families. Reduces financial burden of higher education. Encourages merit-based growth."
+  },
+  {
+    "scholarship_id": "3-SWAMI_VIVEKANANADA_M",
+    "scholarship_name": "Swami Vivekananda Merit Cum Means Scholarship (Minority)",
+    "keywords": ["svmcm", "svmcm minority", "vivekananda scholarship", "aikyashree svmcm"],
+    "intro": "For minority students with strong academic records. Supports UG courses like Arts, Commerce, BBA and Law. Combines merit and financial need. Very popular in West Bengal. Helps maintain academic continuity. Encourages students to aim higher."
+  },
+  {
+    "scholarship_id": "4-SWAMI_VIVEKANANADA_M",
+    "scholarship_name": "Swami Vivekananda Merit Cum Means Scholarship (DPI – General)",
+    "keywords": ["svmcm dpi", "svmcm general", "vivekananda dpi", "non minority svmcm"],
+    "intro": "For general category students under DPI. Supports UG courses such as Arts, Commerce, Law and BBA. Based on merit and family income. Helps students with limited financial resources. Reduces education-related stress. Promotes equal opportunity."
+  },
+  {
+    "scholarship_id": "5-WEST_BENGAL_CHIEF_MI",
+    "scholarship_name": "Nabanna Scholarship (Chief Minister Relief Fund)",
+    "keywords": ["nabanna", "cm relief fund scholarship", "wb cm scholarship", "nabanne"],
+    "intro": "Provided from the Chief Minister’s Relief Fund. Helps students facing financial hardship. Suitable for those not covered by other schemes. Supports basic academic expenses. Simple and supportive scholarship. Ensures education is not discontinued."
+  },
+  {
+    "scholarship_id": "6-POST_MATRIC_SC_ST_OBC",
+    "scholarship_name": "Post Matric Scholarship for SC/ST/OBC",
+    "keywords": ["post matric sc", "post matric st", "post matric obc", "sc st obc scholarship"],
+    "intro": "For SC, ST and OBC students after Class 10. Supports diploma and undergraduate studies. Aims to reduce financial inequality. Helps with tuition and study costs. Encourages higher education participation. Government-supported welfare scheme."
+  },
+  {
+    "scholarship_id": "7-POST_MATRIC_MINORITY_CS",
+    "scholarship_name": "Post Matric Scholarship Scheme for Minorities (Central)",
+    "keywords": ["post matric minority cs", "central minority scholarship", "minority post matric"],
+    "intro": "Central government scholarship for minority students. Covers UG, PG and diploma courses. Based on merit and income. Supports education beyond school level. Helps students across multiple states. Promotes inclusive education."
+  },
+  {
+    "scholarship_id": "8-MERIT_CUM_MEANS_CS",
+    "scholarship_name": "Merit Cum Means Scholarship for Professional Courses (Central)",
+    "keywords": ["mcm cs", "central merit cum means", "professional minority scholarship"],
+    "intro": "Central scheme for minority students in professional courses. Supports UG, PG and diploma programs. Focuses on technical and professional education. Rewards merit with financial support. Reduces burden of course fees. Encourages skill development."
+  },
+  {
+    "scholarship_id": "9-POST_MATRIC_DISABILITY",
+    "scholarship_name": "Post Matric Scholarship for Students with Disabilities",
+    "keywords": ["disability scholarship", "pwd post matric", "40 percent disability scholarship"],
+    "intro": "For students with benchmark disabilities. Requires certified disability status. Supports UG and PG education. Helps meet educational expenses. Encourages inclusive education. Limits family-wise beneficiaries to ensure fairness."
+  },
+  {
+    "scholarship_id": "10-BEEDI_CINE_WORKERS",
+    "scholarship_name": "Financial Assistance for Wards of Beedi/Cine Workers",
+    "keywords": ["beedi scholarship", "cine workers scholarship", "labour welfare education"],
+    "intro": "For children of beedi, cine and mine workers. Supports post-matric education. Based on guardian occupation and income. Helps cover education costs. Welfare-oriented government scheme. Supports socially vulnerable families."
+  },
+  {
+    "scholarship_id": "11-CENTRAL_SECTOR",
+    "scholarship_name": "Central Sector Scholarship for College & University Students",
+    "keywords": ["central sector scholarship", "csss", "college university scholarship"],
+    "intro": "For high-performing students after Class 12. Requires strong academic results. Supports UG and PG education. Central government funded scheme. Encourages academic excellence. Income-based eligibility."
+  },
+  {
+    "scholarship_id": "22-ISHAN_UDAY",
+    "scholarship_name": "Ishan Uday Scholarship (North Eastern Region)",
+    "keywords": ["ishan uday", "ner scholarship", "north east ug scholarship"],
+    "intro": "For students from North Eastern states. Supports UG education. Helps students study outside their home regions. Covers academic expenses. Promotes higher education in NER. Central government initiative."
+  },
+  {
+    "scholarship_id": "24-KANNYASHREE_K2",
+    "scholarship_name": "Kanyashree (K2)",
+    "keywords": ["kanyashree", "k2 scholarship", "girl student wb"],
+    "intro": "For unmarried girl students in West Bengal. Encourages continuation of education. Supports diploma and UG courses. Focuses on empowerment of girls. Income-based eligibility. Social welfare oriented scheme."
+  },
+  {
+    "scholarship_id": "VIRTUSA_ENGINEERING",
+    "scholarship_name": "Virtusa Engineering Excellence Scholarship",
+    "keywords": ["virtusa scholarship", "engineering csr scholarship", "virtusa excellence"],
+    "intro": "Corporate-funded scholarship for engineering students. One-time financial support. Based on merit and income. Helps cover academic expenses. Encourages excellence in engineering. CSR-driven initiative."
+  },
+  {
+    "scholarship_id": "RELIANCE_FOUNDATION",
+    "scholarship_name": "Reliance Foundation Scholarship",
+    "keywords": ["reliance scholarship", "reliance foundation", "reliance foundation ug", "reliance pg scholarship"],
+    "intro": "For meritorious UG and PG students. Covers technical and professional fields. Includes aptitude-based selection. High-value financial support. Encourages leadership and innovation. Prestigious private scholarship."
+  }
+]

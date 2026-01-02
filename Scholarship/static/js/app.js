@@ -44,3 +44,60 @@ searchInput.addEventListener("input", () => {
     });
   }, 180);
 });
+
+// ============================================================================
+// SCHOLARSHIP HIGHLIGHTING FROM URL PARAMETER
+// ============================================================================
+
+// Check if there's a 'highlight' parameter in the URL
+function checkAndHighlightScholarship() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const highlightSlug = urlParams.get('highlight');
+  
+  if (highlightSlug) {
+    // Find the card with matching slug
+    const targetCard = cards.find(card => {
+      const cardLink = card.getAttribute('onclick');
+      return cardLink && cardLink.includes(`id=${highlightSlug}`);
+    });
+    
+    if (targetCard) {
+      // Add highlight animation styles
+      targetCard.style.animation = 'highlightPulse 2s ease-in-out';
+      targetCard.style.border = '3px solid #2563eb';
+      targetCard.style.boxShadow = '0 0 20px rgba(37, 99, 235, 0.4)';
+      
+      // Scroll to the card after a small delay to ensure page is loaded
+      setTimeout(() => {
+        targetCard.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }, 300);
+      
+      // Remove highlight after 5 seconds
+      setTimeout(() => {
+        targetCard.style.animation = '';
+        targetCard.style.border = '';
+        targetCard.style.boxShadow = '';
+      }, 5000);
+    }
+  }
+}
+
+// Add CSS for highlight animation
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes highlightPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+  }
+  
+  .card.hidden {
+    display: none;
+  }
+`;
+document.head.appendChild(style);
+
+// Run highlighting when page loads
+window.addEventListener('DOMContentLoaded', checkAndHighlightScholarship);

@@ -122,13 +122,6 @@ For every VALID academic or administrative query, your response MUST strictly fo
 - Do NOT omit important details if available.
 - Do NOT add interpretation, advice, or opinion.
 
-At the END of this section, list the supporting file paths in square brackets.
-
-Example citation format:
-[sem_explain/sem_01/HSMCM101.json]
-
-If multiple files are used, list ALL of them.
-
 ----------------
 2. RELATED SUGGESTIONS
 ----------------

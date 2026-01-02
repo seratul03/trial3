@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (skills.length === 0) {
     const span = document.createElement('span');
     span.className = 'skill-tag';
-    span.textContent = 'No data';
+    span.textContent = 'This teacher does not have specified research areas.';
     skillsEl.appendChild(span);
   } else {
     skills.forEach(s => {

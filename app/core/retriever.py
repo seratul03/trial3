@@ -20,7 +20,7 @@ def keyword_retrieve(query, docs, k=5, intent="general"):
     # Intent-specific boost keywords
     intent_keywords = {
         "holiday": ["holiday", "vacation", "leave", "closed", "break", "_metadata"],
-        "scholarship": ["scholarship", "stipend", "grant", "financial"],
+        "scholarship": ["scholarship", "stipend", "grant", "financial","scholarships", "svmcm", "mcm", "nabanna", "aikyashree", "kanyashree",],
         "canteen": ["canteen", "food", "mess", "cafeteria"],
         "rules": ["rule", "policy", "allowed", "banned", "penalty"]
     }

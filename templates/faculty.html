@@ -4,236 +4,292 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Faculty Directory</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Your card stylesheet -->
 <link rel="stylesheet" href="{{ url_for('static', filename='faculty-cards.css') }}">
+
+<style>
+/* ===========================
+   DETAILS MODAL (NEW, PREMIUM)
+   =========================== */
+
+.details-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease;
+}
+
+.details-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.details-panel {
+    width: 560px;
+    max-width: 96%;
+    max-height: 85vh;
+    overflow-y: auto;
+
+    position: relative;
+
+    border-radius: 20px;
+    padding: 28px 24px;
+
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.25),
+        0 0 0 1px rgba(255,255,255,.6);
+
+    transform: scale(.9) translateY(15px);
+    transition: transform .25s ease;
+}
+
+.details-overlay.show .details-panel {
+    transform: scale(1) translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    color: #ff4a4a;
+    font-size: 22px;
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.modal-close:hover {
+    transform: scale(1.12);
+    box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+</style>
 </head>
+
 <body>
-    <button class="faculty-close-btn" onclick="window.close()" aria-label="Close">×</button>
-    <div class="container">
-        <h1 class="page-title">Faculty Directory</h1>
-        <div class="search-container">
-            <input type="text" id="facultySearchInput" class="search-input" placeholder="Search by name, position, or research area..." oninput="searchFaculty()">
-        </div>
-            <div class="faculty-grid" id="facultyGrid">
-                <!-- Faculty cards will be dynamically loaded here -->
-            </div>
-            </div>
+
+<button class="faculty-close-btn" onclick="window.close()" aria-label="Close">×</button>
+
+<div class="container">
+    <h1 class="page-title">Faculty Directory</h1>
+
+    <div class="search-container">
+        <input
+            type="text"
+            id="facultySearchInput"
+            class="search-input"
+            placeholder="Search by name, position, or research area..."
+            oninput="searchFaculty()">
     </div>
 
-    <script>
-        // Fetch faculty data and render cards
-        async function loadFaculty() {
-            try {
-                const response = await fetch('/faculty-data');
-                const rawList = await response.json();
-                const list = Array.isArray(rawList) ? rawList : (rawList.faculty || rawList.teachers || []);
+    <div class="faculty-grid" id="facultyGrid"></div>
+</div>
 
-                const facultyMap = {};
-                const keys = [];
+<!-- MODAL OVERLAY -->
+<div id="detailsOverlay" class="details-overlay">
+    <div id="detailsPanel" class="details-panel"></div>
+</div>
 
-                function slugify(name) {
-                    return (name||'').toString().toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,'').replace(/\-+/g,'-').replace(/^-|-$/g,'');
-                }
+<script>
+/* ========================
+   LOAD FACULTY CARDS
+   ======================== */
+async function loadFaculty() {
+    try {
+        const response = await fetch('/faculty-data');
+        const rawList = await response.json();
+        const list = Array.isArray(rawList) ? rawList : (rawList.faculty || rawList.teachers || []);
 
-                list.forEach((faculty, idx) => {
-                    const key = faculty.key || faculty.id || slugify(faculty.name) || `f${idx}`;
-                    facultyMap[key] = faculty;
-                    facultyMap[key].__key = key;
-                    keys.push(key);
-                });
+        const grid = document.getElementById('facultyGrid');
+        grid.innerHTML = '';
 
-                const listEl = document.getElementById('facultyList');
-                const grid = document.getElementById('facultyGrid');
-                grid.innerHTML = '';
-
-                // Build grid cards (name + position + rating + contact + view card + details)
-                list.forEach((faculty, idx) => {
-                    const card = createFacultyCard(faculty);
-                    grid.appendChild(card);
-                });
-            } catch (error) {
-                console.error('Error loading faculty:', error);
-            }
-        }
-
-        function createFacultyCard(faculty) {
-            const card = document.createElement('div');
-            card.className = 'card';
-
-            // Determine the rank for circle color
-            let rankClass = 'blue';
-            if ((faculty.position || '').includes('Professor & HOD') || (faculty.position || '') === 'Professor') {
-                rankClass = 'gold';
-            } else if ((faculty.position || '').includes('Associate Professor')) {
-                rankClass = 'silver';
-            }
-
-            // Determine rating
-            let rating = 4;
-            if ((faculty.position || '').toLowerCase().includes('hod') || (faculty.position || '').toLowerCase().includes('head')) {
-                rating = 5;
-            }
-
-            let starsHtml = '<div class="rating">';
-            for (let i = 1; i <= 5; i++) {
-                starsHtml += (i <= rating) ? '<i class="fas fa-star" aria-hidden="true"></i>' : '<i class="far fa-star" aria-hidden="true"></i>';
-            }
-            starsHtml += '</div>';
-
-            // Contact link
-            let contactHref = '#';
-            if (faculty.email) contactHref = `mailto:${faculty.email}`;
-
-            const connectId = faculty.key ? encodeURIComponent(faculty.key) : encodeURIComponent((faculty.name||'').toString().toLowerCase().replace(/\s+/g,'-'));
-            const connectUrl = `/faculty_card?name=${connectId}`;
-
-            let actionButtonsHtml = `<div class="action-row">`;
-            actionButtonsHtml += `<button class="viewcard-btn" onclick="handleConnect(event, '${connectUrl}')"><i class="fas fa-id-card"></i> View Card</button>`;
-            if (faculty.email) actionButtonsHtml += `<button class="contact-btn" onclick="handleContact(event, '${contactHref}')"><i class="fas fa-envelope"></i> Contact</button>`;
-            actionButtonsHtml += `<button class="detail-btn" onclick="toggleDetails(this)">Detailed View</button>`;
-            actionButtonsHtml += `</div>`;
-
-            card.innerHTML = `
-                <div class="profile-pic ${rankClass}">
-                    <img src="/${faculty.photo || 'logo/Brainware_University.jpg'}" alt="${faculty.name || ''}" onerror="this.src='/logo/Brainware_University.jpg'">
-                </div>
-                <div class="card-content">
-                    <div class="name">${faculty.name || ''}</div>
-                    <div class="position">${faculty.position || ''}</div>
-                    ${starsHtml}
-                    ${actionButtonsHtml}
-                    <div class="details-section" style="display: none;">
-                        <div class="detail-item">
-                            <strong>Department:</strong>
-                            <span>${faculty.department || ''}</span>
-                        </div>
-                        ${(faculty.research || faculty.research_area) ? `
-                        <div class="detail-item">
-                            <strong>Research Areas:</strong>
-                            <span>${(faculty.research || (faculty.research_area || []).join(', '))}</span>
-                        </div>
-                        ` : ''}
-                        ${faculty.qualification ? `
-                        <div class="detail-item">
-                            <strong>Qualification:</strong>
-                            <span>${faculty.qualification}</span>
-                        </div>
-                        ` : ''}
-                    </div>
-                </div>
-            `;
-
-            return card;
-        }
-
-        function toggleDetails(button) {
-            const card = button.closest('.card');
-            const profilePic = card.querySelector('.profile-pic');
-            const detailsSection = card.querySelector('.details-section');
-            const isExpanded = card.classList.contains('expanded');
-            
-            if (isExpanded) {
-                // Collapse - reverse animation
-                detailsSection.classList.remove('show');
-                detailsSection.classList.add('hide');
-                profilePic.classList.remove('minimized');
-                
-                setTimeout(() => {
-                    card.classList.remove('expanded');
-                    detailsSection.style.display = 'none';
-                    detailsSection.classList.remove('hide');
-                }, 400);
-                
-                button.textContent = 'Detailed View';
-            } else {
-                // Expand
-                card.classList.add('expanded');
-                detailsSection.style.display = 'block';
-                
-                setTimeout(() => {
-                    profilePic.classList.add('minimized');
-                    detailsSection.classList.add('show');
-                }, 50);
-                
-                button.textContent = 'Hide Details';
-            }
-        }
-
-        // Handle contact button click: open mailto/tel or show alert when not available
-        function handleContact(event, href) {
-            // prevent card toggle when clicking contact
-            event.stopPropagation();
-            if (!href || href === '#') {
-                alert('Contact information is not available for this faculty.');
-                return;
-            }
-            window.location.href = href;
-        }
-
-        function renderProfileInPlace(key, facultyMap) {
-            const faculty = facultyMap[key];
-            if (!faculty) return;
-            const container = document.getElementById('profileContainer');
-            container.innerHTML = '';
+        list.forEach(faculty => {
             const card = createFacultyCard(faculty);
-            // Add Connect button wired to open faculty_card viewer (preserve previous behavior)
-            const connectId = faculty.key ? encodeURIComponent(faculty.key) : encodeURIComponent(faculty.name || '');
-            const connectUrl = `faculty_card/index.html?name=${connectId}`;
-            const actionRow = card.querySelector('.action-row');
-            if (actionRow) {
-                const connectBtn = document.createElement('button');
-                connectBtn.className = 'connect-btn';
-                connectBtn.innerHTML = '<i class="fas fa-link"></i> Connect';
-                connectBtn.onclick = (e) => { e.stopPropagation(); try { window.open(connectUrl,'_blank'); } catch { window.location.href = connectUrl; } };
-                actionRow.insertAdjacentElement('afterbegin', connectBtn);
-            }
-            container.appendChild(card);
-        }
+            grid.appendChild(card);
+        });
 
-        // Handle Connect: open the faculty_card viewer and pass id or name
-        function handleConnect(event, url) {
-            event.stopPropagation();
-            // open in a new tab/window so student keeps directory open
-            try {
-                window.open(url, '_blank');
-            } catch (e) {
-                // fallback: navigate
-                window.location.href = url;
-            }
-        }
+    } catch (error) {
+        console.error('Error loading faculty:', error);
+    }
+}
 
-        // Search functionality
-        function searchFaculty() {
-            const searchInput = document.getElementById('facultySearchInput').value.toLowerCase().trim();
-            const cards = document.querySelectorAll('.card');
-            
-            if (searchInput === '') {
-                // Show all cards if search is empty
-                cards.forEach(card => {
-                    card.style.display = 'flex';
-                });
-                return;
-            }
-            
-            cards.forEach(card => {
-                const nameElement = card.querySelector('.name');
-                const positionElement = card.querySelector('.position');
-                const detailsSection = card.querySelector('.details-section');
-                
-                const name = nameElement ? nameElement.textContent.toLowerCase() : '';
-                const position = positionElement ? positionElement.textContent.toLowerCase() : '';
-                const research = detailsSection ? detailsSection.textContent.toLowerCase() : '';
-                
-                if (name.includes(searchInput) || position.includes(searchInput) || research.includes(searchInput)) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
+function createFacultyCard(faculty) {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    let rankClass = 'blue';
+    if ((faculty.position || '').includes('Professor & HOD') || (faculty.position || '') === 'Professor') {
+        rankClass = 'gold';
+    } else if ((faculty.position || '').includes('Associate Professor')) {
+        rankClass = 'silver';
+    }
+
+    let contactHref = '#';
+    if (faculty.email) contactHref = `mailto:${faculty.email}`;
+
+    const connectId = faculty.key
+        ? encodeURIComponent(faculty.key)
+        : encodeURIComponent((faculty.name || '').toLowerCase().replace(/\s+/g,'-'));
+
+    const connectUrl = `/faculty_card?name=${connectId}`;
+
+    let actionButtonsHtml = `
+        <div class="action-row">
+            <button class="viewcard-btn" onclick="handleConnect(event, '${connectUrl}')">
+                <i class="fas fa-id-card"></i> View Card
+            </button>
+    `;
+
+    if (faculty.email)
+        actionButtonsHtml += `
+            <button class="contact-btn" onclick="handleContact(event, '${contactHref}')">
+                <i class="fas fa-envelope"></i> Contact
+            </button>
+        `;
+
+    actionButtonsHtml += `
+        <button class="detail-btn" onclick="openDetails(this)">
+            Detailed View
+        </button>
+    </div>`;
+
+    card.innerHTML = `
+        <div class="profile-pic ${rankClass}">
+            <img src="/${faculty.photo || 'logo/Brainware_University.jpg'}"
+                 alt="${faculty.name || ''}"
+                 onerror="this.src='/logo/Brainware_University.jpg'">
+        </div>
+
+        <div class="card-content">
+            <div class="name">${faculty.name || ''}</div>
+            <div class="position">${faculty.position || ''}</div>
+
+            ${actionButtonsHtml}
+
+            <div class="details-section">
+                <div class="detail-item">
+                    <strong>Department:</strong>
+                    <span>${faculty.department || 'Computer Science Engineering AI'}</span>
+                </div>
+
+                ${(faculty.research || faculty.research_area)
+                    ? `
+                    <div class="detail-item">
+                        <strong>Research Areas:</strong>
+                        <span>${(faculty.research || (faculty.research_area || []).join(', '))}</span>
+                    </div>
+                    `
+                    : ''
                 }
-            });
-        }
 
-        // Load faculty on page load
-        document.addEventListener('DOMContentLoaded', loadFaculty);
-    </script>
+                ${faculty.qualification
+                    ? `
+                    <div class="detail-item">
+                        <strong>Qualification:</strong>
+                        <span>${faculty.qualification}</span>
+                    </div>
+                    `
+                    : ''
+                }
+            </div>
+        </div>
+    `;
+
+    return card;
+}
+
+/* ========================
+   MODAL (BUTTERY SMOOTH)
+   ======================== */
+function openDetails(button) {
+    const card = button.closest('.card');
+    const overlay = document.getElementById('detailsOverlay');
+    const panel = document.getElementById('detailsPanel');
+
+    const name = card.querySelector('.name')?.textContent || "";
+    const position = card.querySelector('.position')?.textContent || "";
+    const details = card.querySelector('.details-section')?.innerHTML || "";
+
+    panel.innerHTML = `
+        <button class="modal-close" onclick="closeDetails()">×</button>
+
+        <h2 style="margin:0 0 8px">${name}</h2>
+        <p style="margin:0 0 14px;color:#666">${position}</p>
+
+        ${details}
+    `;
+
+    overlay.classList.add("show");
+}
+
+function closeDetails() {
+    document.getElementById('detailsOverlay').classList.remove("show");
+}
+
+/* ========================
+   OTHER BUTTONS
+   ======================== */
+function handleContact(event, href) {
+    event.stopPropagation();
+    if (!href || href === '#') {
+        alert('Contact information is not available.');
+        return;
+    }
+    window.location.href = href;
+}
+
+function handleConnect(event, url) {
+    event.stopPropagation();
+    try {
+        window.open(url, '_blank');
+    } catch {
+        window.location.href = url;
+    }
+}
+
+/* ========================
+   SEARCH
+   ======================== */
+function searchFaculty() {
+    const searchInput = document.getElementById('facultySearchInput').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        const name = card.querySelector('.name')?.textContent.toLowerCase() || "";
+        const position = card.querySelector('.position')?.textContent.toLowerCase() || "";
+        const research = card.querySelector('.details-section')?.textContent.toLowerCase() || "";
+
+        card.style.display =
+            (name.includes(searchInput) ||
+             position.includes(searchInput) ||
+             research.includes(searchInput))
+            ? 'flex'
+            : 'none';
+    });
+}
+
+/* ========================
+   INIT
+   ======================== */
+document.addEventListener('DOMContentLoaded', loadFaculty);
+</script>
+
 </body>
 </html>
