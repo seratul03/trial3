@@ -342,12 +342,98 @@ html, body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border: 1px solid var(--border);
 }
-.message-content {font-size: 14px; line-height: 1.5; white-space: normal; word-wrap: break-word;}
+.message-content {font-size: 14px; line-height: 1.5; white-space: pre-line; word-wrap: break-word;}
 .message-time {font-size: 11px; margin-top: 6px; opacity: 0.7;}
 .message.user .message-time {text-align: right;}
 .message.bot .message-time {text-align: left; color: #718096;}
 .message-bubble.error {background: #fed7d7; color: #c53030; border-color: #fc8181;}
 body.dark-theme .message-bubble.error {background: #742a2a; color: #feb2b2; border-color: #9b2c2c;}
+
+/* Sticky Welcome Message Styles */
+.sticky-welcome-message {
+  position: sticky !important;
+  top: 20px;
+  z-index: 10;
+  margin: 20px auto;
+  max-width: 85%;
+  animation: fadeInSlide 0.6s ease-out;
+  pointer-events: none;
+}
+
+.sticky-welcome-message .message-bubble {
+  background: whitesmoke !important;
+  color: black !important;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.35), 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  pointer-events: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.sticky-welcome-message .message-bubble::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.sticky-welcome-message .message-content {
+  color: rgb(16, 103, 223) !important;
+  font-weight: 500;
+  /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.sticky-welcome-message .message-time {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.sticky-welcome-message .message-avatar img {
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sticky-welcome-message.fade-out {
+  animation: fadeOutSlide 0.5s ease-in forwards;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeOutSlide {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+}
+
+/* Dark theme adjustments */
+body.dark-theme .sticky-welcome-message .message-bubble {
+  background: linear-gradient(135deg, #4c51bf 0%, #5a32a3 100%) !important;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(76, 81, 191, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 
 .typing-container {padding: 0 16px; margin-top: -12px;}
 .message-bubble.typing {padding: 14px 18px; width: fit-content;}

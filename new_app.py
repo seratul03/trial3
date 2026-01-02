@@ -12,6 +12,7 @@ import requests
 from app.core.intent import detect_intent, find_scholarship, find_all_scholarships
 from app.core.retriever import retrieve
 from app.core.prompt_builder import build_prompt
+from app.core.context_extractor import extract_relevant_context
 from app.vectorstore.index import VectorIndex
 from app.llm.gemini_client import ask_gemini
 
@@ -64,17 +65,16 @@ def load_docs():
             except Exception:
                 continue
 
-        # load .jsonl (one JSON per line)
+        # load .jsonl files - treat as regular JSON
+        # (Previous implementation treated each line separately, causing fragments)
         for p in resources.rglob("*.jsonl"):
             try:
                 with open(p, "r", encoding="utf-8") as f:
-                    for ln in f:
-                        ln = ln.strip()
-                        if not ln:
-                            continue
-                        if ln not in seen:
-                            docs.append(ln)
-                            seen.add(ln)
+                    obj = json.load(f)
+                    s = json.dumps(obj, ensure_ascii=False)
+                    if s not in seen:
+                        docs.append(s)
+                        seen.add(s)
             except Exception:
                 continue
 
@@ -119,15 +119,15 @@ def load_docs():
 
     return docs
 
-print("🔄 Loading chatbot knowledge base...")
+print("[INFO] Loading chatbot knowledge base...")
 ALL_DOCS = load_docs()
-print(f"✓ Loaded {len(ALL_DOCS)} documents")
+print(f"[INFO] Loaded {len(ALL_DOCS)} documents")
 
 # Build vector index ONCE
-print("🔄 Building vector search index (this may take a minute on first run)...")
+print("[INFO] Building vector search index (this may take a minute on first run)...")
 VECTOR_INDEX = VectorIndex()
 VECTOR_INDEX.build(ALL_DOCS)
-print("✓ Vector index ready!")
+print("[INFO] Vector index ready!")
 
 
 # ============================================================================
@@ -214,7 +214,15 @@ def chat():
         fallback_docs=ALL_DOCS
     )
 
-    context = "\n\n".join(docs[:3])
+    # Extract relevant context to reduce token usage and improve accuracy
+    context_items = extract_relevant_context(query, docs)
+    
+    # Join context (limit to first 3 items to prevent overload)
+    if isinstance(context_items, list):
+        context = "\n\n".join(str(item) for item in context_items[:3])
+    else:
+        context = str(context_items)
+    
     prompt = build_prompt(query, context)
     answer = ask_gemini(prompt)
 

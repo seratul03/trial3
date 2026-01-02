@@ -1,5 +1,6 @@
 import json
 import re
+from app.core.document_parser import parse_documents
 
 
 def keyword_retrieve(query, docs, k=5, intent="general"):
@@ -50,7 +51,9 @@ def retrieve(query, intent, vector_index, fallback_docs):
     # semantic search first
     semantic = vector_index.search(query, k=5)
     if semantic:
-        return semantic
+        # Parse the retrieved documents before returning
+        return parse_documents(semantic)
 
     # fallback keyword search with intent prioritization
-    return keyword_retrieve(query, fallback_docs, k=5, intent=intent)
+    keyword_results = keyword_retrieve(query, fallback_docs, k=5, intent=intent)
+    return parse_documents(keyword_results)

@@ -1044,6 +1044,15 @@
         const userInput = document.getElementById("userInput").value.trim();
         if (!userInput) return;
 
+        // Remove sticky welcome message after first user message
+        const stickyWelcome = document.getElementById("stickyWelcomeMessage");
+        if (stickyWelcome) {
+          stickyWelcome.classList.add("fade-out");
+          setTimeout(() => {
+            stickyWelcome.remove();
+          }, 500);
+        }
+
         // Add user message to chat
         addMessage(userInput, "user");
         document.getElementById("userInput").value = "";
