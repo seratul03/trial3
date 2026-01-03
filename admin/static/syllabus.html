@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Syllabus</title>
+<link rel="stylesheet" href="/static/css/kb.css">
+</head><body>
+<header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a> | <a href="/static/audit.html">Audit</a> | <a href="/static/settings.html">Settings</a></header>
+<main>
+  <h2>Syllabus Upload</h2>
+  <form id="upload-form" enctype="multipart/form-data">
+    <input name="title" placeholder="Title" required>
+    <input name="department" placeholder="Department">
+    <input name="semester" placeholder="Semester">
+    <input type="file" name="file" required>
+    <button type="submit">Upload</button>
+  </form>
+  <h3>Existing</h3>
+  <table id="syllabus-table"><thead><tr><th>ID</th><th>Title</th><th>File</th><th>Dept</th><th>Sem</th></tr></thead><tbody></tbody></table>
+</main>
+<script src="/static/js/api.js"></script>
+<script>
+(async function(){try{await api('/me')}catch(e){location.href='/'};
+const form=document.getElementById('upload-form');
+form.addEventListener('submit',async(e)=>{e.preventDefault();const fd=new FormData(form);const res=await fetch('/api/syllabus',{method:'POST',body:fd});if(res.ok){alert('uploaded');location.reload()}else alert('upload failed')});
+const rows=await api('/syllabus');const tbody=document.querySelector('#syllabus-table tbody');tbody.innerHTML='';rows.forEach(r=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${r.id}</td><td>${r.title}</td><td>${r.filename?'<a href="/static/uploads/'+r.filename+'">file</a>':''}</td><td>${r.department}</td><td>${r.semester||''}</td>`;tbody.appendChild(tr)})
+})();
+</script>
+</body></html>

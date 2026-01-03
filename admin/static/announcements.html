@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notices</title>
+<link rel="stylesheet" href="/static/css/kb.css">
+</head><body>
+<header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/faq.html">FAQ</a> | <a href="/static/custom.html">Custom Replies</a> | <a href="/static/knowledge.html">Documents</a> | <a href="/static/announcements.html">Notices</a> | <a href="/static/control.html">Control</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a> | <a href="/static/audit.html">Audit</a> | <a href="/static/settings.html">Settings</a></header>
+<main>
+  <h2>Notice Board</h2>
+  <form id="ann-form">
+    <input name="title" placeholder="Title" required>
+    <input name="publish_at" placeholder="Publish (YYYY-MM-DD)">
+    <input name="expire_at" placeholder="Expire (YYYY-MM-DD)">
+    <textarea name="content" placeholder="Content"></textarea>
+    <button>Save</button>
+  </form>
+  <table id="ann-table"><thead><tr><th>ID</th><th>Title</th><th>Publish</th><th>Expire</th><th>Actions</th></tr></thead><tbody></tbody></table>
+</main>
+<script src="/static/js/api.js"></script>
+<script>
+(async()=>{try{await api('/me')}catch(e){location.href='/'};document.getElementById('ann-form').addEventListener('submit',async(e)=>{e.preventDefault();const f=e.target;await api('/announcements','POST',{title:f.title.value,content:f.content.value,publish_at:f.publish_at.value,expire_at:f.expire_at.value});f.reset();load();});const tb=document.querySelector('#ann-table tbody');const load=async()=>{const rows=await api('/announcements');tb.innerHTML='';if(!rows.length){tb.innerHTML='<tr><td colspan="5">No notices yet</td></tr>';return;}rows.forEach(r=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${r.id}</td><td>${r.title}</td><td>${r.publish_at||''}</td><td>${r.expire_at||''}</td><td><button data-id="${r.id}" class="delete">Delete</button></td>`;tb.appendChild(tr);});tb.querySelectorAll('.delete').forEach(btn=>btn.addEventListener('click',async()=>{if(!confirm('Delete notice?'))return;await api('/announcements/'+btn.dataset.id,'DELETE');load();}));};load();})();
+</script>
+</body></html>

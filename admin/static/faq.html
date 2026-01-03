@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQs</title>
+<link rel="stylesheet" href="/static/css/kb.css">
+</head><body>
+<header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/faq.html">FAQ</a> | <a href="/static/custom.html">Custom Replies</a> | <a href="/static/knowledge.html">Documents</a> | <a href="/static/announcements.html">Notices</a> | <a href="/static/control.html">Control</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a> | <a href="/static/audit.html">Audit</a> | <a href="/static/settings.html">Settings</a></header>
+<main>
+  <h2>FAQ Management</h2>
+  <form id="faq-form">
+    <input name="question" placeholder="Question" required>
+    <textarea name="answer" placeholder="Answer" required></textarea>
+    <button>Save FAQ</button>
+  </form>
+  <table id="faq-table"><thead><tr><th>ID</th><th>Question</th><th>Answer</th><th>Active</th><th>Actions</th></tr></thead><tbody></tbody></table>
+</main>
+<script src="/static/js/api.js"></script>
+<script>
+(async()=>{try{await api('/me')}catch(e){location.href='/'};const f=document.getElementById('faq-form');const tb=document.querySelector('#faq-table tbody');f.addEventListener('submit',async(e)=>{e.preventDefault();const q=f.elements['question'].value;const a=f.elements['answer'].value;await api('/faq','POST',{question:q,answer:a});f.reset();load();});const load=async()=>{const rows=await api('/faq');tb.innerHTML='';if(!rows.length){tb.innerHTML='<tr><td colspan="5">No FAQs yet</td></tr>';return;}rows.forEach(r=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${r.id}</td><td>${r.question}</td><td>${r.answer}</td><td><input type="checkbox" ${r.active?'checked':''} data-id="${r.id}" class="toggle"></td><td><button data-id="${r.id}" class="delete">Delete</button></td>`;tb.appendChild(tr);});tb.querySelectorAll('.delete').forEach(btn=>btn.addEventListener('click',async()=>{if(!confirm('Delete FAQ?'))return;await api('/faq/'+btn.dataset.id,'DELETE');load();}));tb.querySelectorAll('.toggle').forEach(cb=>cb.addEventListener('change',async()=>{const id=cb.dataset.id;const row=(await api('/faq')).find(r=>String(r.id)===String(id));if(!row)return;await api('/faq/'+id,'PUT',{question:row.question,answer:row.answer,active:cb.checked});}));};load();})();
+</script>
+</body></html>

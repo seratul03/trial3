@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exams</title>
+<link rel="stylesheet" href="/static/css/kb.css">
+</head><body>
+<header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a></header>
+<main>
+  <h2>Exams</h2>
+  <form id="exam-form">
+    <input name="title" placeholder="Title" required>
+    <textarea name="content" placeholder="Content"></textarea>
+    <label><input type="checkbox" name="visible" checked> Visible</label>
+    <button>Save</button>
+  </form>
+  <table id="exam-table"><thead><tr><th>ID</th><th>Title</th><th>Visible</th></tr></thead><tbody></tbody></table>
+</main>
+<script src="/static/js/api.js"></script>
+<script>
+(async()=>{try{await api('/me')}catch(e){location.href='/'};document.getElementById('exam-form').addEventListener('submit',async(e)=>{e.preventDefault();const f=e.target;await api('/exams','POST',{title:f.title.value,content:f.content.value,visible:f.visible.checked});location.reload()});const rows=await api('/exams');const tb=document.querySelector('#exam-table tbody');tb.innerHTML='';rows.forEach(r=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${r.id}</td><td>${r.title}</td><td>${r.visible}</td>`;tb.appendChild(tr)})})();
+</script>
+</body></html>

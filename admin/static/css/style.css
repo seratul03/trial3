@@ -1,0 +1,25 @@
+*{box-sizing:border-box;font-family:Segoe UI,Arial,Helvetica,sans-serif}
+body{margin:0;background:#f7f7f9;color:#111}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#fff;border-bottom:1px solid #e6e6e6}
+.topbar h1{font-size:18px;margin:0}
+.card{background:#fff;border:1px solid #e6e6e6;padding:12px;border-radius:6px}
+#login-box{width:360px;margin:60px auto;padding:18px}
+#login-box input{width:100%;padding:8px;margin:6px 0}
+#login-box button{padding:8px 12px}
+.muted{color:#666;font-size:13px}
+.tabs{display:flex;gap:6px;padding:10px;background:#fafafa;border-bottom:1px solid #eee}
+.tabs button{background:transparent;border:1px solid transparent;padding:8px 12px;border-radius:4px;cursor:pointer}
+.tabs button.active{background:#fff;border-color:#e6e6e6}
+.panel{padding:16px}
+.tab{display:none}
+.tab.active{display:block}
+.inline-form{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.inline-form input,.inline-form select,.inline-form textarea{padding:8px;border:1px solid #ddd;border-radius:4px}
+.inline-form textarea{min-width:100%;min-height:60px}
+table{width:100%;border-collapse:collapse;background:#fff}
+thead th{border-bottom:1px solid #e6e6e6;text-align:left;padding:8px}
+tbody td{padding:8px;border-bottom:1px solid #f0f0f0}
+button{cursor:pointer}
+.cards{display:flex;gap:12px}
+.card.small{padding:12px;text-align:center;width:160px}
+#admin-email{margin-right:12px}

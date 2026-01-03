@@ -1,0 +1,6 @@
+*{box-sizing:border-box;font-family:Segoe UI,Arial,Helvetica,sans-serif}
+body{margin:0;background:#f7f7f9;color:#111;display:flex;align-items:center;justify-content:center;height:100vh}
+.card{background:#fff;border:1px solid #e6e6e6;padding:18px;border-radius:6px;width:360px}
+input{width:100%;padding:8px;margin:6px 0}
+button{padding:8px 12px}
+.muted{color:#666;font-size:13px}

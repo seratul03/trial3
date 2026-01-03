@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Users</title>
+  <link rel="stylesheet" href="/static/css/users.css">
+</head><body>
+  <header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/faq.html">FAQ</a> | <a href="/static/custom.html">Custom Replies</a> | <a href="/static/knowledge.html">Documents</a> | <a href="/static/announcements.html">Notices</a> | <a href="/static/control.html">Control</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a> | <a href="/static/audit.html">Audit</a> | <a href="/static/settings.html">Settings</a></header>
+  <main>
+    <h2>Users</h2>
+    <form id="create-user-form">
+      <input type="email" id="new-user-email" placeholder="email" required>
+      <input type="password" id="new-user-password" placeholder="password" required>
+      <button type="submit">Add User</button>
+    </form>
+    <table id="users-table"><thead><tr><th>Email</th><th>Created</th><th>Actions</th></tr></thead><tbody></tbody></table>
+  </main>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/users.js"></script>
+</body></html>

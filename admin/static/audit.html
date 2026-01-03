@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Audit</title>
+  <link rel="stylesheet" href="/static/css/audit.css">
+</head><body>
+  <header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/faq.html">FAQ</a> | <a href="/static/custom.html">Custom Replies</a> | <a href="/static/knowledge.html">Documents</a> | <a href="/static/announcements.html">Notices</a> | <a href="/static/control.html">Control</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a> | <a href="/static/audit.html">Audit</a> | <a href="/static/settings.html">Settings</a></header>
+  <main>
+    <h2>Audit & Feedback</h2>
+    <div style="margin-bottom:8px"><button id="refresh-audit">Refresh</button></div>
+    <h3>Audit Log</h3>
+    <table id="audit-table"><thead><tr><th>ID</th><th>Admin</th><th>Action</th><th>Detail</th><th>Time</th></tr></thead><tbody></tbody></table>
+    <h3 style="margin-top:12px">Feedback</h3>
+    <table id="feedback-table"><thead><tr><th>ID</th><th>User</th><th>Message</th><th>Time</th></tr></thead><tbody></tbody></table>
+  </main>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/audit.js"></script>
+</body></html>

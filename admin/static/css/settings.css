@@ -1,0 +1,8 @@
+*{box-sizing:border-box;font-family:Segoe UI,Arial,Helvetica,sans-serif}
+body{margin:12px;background:#f7f7f9;color:#111}
+header{margin-bottom:12px}
+button{padding:8px}
+label{display:block;margin:8px 0}
+input,select,textarea{width:100%;max-width:520px;padding:6px;margin-top:4px}
+.stack{max-width:600px}
+.muted{color:#555;font-size:12px}

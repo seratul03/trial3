@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chatbot Control</title>
+<link rel="stylesheet" href="/static/css/settings.css">
+</head><body>
+<header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/faq.html">FAQ</a> | <a href="/static/custom.html">Custom Replies</a> | <a href="/static/knowledge.html">Documents</a> | <a href="/static/announcements.html">Notices</a> | <a href="/static/control.html">Control</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a> | <a href="/static/audit.html">Audit</a> | <a href="/static/settings.html">Settings</a></header>
+<main>
+  <h2>Chatbot Control</h2>
+  <p class="muted">Toggle chatbot availability, maintenance mode, and edit default messages.</p>
+  <form id="ctrl-form" class="stack">
+    <label>Chatbot Status
+      <select id="chatbot-enabled" name="chatbot_enabled">
+        <option value="1">On</option>
+        <option value="0">Off</option>
+      </select>
+    </label>
+    <label>Maintenance Mode (requires chatbot on)
+      <select id="maintenance-mode" name="maintenance_mode">
+        <option value="0">Off</option>
+        <option value="1">On</option>
+      </select>
+    </label>
+    <label>Maintenance Reply
+      <textarea id="maintenance-reply" name="maintenance_reply" rows="2"></textarea>
+    </label>
+    <label>Greeting Message
+      <input id="greeting-message" name="greeting_message" placeholder="Hello! How can I help you today?">
+    </label>
+    <label>Error / Fallback Message
+      <input id="fallback-message" name="fallback_message" placeholder="Sorry, I do not understand...">
+    </label>
+    <label>Tone
+      <select id="tone" name="tone">
+        <option value="neutral">Neutral</option>
+        <option value="formal">Formal</option>
+        <option value="friendly">Friendly</option>
+      </select>
+    </label>
+    <label>Suggestions
+      <select id="suggestions-enabled" name="suggestions_enabled">
+        <option value="1">On</option>
+        <option value="0">Off</option>
+      </select>
+    </label>
+    <button type="submit">Save</button>
+    <div id="ctrl-status" class="muted"></div>
+  </form>
+</main>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/control.js"></script>
+</body></html>

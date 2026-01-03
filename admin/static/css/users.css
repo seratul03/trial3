@@ -1,0 +1,8 @@
+*{box-sizing:border-box;font-family:Segoe UI,Arial,Helvetica,sans-serif}
+body{margin:12px;background:#f7f7f9;color:#111}
+header{margin-bottom:12px}
+.card{background:#fff;border:1px solid #e6e6e6;padding:12px;border-radius:6px}
+input{padding:8px;margin:6px}
+table{width:100%;border-collapse:collapse;background:#fff}
+thead th{border-bottom:1px solid #e6e6e6;text-align:left;padding:8px}
+tbody td{padding:8px;border-bottom:1px solid #f0f0f0}

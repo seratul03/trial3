@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Knowledge Base</title>
+  <link rel="stylesheet" href="/static/css/kb.css">
+</head><body>
+  <header><a href="/">Logout</a> | <a href="/static/users.html">Users</a> | <a href="/static/kb.html">KB</a> | <a href="/static/faq.html">FAQ</a> | <a href="/static/custom.html">Custom Replies</a> | <a href="/static/knowledge.html">Documents</a> | <a href="/static/announcements.html">Notices</a> | <a href="/static/control.html">Control</a> | <a href="/static/sessions.html">Sessions</a> | <a href="/static/analytics.html">Analytics</a> | <a href="/static/audit.html">Audit</a> | <a href="/static/settings.html">Settings</a></header>
+  <main>
+    <h2>Knowledge Base</h2>
+    <form id="create-kb-form">
+      <input id="kb-title" placeholder="Title" required>
+      <input id="kb-dept" placeholder="Department">
+      <input id="kb-tags" placeholder="tags (comma)">
+      <label><input id="kb-active" type="checkbox" checked> Active</label>
+      <textarea id="kb-content" placeholder="Content" required></textarea>
+      <button type="submit">Add KB</button>
+    </form>
+    <table id="kb-table"><thead><tr><th>ID</th><th>Title</th><th>Dept</th><th>Active</th><th>Actions</th></tr></thead><tbody></tbody></table>
+  </main>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/kb.js"></script>
+</body></html>
