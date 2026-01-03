@@ -139,13 +139,27 @@ def chat():
     """Main chatbot endpoint for AI queries"""
     # check admin backend to see if chatbot is enabled
     try:
-        r = requests.get("http://localhost:5001/api/settings/chatbot", timeout=2)
+        r = requests.get("http://localhost:8000/api/chatbot/settings", timeout=2)
         if r.status_code == 200:
             js = r.json()
-            if not js.get('enabled', True):
-                return jsonify({"intent": "disabled", "response": "Chatbot has been disabled by the admin."}), 200
-    except Exception:
+            if js.get('success') and js.get('data'):
+                settings = js['data']
+                # Check if maintenance mode is enabled
+                if settings.get('maintenance_mode', False):
+                    return jsonify({
+                        "intent": "maintenance",
+                        "response": settings.get('maintenance_message', 
+                                                "The chatbot is currently under maintenance. Please check back later.")
+                    }), 200
+                # Check if chatbot is disabled
+                if not settings.get('enabled', True):
+                    return jsonify({
+                        "intent": "disabled",
+                        "response": "Chatbot has been disabled by the admin."
+                    }), 200
+    except Exception as e:
         # if admin backend unreachable, assume enabled (fail-open)
+        print(f"[WARNING] Could not connect to admin panel: {e}")
         pass
 
     data = request.get_json(force=True)
