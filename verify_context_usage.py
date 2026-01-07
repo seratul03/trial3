@@ -8,7 +8,6 @@ sys.path.insert(0, '.')
 from app.core.intent import detect_intent
 from app.core.retriever import retrieve
 from app.core.prompt_builder import build_prompt
-from app.core.context_extractor import extract_relevant_context
 from app.vectorstore.index import VectorIndex
 from app.llm.gemini_client import ask_gemini
 from new_app import ALL_DOCS, VECTOR_INDEX
@@ -44,7 +43,7 @@ print(docs[0][:300] if docs else "No docs")
 # Extract Relevant Context
 print("\n[STEP 3] Extracting relevant context...")
 print("-"*80)
-context_items = extract_relevant_context(test_query, docs)
+context_items = docs if docs is not None else []
 print(f"✓ Extracted {len(context_items) if isinstance(context_items, list) else 1} context items")
 
 # Build final context

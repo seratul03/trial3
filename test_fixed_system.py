@@ -6,7 +6,6 @@ from pathlib import Path
 from app.core.intent import detect_intent
 from app.core.retriever import retrieve
 from app.core.prompt_builder import build_prompt
-from app.core.context_extractor import extract_relevant_context
 from app.vectorstore.index import VectorIndex
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -65,10 +64,8 @@ for query in test_queries:
     
     print(f"\nRetrieved {len(docs)} documents (parsed)")
     
-    # Extract relevant context
-    context_items = extract_relevant_context(query, docs)
+    context_items = docs if docs is not None else []
     
-    # Join context
     if isinstance(context_items, list):
         context = "\n\n".join(str(item) for item in context_items[:3])
     else:

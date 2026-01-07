@@ -1,171 +1,124 @@
 """
-Context Extraction - Smart extraction of relevant information from documents
-Reduces context size and improves answer accuracy
+Context Extraction – Faculty-safe, deterministic extraction
 """
+
 import json
 import re
 
 
+# --------------------------------------------------
+# NAME NORMALIZATION
+# --------------------------------------------------
+
+def normalize_name(text: str) -> str:
+    text = text.lower()
+    text = re.sub(r"\b(dr|sir|prof|professor|mr|ms|mrs)\.?\b", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+# --------------------------------------------------
+# FACULTY EXTRACTION (SINGLE RESPONSIBILITY)
+# --------------------------------------------------
+
 def extract_faculty_info(query, docs):
     """
-    Extract specific faculty information from documents based on the query.
-    This prevents sending entire faculty databases to the LLM.
+    Rules:
+    1. Name-based match ALWAYS has priority
+    2. HOD match ONLY if explicitly asked
+    3. Return type is ALWAYS dict
     """
-    query_lower = query.lower()
-    
-    # Check if asking about HOD
-    is_hod_query = any(term in query_lower for term in ["hod", "head of department", "head of dept"])
-    
-    # Check if asking about a specific person
-    # Extract potential names (capitalized words that aren't common words)
-    name_pattern = r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\b'
-    potential_names = re.findall(name_pattern, query)
-    
-    extracted_info = []
-    found_specific = False
-    
-    for doc_text in docs:
-        try:
-            # Check if doc is already parsed (string format) or raw JSON
-            if isinstance(doc_text, str) and doc_text.strip().startswith('{'):
-                data = json.loads(doc_text)
-            elif isinstance(doc_text, str):
-                # Already parsed, return as-is but check if it's faculty info
-                if "DEPARTMENT:" in doc_text or "Faculty Member:" in doc_text:
-                    # Parse the already-formatted text to extract only what we need
-                    if is_hod_query and "HOD" in doc_text:
-                        lines = doc_text.split("\n")
-                        current_faculty = []
-                        in_hod_section = False
-                        
-                        for line in lines:
-                            if "Faculty Member:" in line:
-                                if current_faculty and in_hod_section:
-                                    extracted_info.append("\n".join(current_faculty))
-                                    found_specific = True
-                                    break
-                                current_faculty = [line]
-                                in_hod_section = False
-                            elif "Position:" in line and "HOD" in line:
-                                in_hod_section = True
-                                current_faculty.append(line)
-                            elif current_faculty:
-                                current_faculty.append(line)
-                                if line.strip() == "":
-                                    if in_hod_section:
-                                        extracted_info.append("\n".join(current_faculty))
-                                        found_specific = True
-                                        break
-                                    current_faculty = []
-                    
-                    elif potential_names:
-                        for name in potential_names:
-                            if name.lower() in doc_text.lower():
-                                # Extract just this faculty member's section
-                                lines = doc_text.split("\n")
-                                current_section = []
-                                capture = False
-                                
-                                for line in lines:
-                                    if f"Faculty Member: {name}" in line or name in line:
-                                        capture = True
-                                        current_section.append(line)
-                                    elif capture:
-                                        if line.startswith("============================================================"):
-                                            if len(current_section) > 1:
-                                                current_section.append(line)
-                                                break
-                                        current_section.append(line)
-                                
-                                if current_section:
-                                    extracted_info.append("\n".join(current_section))
-                                    found_specific = True
-                                    break
-                
-                if found_specific:
-                    break
-                continue
-            else:
-                data = doc_text
-            
-            if "faculty" not in data:
-                continue
-            
-            department = data.get("department", "Unknown Department")
-            
-            # If asking about HOD
-            if is_hod_query:
-                for faculty_id, info in data["faculty"].items():
-                    position = info.get("position", "").lower()
-                    if "hod" in position or "head" in position:
-                        extracted_info.append(format_faculty_member(info, department))
-                        found_specific = True
-                        break
-            
-            # If asking about specific person
-            elif potential_names:
-                for name in potential_names:
-                    for faculty_id, info in data["faculty"].items():
-                        faculty_name = info.get("name", "")
-                        if name.lower() in faculty_name.lower():
-                            extracted_info.append(format_faculty_member(info, department))
-                            found_specific = True
-                            break
-                    if found_specific:
-                        break
-            
-            if found_specific:
-                break
-        
-        except (json.JSONDecodeError, TypeError):
-            continue
-    
-    # If we found specific info, return only that
-    if extracted_info:
-        return extracted_info[:1]  # Return only the first match
-    
-    # Otherwise return empty (let the original docs through)
-    return []
 
+    query_norm = normalize_name(query)
+    want_hod = any(t in query.lower() for t in ["hod", "head of department", "head of dept"])
+
+    for doc_text in docs:
+        if not isinstance(doc_text, str):
+            continue
+
+        if not doc_text.strip().startswith("{"):
+            continue
+
+        try:
+            data = json.loads(doc_text)
+        except Exception:
+            continue
+
+        if "faculty" not in data:
+            continue
+
+        department = data.get("department", "Unknown Department")
+
+        # -------------------------------
+        # 1️⃣ NAME MATCH (HIGHEST PRIORITY)
+        # -------------------------------
+        for info in data["faculty"].values():
+            faculty_name = info.get("name", "")
+            if normalize_name(faculty_name) and normalize_name(faculty_name) in query_norm:
+                return {
+                    "matched": True,
+                    "data": [format_faculty_member(info, department)]
+                }
+
+        # -------------------------------
+        # 2️⃣ HOD MATCH (ONLY IF ASKED)
+        # -------------------------------
+        if want_hod:
+            for info in data["faculty"].values():
+                position = info.get("position", "").lower()
+                if "hod" in position or "head" in position:
+                    return {
+                        "matched": True,
+                        "data": [format_faculty_member(info, department)]
+                    }
+
+    # -------------------------------
+    # ❌ NOTHING FOUND
+    # -------------------------------
+    return {
+        "matched": False,
+        "data": []
+    }
+
+
+# --------------------------------------------------
+# FORMATTER
+# --------------------------------------------------
 
 def format_faculty_member(info, department):
-    """Format a single faculty member's information"""
     parts = [
-        "="*60,
+        "=" * 60,
         f"Faculty Member: {info.get('name', 'Unknown')}",
-        "="*60,
+        "=" * 60,
         f"Department: {department}",
         f"Position: {info.get('position', 'Not specified')}",
-        f"Qualification: {info.get('qualification', 'Not specified')}"
+        f"Qualification: {info.get('qualification', 'Not specified')}",
     ]
-    
+
     if "research_area" in info:
-        if isinstance(info["research_area"], list):
-            parts.append(f"Research Areas: {', '.join(info['research_area'])}")
+        ra = info["research_area"]
+        if isinstance(ra, list):
+            parts.append(f"Research Areas: {', '.join(ra)}")
         else:
-            parts.append(f"Research Areas: {info['research_area']}")
-    
+            parts.append(f"Research Areas: {ra}")
+
     if "email" in info:
         parts.append(f"Email: {info['email']}")
-    
+
     if "phone" in info:
         parts.append(f"Phone: {info['phone']}")
-    
+
     return "\n".join(parts)
 
 
+# --------------------------------------------------
+# MAIN CONTEXT ENTRY
+# --------------------------------------------------
+
 def extract_relevant_context(query, docs):
-    """
-    Main extraction function - intelligently extracts relevant context
-    based on query type to reduce token usage and improve accuracy
-    """
     query_lower = query.lower()
-    
-    # Faculty/HOD queries
-    if any(term in query_lower for term in ["hod", "faculty", "professor", "teacher", "dr."]):
-        extracted = extract_faculty_info(query, docs)
-        if extracted:
-            return extracted
-    
-    # For other queries, return the docs as-is
+
+    if any(t in query_lower for t in ["hod", "faculty", "professor", "teacher", "dr."]):
+        result = extract_faculty_info(query, docs)
+        return result["data"] if result["matched"] else []
+
     return docs

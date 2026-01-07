@@ -9,7 +9,6 @@ from new_app import ALL_DOCS, VECTOR_INDEX
 from app.core.intent import detect_intent
 from app.core.retriever import retrieve
 from app.core.prompt_builder import build_prompt
-from app.core.context_extractor import extract_relevant_context
 from app.llm.gemini_client import ask_gemini
 
 def test_query(query, expected_in_response):
@@ -20,8 +19,8 @@ def test_query(query, expected_in_response):
     # Process query
     intent = detect_intent(query)
     docs = retrieve(query, intent, VECTOR_INDEX, ALL_DOCS)
-    context_items = extract_relevant_context(query, docs)
-    
+    context_items = docs if docs is not None else []
+
     if isinstance(context_items, list):
         context = "\n\n".join(str(item) for item in context_items[:3])
     else:

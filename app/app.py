@@ -7,7 +7,6 @@ from pathlib import Path
 from app.core.intent import detect_intent
 from app.core.retriever import retrieve
 from app.core.prompt_builder import build_prompt
-from app.core.context_extractor import extract_relevant_context
 from app.vectorstore.index import VectorIndex
 from app.llm.gemini_client import ask_gemini
 
@@ -50,10 +49,9 @@ def chat():
         fallback_docs=ALL_DOCS
     )
 
-    # Extract relevant context to reduce token usage
-    context_items = extract_relevant_context(query, docs)
-    
-    # Join context (limit to first 3 items to prevent overload)
+    # Retriever already returns filtered, parsed context
+    context_items = docs if docs is not None else []
+
     if isinstance(context_items, list):
         context = "\n\n".join(str(item) for item in context_items[:3])
     else:

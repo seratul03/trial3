@@ -31,12 +31,12 @@
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color: #e53e3e;
+  color: #2d1ade;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  box-shadow: 0px 0px 15px 0px rgba(229, 62, 62, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(179, 160, 228, 0.5);
   z-index: 10;
 }
 
@@ -75,7 +75,7 @@ html, body {
   border: none; border-radius: 50%;
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 8px 32px rgba(102,126,234,0.4);
+  box-shadow: 0 8px 32px rgba(111, 102, 234, 0.525);
   z-index: 999;
   animation: float 3s ease-in-out infinite;
 }
@@ -104,101 +104,21 @@ html, body {
   to {opacity: 1; transform: translateY(0) scale(1);}
 }
 
-/* Video Intro Screen Styles */
-.video-intro-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #fdfdfd;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 40px;
-  z-index: 10000;
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.video-intro-screen.fade-out {
-  opacity: 0;
-  transform: scale(0.95);
-  pointer-events: none;
-}
-
-.video-intro-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 30px;
-  animation: fadeInScale 0.8s ease;
-}
-
-/* Video Player Container */
-.video-player-container {
-  position: relative;
-  width: 400px;
-  border-radius: 0;
-  overflow: hidden;
-  box-shadow: none;
-  border: none;
-  background: transparent;
-  line-height: 0;
-}
-
-.intro-video {
-  width: 100%;
-  height: auto;
-  display: block;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  vertical-align: bottom;
-}
-
-/* Start Chat Button */
-.start-chat-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 40px;
-  background: #667eea;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
-  animation: fadeInUp 0.8s ease-out 0.5s both, pulse 2s ease-in-out 1.5s infinite;
-}
-
-.start-chat-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.4);
-  background: #5568d3;
-}
-
-.start-chat-btn:active {
-  transform: translateY(0);
-}
-
-.start-chat-btn .btn-arrow {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.3s ease;
-}
-
-.start-chat-btn:hover .btn-arrow {
-  transform: translateX(4px);
-}
-
 .welcome-screen {
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   height: 100%; padding: 48px 32px;
   text-align: center;
-  background: var(--primary);
+  /* background: rgb(180, 38, 38); */
+ background: 
+  radial-gradient(
+    circle at center,
+    #ffffff 0%,
+    #ffffff 45%,
+    #ffffff 70%,
+    #e8e0fc 100%
+  );
+
   color: white;
   position: relative;
   overflow: hidden;
@@ -212,114 +132,23 @@ html, body {
   filter: blur(60px);
 }
 .welcome-screen.hidden {display: none;}
-.welcome-screen.fade-out {
-  animation: fadeOutWelcome 0.6s ease-out forwards;
-}
-
-@keyframes fadeOutWelcome {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-}
-
 .welcome-content {position: relative; z-index: 1; animation: fadeInScale 0.5s ease;}
 
 @keyframes fadeInScale {from {opacity: 0; transform: scale(0.9);} to {opacity: 1; transform: scale(1);}}
-
-/* Video Intro Styles */
-.video-intro-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  margin-bottom: 32px;
-}
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  background: rgba(0, 0, 0, 0.2);
-  animation: videoFloat 3s ease-in-out infinite;
-}
-
-@keyframes videoFloat {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.video-intro-text {
-  text-align: center;
-  animation: fadeInUp 0.8s ease-out 0.3s both;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.video-intro-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: white;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.video-intro-subtitle {
-  font-size: 16px;
-  opacity: 0.95;
-  color: white;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-.video-start-btn {
-  animation: fadeInUp 0.8s ease-out 0.5s both, pulse 2s ease-in-out 1.5s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
-  }
-}
 
 .university-logo {
   width: 96px; height: 96px;
   background: white;
   border-radius: 50%;
   margin: 0 auto 24px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   border: 4px solid rgba(255,255,255,0.3);
 }
 .university-logo img {width: 100%; height: 100%; object-fit: cover;}
 
-.welcome-title {font-size: 28px; font-weight: 700; margin-bottom: 12px;}
-.welcome-subtitle {font-size: 16px; margin-bottom: 32px; opacity: 0.95;}
+.welcome-title {font-size: 28px; font-weight: 700; margin-bottom: 12px; color: #5a19d2;}
+.welcome-subtitle {font-size: 16px; margin-bottom: 32px; opacity: 0.95;color: #000000;}
 
 .welcome-features {
   display: grid; grid-template-columns: repeat(2, 1fr);
@@ -345,12 +174,13 @@ html, body {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 32px;
   background: white;
-  color: var(--primary-color);
+  color:#5a19d2;
   border: none; border-radius: 100px;
   font-size: 16px; font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 16px rgba(204, 186, 251, 0.5);
   transition: all 0.25s;
+  margin-top: 4px; 
 }
 .lets-start-btn:hover {transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,0.25);}
 .btn-arrow {width: 18px; height: 18px; transition: transform 0.25s;}
@@ -522,97 +352,12 @@ html, body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border: 1px solid var(--border);
 }
-.message-content {font-size: 14px; line-height: 1.5; white-space: pre-line; word-wrap: break-word;}
+.message-content {font-size: 14px; line-height: 1.5; white-space: pre-wrap; word-wrap: break-word;}
 .message-time {font-size: 11px; margin-top: 6px; opacity: 0.7;}
 .message.user .message-time {text-align: right;}
 .message.bot .message-time {text-align: left; color: #718096;}
 .message-bubble.error {background: #fed7d7; color: #c53030; border-color: #fc8181;}
 body.dark-theme .message-bubble.error {background: #742a2a; color: #feb2b2; border-color: #9b2c2c;}
-
-/* Sticky Welcome Message Styles */
-.sticky-welcome-message {
-  position: sticky !important;
-  top: 20px;
-  z-index: 10;
-  margin: 20px auto;
-  max-width: 85%;
-  animation: fadeInSlide 0.6s ease-out;
-  pointer-events: none;
-}
-
-.sticky-welcome-message .message-bubble {
-  background: whitesmoke !important;
-  color: black !important;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.35), 0 4px 12px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(10px);
-  pointer-events: auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.sticky-welcome-message .message-bubble::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  animation: shimmer 3s infinite;
-}
-
-@keyframes shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
-}
-
-.sticky-welcome-message .message-content {
-  color: rgb(16, 103, 223) !important;
-  font-weight: 500;
-}
-
-.sticky-welcome-message .message-time {
-  color: rgba(0, 0, 0, 0.6) !important;
-}
-
-.sticky-welcome-message .message-avatar img {
-  border: 2px solid white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.sticky-welcome-message.fade-out {
-  animation: fadeOutSlide 0.5s ease-in forwards;
-}
-
-@keyframes fadeInSlide {
-  from {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes fadeOutSlide {
-  from {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.95);
-  }
-}
-
-/* Dark theme adjustments */
-body.dark-theme .sticky-welcome-message .message-bubble {
-  background: linear-gradient(135deg, #4c51bf 0%, #5a32a3 100%) !important;
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 24px rgba(76, 81, 191, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
-}
 
 .typing-container {padding: 0 16px; margin-top: -12px;}
 .message-bubble.typing {padding: 14px 18px; width: fit-content;}
@@ -873,31 +618,6 @@ body.dark-theme .sticky-welcome-message .message-bubble {
   .welcome-title {font-size: 24px;}
   .message-bubble {max-width: 85%;}
   
-  .video-intro-screen {
-    padding: 20px;
-  }
-  
-  .video-player-container {
-    width: 300px;
-  }
-  
-  .start-chat-btn {
-    padding: 14px 32px;
-    font-size: 16px;
-  }
-  
-  .video-wrapper {
-    max-width: 320px;
-  }
-  
-  .video-intro-title {
-    font-size: 22px;
-  }
-  
-  .video-intro-subtitle {
-    font-size: 14px;
-  }
-  
   .faculty-modal {padding: 0;}
   .faculty-modal-content {
     max-width: 100%;
@@ -917,40 +637,6 @@ body.dark-theme .sticky-welcome-message .message-bubble {
   .action-text {display: none;}
   .quick-action-btn {padding: 10px;}
   .message-bubble {max-width: 90%;}
-  
-  .video-intro-screen {
-    padding: 15px;
-  }
-  
-  .video-intro-wrapper {
-    gap: 16px;
-  }
-  
-  .video-player-container {
-    width: 250px;
-  }
-  
-  .start-chat-btn {
-    padding: 12px 28px;
-    font-size: 16px;
-  }
-  
-  .video-wrapper {
-    max-width: 280px;
-  }
-  
-  .video-intro-container {
-    gap: 16px;
-    margin-bottom: 24px;
-  }
-  
-  .video-intro-title {
-    font-size: 20px;
-  }
-  
-  .video-intro-subtitle {
-    font-size: 13px;
-  }
   
   .faculty-modal-header {padding: 20px;}
   .faculty-modal-header h2 {font-size: 20px;}
@@ -3098,71 +2784,6 @@ body.dark-theme .sticky-welcome-message .message-bubble {
     transform: translateY(-1px);
 }
 
-.details-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.45);
-    backdrop-filter: blur(6px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .25s ease;
-}
-
-.details-overlay.show {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.details-panel {
-    width: 560px;
-    max-width: 96%;
-    max-height: 85vh;
-    overflow-y: auto;
-
-    border-radius: 20px;
-    padding: 28px 24px;
-
-    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
-    box-shadow:
-        0 30px 80px rgba(0,0,0,.25),
-        0 0 0 1px rgba(255,255,255,.6);
-
-    transform: scale(.9) translateY(15px);
-    transition: transform .25s ease;
-}
-
-.details-overlay.show .details-panel {
-    transform: scale(1) translateY(0);
-}
-
-.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    width: 34px;
-    height: 34px;
-
-    border-radius: 50%;
-    border: none;
-    background: #fff;
-    color: #ff4a4a;
-    font-size: 22px;
-    cursor: pointer;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,.18);
-    transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.modal-close:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 28px rgba(0,0,0,.25);
-}
-
-
 /* Responsive Updates */
 @media (max-width: 768px) {
     .holiday-modal-content {
@@ -3186,3 +2807,26 @@ body.dark-theme .sticky-welcome-message .message-bubble {
 }
 
 ::selection {background: var(--primary-color); color: white;}
+/* ===============================
+   WELCOME VIDEO - NO CARD STYLE
+=============================== */
+.welcome-video-wrapper {
+  width: 100%;
+  max-width: 360px;
+  margin: 16px auto 6px;
+  display: flex;
+  justify-content: center;
+  background: transparent;     /* ❌ no card */
+  box-shadow: none;            /* ❌ no card */
+  border-radius: 0;            /* ❌ no card */
+}
+
+#welcomeScreen #card-video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;     /* ❌ no card */
+  box-shadow: none;            /* ❌ no card */
+  border-radius: 0;            /* ❌ no card */
+  pointer-events: none;
+}

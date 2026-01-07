@@ -22,22 +22,48 @@ def normalize(text: str) -> str:
 # -------------------------
 # DETECT INTENT
 # -------------------------
+# def detect_intent(query: str) -> str:
+#     q = query.lower()
+
+#     if re.search(r"\b(scholarship|stipend|grant|svmcm|mcm|nabanna|aikyashree|kanyashree)\b", q):
+#         return "scholarship"
+
+#     if re.search(r"\b(canteen|mess|food|cafeteria)\b", q):
+#         return "canteen"
+
+#     if re.search(r"\b(rule|policy|fine|banned|allowed)\b", q):
+#         return "rules"
+
+#     if re.search(r"\b(holiday|vacation|leave|break)\b", q):
+#         return "holiday"
+
+#     return "general"
 def detect_intent(query: str) -> str:
     q = query.lower()
 
-    if re.search(r"\b(scholarship|stipend|grant|svmcm|mcm|nabanna|aikyashree|kanyashree)\b", q):
+    if re.search(r"\b(hod|faculty|professor|teacher|dr\.)\b", q):
+        return "faculty"
+
+    if re.search(r"\b(bscm|escm|pcc|pec)[-\s]?\d+\b", q):
+        return "subject"
+
+    if re.search(r"\b(scholarship|stipend|grant)\b", q):
         return "scholarship"
 
-    if re.search(r"\b(canteen|mess|food|cafeteria)\b", q):
-        return "canteen"
-
-    if re.search(r"\b(rule|policy|fine|banned|allowed)\b", q):
-        return "rules"
-
-    if re.search(r"\b(holiday|vacation|leave|break)\b", q):
+    if re.search(r"\b(holiday|vacation|leave)\b", q):
         return "holiday"
 
+    if re.search(r"\b(exam|attendance)\b", q):
+        return "exam"
+
+    if re.search(r"\b(library|reading room)\b", q):
+        return "library"
+
+    if re.search(r"\b(rule|policy|fine|allowed|banned)\b", q):
+        return "rules"
+
     return "general"
+
 
 
 # -------------------------
