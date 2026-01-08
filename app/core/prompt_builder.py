@@ -176,7 +176,7 @@ Then list 3–5 bullet points, each on its own line.
 SUGGESTION PLACEMENT RULES
 --------------------------------------------------
 
-The suggestions must always appear at the very bottom.
+The suggestions must always appear in a different bubble or section after the main answer.
 
 Rules:
 - Keep suggestions relevant to the original query

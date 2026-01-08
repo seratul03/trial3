@@ -1,0 +1,92 @@
+[
+  {
+    "scholarship_id": "1-POST_MATRIC_SCHOLARS",
+    "scholarship_name": "Post Matric Scholarship (Minority)",
+    "keywords": ["post matric", "post matric minority", "aikyashree post matric", "wb post matric", "aikyashree"],
+    "intro": "The Post Matric Scholarship (Minority) is designed to support minority community students pursuing education beyond Class 10. This scholarship helps cover tuition fees and other academic expenses, with a special focus on students from economically weaker families. It aims to encourage continuation of higher education and reduce dropout rates by providing essential financial assistance. With easy-to-understand eligibility criteria, this widely-used scheme across West Bengal ensures that financial constraints don't hinder your educational journey."
+  },
+  {
+    "scholarship_id": "2-MERIT_CUM_MEANS_SCHO",
+    "scholarship_name": "Merit Cum Means Scholarship (MCM)",
+    "keywords": ["mcm", "merit cum means", "aikyashree mcm", "minority professional scholarship"],
+    "intro": "The Merit Cum Means Scholarship (MCM) is specifically tailored for minority students enrolled in professional courses such as Engineering, Medical, Law, and Management. This scholarship recognizes and rewards good academic performance while providing crucial financial support to students from low-income families. By reducing the financial burden of higher education, this scheme encourages merit-based growth and helps talented students achieve their professional aspirations without economic barriers."
+  },
+  {
+    "scholarship_id": "3-SWAMI_VIVEKANANADA_M",
+    "scholarship_name": "Swami Vivekananda Merit Cum Means Scholarship (Minority)",
+    "keywords": ["svmcm", "svmcm minority", "vivekananda scholarship", "aikyashree svmcm"],
+    "intro": "The Swami Vivekananda Merit Cum Means Scholarship (Minority) is one of the most popular scholarships in West Bengal, supporting minority students with strong academic records. This scheme covers undergraduate courses including Arts, Commerce, BBA, and Law, combining merit-based selection with financial need assessment. It helps maintain academic continuity by providing timely financial support and encourages students to set higher educational goals and achieve excellence in their chosen fields."
+  },
+  {
+    "scholarship_id": "4-SWAMI_VIVEKANANADA_M",
+    "scholarship_name": "Swami Vivekananda Merit Cum Means Scholarship (DPI – General)",
+    "keywords": ["svmcm dpi", "svmcm general", "vivekananda dpi", "non minority svmcm"],
+    "intro": "The Swami Vivekananda Merit Cum Means Scholarship (DPI – General) supports general category students pursuing undergraduate courses such as Arts, Commerce, Law, and BBA under the Directorate of Public Instruction. This scholarship is based on both merit and family income criteria, helping students with limited financial resources continue their higher education. By reducing education-related financial stress, this scheme promotes equal opportunity and ensures that deserving students can focus on their academic goals without economic worries."
+  },
+  {
+    "scholarship_id": "5-WEST_BENGAL_CHIEF_MI",
+    "scholarship_name": "Nabanna Scholarship (Chief Minister Relief Fund)",
+    "keywords": ["nabanna", "cm relief fund scholarship", "wb cm scholarship", "nabanne"],
+    "intro": "The Nabanna Scholarship, provided from the West Bengal Chief Minister's Relief Fund, offers crucial financial assistance to students facing significant economic hardship. This simple and supportive scholarship is particularly suitable for those who may not be covered by other existing schemes. It helps support basic academic expenses and ensures that education is not discontinued due to financial constraints, demonstrating the government's commitment to accessible education for all."
+  },
+  {
+    "scholarship_id": "6-POST_MATRIC_SC_ST_OBC",
+    "scholarship_name": "Post Matric Scholarship for SC/ST/OBC",
+    "keywords": ["post matric sc", "post matric st", "post matric obc", "sc st obc scholarship"],
+    "intro": "The Post Matric Scholarship for SC/ST/OBC students is a government-supported welfare scheme designed for Scheduled Caste, Scheduled Tribe, and Other Backward Classes students pursuing education after Class 10. This scholarship supports both diploma and undergraduate studies, aiming to reduce financial inequality and promote social inclusion. By helping with tuition and study-related costs, it encourages higher education participation among communities that have historically faced educational barriers."
+  },
+  {
+    "scholarship_id": "7-POST_MATRIC_MINORITY_CS",
+    "scholarship_name": "Post Matric Scholarship Scheme for Minorities (Central)",
+    "keywords": ["post matric minority cs", "central minority scholarship", "minority post matric"],
+    "intro": "The Post Matric Scholarship Scheme for Minorities (Central) is a central government initiative that supports minority community students across multiple states. This comprehensive scholarship covers UG, PG, and diploma courses, with selection based on both merit and family income. It provides crucial financial assistance for education beyond school level and promotes inclusive education by ensuring that talented students from minority communities have access to higher education opportunities regardless of their economic background."
+  },
+  {
+    "scholarship_id": "8-MERIT_CUM_MEANS_CS",
+    "scholarship_name": "Merit Cum Means Scholarship for Professional Courses (Central)",
+    "keywords": ["mcm cs", "central merit cum means", "professional minority scholarship"],
+    "intro": "The Merit Cum Means Scholarship for Professional Courses (Central) is a central government scheme designed for minority students pursuing professional education. This scholarship supports UG, PG, and diploma programs with a special focus on technical and professional fields. By rewarding academic merit with substantial financial support, it reduces the burden of expensive course fees and encourages skill development in areas that are crucial for career advancement and national development."
+  },
+  {
+    "scholarship_id": "9-POST_MATRIC_DISABILITY",
+    "scholarship_name": "Post Matric Scholarship for Students with Disabilities",
+    "keywords": ["disability scholarship", "pwd post matric", "40 percent disability scholarship"],
+    "intro": "The Post Matric Scholarship for Students with Disabilities is an inclusive initiative specifically designed for students with benchmark disabilities (40% or more). This scholarship requires certified disability status and supports both undergraduate and postgraduate education. It helps meet various educational expenses including tuition, books, and special equipment needs. By limiting family-wise beneficiaries to ensure fairness, this scheme promotes inclusive education and empowers differently-abled students to pursue their academic dreams."
+  },
+  {
+    "scholarship_id": "10-BEEDI_CINE_WORKERS",
+    "scholarship_name": "Financial Assistance for Wards of Beedi/Cine Workers",
+    "keywords": ["beedi scholarship", "cine workers scholarship", "labour welfare education"],
+    "intro": "The Financial Assistance for Wards of Beedi/Cine Workers is a welfare-oriented government scheme that provides educational support to children of beedi, cine, and mine workers. This scholarship supports post-matric education and is based on the guardian's occupation and family income. Recognizing the economic challenges faced by families in these sectors, this scheme helps cover essential education costs and supports socially vulnerable families in ensuring their children receive quality higher education."
+  },
+  {
+    "scholarship_id": "11-CENTRAL_SECTOR",
+    "scholarship_name": "Central Sector Scholarship for College & University Students",
+    "keywords": ["central sector scholarship", "csss", "college university scholarship"],
+    "intro": "The Central Sector Scholarship for College & University Students is a prestigious central government-funded scheme that rewards high-performing students who have excelled in their Class 12 examinations. This merit-based scholarship supports both undergraduate and postgraduate education, combining academic excellence with income-based eligibility criteria. It encourages continued academic achievement by providing financial assistance to talented students from families with limited financial means."
+  },
+  {
+    "scholarship_id": "22-ISHAN_UDAY",
+    "scholarship_name": "Ishan Uday Scholarship (North Eastern Region)",
+    "keywords": ["ishan uday", "ner scholarship", "north east ug scholarship"],
+    "intro": "The Ishan Uday Scholarship (North Eastern Region) is a central government initiative specifically designed for students from the North Eastern states of India. This scholarship supports undergraduate education and helps students pursue higher studies outside their home regions, thereby promoting educational mobility and exposure. By covering essential academic expenses, it facilitates access to quality higher education institutions across India and promotes educational development in the North Eastern Region."
+  },
+  {
+    "scholarship_id": "24-KANNYASHREE_K2",
+    "scholarship_name": "Kanyashree (K2)",
+    "keywords": ["kanyashree", "k2 scholarship", "girl student wb"],
+    "intro": "The Kanyashree (K2) scholarship is a groundbreaking social welfare initiative by the West Bengal government that focuses on empowering unmarried girl students. This scheme encourages continuation of education among girls by providing financial support for diploma and undergraduate courses. With income-based eligibility criteria, Kanyashree aims to reduce gender disparity in education, prevent early marriage, and promote girls' empowerment through sustained academic engagement and achievement."
+  },
+  {
+    "scholarship_id": "VIRTUSA_ENGINEERING",
+    "scholarship_name": "Virtusa Engineering Excellence Scholarship",
+    "keywords": ["virtusa scholarship", "engineering csr scholarship", "virtusa excellence"],
+    "intro": "The Virtusa Engineering Excellence Scholarship is a corporate-funded CSR initiative that provides one-time financial support to deserving engineering students. This scholarship is awarded based on both academic merit and family income, helping cover essential academic expenses during critical phases of engineering education. By encouraging excellence in engineering through targeted financial assistance, Virtusa demonstrates its commitment to nurturing future technology leaders and supporting technical education in India."
+  },
+  {
+    "scholarship_id": "RELIANCE_FOUNDATION",
+    "scholarship_name": "Reliance Foundation Scholarship",
+    "keywords": ["reliance scholarship", "reliance foundation", "reliance foundation ug", "reliance pg scholarship"],
+    "intro": "The Reliance Foundation Scholarship is a prestigious private scholarship program designed for meritorious undergraduate and postgraduate students in technical and professional fields. This highly competitive scholarship includes aptitude-based selection and offers high-value financial support to exceptional students. Beyond monetary assistance, it encourages leadership development and innovation, providing opportunities for talented students to excel academically while developing skills essential for future success and societal contribution."
+  }
+]

@@ -4,7 +4,7 @@ import json
 import os
 from pathlib import Path
 
-from app.core.intent import detect_intent
+from app.core.intent import detect_intent, find_scholarship, SCHOLARSHIP_ID_TO_SLUG
 from app.core.retriever import retrieve
 from app.core.prompt_builder import build_prompt
 from app.vectorstore.index import VectorIndex
@@ -41,6 +41,32 @@ def chat():
         return jsonify({"error": "Empty query"}), 400
 
     intent = detect_intent(query)
+
+    # Fast path for scholarship queries to return intro + clickable portal link
+    if intent == "scholarship":
+        scholarship = find_scholarship(query)
+
+        if scholarship:
+            scholarship_id = scholarship.get("scholarship_id", "")
+            scholarship_name = scholarship.get("scholarship_name", "")
+            intro = scholarship.get("intro", "")
+            scholarship_slug = SCHOLARSHIP_ID_TO_SLUG.get(scholarship_id, "")
+            scholarship_url = f"/scholarship?highlight={scholarship_slug}" if scholarship_slug else ""
+
+            response_text = (
+                f"{intro}\n\n"
+                "Please go through our scholarship portal for more details.\n"
+                f"🔗 View {scholarship_name} Details: {scholarship_url}"
+            )
+
+            return jsonify({
+                "intent": intent,
+                "response": response_text,
+                "scholarship_slug": scholarship_slug,
+                "scholarship_name": scholarship_name,
+                "scholarship_url": scholarship_url,
+                "has_scholarship_link": True
+            })
 
     docs = retrieve(
         query=query,

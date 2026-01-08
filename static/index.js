@@ -1104,10 +1104,32 @@
               // Check if this is a scholarship response with link
               else if (data.has_scholarship_link && data.scholarship_slug) {
                 console.log("Calling addMessageWithScholarshipLink");
-                addMessageWithScholarshipLink(data.response, data.scholarship_slug, data.scholarship_name);
-              } else {
-                console.log("Calling regular addMessage");
-                addMessage(data.response, "bot");
+                addMessageWithScholarshipLink(
+                  data.response,
+                  data.scholarship_slug,
+                  data.scholarship_name,
+                  data.scholarship_url
+                );
+              }
+              // Fallback: detect scholarship link text and render rich card
+              else {
+                const fallback = extractScholarshipFromText(data.response);
+                if (fallback.slug) {
+                  console.log("Detected scholarship link in text, upgrading to card");
+                  addMessageWithScholarshipLink(
+                    data.response,
+                    fallback.slug,
+                    data.scholarship_name || fallback.name || "Scholarship",
+                    data.scholarship_url || `/scholarship?highlight=${fallback.slug}`
+                  );
+                } else {
+                  console.log("Calling regular addMessage");
+                  const parsed = parseResponseForSuggestions(data.response);
+                  addMessage(parsed.main || data.response, "bot");
+                  if (parsed.suggestions.length) {
+                    addSuggestionBubble(parsed.suggestions);
+                  }
+                }
               }
             } else if (data.error) {
               addMessage("Sorry, I encountered an error: " + data.error, "bot");
@@ -1125,6 +1147,67 @@
           });
       }
 
+      function parseResponseForSuggestions(text) {
+  const markers = [/would you like to know more about:?/i];
+
+  if (!text || typeof text !== "string") {
+    return { main: text, suggestions: [] };
+  }
+
+  // Add a blank line BEFORE the section
+  text = text.replace(
+    /would you like to know more about:?/i,
+    "\n\nWould you like to know more about:"
+  );
+
+  let splitIdx = -1;
+  let markerLength = 0;
+
+  for (const m of markers) {
+    const match = text.match(m);
+    if (match) {
+      splitIdx = match.index;
+      markerLength = match[0].length;
+      break;
+    }
+  }
+
+  // Fallback: detect first bullet line as start of suggestions
+  if (splitIdx === -1) {
+    const lines = text.split(/\r?\n/);
+    const bulletIdx = lines.findIndex((l) => /^\s*[-•]/.test(l));
+    if (bulletIdx > 0) {
+      splitIdx = text.indexOf(lines[bulletIdx]);
+      markerLength = 0;
+    }
+  }
+
+  if (splitIdx === -1) {
+    return { main: text.trim(), suggestions: [] };
+  }
+
+  const main = text.slice(0, splitIdx).trim();
+  const tail = text.slice(splitIdx + markerLength);
+
+  let suggestions = tail
+    .split(/\r?\n/)
+    .map((line) => line.trim().replace(/^[-•]\s*/, ""))
+    .filter((line) => line.length > 0);
+
+  if (suggestions.length === 1 && /\s-\s/.test(suggestions[0])) {
+    suggestions = suggestions[0]
+      .split(/\s-\s+/)
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0);
+  }
+
+  return {
+    main: main || text.trim(),
+    suggestions,
+  };
+}
+
+
       function addMessage(message, sender) {
         const chatlog = document.getElementById("chatlog");
         const messageDiv = document.createElement("div");
@@ -1135,7 +1218,16 @@
           minute: "2-digit",
         });
 
+        let extractedSuggestions = [];
+
+        // Final safety: if bot message still contains suggestions, extract them here
         if (sender === "bot") {
+          const parsed = parseResponseForSuggestions(message);
+          if (parsed.suggestions.length) {
+            extractedSuggestions = parsed.suggestions;
+            message = parsed.main;
+          }
+
           messageDiv.innerHTML = `
           <div class="message-avatar">
             <img src="/logo/Brainware_University.jpg" alt="Bot">
@@ -1164,6 +1256,11 @@
 
         chatlog.appendChild(messageDiv);
         chatlog.scrollTop = chatlog.scrollHeight;
+
+        // Render suggestions in a separate bubble when present
+        if (extractedSuggestions.length) {
+          addSuggestionBubble(extractedSuggestions);
+        }
 
         // Attach feedback handlers (Like / Dislike)
         const fb = messageDiv.querySelector('.feedback-container');
@@ -1208,7 +1305,70 @@
         }
       }
 
-      function addMessageWithScholarshipLink(message, scholarshipSlug, scholarshipName) {
+      function addSuggestionBubble(suggestions) {
+        if (!suggestions || !suggestions.length) return;
+
+        const chatlog = document.getElementById("chatlog");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = "message bot";
+
+        const avatarDiv = document.createElement("div");
+        avatarDiv.className = "message-avatar";
+        const avatarImg = document.createElement("img");
+        avatarImg.src = "/logo/Brainware_University.jpg";
+        avatarImg.alt = "Bot";
+        avatarDiv.appendChild(avatarImg);
+
+        const bubble = document.createElement("div");
+        bubble.className = "message-bubble suggestions";
+
+        const content = document.createElement("div");
+        content.className = "message-content";
+
+        const title = document.createElement("div");
+        title.className = "suggestion-title";
+        title.textContent = "Related suggestions";
+        content.appendChild(title);
+
+        const list = document.createElement("ul");
+        list.className = "suggestion-list";
+        suggestions.forEach((text) => {
+          const li = document.createElement("li");
+          li.textContent = text;
+          list.appendChild(li);
+        });
+        content.appendChild(list);
+
+        const timeEl = document.createElement("div");
+        timeEl.className = "message-time";
+        timeEl.textContent = new Date().toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+
+        bubble.appendChild(content);
+        bubble.appendChild(timeEl);
+
+        messageDiv.appendChild(avatarDiv);
+        messageDiv.appendChild(bubble);
+
+        chatlog.appendChild(messageDiv);
+        chatlog.scrollTop = chatlog.scrollHeight;
+      }
+
+      function extractScholarshipFromText(text) {
+        if (!text) return { slug: "", name: "" };
+
+        const slugMatch = text.match(/highlight=([A-Za-z0-9_-]+)/);
+        const nameMatch = text.match(/View\s+(.+?)\s+Details/i);
+
+        return {
+          slug: slugMatch ? slugMatch[1] : "",
+          name: nameMatch ? nameMatch[1] : ""
+        };
+      }
+
+      function addMessageWithScholarshipLink(message, scholarshipSlug, scholarshipName, scholarshipUrl) {
         const chatlog = document.getElementById("chatlog");
         const messageDiv = document.createElement("div");
         messageDiv.className = "message bot";
@@ -1216,7 +1376,6 @@
         const time = new Date().toLocaleTimeString([], {
           hour: "2-digit",
           minute: "2-digit",
-          second: "2-digit"
         });
 
         // Extract intro text (everything before "Please go through")
@@ -1226,8 +1385,8 @@
         // Remove excessive whitespace and format properly
         introText = introText.replace(/\s+/g, ' ').trim();
         
-        // Create scholarship link URL with highlight parameter
-        const scholarshipUrl = `/scholarship?highlight=${scholarshipSlug}`;
+        // Prefer backend-provided URL; fallback to slug-based highlight
+        const scholarshipLink = scholarshipUrl || (scholarshipSlug ? `/scholarship?highlight=${scholarshipSlug}` : "#");
 
         messageDiv.innerHTML = `
           <div class="message-avatar">
@@ -1240,16 +1399,19 @@
               </h4>
               <p style="margin: 0 0 3px 0; line-height: 1.5; color: #333;">${introText}</p>
               <p style="margin: 0 0 3px 0; font-size: 14px; color: #666;">Please go through our scholarship portal for more details.</p>
-              <a href="${scholarshipUrl}" 
-                 style="display: inline-flex; align-items: center; gap: 4px; 
-                        color: #1976d2; text-decoration: none; font-weight: 500; 
-                        font-size: 14px; padding: 3px 6px; background: #f0f7ff; 
-                        border: 1px solid #d0e8f7; border-radius: 4px; transition: all 0.2s;"
-                 onmouseover="this.style.background='#e3f2fd'; this.style.borderColor='#1976d2';"
-                 onmouseout="this.style.background='#f0f7ff'; this.style.borderColor='#d0e8f7';"
-                 target="_blank">
-                View Details →
-              </a>
+              <div style="margin: 6px 0 0 0;">
+                <a href="${scholarshipLink}"
+                   target="_blank"
+                   style="display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid #d0e8f7; border-radius: 8px; background: #f8fbff; text-decoration: none; color: #0f3d91; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.06); transition: all 0.2s;"
+                   onmouseover="this.style.background='#e9f3ff'; this.style.borderColor='#1976d2'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.10)';"
+                   onmouseout="this.style.background='#f8fbff'; this.style.borderColor='#d0e8f7'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: #e3f2fd; border: 1px solid #c6def9; font-size: 16px;">🔗</span>
+                  <span style="display: flex; flex-direction: column; gap: 2px; color: #0f3d91;">
+                    <span style="font-size: 14px;">View ${scholarshipName} Details</span>
+                    <span style="font-size: 12px; color: #4b5563; font-weight: 500;">Open scholarship portal</span>
+                  </span>
+                </a>
+              </div>
             </div>
             <div class="message-time">${time}</div>
             <div class="feedback-container" data-message-id="${Date.now()}-${Math.random().toString(36).slice(2,6)}">
@@ -1384,7 +1546,12 @@
           .then((data) => {
             hideTypingIndicator();
             if (data.has_scholarship_link && data.scholarship_slug) {
-              addMessageWithScholarshipLink(data.response, data.scholarship_slug, data.scholarship_name);
+              addMessageWithScholarshipLink(
+                data.response,
+                data.scholarship_slug,
+                data.scholarship_name,
+                data.scholarship_url
+              );
             } else if (data.error) {
               addMessage("Sorry, I couldn't find that scholarship.", "bot");
             }

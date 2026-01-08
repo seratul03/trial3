@@ -1,0 +1,77 @@
+{
+  "university": {
+    "name": "Brainware University",
+    "location": {
+      "campus": "Barasat Campus",
+      "address": "398, Ramkrishnapur Road, Near Jagadighata Market, Barasat, Kolkata, West Bengal, India",
+      "pincode": "700125"
+    },
+    "established_year": 2016,
+    "status": "UGC-recognised Private State University",
+    "act": "Brainware University Act, 2015",
+    "legacy": "Part of Brainware Group with over 35 years of academic excellence (since 1990)",
+    "programmes_offered": [
+      "Undergraduate",
+      "Postgraduate",
+      "Diploma",
+      "PhD",
+      "Skill-based Programmes"
+    ],
+    "academic_domains": [
+      "Engineering",
+      "Biotechnology & Biosciences",
+      "Medical & Allied Health Sciences",
+      "Computational & Applied Sciences",
+      "Management & Commerce",
+      "Humanities & Social Sciences",
+      "Law",
+      "Agriculture",
+      "Communication, Multimedia & Film Studies"
+    ],
+    "key_highlights": [
+      "State-of-the-art infrastructure",
+      "Ragging-free green campus",
+      "75+ career-oriented programmes",
+      "Merit-based scholarships",
+      "International academic collaborations",
+      "90%+ placement record",
+      "500+ recruiters across India",
+      "Over 2 lakh students trained and placed pan-India"
+    ],
+    "approvals_and_memberships": [
+      "University Grants Commission (UGC)",
+      "Bar Council of India (BCI)",
+      "Pharmacy Council of India (PCI)",
+      "Indian Nursing Council (INC)",
+      "West Bengal Nursing Council (WBNC)",
+      "Association of Indian Universities (AIU)",
+      "Institution Innovation Council (IIC)",
+      "Unnat Bharat Abhiyan (UBA)"
+    ]
+  },
+
+  "chancellor": {
+    "name": "Phalguni Mookhopadhyay",
+    "designation": "Founder Chancellor",
+    "role_equivalent": "CEO",
+    "education": [
+      "MBA – Indian Institute of Social Welfare and Business Management",
+      "MA (Economics) – University of Calcutta"
+    ],
+    "professional_roles": [
+      "Chairman & Managing Trustee – Brainware Group of Institutions (SDET)",
+      "Chairman & Managing Director – Brainware Consultancy Private Limited",
+      "Chairman & Managing Director – WebGuru Infosystems Private Limited"
+    ],
+    "vision": "To deliver global standard education at affordable fees and make students employable with strong placement support",
+    "background": "Brainchild behind the establishment and rapid growth of Brainware University, transforming it into one of the leading private universities in West Bengal"
+  },
+
+  "vice_chancellor": {
+    "name": "Dr. Sankar Gangopadhyay",
+    "designation": "Vice Chancellor",
+    "role_equivalent": "Co-CEO",
+    "academic_focus": "Academic leadership, research excellence, and holistic student development",
+    "vision": "To foster openness, innovation, competitiveness, and creative expression while producing responsible professionals, leaders, entrepreneurs, and technologists"
+  }
+}

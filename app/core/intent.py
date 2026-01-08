@@ -47,7 +47,8 @@ def detect_intent(query: str) -> str:
     if re.search(r"\b(bscm|escm|pcc|pec)[-\s]?\d+\b", q):
         return "subject"
 
-    if re.search(r"\b(scholarship|stipend|grant)\b", q):
+    # Expand scholarship trigger words so named schemes (e.g., kanyashree, svmcm) hit the scholarship intent
+    if re.search(r"\b(scholarship|stipend|grant|svmcm|kanyashree|nabanna|aikyashree|mcm)\b", q):
         return "scholarship"
 
     if re.search(r"\b(holiday|vacation|leave)\b", q):
@@ -61,6 +62,9 @@ def detect_intent(query: str) -> str:
 
     if re.search(r"\b(rule|policy|fine|allowed|banned)\b", q):
         return "rules"
+
+    if re.search(r"\b(brainware university|chancellor|vice chancellor|vc|founder|campus|address|location|established)\b", q):
+        return "about"
 
     return "general"
 

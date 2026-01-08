@@ -12,6 +12,10 @@ RESOURCE_MAP = {
         JSON_PATH / "brainware_cse_ai_faculty.json"
     ],
 
+    "about": [
+        JSON_PATH / "about.json"
+    ],
+
     "subject": [
         # subject code will be resolved dynamically
     ],

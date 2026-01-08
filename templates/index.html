@@ -2685,7 +2685,33 @@
         .then((data) => {
           hideTypingIndicator();
           if (data.response) {
-            addMessage(data.response, "bot");
+            // Disambiguation flow for multiple scholarships
+            if (data.needs_disambiguation && data.options) {
+              addDisambiguationMessage(data.response, data.options);
+            }
+            // Structured scholarship response from backend
+            else if (data.has_scholarship_link && data.scholarship_slug) {
+              addMessageWithScholarshipLink(
+                data.response,
+                data.scholarship_slug,
+                data.scholarship_name,
+                data.scholarship_url
+              );
+            }
+            // Fallback: detect scholarship link text in plain response
+            else {
+              const fallback = extractScholarshipFromText(data.response);
+              if (fallback.slug) {
+                addMessageWithScholarshipLink(
+                  data.response,
+                  fallback.slug,
+                  data.scholarship_name || fallback.name || "Scholarship",
+                  data.scholarship_url || `/scholarship?highlight=${fallback.slug}`
+                );
+              } else {
+                addMessage(data.response, "bot");
+              }
+            }
           } else if (data.error) {
             addMessage("Sorry, I encountered an error: " + data.error, "bot");
           } else {
@@ -2783,6 +2809,202 @@
           setTimeout(() => dislikeBtn.classList.remove('clicked'), 220);
         });
       }
+    }
+
+    function extractScholarshipFromText(text) {
+      if (!text) return { slug: "", name: "" };
+
+      const slugMatch = text.match(/highlight=([A-Za-z0-9_-]+)/);
+      const nameMatch = text.match(/View\s+(.+?)\s+Details/i);
+
+      return {
+        slug: slugMatch ? slugMatch[1] : "",
+        name: nameMatch ? nameMatch[1] : ""
+      };
+    }
+
+    function addMessageWithScholarshipLink(message, scholarshipSlug, scholarshipName, scholarshipUrl) {
+      const chatlog = document.getElementById("chatlog");
+      const messageDiv = document.createElement("div");
+      messageDiv.className = "message bot";
+
+      const time = new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      });
+
+      const parts = message.split("Please go through our scholarship portal for more details.");
+      let introText = parts[0].trim();
+      introText = introText.replace(/\s+/g, ' ').trim();
+
+      const scholarshipLink = scholarshipUrl || (scholarshipSlug ? `/scholarship?highlight=${scholarshipSlug}` : "#");
+
+      messageDiv.innerHTML = `
+          <div class="message-avatar">
+            <img src="/logo/Brainware_University.jpg" alt="Bot">
+          </div>
+          <div class="message-bubble">
+            <div class="message-content">
+              <h4 style="margin: 0 0 3px 0; color: #1976d2; font-size: 15px; font-weight: 600;">
+                ${scholarshipName}
+              </h4>
+              <p style="margin: 0 0 3px 0; line-height: 1.5; color: #333;">${introText}</p>
+              <p style="margin: 0 0 3px 0; font-size: 14px; color: #666;">Please go through our scholarship portal for more details.</p>
+              <div style="margin: 6px 0 0 0;">
+                <a href="${scholarshipLink}"
+                   target="_blank"
+                   style="display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid #d0e8f7; border-radius: 8px; background: #f8fbff; text-decoration: none; color: #0f3d91; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,0.06); transition: all 0.2s;"
+                   onmouseover="this.style.background='#e9f3ff'; this.style.borderColor='#1976d2'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.10)';"
+                   onmouseout="this.style.background='#f8fbff'; this.style.borderColor='#d0e8f7'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: #e3f2fd; border: 1px solid #c6def9; font-size: 16px;">🔗</span>
+                  <span style="display: flex; flex-direction: column; gap: 2px; color: #0f3d91;">
+                    <span style="font-size: 14px;">View ${scholarshipName} Details</span>
+                    <span style="font-size: 12px; color: #4b5563; font-weight: 500;">Open scholarship portal</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="message-time">${time}</div>
+            <div class="feedback-container" data-message-id="${Date.now()}-${Math.random().toString(36).slice(2, 6)}">
+              <button class="feedback-btn like-btn" title="Like">
+                <img src="/sidebar/Like%20svg.svg" alt="Like">
+              </button>
+              <button class="feedback-btn dislike-btn" title="Dislike">
+                <img src="/sidebar/Dislike%20svg.svg" alt="Dislike">
+              </button>
+            </div>
+          </div>
+        `;
+
+      chatlog.appendChild(messageDiv);
+      chatlog.scrollTop = chatlog.scrollHeight;
+
+      const fb = messageDiv.querySelector('.feedback-container');
+      if (fb) {
+        const mid = fb.dataset.messageId;
+        const likeBtn = fb.querySelector('.like-btn');
+        const dislikeBtn = fb.querySelector('.dislike-btn');
+
+        try {
+          const prev = localStorage.getItem('feedback_' + mid);
+          if (prev === 'like') {
+            likeBtn.classList.add('active');
+          } else if (prev === 'dislike') {
+            dislikeBtn.classList.add('active');
+          }
+        } catch (e) { }
+
+        likeBtn.addEventListener('click', () => {
+          const isActive = likeBtn.classList.toggle('active');
+          if (isActive) {
+            dislikeBtn.classList.remove('active');
+            try { localStorage.setItem('feedback_' + mid, 'like'); } catch (e) { }
+          } else {
+            try { localStorage.removeItem('feedback_' + mid); } catch (e) { }
+          }
+          likeBtn.classList.add('clicked');
+          setTimeout(() => likeBtn.classList.remove('clicked'), 220);
+        });
+
+        dislikeBtn.addEventListener('click', () => {
+          const isActive = dislikeBtn.classList.toggle('active');
+          if (isActive) {
+            likeBtn.classList.remove('active');
+            try { localStorage.setItem('feedback_' + mid, 'dislike'); } catch (e) { }
+          } else {
+            try { localStorage.removeItem('feedback_' + mid); } catch (e) { }
+          }
+          dislikeBtn.classList.add('clicked');
+          setTimeout(() => dislikeBtn.classList.remove('clicked'), 220);
+        });
+      }
+    }
+
+    function addDisambiguationMessage(message, options) {
+      const chatlog = document.getElementById("chatlog");
+      const messageDiv = document.createElement("div");
+      messageDiv.className = "message bot";
+
+      const time = new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
+      const optionsHTML = options.map((opt, index) => `
+          <button 
+            class="scholarship-option-btn" 
+            data-slug="${opt.slug}"
+            data-name="${opt.name}"
+            onclick="selectScholarship('${opt.slug}', '${opt.name.replace(/'/g, "\\'")}')"
+            style="display: flex; align-items: center; width: 100%; text-align: left; 
+                   padding: 10px 12px; margin-bottom: 3px; 
+                   background: ${index % 2 === 0 ? '#ffffff' : '#f8fafc'}; 
+                   border: 1px solid #e2e8f0; border-radius: 6px;
+                   cursor: pointer; font-size: 14px; font-weight: 500; 
+                   color: #334155; transition: all 0.2s ease;
+                   gap: 10px;"
+            onmouseover="this.style.background='#e0f2fe'; this.style.color='#0369a1'; this.style.paddingLeft='16px';"
+            onmouseout="this.style.background='${index % 2 === 0 ? '#ffffff' : '#f8fafc'}'; this.style.color='#334155'; this.style.paddingLeft='12px';">
+            <span style="display: inline-flex; align-items: center; justify-content: center; 
+                         width: 22px; height: 22px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); 
+                         color: white; border-radius: 50%; font-size: 12px; font-weight: 600;
+                         flex-shrink: 0;">${opt.number}</span>
+            <span style="flex: 1;">${opt.name}</span>
+            <span style="color: #94a3b8; font-size: 16px;">›</span>
+          </button>
+        `).join('');
+
+      messageDiv.innerHTML = `
+          <div class="message-avatar">
+            <img src="/logo/Brainware_University.jpg" alt="Bot">
+          </div>
+          <div class="message-bubble">
+            <div class="message-content">
+              ${message}
+              <div style="margin-top: 10px;">
+                ${optionsHTML}
+              </div>
+            </div>
+            <div class="message-time">${time}</div>
+          </div>
+        `;
+
+      chatlog.appendChild(messageDiv);
+      chatlog.scrollTop = chatlog.scrollHeight;
+    }
+
+    function selectScholarship(slug, name) {
+      addMessage(name, "user");
+      showTypingIndicator();
+
+      fetch("/scholarship-by-slug", {
+        method: "POST",
+        credentials: 'same-origin',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ slug: slug }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          hideTypingIndicator();
+          if (data.has_scholarship_link && data.scholarship_slug) {
+            addMessageWithScholarshipLink(
+              data.response,
+              data.scholarship_slug,
+              data.scholarship_name,
+              data.scholarship_url
+            );
+          } else if (data.error) {
+            addMessage("Sorry, I couldn't find that scholarship.", "bot");
+          }
+        })
+        .catch((error) => {
+          hideTypingIndicator();
+          console.error("Error:", error);
+          addMessage("Sorry, I encountered an error. Please try again.", "bot");
+        });
     }
 
     function showTypingIndicator() {
@@ -4212,7 +4434,7 @@
             <span style="color:#717171;font-size:13px;margin-left:12px;">${formattedDate}</span>
           </div>
           <h2 style="font-size:20px;font-weight:700;color:#333;margin-bottom:16px;line-height:1.4;">${announcement.title}</h2>
-          <div style="color:#555;font-size:14px;line-height:1.6;white-space:pre-wrap;">${announcement.body}</div>
+          <div style="color:#555;font-size:14px;line-height:1.6;">${announcement.body}</div>
           ${attachmentsHtml}
         `;
 
