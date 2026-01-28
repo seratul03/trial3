@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     profileContainer.innerHTML = `
     <div class="profile-card">
       <div class="card-header">
-        <div class="menu-icon"><i class="fas fa-ellipsis-v"></i></div>
+        <a href="/faculty" class="back-link"><i class="fas fa-arrow-left"></i> Back to Faculty List</a>
       </div>
 
       <div class="profile-image-wrapper">

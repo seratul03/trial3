@@ -8,7 +8,6 @@ from functools import wraps
 
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / 'admin.db'
-# Target upload directory provided by the user; fallback to a local folder if creation fails.
 PREFERRED_UPLOAD_ROOT = Path(r"C:\Users\Seratul Mustakim\Desktop\Ai saves\College_chatbot\admin\uploads")
 UPLOAD_ROOT = PREFERRED_UPLOAD_ROOT
 try:
