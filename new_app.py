@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, render_template, send_from_directory,
 from flask_cors import CORS
 # Import Jinja2 loaders to handle multiple template folders without conflicts
 from jinja2 import ChoiceLoader, FileSystemLoader, PrefixLoader
+import html
 import json
 import os
 from pathlib import Path
@@ -180,6 +181,82 @@ def chat():
     prelim_matches = find_all_scholarships(query)
     if prelim_matches and intent != "scholarship":
         intent = "scholarship"
+
+    # Handle hackathon / events queries from dedicated source
+    if intent == "events":
+        events_file = BASE_DIR / "Resources" / "json" / "events.json"
+        try:
+            with open(events_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            # The file stores events under the "events" key
+            events_list = data.get("events") if isinstance(data, dict) else []
+
+            if not events_list:
+                raise ValueError("Events list missing or empty")
+
+            lines = []
+            for ev in events_list:
+                name = html.escape(str(ev.get("name", "")) or "Event")
+                date = html.escape(str(ev.get("date", "")) or "Date not specified")
+                dept = html.escape(str(ev.get("department", "")) or "Department not specified")
+                lines.append(f"• {name} — {date} (Dept: {dept})")
+
+            response_text = (
+                "Here are the hackathons and events I have on record:<br>" + "<br>".join(lines)
+            )
+
+            return jsonify({
+                "intent": intent,
+                "response": response_text
+            })
+        except Exception as e:
+            print(f"[ERROR] Failed to load events data: {e}")
+            return jsonify({
+                "intent": intent,
+                "response": "Sorry, I couldn't load the event details right now."
+            })
+
+    # Handle placement queries from dedicated source
+    if intent == "placement":
+        placement_file = BASE_DIR / "Resources" / "json" / "placement.json"
+        try:
+            with open(placement_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            dept = ""
+            if isinstance(data, dict):
+                dept = html.escape(str(data.get("department", "")) or "")
+                placements_list = data.get("placements") or []
+            else:
+                placements_list = []
+
+            if not placements_list:
+                raise ValueError("Placements list missing or empty")
+
+            lines = []
+            for p in placements_list:
+                name = html.escape(str(p.get("name", "")) or "Student")
+                company = html.escape(str(p.get("company", "")) or "Company not specified")
+                lines.append(f"• {name} — {company}")
+
+            header = "Here are the latest placements"
+            if dept:
+                header += f" for {dept}"
+            header += ":<br>"
+
+            response_text = header + "<br>".join(lines)
+
+            return jsonify({
+                "intent": intent,
+                "response": response_text
+            })
+        except Exception as e:
+            print(f"[ERROR] Failed to load placement data: {e}")
+            return jsonify({
+                "intent": intent,
+                "response": "Sorry, I couldn't load the placement details right now."
+            })
 
     # Check if this is a scholarship query
     if intent == "scholarship":

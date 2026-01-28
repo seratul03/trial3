@@ -1,0 +1,57 @@
+{
+  "department": "CSE AIML",
+  "placements": [
+    {
+      "name": "Momtaj Khatun",
+      "company": "SmartEd"
+    },
+    {
+      "name": "Muskan Kumari",
+      "company": "Okaya Infocom Pvt. Ltd."
+    },
+    {
+      "name": "Ananya Ghosh",
+      "company": "Eframe Infomedia"
+    },
+    {
+      "name": "Debayan Ghosh",
+      "company": "JusPay"
+    },
+    {
+      "name": "Himel Dutta",
+      "company": "Rinex Technologies"
+    },
+    {
+      "name": "Riddhi Dey",
+      "company": "Rinex Technologies"
+    },
+    {
+      "name": "Mitrayan Mallick",
+      "company": "Rinex Technologies"
+    },
+    {
+      "name": "Mimansha Lal",
+      "company": "Rinex Technologies"
+    },
+    {
+      "name": "Kaushik Datta",
+      "company": "Bharat Financial Inclusion Limited"
+    },
+    {
+      "name": "Tania Bhattacharjee",
+      "company": "Linde Global Support Services"
+    },
+    {
+      "name": "Aman Kumar Srivastav",
+      "company": "Keross"
+    },
+    {
+      "name": "Shubhadeep Pandit",
+      "company": "Ginni Systems Ltd. (Ginesys)"
+    },
+    {
+      "name": "Arnab Bhattacharyya",
+      "company": "Aeka Advisors"
+    }
+  ]
+}

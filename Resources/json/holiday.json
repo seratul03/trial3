@@ -1,107 +1,107 @@
 {
   "_metadata": {
-    "title": "University Holiday Calendar 2025",
-    "description": "Complete list of holidays, vacation days, and university closed dates for the academic year 2025. This includes all public holidays, festival celebrations, and semester breaks.",
+    "title": "University Holiday Calendar 2026",
+    "description": "Complete list of holidays, vacation days, and university closed dates for the academic year 2026. This includes all public holidays, festival celebrations, and semester breaks.",
     "keywords": "holiday, holidays, vacation, leave, off, closed, university closed, semester break, festival, celebration, public holiday, break, upcoming holiday, next holiday, holiday list, holiday calendar, holiday dates, when is holiday, which day is holiday"
   },
   "holidays": [
-  {
-    "date": "1 January 2025",
-    "day": "Wednesday",
-    "event": "New Year's Day",
-    "duration": "1 day",
-    "type": "Public Holiday"
-  },
-  {
-    "date": "23 January 2025",
-    "day": "Thursday",
-    "event": "Netaji's Birthday",
-    "duration": "1 day",
-    "type": "Public Holiday"
-  },
-  {
-    "date": "26 January 2025",
-    "day": "Sunday",
-    "event": "Republic Day",
-    "duration": "1 day",
-    "type": "National Holiday"
-  },
-  {
-    "date": "2 February 2025",
-    "day": "Sunday",
-    "event": "Saraswati Puja (Vasant Panchami)",
-    "duration": "1 day",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "14 March 2025",
-    "day": "Friday",
-    "event": "Doljatra / Holi",
-    "duration": "1 day",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "31 March 2025",
-    "day": "Monday",
-    "event": "Id-Ul-Fitr",
-    "duration": "1 day",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "18 April 2025",
-    "day": "Friday",
-    "event": "Good Friday",
-    "duration": "1 day",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "7 June 2025",
-    "day": "Saturday",
-    "event": "Id-Ud-Zoha (Bakrid)",
-    "duration": "1 day",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "6 July 2025",
-    "day": "Sunday",
-    "event": "Muharram",
-    "duration": "1 day",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "15 August 2025",
-    "day": "Friday",
-    "event": "Independence Day",
-    "duration": "1 day",
-    "type": "National Holiday"
-  },
-  {
-    "date": "28 September 2025 to 6 October 2025",
-    "day": "Sunday to Monday",
-    "event": "Sasthi to Lakshmi Puja",
-    "duration": "8 days",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "2 October 2025",
-    "day": "Thursday",
-    "event": "Gandhi's Birthday",
-    "duration": "1 day",
-    "type": "National Holiday"
-  },
-  {
-    "date": "20 October 2025 to 23 October 2025",
-    "day": "Monday to Thursday",
-    "event": "Deepabali to Bhatriditiya",
-    "duration": "4 days",
-    "type": "Festival Holiday"
-  },
-  {
-    "date": "25 December 2025",
-    "day": "Thursday",
-    "event": "Christmas Day",
-    "duration": "1 day",
-    "type": "Festival Holiday"
-  }
-]
+    {
+      "date": "1 January 2026",
+      "day": "Thursday",
+      "event": "New Year's Day",
+      "duration": "1 day",
+      "type": "Public Holiday"
+    },
+    {
+      "date": "23 January 2026",
+      "day": "Friday",
+      "event": "Netaji's Birthday & Saraswati Puja (Vasant Panchami)",
+      "duration": "1 day",
+      "type": "Public Holiday"
+    },
+    {
+      "date": "26 January 2026",
+      "day": "Monday",
+      "event": "Republic Day",
+      "duration": "1 day",
+      "type": "National Holiday"
+    },
+    {
+      "date": "3 March 2026",
+      "day": "Tuesday",
+      "event": "Doljatra",
+      "duration": "1 day",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "4 March 2026",
+      "day": "Wednesday",
+      "event": "Holi",
+      "duration": "1 day",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "21 March 2026",
+      "day": "Saturday",
+      "event": "Id-Ul-Fitr",
+      "duration": "1 day",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "3 April 2026",
+      "day": "Friday",
+      "event": "Good Friday",
+      "duration": "1 day",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "27 May 2026",
+      "day": "Wednesday",
+      "event": "Id-Ud-Zoha (Bakrid)",
+      "duration": "1 day",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "26 June 2026",
+      "day": "Friday",
+      "event": "Muharram",
+      "duration": "1 day",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "15 August 2026",
+      "day": "Saturday",
+      "event": "Independence Day",
+      "duration": "1 day",
+      "type": "National Holiday"
+    },
+    {
+      "date": "17 October 2026 to 25 October 2026",
+      "day": "Saturday to Next Sunday",
+      "event": "Sasthi to Lakshmi Puja",
+      "duration": "9 days",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "2 October 2026",
+      "day": "Friday",
+      "event": "Gandhi's Birthday",
+      "duration": "1 day",
+      "type": "National Holiday"
+    },
+    {
+      "date": "8 November 2026 to 11 November 2026",
+      "day": "Sunday to Wednesday",
+      "event": "Deepabali to Bhatriditiya",
+      "duration": "4 days",
+      "type": "Festival Holiday"
+    },
+    {
+      "date": "25 December 2026",
+      "day": "Friday",
+      "event": "Christmas Day",
+      "duration": "1 day",
+      "type": "Festival Holiday"
+    }
+  ]
 }

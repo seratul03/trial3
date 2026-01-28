@@ -1,0 +1,60 @@
+{
+  "category": "Hackathons & Events",
+  "events": [
+    {
+      "name": "NEXATHON 1.0 (48-Hour Hackathon)",
+      "date": "09-09-2025 to 11-09-2025",
+      "department": "CSE AI"
+    },
+    {
+      "name": "IBM Technovate",
+      "date": "01-04-2025 to 02-04-2025",
+      "department": "Management and Computer Science and Engineering – Artificial Intelligence"
+    },
+    {
+      "name": "SAMSUNG INNOVATION CAMPUS HACKATHON",
+      "date": "15-10-2025 to 17-10-2025",
+      "department": "CSS, CSE AI, CSE CSDS, CS"
+    },
+    {
+      "name": "Innovate. Create. Compete. Internal Hackathon 2025",
+      "date": "17-09-2025 to 18-09-2025",
+      "department": "Tech Club"
+    },
+    {
+      "name": "Generative AI Model & Application",
+      "date": "21-08-2025",
+      "department": "CSE CS & DS"
+    },
+    {
+      "name": "Texibition 2K25",
+      "date": "30-04-2025 to 01-05-2025",
+      "department": "Tech Club & IIC"
+    },
+    {
+      "name": "Alumni Insights: Journey Beyond",
+      "date": "11-10-2025",
+      "department": "CSE AI"
+    },
+    {
+      "name": "Placement AI Tools",
+      "date": "26-03-2025",
+      "department": "Computer Science and Engineering – Artificial Intelligence"
+    },
+    {
+      "name": "Industry Visit to Varun Beverages Ltd",
+      "date": "14-09-2024",
+      "department": "Computer Science Engineering – Artificial Intelligence"
+    },
+    {
+      "name": "Empowering Your Persona",
+      "date": "13-08-2024",
+      "department": "Computer Science & Engineering – Artificial Intelligence & Machine Learning"
+    },
+    {
+      "name": "5-Day Workshop on Emerging Technology",
+      "date": "19-08-2024",
+      "department": "Computer Science & Engineering – Artificial Intelligence"
+    }
+  ]
+}
